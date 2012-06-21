@@ -71,7 +71,7 @@
       "nome": "sacador_inscricao_numero",
       "posicao_inicio": 21,
       "posicao_fim": 35,
-      "formato": "numero"
+      "formato": "num"
     },
 
     "11.3Y": {
