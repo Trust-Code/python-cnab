@@ -1,5 +1,5 @@
 {
-  "nome": "header_arquivo",
+  "nome": "detalhe_segmento_p",
   "campos": {
     "01.3P": {
       "nome": "controle_banco",
@@ -301,6 +301,6 @@
       "posicao_fim": 240,
       "formato": "alfa"
     }
-    
+
   }
 }
