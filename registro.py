@@ -24,8 +24,13 @@ class Campo(object):
                 self.default = u' ' * self.digitos
 
         self._valor = None
+    
+    @property    
+    def valor(self):
+        return self._valor 
 
-    def set_valor(self, valor):
+    @valor.setter
+    def valor(self, valor):
         if self.formato == 'num':
             if self.decimais:
                 if isinstance(valor, Decimal):
@@ -42,10 +47,7 @@ class Campo(object):
                     raise Exception #TODO
         else:
             self._valor = valor
-    
-    def get_valor(self):
-        return self._valor
-     
+
     def __unicode__(self):
         if self._valor:
             valor = self._valor
@@ -60,10 +62,15 @@ class Campo(object):
 
         return u'{0:0{1}d}'.format(valor, self.digitos)
 
-    valor = property(get_valor, set_valor)        
-
     def __repr__(self):
         return unicode(self)
+
+    def __set__(self, instance, value):
+        self.valor = value
+
+    def __get__(self, instance, owner):
+        return self.valor
+
 
 class ErrorAoLerCampo(Exception):
     #def __unicode__(self):
@@ -73,19 +80,23 @@ class ErrorAoLerCampo(Exception):
 
 class Registro(object):
 
-    def __init__(self, nome):
-        self.spec = cnab240.registro_specs.get(nome)
-        self.campos = OrderedDict() 
- 
-        if not self.spec:
-            # TODO:
-            raise Exception
-     
-        campo_specs = self.spec.get('campos', {})
+    def __new__(cls, nome):
+        
+        spec = cnab240.registro_specs.get(nome)
+        campos = OrderedDict()
+        attrs = {'_campos': campos}
+
+        campo_specs = spec.get('campos', {})
         for key in sorted(campo_specs.iterkeys()):
             campo = Campo(campo_specs[key])
-            self.campos.update({campo.nome: campo})
-            setattr(self, campo.nome, campo)
+            campos.update({campo.nome: campo})
+            attrs.update({campo.nome: campo})
+
+        new_cls = type('Registro', (RegistroBase, ), attrs)
+        return new_cls() 
+
+
+class RegistroBase(object):
 
     def carrega(self, registro_str):
         """
@@ -93,7 +104,7 @@ class Registro(object):
 00100000         212345678901234abcdefghijklmnopqrst028916000000014262X7TRACY TECNOLOGIA LTDA ME      BANCO DO BRASIL                         02012071322000012345608512345                                                                     
 """       
  
-        for campo in self.campos.values():
+        for campo in self._campos.values():
             
             valor = registro_str[campo.inicio:campo.fim].strip()
             if campo.formato == 'num' and campo.decimais:
@@ -112,4 +123,5 @@ class Registro(object):
                                           valor, campo_spec)
 
     def escreve(self):
-        return ''.join([unicode(campo) for campo in self.campos.values()])  
+        return ''.join([unicode(campo) for campo in self._campos.values()])  
+
