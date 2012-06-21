@@ -23,7 +23,7 @@
     },
 
     "04.0": {
-        "nome": "cnab",
+        "nome": "cnab1",
         "posicao_inicio": 9,
         "posicao_fim": 17,
         "formato": "alfa"
@@ -100,7 +100,7 @@
     },
 
     "15.0": {
-        "nome": "cnab",
+        "nome": "cnab2",
         "posicao_inicio": 133,
         "posicao_fim": 142,
         "formato": "alfa"
@@ -164,7 +164,7 @@
     },
 
     "24.0": {
-        "nome": "cnab",
+        "nome": "cnab3",
         "posicao_inicio": 212,
         "posicao_fim": 240,
         "formato": "alfa"
