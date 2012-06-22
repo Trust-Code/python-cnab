@@ -71,7 +71,7 @@
       "posicao_inicio": 27,
       "posicao_fim": 41,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "11.3R": {
@@ -93,7 +93,7 @@
       "posicao_inicio": 51,
       "posicao_fim": 65,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "14.3R": {
@@ -115,7 +115,7 @@
       "posicao_inicio": 75,
       "posicao_fim": 89,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "17.3R": {

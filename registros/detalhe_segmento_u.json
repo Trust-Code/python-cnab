@@ -57,7 +57,7 @@
       "posicao_inicio": 18,
       "posicao_fim": 32,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "09.3U": {
@@ -65,7 +65,7 @@
       "posicao_inicio": 33,
       "posicao_fim": 47,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "10.3U": {
@@ -73,7 +73,7 @@
       "posicao_inicio": 48,
       "posicao_fim": 62,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "11.3U": {
@@ -81,7 +81,7 @@
       "posicao_inicio": 63,
       "posicao_fim": 77,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "12.3U": {
@@ -89,7 +89,7 @@
       "posicao_inicio": 78,
       "posicao_fim": 92,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "13.3U": {
@@ -97,7 +97,7 @@
       "posicao_inicio": 93,
       "posicao_fim": 107,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "14.3U": {
@@ -105,7 +105,7 @@
       "posicao_inicio": 108,
       "posicao_fim": 122,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "15.3U": {
@@ -113,7 +113,7 @@
       "posicao_inicio": 123,
       "posicao_fim": 137,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "16.3U": {
@@ -128,7 +128,7 @@
       "posicao_inicio": 146,
       "posicao_fim": 153,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "18.3U": {
@@ -150,7 +150,7 @@
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "21.3U": {

@@ -72,7 +72,7 @@
       "posicao_inicio": 35,
       "posicao_fim": 49,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "11.3Y": {
@@ -94,7 +94,7 @@
       "posicao_inicio": 73,
       "posicao_fim": 87,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "14.3Y": {
@@ -116,7 +116,7 @@
       "posicao_inicio": 111,
       "posicao_fim": 125,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "17.3Y": {
@@ -138,7 +138,7 @@
       "posicao_inicio": 149,
       "posicao_fim": 163,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "20.3Y": {
@@ -160,7 +160,7 @@
       "posicao_inicio": 187,
       "posicao_fim": 201,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "23.3Y": {

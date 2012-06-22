@@ -49,7 +49,7 @@
       "posicao_inicio": 30,
       "posicao_fim": 46,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "08.5": {
@@ -64,7 +64,7 @@
       "posicao_inicio": 53,
       "posicao_fim": 69,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "10.5": {
@@ -79,7 +79,7 @@
       "posicao_inicio": 76,
       "posicao_fim": 92,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "12.5": {
@@ -94,7 +94,7 @@
       "posicao_inicio": 99,
       "posicao_fim": 115,
       "formato": "num",
-      "dec": 2
+      "decimais": 2
     },
 
     "14.5": {
