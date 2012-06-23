@@ -3,7 +3,7 @@ import os
 import json
 import errors
 
-from glob import glob
+from glob import iglob
 from decimal import Decimal, InvalidOperation
 from collections import OrderedDict
 from campo import Campo
@@ -66,7 +66,7 @@ def load_register_specs():
     for version in os.listdir(specs_dirpath):
         specs = {}
         REGISTRO_SPECS.update({version: specs})
-        registro_filepath_list = glob(os.path.join(specs_dirpath,
+        registro_filepath_list = iglob(os.path.join(specs_dirpath,
                                                     version, '*.json'))
         for registro_filepath in registro_filepath_list:
             registro_file = open(registro_filepath)
