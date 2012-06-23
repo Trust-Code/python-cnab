@@ -53,7 +53,7 @@ class RegistroBase(object):
             else:
                 campo.valor = valor
 
-    def escrever(self):
+    def __unicode__(self):
         return ''.join([unicode(campo) for campo in self._campos.values()])
 
 
