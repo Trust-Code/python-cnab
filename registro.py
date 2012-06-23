@@ -14,9 +14,9 @@ REGISTRO_SPECS = {}
 
 class Registro(object):
 
-    def __new__(cls, nome):
+    def __new__(cls, nome, versao='085'):
 
-        spec = REGISTRO_SPECS.get(nome, {})
+        spec = REGISTRO_SPECS.get(versao, {}).get(nome, {})
         campos = OrderedDict()
         attrs = {'_campos': campos}
 
@@ -53,7 +53,7 @@ class RegistroBase(object):
             else:
                 campo.valor = valor
 
-    def escreve(self):
+    def escrever(self):
         return ''.join([unicode(campo) for campo in self._campos.values()])
 
 
