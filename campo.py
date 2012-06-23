@@ -18,7 +18,7 @@ class Campo(object):
             if self.formato == 'alfa':
                 self.default = u' ' * self.digitos
             elif self.decimais:
-                self.default = Decimal('0' * self.digitos) 
+                self.default = Decimal('0') 
             else:
                 self.default = 0 
 
