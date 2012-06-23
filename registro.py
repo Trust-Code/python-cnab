@@ -1,6 +1,7 @@
 
 import os                                                                        
 import json                                                                      
+import errors
                                                                                  
 from decimal import Decimal, InvalidOperation
 from collections import OrderedDict
@@ -36,7 +37,8 @@ class RegistroBase(object):
             
             valor = registro_str[campo.inicio:campo.fim].strip()
             if campo.formato == 'num' and campo.decimais:
-                dec = valor[:campo.decimais] + '.' + valor[campo.decimais:]
+                exponente = campo.decimais * -1
+                dec = valor[:exponente] + '.' + valor[exponente:]
                 try:
                     campo.valor = Decimal(dec)
                 except InvalidOperation:
@@ -46,7 +48,7 @@ class RegistroBase(object):
                 try:
                     campo.valor = int(valor)
                 except ValueError:
-                    raise # raise custom? 
+                    raise errors.TipoError(campo, valor)
             else:
                 campo.valor = valor
 
