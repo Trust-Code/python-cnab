@@ -19,7 +19,7 @@ class TestEvento(unittest.TestCase):
 
     def test_segmento_valido(self):
         evento = EventoImplementado()
-        registro = Registro('segmento_t')
+        registro = Registro('segmento_t', '085')
         registro.carregar(REGISTRO_T) 
         evento.adicionar_segmento(registro)
         self.assertEqual(evento._segmentos['T'], registro)

@@ -11,10 +11,10 @@ from tests.data import HEADER_ARQUIVO_STR, REGISTRO_T
 class TestRegistro(unittest.TestCase):
     
     def setUp(self):
-        self.header_arquivo = Registro('header_arquivo')
+        self.header_arquivo = Registro('header_arquivo',  '085')
         self.header_arquivo.carregar(HEADER_ARQUIVO_STR)
         
-        self.seg_t = Registro('segmento_t')
+        self.seg_t = Registro('segmento_t', '085')
         self.seg_t.carregar(REGISTRO_T)
 
     def test_leitura_campo_num_decimal(self):

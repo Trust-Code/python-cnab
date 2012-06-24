@@ -14,11 +14,11 @@ REGISTRO_SPECS = {}
 
 class Registro(object):
 
-    def __new__(cls, nome, versao='085'):
+    def __new__(cls, nome, versao):
 
         spec = REGISTRO_SPECS.get(versao, {}).get(nome, {})
         campos = OrderedDict()
-        attrs = {'_campos': campos}
+        attrs = {'_campos': campos, 'versao': versao}
 
         campo_specs = spec.get('campos', {})
         for key in sorted(campo_specs.iterkeys()):
