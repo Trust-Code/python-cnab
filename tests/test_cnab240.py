@@ -6,6 +6,7 @@ from cnab240 import errors
 
 
 class TestCnab240(unittest.TestCase):
+
     def setUp(self):
         self.args = {
             'versao': u'085',

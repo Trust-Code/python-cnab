@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 
-from cnab240.registro import Registro
 from datetime import datetime
+from cnab240.registro import Registro
+
 
 class Cnab240(object):
 
-    CAMPOS_OBRIGATORIOS = (
+    ARGS_OBRIGATORIOS = (
         'versao',
-        'banco_codigo',
-        'banco_nome',
+        'cedente_banco_codigo',
+        'cedente_banco_nome',
         'cedente_nome',
         'cedente_convenio',
         'cedente_agencia',
@@ -36,11 +37,12 @@ class Cnab240(object):
         - cedente_agencia_conta_dv -> Digito verificador da conta e agência
         - arquivo_sequencia -> Número sequencial do arquivo
         - arquivo_densidade -> Densidade de gravação do arquivo
-        """
+        """ # TODO: Formatar docstrings em formato sphinx
 
-        if not all(kwargs.has_key(campo) for campo in self.CAMPOS_OBRIGATORIOS):
-            #TODO: raise right exception
-            raise Exception
+        faltando_campos = [campo for campo in self.ARGS_OBRIGATORIOS
+                           if not kwargs.has_key(campo)]
+        if faltando_campos:
+            raise errors.FaltandoArgsError(faltando_campos)
 
         self.header = Registro('header_arquivo', kwargs.get('versao'))
         self.trailer = Registro('trailer_arquivo', kwargs.get('versao'))
@@ -52,14 +54,19 @@ class Cnab240(object):
 
         # 05.0
         # CPF
-        if len(kwargs.get('cedente_numero_documento')) == 11:
+        cedente_numero_documento = kwargs.get('cedente_numero_documento', '')
+        cedente_numero_documento_len = len(str(cedente_numero_documento))
+        if cedente_numero_documento_len == 11:
             self.header.empresa_inscricao_tipo = 1
         # CNPJ
-        elif len(kwargs.get('cedente_numero_documento')) == 14:
+        elif cedente_numero_documento_len == 14:
             self.header.empresa_inscricao_tipo = 2
         # Documento inválido
         else:
-            raise Exception # TODO
+            raise TypeError(('cedente_numero_documento invalido: "{0}" - '
+                            'Deve ser CPF ou CNPJ.').format(
+                            cedente_numero_documento))
+
         # 06.0 
         self.header.empresa_inscricao_numero = kwargs.get('cedente_numero_documento')
         # 07.0
@@ -85,9 +92,9 @@ class Cnab240(object):
 
         now = datetime.now()
         # 17.0
-        self.header.arquivo_data_de_geracao = now.strftime("%d%m%y")
+        self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%Y"))
         # 18.0
-        self.header.arquivo_hora_de_geracao = now.strftime("%H%M%S")
+        self.header.arquivo_hora_de_geracao = int(now.strftime("%H%M%S"))
         # 19.0
         self.header.arquivo_sequencia = kwargs.get('arquivo_sequencia')
         # 21.0
@@ -101,22 +108,22 @@ class Cnab240(object):
         # 06.9
         self.trailer.totais_quantidade_registros = 0
         # 07.9
-        self.lotes = []
+        self._lotes = []
 
     def __unicode__(self):
-        if self.lotes.count() == 0:
-            raise Exception # TODO
+        if len(self._lotes) == 0:
+            raise NotImplementedError() # TODO
         
         result = []
         result.append(unicode(self.header))
-        result.extend(unicode(lote) for lote in self.lotes)
+        result.extend(unicode(lote) for lote in self._lotes)
         result.append(unicode(self.trailer))
         return '\n'.join(result)
         
     def adicionar_lote(self, lote):
         if not isinstance(lote, 'Lote'):
             raise Exception # TODO
-        self.lotes.append(lote)
+        self._lotes.append(lote)
 
         # Incrementar numero de lotes no trailer do arquivo
         self.trailer.totais_quantidade_lotes += 1
@@ -128,7 +135,7 @@ class Cnab240(object):
     def escrever(self, file_):
         file_.write(unicode(self.header))
         file_.write('\n')
-        for lote in self.lotes:
+        for lote in self._lotes:
             file_.write(unicode(lote))
             file_.write('\n')
         file_.write(unicode(self.trailer))
