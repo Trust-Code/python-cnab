@@ -36,6 +36,10 @@ class TestCnab240(unittest.TestCase):
         with self.assertRaises(errors.NenhumLoteError):
             unicode(self.cnab240)
 
+    def test_erro_de_lote(self):
+        with self.assertRaises(TypeError):
+            self.cnab240.adicionar_lote('Lote')
+
 
 if __name__ == '__main__':
     unittest.main()
