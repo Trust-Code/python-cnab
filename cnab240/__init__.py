@@ -122,7 +122,7 @@ class Cnab240(object):
         
     def adicionar_lote(self, lote):
         if not isinstance(lote, 'Lote'):
-            raise Exception # TODO
+            raise TypeError('Objeto deve ser instancia de "Lote"')
         self._lotes.append(lote)
 
         # Incrementar numero de lotes no trailer do arquivo
@@ -141,50 +141,3 @@ class Cnab240(object):
         file_.write(unicode(self.trailer))
         file_.write('\n')
 
-
-class Lote(object):
-    HEADER_LOTE = None
-    TRAILER_LOTE = None
-    EVENTOS_VALIDOS = None
-     
-    def __init__(self, **kwargs):
-        required_constants = (self.HEADER_LOTE, 
-                              self.TRAILER_LOTE,
-                              self.EVENTOS_VALIDOS)
-        if not all(required_constants):
-            raise NotImplementedError
-
-        self.header = Registro(self.HEADER_LOTE, versao)
-        self.trailer = Registro(self.TRAILER_LOTE, versao)
-
-        self.eventos = []
-
-    def __unicode__(self):
-        if self.eventos.count() == 0:
-            raise Exception # TODO: raise exception
-    
-        result = [] 
-        result.append(unicode(self.header))
-        result.extend(unicode(evento) for evento in self.eventos)
-        result.append(unicode(self.trailer))
-        return '\n'.join(result)
-    
-    def adicionar_evento(self, evento):
-        if any(isintance(evento, cls) for cls in EVENTOS_VALIDOS):
-            self.eventos.append(evento)
-
-
-class Evento(object):
-    SEGMENTOS_UTILIZADOS = None
-    
-    def __init__(self, **kwargs):
-        # TODO: validar SEGMENTOS_VALIDOS
-        self.versao_layout = kwargs.get('versao')
-        self.segmentos = []
-       
-    def adicionar_segmento(self, segmento):
-        # TODO: validar segmento usando SEGMENTOS_VALIDOS
-        pass
- 
-    def __unicode__(self):
-        pass # TODO:
