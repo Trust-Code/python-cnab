@@ -1,9 +1,9 @@
 
 import unittest
-import errors
 
-from registro import Registro
 from decimal import Decimal
+from cnab240 import errors
+from cnab240.registro import Registro
 
 
 HEADER_ARQUIVO_STR = u'00100020         212345678901234abcdefghijklmnopqrst028916000000014262X7TRACY TECNOLOGIA LTDA ME      BANCO DO BRASIL                         02012071322000012345608512345                                                                     '
