@@ -1,15 +1,28 @@
 
+from cnab240.registro import RegistroBase
+
 class Evento(object):
-    SEGMENTOS_UTILIZADOS = None
     
+    SEGMENTOS_VALIDOS = tuple()
+
     def __init__(self, **kwargs):
-        # TODO: validar SEGMENTOS_VALIDOS
+        if not self.SEGMENTOS_VALIDOS:
+            raise NotImplementedError
+
         self.versao_layout = kwargs.get('versao')
-        self.segmentos = []
+        self._segmentos = dict.fromkeys(self.SEGMENTOS_VALIDOS)
        
     def adicionar_segmento(self, segmento):
-        # TODO: validar segmento usando SEGMENTOS_VALIDOS
-        pass
- 
+    
+        if not isinstance(segmento, RegistroBase):
+            raise TypeError
+        
+        if segmento.servico_segmento not in self.SEGMENTOS_VALIDOS:
+            raise TypeError 
+
+        self._segmentos.update({segmento.servico_segmento: segmento})
+         
     def __unicode__(self):
-        pass # TODO:
+        return u'\n'.join(unicode(seg) for seg in self._segmentos.values()
+                          if seg) 
+
