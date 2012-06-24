@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 class Cnab240Error(Exception):
     """Excessao base para o CNAB 240"""
@@ -33,4 +34,15 @@ class TipoError(AtribuicaoCampoError):
 class NumDecimaisError(AtribuicaoCampoError):
     """Numero de casasa decimais em desacordo com especificacao"""
 
+
+class FaltandoArgsError(Exception):
+    """Faltando argumentos na chamada do metodo"""
+
+    def __init__(self, args_faltantes):
+        self.args_faltantes = args_faltantes
+        super(FaltandoArgsError, self).__init__(self)
+
+    def __unicode__(self):
+        return (u'Os seguintes kwargs sao obrigatorios e nao foram '
+                u'encontrados: {0}').format(', '.join(self.args_faltantes))
 
