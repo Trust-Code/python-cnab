@@ -1,31 +1,42 @@
 
+from cnab240 import errors
+from cnab240.registro import Registro
+
+
 class Lote(object):
-    HEADER_LOTE = None
-    TRAILER_LOTE = None
-    EVENTOS_VALIDOS = None
-     
+
+    REQUIRED_CONSTANTS = {
+        'header_lote': None,
+        'trailer_lote': None,
+        'eventos_validos': None,
+    }    
+ 
     def __init__(self, **kwargs):
-        required_constants = (self.HEADER_LOTE, 
-                              self.TRAILER_LOTE,
-                              self.EVENTOS_VALIDOS)
-        if not all(required_constants):
+        if not all(self.REQUIRED_CONSTANTS.values()):
             raise NotImplementedError
 
-        self.header = Registro(self.HEADER_LOTE, versao)
-        self.trailer = Registro(self.TRAILER_LOTE, versao)
+        header_lote = self.REQUIRED_CONSTANTS.get('header_lote')
+        trailer_lote = self.REQUIRED_CONSTANTS.get('trailer_lote')
+        versao = kwargs.get('versao')       
+ 
+        self.header = Registro(header_lote, versao)
+        self.trailer = Registro(header_lote, versao)
 
-        self.eventos = []
+        self._eventos = []
+    
+    def adicionar_evento(self, evento):
+        eventos_validos = self.REQUIRED_CONSTANTS.get('eventos_validos')
+        if any(isinstance(evento, cls) for cls in eventos_validos):
+            self._eventos.append(evento)
+        else:
+            raise TypeError
 
     def __unicode__(self):
-        if self.eventos.count() == 0:
-            raise Exception # TODO: raise exception
+        if not self._eventos:
+            errors.NenhumEventoError()
     
         result = [] 
         result.append(unicode(self.header))
-        result.extend(unicode(evento) for evento in self.eventos)
+        result.extend(unicode(evento) for evento in self._eventos)
         result.append(unicode(self.trailer))
         return '\n'.join(result)
-    
-    def adicionar_evento(self, evento):
-        if any(isintance(evento, cls) for cls in EVENTOS_VALIDOS):
-            self.eventos.append(evento)
