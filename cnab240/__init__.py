@@ -111,7 +111,7 @@ class Cnab240(object):
         self._lotes = []
 
     def __unicode__(self):
-        if len(self._lotes) == 0:
+        if self._lotes:
             raise errors.NenhumLoteError()
         
         result = []
