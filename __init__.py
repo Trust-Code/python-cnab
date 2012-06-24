@@ -42,10 +42,10 @@ class Cnab240(object):
         self.header = Registro('header_arquivo', kwargs['versao'])
         self.trailer = Registro('trailer_arquivo', kwargs['versao'])
 
+        # HEADER
+
         # 01.0
         self.header.controle_banco = kwargs['cedente_banco_codigo']
-        # 01.9
-        self.trailer.controle_banco = kwargs['cedente_banco_codigo']
 
         # 05.0
         # CPF
@@ -82,27 +82,29 @@ class Cnab240(object):
 
         now = datetime.now()
         # 17.0
-        self.header.arquivo_data_de_geracao = date.today()
+        self.header.arquivo_data_de_geracao = now.strftime("%d%m%y")
         # 18.0
-        self.header.arquivo_hora_de_geracao = time.now()
+        self.header.arquivo_hora_de_geracao = now.strftime("%H%M%S")
         # 19.0
         self.header.arquivo_sequencia = kwargs['arquivo_sequencia']
         # 21.0
         self.header.arquivo_densidade = kwargs['arquivo_densidade']
+
+        # TRAILER
+        # 01.9
+        self.trailer.controle_banco = kwargs['cedente_banco_codigo']
+        # 05.9
+        self.trailer.totais_quantidade_lotes = 0
+        # 06.9
+        self.trailer.totais_quantidade_registros = 0
+        # 07.9
         self.lotes = []
 
 
     def __unicode__(self):
         if self.lotes.count() == 0:
             raise Exception
-        count_lotes = self.lotes.count()
-        count_registros = 0
-        for lote in lotes:
-            for evento in lote.eventos:
-                registros += evento.segmentos.count()
 
-        self.trailer.totais_quantidade_lotes = count_lotes
-        self.trailer.totais_quantidade_registros = count_registros
         unicode(self.header):
         unicode(lote) for lote in lotes
         unicode(self.trailer)
@@ -111,6 +113,13 @@ class Cnab240(object):
         if not isinstance(lote, 'Lote'):
             raise Exception
         self.lotes.append(lote)
+
+        # Incrementar numero de lotes no trailer do arquivo
+        self.trailer.totais_quantidade_lotes += 1
+
+        # Incrementar numero de registros no trailer do arquivo
+        for evento in lote.eventos:
+            self.trailer.totais_quantidade_registros += evento.segmentos.count()
 
 
 class Lote(object):
