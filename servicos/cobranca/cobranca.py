@@ -15,14 +15,14 @@ class Lote(object):
         self.header = Registro(self.HEADER_LOTE, versao)
         self.trailer = Registro(self.TRAILER_LOTE, versao)
 
-        self._eventos = []
+        self.eventos = []
 
     def __unicode__(self):
         pass
     
     def adicionar_evento(self, evento):
         if any(isintance(evento, cls) for cls in EVENTOS_VALIDOS):
-            self._evento.append(evento)
+            self.eventos.append(evento)
  
 
 class Evento(object):
@@ -31,7 +31,7 @@ class Evento(object):
     def __init__(self, **kwargs):
         # TODO: validar SEGMENTOS_VALIDOS
         self.versao_layout = kwargs.get('versao')
-        self._segmentos = []
+        self.segmentos = []
        
     def adicionar_segmento(self, segmento):
         # TODO: validar segmento usando SEGMENTOS_VALIDOS
