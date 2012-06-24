@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from cnab240.registro import Registro
 from datetime import datetime
 
@@ -36,45 +38,46 @@ class Cnab240(object):
         - arquivo_densidade -> Densidade de gravação do arquivo
         """
 
-        if not all(kwargs.get(campo)) for campo in self.CAMPOS_OBRIGATORIOS:
+        if not all(kwargs.has_key(campo) for campo in self.CAMPOS_OBRIGATORIOS):
+            #TODO: raise right exception
             raise Exception
 
-        self.header = Registro('header_arquivo', kwargs['versao'])
-        self.trailer = Registro('trailer_arquivo', kwargs['versao'])
+        self.header = Registro('header_arquivo', kwargs.get('versao'))
+        self.trailer = Registro('trailer_arquivo', kwargs.get('versao'))
 
         # HEADER
 
         # 01.0
-        self.header.controle_banco = kwargs['cedente_banco_codigo']
+        self.header.controle_banco = kwargs.get('cedente_banco_codigo')
 
         # 05.0
         # CPF
-        if len(kwargs['cedente_numero_documento']) == 11:
+        if len(kwargs.get('cedente_numero_documento')) == 11:
             self.header.empresa_inscricao_tipo = 1
         # CNPJ
-        elif len(kwargs['cedente_numero_documento']) == 14:
+        elif len(kwargs.get('cedente_numero_documento')) == 14:
             self.header.empresa_inscricao_tipo = 2
         # Documento inválido
         else:
-            raise Exception
+            raise Exception # TODO
         # 06.0 
-        self.header.empresa_inscricao_numero = kwargs['cedente_numero_documento']
+        self.header.empresa_inscricao_numero = kwargs.get('cedente_numero_documento')
         # 07.0
-        self.header.empresa_convenio = kwargs['cedente_convenio']
+        self.header.empresa_convenio = kwargs.get('cedente_convenio')
         # 08.0
-        self.header.empresa_conta_agencia_codigo = kwargs['cedente_agencia']
+        self.header.empresa_conta_agencia_codigo = kwargs.get('cedente_agencia')
         # 09.0
-        self.header.empresa_conta_agencia_dv = kwargs['cedente_agencia_dv']
+        self.header.empresa_conta_agencia_dv = kwargs.get('cedente_agencia_dv')
         # 10.0
-        self.header.empresa_conta_numero = kwargs['cedente_conta']
+        self.header.empresa_conta_numero = kwargs.get('cedente_conta')
         # 11.0
-        self.header.empresa_conta_dv = kwargs['cedente_conta_dv']
+        self.header.empresa_conta_dv = kwargs.get('cedente_conta_dv')
         # 12.0
-        self.header.empresa_agencia_conta_dv = kwargs['cedente_agencia_conta_dv']
+        self.header.empresa_agencia_conta_dv = kwargs.get('cedente_agencia_conta_dv')
         # 13.0
-        self.header.empresa_nome = kwargs['cedente_nome']
+        self.header.empresa_nome = kwargs.get('cedente_nome')
         # 14.0
-        self.header.nome_do_banco = kwargs['cedente_banco_nome']
+        self.header.nome_do_banco = kwargs.get('cedente_banco_nome')
 
         # 16.0
         # 1 -> Remessa; 2 -> Retorno
@@ -86,13 +89,13 @@ class Cnab240(object):
         # 18.0
         self.header.arquivo_hora_de_geracao = now.strftime("%H%M%S")
         # 19.0
-        self.header.arquivo_sequencia = kwargs['arquivo_sequencia']
+        self.header.arquivo_sequencia = kwargs.get('arquivo_sequencia')
         # 21.0
-        self.header.arquivo_densidade = kwargs['arquivo_densidade']
+        self.header.arquivo_densidade = kwargs.get('arquivo_densidade')
 
         # TRAILER
         # 01.9
-        self.trailer.controle_banco = kwargs['cedente_banco_codigo']
+        self.trailer.controle_banco = kwargs.get('cedente_banco_codigo')
         # 05.9
         self.trailer.totais_quantidade_lotes = 0
         # 06.9
@@ -100,18 +103,19 @@ class Cnab240(object):
         # 07.9
         self.lotes = []
 
-
     def __unicode__(self):
         if self.lotes.count() == 0:
-            raise Exception
-
-        unicode(self.header):
-        unicode(lote) for lote in self.lotes
-        unicode(self.trailer)
-
+            raise Exception # TODO
+        
+        result = []
+        result.append(unicode(self.header))
+        result.extend(unicode(lote) for lote in self.lotes)
+        result.append(unicode(self.trailer))
+        return '\n'.join(result)
+        
     def adicionar_lote(self, lote):
         if not isinstance(lote, 'Lote'):
-            raise Exception
+            raise Exception # TODO
         self.lotes.append(lote)
 
         # Incrementar numero de lotes no trailer do arquivo
@@ -121,10 +125,14 @@ class Cnab240(object):
         for evento in lote.eventos:
             self.trailer.totais_quantidade_registros += evento.segmentos.count()
 
-    def escrever(self, f):
-        f.write(unicode(self.header)+"\n")
-        f.write(unicode(lote)+"\n") for lote in self.lotes
-        f.write(unicode(self.trailer)+"\n")
+    def escrever(self, file_):
+        file_.write(unicode(self.header))
+        file_.write('\n')
+        for lote in self.lotes:
+            file_.write(unicode(lote))
+            file_.write('\n')
+        file_.write(unicode(self.trailer))
+        file_.write('\n')
 
 
 class Lote(object):
@@ -146,10 +154,13 @@ class Lote(object):
 
     def __unicode__(self):
         if self.eventos.count() == 0:
-            raise Exception
-        unicode(self.header)
-        unicode(evento) for evento in self.eventos
-        unicode(self.trailer)
+            raise Exception # TODO: raise exception
+    
+        result = [] 
+        result.append(unicode(self.header))
+        result.extend(unicode(evento) for evento in self.eventos)
+        result.append(unicode(self.trailer))
+        return '\n'.join(result)
     
     def adicionar_evento(self, evento):
         if any(isintance(evento, cls) for cls in EVENTOS_VALIDOS):
