@@ -112,7 +112,7 @@ class Cnab240(object):
 
     def __unicode__(self):
         if len(self._lotes) == 0:
-            raise NotImplementedError() # TODO
+            raise errors.NenhumLoteError()
         
         result = []
         result.append(unicode(self.header))

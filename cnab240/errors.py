@@ -46,3 +46,7 @@ class FaltandoArgsError(Exception):
         return (u'Os seguintes kwargs sao obrigatorios e nao foram '
                 u'encontrados: {0}').format(', '.join(self.args_faltantes))
 
+class NenhumLoteError(Exception):
+    """Tentativa de escrita de arquivo sem lotes."""
+
+

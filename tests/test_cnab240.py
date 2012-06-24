@@ -32,5 +32,10 @@ class TestCnab240(unittest.TestCase):
         with self.assertRaises(errors.FaltandoArgsError):
             cnab240 = Cnab240(**args)
 
+    def test_nenhum_lote(self):
+        with self.assertRaises(errors.NenhumLoteError):
+            unicode(self.cnab240)
+
+
 if __name__ == '__main__':
     unittest.main()
