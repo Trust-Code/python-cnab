@@ -3,24 +3,12 @@
 from datetime import datetime
 from cnab240 import errors
 from cnab240.registro import Registro
+from cnab240.base import TipoCnab240
 
 
-class ComponenteBaseCnab240(object):
-    ARGS_OBRIGATORIOS = ('versao', )
+class Cnab240(TipoCnab240):
 
-    def __init__(self, **kwargs):
-
-        faltando_campos = [campo for campo in self.ARGS_OBRIGATORIOS
-                           if not kwargs.has_key(campo)]
-        if faltando_campos:
-            raise errors.FaltandoArgsError(faltando_campos)
-        
-        self.versao = kwargs.get('versao',  '085')        
-
-
-class Cnab240(ComponenteBaseCnab240):
-
-    ARGS_OBRIGATORIOS = ComponenteBaseCnab240.ARGS_OBRIGATORIOS + (
+    ARGS_OBRIGATORIOS = TipoCnab240.ARGS_OBRIGATORIOS + (
         'cedente_banco_codigo',
         'cedente_banco_nome',
         'cedente_nome',

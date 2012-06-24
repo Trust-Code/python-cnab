@@ -6,8 +6,8 @@ import errors
 from glob import iglob
 from decimal import Decimal, InvalidOperation
 from collections import OrderedDict
-from campo import Campo
-
+from cnab240.campo import Campo
+from cnab240.base import TipoCnab240
 
 REGISTRO_SPECS = {}
 
@@ -18,7 +18,7 @@ class Registro(object):
 
         spec = REGISTRO_SPECS.get(versao, {}).get(nome, {})
         campos = OrderedDict()
-        attrs = {'_campos': campos, 'versao': versao}
+        attrs = {'_campos': campos}
 
         campo_specs = spec.get('campos', {})
         for key in sorted(campo_specs.iterkeys()):
@@ -27,10 +27,10 @@ class Registro(object):
             attrs.update({campo.nome: campo})
 
         new_cls = type('Registro', (RegistroBase, ), attrs)
-        return new_cls()
+        return new_cls(versao=versao)
 
 
-class RegistroBase(object):
+class RegistroBase(TipoCnab240):
 
     def carregar(self, registro_str):
 

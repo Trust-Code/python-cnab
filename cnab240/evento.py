@@ -1,8 +1,8 @@
 
-from cnab240 import ComponenteBaseCnab240
+from cnab240.base import TipoCnab240
 from cnab240.registro import RegistroBase
 
-class Evento(ComponenteBaseCnab240):
+class Evento(TipoCnab240):
     
     SEGMENTOS_VALIDOS = tuple()
 

@@ -1,19 +1,18 @@
 from cnab240.registro import Registro
-from cnab240 import Evento
+from cnab240.evento import Evento
 
  
-# XXX: Necessario?
-class Cobranca(Evento):
-    def __init__(self, **kwargs):
-        super(Cobranca, self).__init__(**kwargs)
-        
-
-class CobrancaRemessa(Cobranca):
+class CobrancaRemessa(Evento):
     SEGMENTOS_VALIDOS = ('P', 'Q', 'R', 'Y')
 
     def __init__(self, **kwargs):
         super(CobrancaRemessa, self).__init__(**kwargs)
         self.banco = kwargs.get('banco')
+        self.versao = kwargs.get('versao')
+        
+        if not kwargs.has_key('versao'):
+            raise TypeError('kwarg "versao" eh obrigatorio')
+
         if not self.banco:
             raise Exception
         
@@ -29,5 +28,3 @@ class EntradaTitulo(CobrancaRemessa):
         super(EntradaTitulo, self).__init__(**kwargs)
         
 
-EntradaTitulo({'banco': '001', 'conta': 123123, 's': 'lala'})
-Instrucao({'banco': '001', 'conta': 1213213})

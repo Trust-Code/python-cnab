@@ -1,9 +1,10 @@
 
-from cnab240 import errors, ComponenteBaseCnab240
+from cnab240 import errors
+from cnab240.base import TipoCnab240
 from cnab240.registro import Registro
 
 
-class Lote(ComponenteBaseCnab240):
+class Lote(TipoCnab240):
 
     REQUIRED_CONSTANTS = {
         'header_lote': None,
