@@ -2,6 +2,20 @@ from cnab240.registro import Registro
 
 class Cnab240(object):
 
+    CAMPOS_OBRIGATORIOS = (
+        'versao',
+        'banco_codigo',
+        'banco_nome',
+        'cedente_convenio',
+        'cedente_agencia',
+        'cedente_agencia_dv',
+        'cedente_conta',
+        'cedente_conta_dv',
+        'cedente_agencia_conta_dv',
+        'arquivo_sequencia',
+        'arquivo_densidade'
+    )
+
     def __init__(self, **kwargs):
         """
         Argumentos:
@@ -18,12 +32,12 @@ class Cnab240(object):
         - arquivo_sequencia -> Número sequencial do arquivo
         - arquivo_densidade -> Densidade de gravação do arquivo
         """
-        versao_layout = kwargs.get('versao')
-        if not versao_layout:
+
+        if not all(kwargs.get(campo)) for campo in self.CAMPOS_OBRIGATORIOS:
             raise Exception
 
-        self.header = Registro('header_arquivo', self.versao_layout)
-        self.trailer = Registro('trailer_arquivo', self.versao_layout)
+        self.header = Registro('header_arquivo', kwargs['versao'])
+        self.trailer = Registro('trailer_arquivo', kwargs['versao'])
 
         self.lotes = []
 
