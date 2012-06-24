@@ -1,45 +1,7 @@
 from cnab240.registro import Registro
+from cnab240 import Evento
 
-class Lote(object):
-    HEADER_LOTE = None
-    TRAILER_LOTE = None
-    EVENTOS_VALIDOS = None
-     
-    def __init__(self, **kwargs):
-        required_constants = (self.HEADER_LOTE, 
-                              self.TRAILER_LOTE,
-                              self.EVENTOS_VALIDOS)
-        if not all(required_constants):
-            raise NotImplementedError
-
-        self.header = Registro(self.HEADER_LOTE, versao)
-        self.trailer = Registro(self.TRAILER_LOTE, versao)
-
-        self.eventos = []
-
-    def __unicode__(self):
-        pass
-    
-    def adicionar_evento(self, evento):
-        if any(isintance(evento, cls) for cls in EVENTOS_VALIDOS):
-            self.eventos.append(evento)
  
-
-class Evento(object):
-    SEGMENTOS_VALIDOS = None
-    
-    def __init__(self, **kwargs):
-        # TODO: validar SEGMENTOS_VALIDOS
-        self.versao_layout = kwargs.get('versao')
-        self.segmentos = []
-       
-    def adicionar_segmento(self, segmento):
-        # TODO: validar segmento usando SEGMENTOS_VALIDOS
-        pass
- 
-    def __unicode__(self):
-        pass # TODO:
-
 # XXX: Necessario?
 class Cobranca(Evento):
     def __init__(self, **kwargs):
