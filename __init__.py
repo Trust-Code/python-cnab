@@ -3,6 +3,21 @@ from cnab240.registro import Registro
 class Cnab240(object):
 
     def __init__(self, **kwargs):
+        """
+        Argumentos:
+        - versao -> Versão do versao_layout
+        - banco_codigo -> Código do banco
+        - banco_nome -> Nome do banco
+        - cedente_numero_documento -> CPF/CNPJ
+        - cedente_convenio -> Convênio com o banco
+        - cedente_agencia -> Agência bancária
+        - cedente_agencia_dv -> Digito verificador da agência
+        - cedente_conta -> Conta corrente
+        - cedente_conta_dv -> Digito verificador da conta
+        - cedente_agencia_conta_dv -> Digito verificador da conta e agência
+        - arquivo_sequencia -> Número sequencial do arquivo
+        - arquivo_densidade -> Densidade de gravação do arquivo
+        """
         versao_layout = kwargs.get('versao')
         if not versao_layout:
             raise Exception
