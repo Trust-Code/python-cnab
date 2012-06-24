@@ -111,14 +111,14 @@ class Cnab240(object):
         self._lotes = []
 
     def __unicode__(self):
-        if self._lotes:
+        if not self._lotes:
             raise errors.NenhumLoteError()
         
         result = []
         result.append(unicode(self.header))
         result.extend(unicode(lote) for lote in self._lotes)
         result.append(unicode(self.trailer))
-        return '\n'.join(result)
+        return u'\n'.join(result)
         
     def adicionar_lote(self, lote):
         if not isinstance(lote, 'Lote'):
