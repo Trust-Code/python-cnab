@@ -1,9 +1,9 @@
 
-from cnab240 import errors
+from cnab240 import errors, ComponenteBaseCnab240
 from cnab240.registro import Registro
 
 
-class Lote(object):
+class Lote(ComponenteBaseCnab240):
 
     REQUIRED_CONSTANTS = {
         'header_lote': None,
@@ -12,15 +12,16 @@ class Lote(object):
     }    
  
     def __init__(self, **kwargs):
+        super(Lote, self).__init__(**kwargs)
+
         if not all(self.REQUIRED_CONSTANTS.values()):
             raise NotImplementedError
 
         header_lote = self.REQUIRED_CONSTANTS.get('header_lote')
         trailer_lote = self.REQUIRED_CONSTANTS.get('trailer_lote')
-        versao = kwargs.get('versao')       
  
-        self.header = Registro(header_lote, versao)
-        self.trailer = Registro(header_lote, versao)
+        self.header = Registro(header_lote, self.versao)
+        self.trailer = Registro(header_lote, self.versao)
 
         self._eventos = []
     

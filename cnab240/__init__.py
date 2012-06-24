@@ -1,13 +1,26 @@
 # -*- coding: utf-8 -*-
 
 from datetime import datetime
+from cnab240 import errors
 from cnab240.registro import Registro
 
 
-class Cnab240(object):
+class ComponenteBaseCnab240(object):
+    ARGS_OBRIGATORIOS = ('versao', )
 
-    ARGS_OBRIGATORIOS = (
-        'versao',
+    def __init__(self, **kwargs):
+
+        faltando_campos = [campo for campo in self.ARGS_OBRIGATORIOS
+                           if not kwargs.has_key(campo)]
+        if faltando_campos:
+            raise errors.FaltandoArgsError(faltando_campos)
+        
+        self.versao = kwargs.get('versao',  '085')        
+
+
+class Cnab240(ComponenteBaseCnab240):
+
+    ARGS_OBRIGATORIOS = ComponenteBaseCnab240.ARGS_OBRIGATORIOS + (
         'cedente_banco_codigo',
         'cedente_banco_nome',
         'cedente_nome',
@@ -39,13 +52,10 @@ class Cnab240(object):
         - arquivo_densidade -> Densidade de gravação do arquivo
         """ # TODO: Formatar docstrings em formato sphinx
 
-        faltando_campos = [campo for campo in self.ARGS_OBRIGATORIOS
-                           if not kwargs.has_key(campo)]
-        if faltando_campos:
-            raise errors.FaltandoArgsError(faltando_campos)
-
-        self.header = Registro('header_arquivo', kwargs.get('versao'))
-        self.trailer = Registro('trailer_arquivo', kwargs.get('versao'))
+        super(Cnab240, self).__init__(**kwargs)
+        
+        self.header = Registro('header_arquivo', self.versao)
+        self.trailer = Registro('trailer_arquivo', self.versao)
 
         # HEADER
 

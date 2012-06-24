@@ -10,15 +10,15 @@ class TestEvento(unittest.TestCase):
     
     def test_not_implemented(self):
         with self.assertRaises(NotImplementedError):
-            evento = Evento()
+            evento = Evento(versao='085')
 
     def test_segmento_invalido(self):
-        evento = EventoImplementado() 
+        evento = EventoImplementado(versao='085') 
         with self.assertRaises(TypeError):
             evento.adicionar_segmento('evento')
 
     def test_segmento_valido(self):
-        evento = EventoImplementado()
+        evento = EventoImplementado(versao='085') 
         registro = Registro('segmento_t', '085')
         registro.carregar(REGISTRO_T) 
         evento.adicionar_segmento(registro)
