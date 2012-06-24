@@ -106,7 +106,7 @@ class Cnab240(object):
             raise Exception
 
         unicode(self.header):
-        unicode(lote) for lote in lotes
+        unicode(lote) for lote in self.lotes
         unicode(self.trailer)
 
     def adicionar_lote(self, lote):
@@ -120,6 +120,11 @@ class Cnab240(object):
         # Incrementar numero de registros no trailer do arquivo
         for evento in lote.eventos:
             self.trailer.totais_quantidade_registros += evento.segmentos.count()
+
+    def escrever(self, f):
+        f.write(unicode(self.header)+"\n")
+        f.write(unicode(lote)+"\n") for lote in self.lotes
+        f.write(unicode(self.trailer)+"\n")
 
 
 class Lote(object):
