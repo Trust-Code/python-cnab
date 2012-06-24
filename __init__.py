@@ -1,4 +1,5 @@
 from cnab240.registro import Registro
+from datetime import datetime
 
 class Cnab240(object):
 
@@ -6,6 +7,7 @@ class Cnab240(object):
         'versao',
         'banco_codigo',
         'banco_nome',
+        'cedente_nome',
         'cedente_convenio',
         'cedente_agencia',
         'cedente_agencia_dv',
@@ -20,8 +22,9 @@ class Cnab240(object):
         """
         Argumentos:
         - versao -> Versão do versao_layout
-        - banco_codigo -> Código do banco
-        - banco_nome -> Nome do banco
+        - cedente_banco_codigo -> Código do banco
+        - cedente_banco_nome -> Nome do banco
+        - cedente_nome -> Nome do Cedente
         - cedente_numero_documento -> CPF/CNPJ
         - cedente_convenio -> Convênio com o banco
         - cedente_agencia -> Agência bancária
@@ -39,6 +42,53 @@ class Cnab240(object):
         self.header = Registro('header_arquivo', kwargs['versao'])
         self.trailer = Registro('trailer_arquivo', kwargs['versao'])
 
+        # 01.0
+        self.header.controle_banco = kwargs['cedente_banco_codigo']
+        # 01.9
+        self.trailer.controle_banco = kwargs['cedente_banco_codigo']
+
+        # 05.0
+        # CPF
+        if len(kwargs['cedente_numero_documento']) == 11:
+            self.header.empresa_inscricao_tipo = 1
+        # CNPJ
+        elif len(kwargs['cedente_numero_documento']) == 14:
+            self.header.empresa_inscricao_tipo = 2
+        # Documento inválido
+        else:
+            raise Exception
+        # 06.0 
+        self.header.empresa_inscricao_numero = kwargs['cedente_numero_documento']
+        # 07.0
+        self.header.empresa_convenio = kwargs['cedente_convenio']
+        # 08.0
+        self.header.empresa_conta_agencia_codigo = kwargs['cedente_agencia']
+        # 09.0
+        self.header.empresa_conta_agencia_dv = kwargs['cedente_agencia_dv']
+        # 10.0
+        self.header.empresa_conta_numero = kwargs['cedente_conta']
+        # 11.0
+        self.header.empresa_conta_dv = kwargs['cedente_conta_dv']
+        # 12.0
+        self.header.empresa_agencia_conta_dv = kwargs['cedente_agencia_conta_dv']
+        # 13.0
+        self.header.empresa_nome = kwargs['cedente_nome']
+        # 14.0
+        self.header.nome_do_banco = kwargs['cedente_banco_nome']
+
+        # 16.0
+        # 1 -> Remessa; 2 -> Retorno
+        self.header.arquivo_codigo = 1
+
+        now = datetime.now()
+        # 17.0
+        self.header.arquivo_data_de_geracao = date.today()
+        # 18.0
+        self.header.arquivo_hora_de_geracao = time.now()
+        # 19.0
+        self.header.arquivo_sequencia = kwargs['arquivo_sequencia']
+        # 21.0
+        self.header.arquivo_densidade = kwargs['arquivo_densidade']
         self.lotes = []
 
 
