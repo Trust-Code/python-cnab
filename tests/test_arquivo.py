@@ -1,8 +1,8 @@
 
 import unittest
 
-from cnab240 import Cnab240
 from cnab240 import errors
+from cnab240.bancos.bb.tipos import Arquivo
 
 
 class TestCnab240(unittest.TestCase):
@@ -24,21 +24,15 @@ class TestCnab240(unittest.TestCase):
             'arquivo_densidade': 324,
         }
 
-        self.cnab240 = Cnab240(**self.args)
-    
-    def test_faltando_args(self):
-        args = dict(self.args.items())
-        del args['arquivo_sequencia'] 
-        with self.assertRaises(errors.FaltandoArgsError):
-            cnab240 = Cnab240(**args)
-
+        self.arquivo_bb = Arquivo()
+        
     def test_nenhum_lote(self):
-        with self.assertRaises(errors.NenhumLoteError):
-            unicode(self.cnab240)
+        with self.assertRaises(errors.ArquivoVazioError):
+            unicode(self.arquivo_bb)
 
     def test_erro_de_lote(self):
         with self.assertRaises(TypeError):
-            self.cnab240.adicionar_lote('Lote')
+            self.arquivo_bb.adicionar_lote('Lote')
 
 
 if __name__ == '__main__':

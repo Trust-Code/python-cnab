@@ -16,16 +16,7 @@ class Campo(object):
         self.digitos = self.fim - self.inicio
         self.formato = spec.get('formato', 'alfa')
         self.decimais = spec.get('decimais', 0)
-        self.default = spec.get('default', None)
-        
-        if not self.default:
-            if self.formato == 'alfa':
-                self.default = u' ' * self.digitos
-            elif self.decimais:
-                self.default = Decimal('0') 
-            else:
-                self.default = 0 
-
+        self.default = spec.get('default')
         self._valor = None
     
     @property    
@@ -60,11 +51,10 @@ class Campo(object):
         self._valor = valor
 
     def __unicode__(self):
-        if self._valor:
-            valor = self._valor
-        else:
-            valor = self.default
-
+        if not self._valor:
+            raise errors.CampoObrigatorioError(self.nome)
+        
+        valor = self._valor
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
                 valor = unicode(valor).replace('.', '')

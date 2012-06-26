@@ -26,10 +26,10 @@ class ArquivoBase(object):
         - arquivo_densidade -> Densidade de gravação do arquivo
         """ # TODO: Formatar docstrings em formato sphinx
 
-        self.header = self.banco.HeaderArquivo()
+        self.header = self.banco.registros.HeaderArquivo()
         self.header.fromdict(kwargs)
         
-        self.trailer = self.banco.TrailerArquivo()
+        self.trailer = self.banco.registros.TrailerArquivo()
         self.trailer.fromdict(kwargs)        
         
         self._lotes = []
@@ -40,7 +40,7 @@ class ArquivoBase(object):
 
     def __unicode__(self):
         if not self._lotes:
-            raise errors.NenhumLoteError()
+            raise errors.ArquivoVazioError()
         
         result = []
         result.append(unicode(self.header))

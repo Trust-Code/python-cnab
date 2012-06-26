@@ -47,11 +47,15 @@ class FaltandoArgsError(Cnab240Error):
                 u'encontrados: {0}').format(', '.join(self.args_faltantes))
 
 
-class NenhumLoteError(Cnab240Error):
-    """Tentativa de escrita de arquivo sem lotes."""
+class ArquivoVazioError(Cnab240Error):
+    """Tentativa de escrita de arquivo vazio."""
 
 
 class NenhumEventoError(Cnab240Error):
     """Tentativa de escrita de lote sem eventos. """
+
+
+class CampoObrigatorioError(Cnab240Error):
+    """Campo obrigatorio nao preenchido."""
 
 
