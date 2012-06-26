@@ -1,13 +1,9 @@
 
-from cnab240.base import TipoCnab240
 from cnab240.registro import RegistroBase
 
-class Evento(TipoCnab240):
+class Evento(dict):
     
-    SEGMENTOS_VALIDOS = tuple()
-
     def __init__(self, **kwargs):
-        super(Evento, self).__init__(**kwargs)
         if not self.SEGMENTOS_VALIDOS:
             raise NotImplementedError
 
