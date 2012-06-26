@@ -35,7 +35,7 @@ class NumDecimaisError(AtribuicaoCampoError):
     """Numero de casasa decimais em desacordo com especificacao"""
 
 
-class FaltandoArgsError(Exception):
+class FaltandoArgsError(Cnab240Error):
     """Faltando argumentos na chamada do metodo"""
 
     def __init__(self, args_faltantes):
@@ -47,11 +47,11 @@ class FaltandoArgsError(Exception):
                 u'encontrados: {0}').format(', '.join(self.args_faltantes))
 
 
-class NenhumLoteError(Exception):
+class NenhumLoteError(Cnab240Error):
     """Tentativa de escrita de arquivo sem lotes."""
 
 
-class NenhumEventoError(Exception):
+class NenhumEventoError(Cnab240Error):
     """Tentativa de escrita de lote sem eventos. """
 
 
