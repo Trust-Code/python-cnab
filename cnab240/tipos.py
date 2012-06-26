@@ -1,12 +1,13 @@
-# -*- coding: utf-8 -*-
+# -*- encoding: utf8 -*-
 
 from datetime import datetime
 from cnab240 import errors
-from registro import Registro
 
 
-class ArquivoCnab240(object):
-    
+class ArquivoBase(object):
+
+    banco = None
+
     def __init__(self, **kwargs):
         """
         Argumentos:
@@ -24,15 +25,11 @@ class ArquivoCnab240(object):
         - arquivo_sequencia -> Número sequencial do arquivo
         - arquivo_densidade -> Densidade de gravação do arquivo
         """ # TODO: Formatar docstrings em formato sphinx
-        
-        required_methods = ('HeaderArquivo', 'TrailerArquivo')
-        if not all(hasattr(self, method) for method in required_methods):
-            raise NotImplementedError
-    
-        self.header = self.HeaderArquivo()
+
+        self.header = self.banco.HeaderArquivo()
         self.header.fromdict(kwargs)
         
-        self.trailer = self.TrailerArquivo()
+        self.trailer = self.banco.TrailerArquivo()
         self.trailer.fromdict(kwargs)        
         
         self._lotes = []
@@ -72,3 +69,57 @@ class ArquivoCnab240(object):
         file_.write(unicode(self.trailer))
         file_.write('\n')
 
+
+class EventoBase(object):
+    segmentos_validos = {} 
+
+    def __init__(self, **kwargs):
+        if not self.segmentos_validos:
+            raise NotImplementedError
+
+        self._segmentos = dict.fromkeys(self.segmentos_validos.keys())
+       
+    def adicionar_segmento(self, segmento):
+    
+        if not isinstance(segmento, self.segmentos_validos.values()):
+            raise TypeError
+
+        self._segmentos.update({segmento.servico_segmento: segmento})
+
+    @property
+    def segmentos(self):    
+        return self._segmentos
+        
+    def __unicode__(self):
+        return u'\n'.join(unicode(seg) for seg in self._segmentos.values()
+                          if seg) 
+
+
+class LoteBase(object):
+
+    banco = None
+    eventos_validos = None
+ 
+    def __init__(self):
+        if not all(self.REQUIRED_CONSTANTS.values()):
+            raise NotImplementedError
+
+        self.header = self.banco.HeaderLote()
+        self.trailer = self.banco.TrailerLote()
+        self._eventos = []
+    
+    def adicionar_evento(self, evento):
+        if any(isinstance(evento, cls) for cls in self.eventos_validos):
+            self._eventos.append(evento)
+        else:
+            raise TypeError
+
+    def __unicode__(self):
+        if not self._eventos:
+            errors.NenhumEventoError()
+    
+        result = [] 
+        result.append(unicode(self.header))
+        result.extend(unicode(evento) for evento in self._eventos)
+        result.append(unicode(self.trailer))
+        return '\n'.join(result)

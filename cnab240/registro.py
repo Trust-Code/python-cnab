@@ -1,7 +1,11 @@
 
-import errors
+import os
+import json
 
-from decimal import Decimal
+from glob import iglob
+from decimal import Decimal, InvalidOperation
+from collections import OrderedDict
+from cnab240 import errors
 
 
 class Campo(object):
@@ -77,3 +81,65 @@ class Campo(object):
 
     def __get__(self, instance, owner):
         return self.valor
+
+
+class RegistroBase(object):
+
+    def fromdict(self, dict_):
+        pass
+
+    def carregar(self, registro_str):
+
+        for campo in self._campos.values():
+
+            valor = registro_str[campo.inicio:campo.fim].strip()
+            if campo.formato == 'num' and campo.decimais:
+                exponente = campo.decimais * -1
+                dec = valor[:exponente] + '.' + valor[exponente:]
+                try:
+                    campo.valor = Decimal(dec)
+                except InvalidOperation:
+                    raise # raise custom?
+
+            elif campo.formato == 'num':
+                try:
+                    campo.valor = int(valor)
+                except ValueError:
+                    raise errors.TipoError(campo, valor)
+            else:
+                campo.valor = valor
+
+    def __unicode__(self):
+        return ''.join([unicode(campo) for campo in self._campos.values()])
+
+
+class Registros(object):
+    def __init__(self, specs_dirpath):
+        # TODO: Validar spec: nome (deve ser unico para cada registro),
+        #   posicao_inicio, posicao_fim, formato (alpha), decimais (0),
+        #   default (zeros se numerico ou brancos se alfa)
+        registro_filepath_list = iglob(os.path.join(specs_dirpath, '*.json'))
+
+        for registro_filepath in registro_filepath_list:
+            registro_file = open(registro_filepath)
+            spec = json.load(registro_file)
+            registro_file.close()
+
+            setattr(self, spec.get('nome'), self.criar_classe_registro(spec))
+
+
+    def criar_classe_registro(self, spec):
+
+        campos = OrderedDict()
+        attrs = {'_campos': campos}
+        cls_name = spec.get('nome').encode('utf8')
+
+        campo_specs = spec.get('campos', {})
+        for key in sorted(campo_specs.iterkeys()):
+            campo = Campo(campo_specs[key])
+            entrada = {campo.nome: campo}
+
+            campos.update(entrada)
+            attrs.update(entrada)
+        
+        return type(cls_name, (RegistroBase, ), attrs)
