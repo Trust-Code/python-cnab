@@ -3,7 +3,7 @@ import unittest
 
 from decimal import Decimal
 from cnab240 import errors
-from cnab240.registro import Registro
+from cnab240.bancos import bb
 from tests.data import HEADER_ARQUIVO_STR, REGISTRO_T
 
 
@@ -11,10 +11,10 @@ from tests.data import HEADER_ARQUIVO_STR, REGISTRO_T
 class TestRegistro(unittest.TestCase):
     
     def setUp(self):
-        self.header_arquivo = Registro('header_arquivo',  '085')
+        self.header_arquivo = bb.registros.HeaderArquivo()
         self.header_arquivo.carregar(HEADER_ARQUIVO_STR)
         
-        self.seg_t = Registro('segmento_t', '085')
+        self.seg_t = bb.registros.segmento_t()
         self.seg_t.carregar(REGISTRO_T)
 
     def test_leitura_campo_num_decimal(self):
