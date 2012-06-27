@@ -6,7 +6,7 @@ class Arquivo(ArquivoBase):
     banco = bb
 
 class Lote(LoteBase):
-    banco = bb
+    pass
 
 class Evento(EventoBase):
-    banco = bb
+    pass

@@ -9,22 +9,63 @@ class ArquivoBase(object):
     banco = None
 
     def __init__(self, **kwargs):
+        """Arquivo Cnab240. 
+      
+        :param empresa_inscricao_tipo: Tipo de Inscrição da Empresa
+        :type empresa_inscricao_tipo: int
+
+        :param empresa_inscricao_numero: Número de Inscrição da Empresa
+        :type empresa_inscricao_numero: int
+
+        :param empresa_convenio: Código do Convênio no Banco
+        :type :empresa_convenio: str
+
+        :param empresa_conta_agencia_codigo: Agência Mantenedora da Conta
+        :type empresa_conta_agencia_codigo: int
+
+        :param empresa_conta_agencia_dv: Dígito Verificador da Agência
+        :type empresa_conta_agencia_dv: str 
+
+        :param empresa_conta_numero: Número da Conta Corrente
+        :type empresa_conta_numero: int
+
+        :param empresa_conta_dv: Dígito Verificador da Conta
+        :type empresa_conta_dv: str 
+
+        :param empresa_agencia_conta_dv: Dígito Verificador da Ag/Conta
+        :type empresa_agencia_conta_dv: str
+
+        :param empresa_nome: Nome da Empresa
+        :type empresa_nome: str
+
+        :param nome_do_banco: Nome do Banco
+        :type nome_do_banco: str
+
+        :param arquivo_codigo: Código Remessa / Retorno
+        :type arquivo_codigo: int
+
+        :param arquivo_data_de_geracao: Data de Geração do Arquivo
+        :type arquivo_data_de_geracao: int
+
+        :param arquivo_hora_de_geracao: Hora de Geração do Arquivo
+        :type arquivo_hora_de_geracao: int
+
+        :param arquivo_sequencia: Número Seqüencial do Arquivo
+        :type arquivo_sequencia: int
+
+        :param arquivo_layout: No da Versão do Layout do Arquivo
+        :type arquivo_layout: int
+
+        :param arquivo_densidade: Densidade de Gravação do Arquivo
+        :type arquivo_densidade: int
+
+        :param reservado_banco: Para Uso Reservado do Banco
+        :type reservado_banco: str
+
+        :param reservado_empresa: Para Uso Reservado da Empresa
+        :type reservado_empresa: str
+
         """
-        Argumentos:
-        - versao -> Versão do versao_layout
-        - cedente_banco_codigo -> Código do banco
-        - cedente_banco_nome -> Nome do banco
-        - cedente_nome -> Nome do Cedente
-        - cedente_numero_documento -> CPF/CNPJ
-        - cedente_convenio -> Convênio com o banco
-        - cedente_agencia -> Agência bancária
-        - cedente_agencia_dv -> Digito verificador da agência
-        - cedente_conta -> Conta corrente
-        - cedente_conta_dv -> Digito verificador da conta
-        - cedente_agencia_conta_dv -> Digito verificador da conta e agência
-        - arquivo_sequencia -> Número sequencial do arquivo
-        - arquivo_densidade -> Densidade de gravação do arquivo
-        """ # TODO: Formatar docstrings em formato sphinx
 
         self.header = self.banco.registros.HeaderArquivo()
         self.header.fromdict(kwargs)
@@ -97,13 +138,14 @@ class EventoBase(object):
 
 class LoteBase(object):
 
-    banco = None
     eventos_validos = None
  
-    def __init__(self):
-        if not all(self.REQUIRED_CONSTANTS.values()):
+    def __init__(self, banco):
+        if self.eventos_validos is None:
             raise NotImplementedError
-
+        
+        self.banco = banco
+    
         self.header = self.banco.HeaderLote()
         self.trailer = self.banco.TrailerLote()
         self._eventos = []
