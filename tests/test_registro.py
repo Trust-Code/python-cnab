@@ -14,7 +14,7 @@ class TestRegistro(unittest.TestCase):
         self.header_arquivo = bb.registros.HeaderArquivo()
         self.header_arquivo.carregar(HEADER_ARQUIVO_STR)
         
-        self.seg_t = bb.registros.segmento_t()
+        self.seg_t = bb.registros.SegmentoT()
         self.seg_t.carregar(REGISTRO_T)
 
     def test_leitura_campo_num_decimal(self):
