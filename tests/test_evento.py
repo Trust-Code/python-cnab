@@ -1,7 +1,9 @@
 
 import unittest
-from cnab240.tipos import EventoBase
 from cnab240.bancos import bb
+from cnab240.tipos import EventoBase
+from cnab240.eventos.cobranca import EventoInclusao
+from tests.data import REGISTRO_T_DICT
 
 class TestEvento(unittest.TestCase):
     def setUp(self):
@@ -24,5 +26,3 @@ class TestEvento(unittest.TestCase):
         self.assertEquals(unicode(self.evento), u'test_1') 
         self.evento._segmentos.append('test_2') 
         self.assertEquals(unicode(self.evento), u'test_1\ntest_2') 
-
-

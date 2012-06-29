@@ -78,11 +78,21 @@ class RegistroBase(object):
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
 
+    def necessario(self, data_dict):
+        for key, value in data_dict.items():
+            if key.startswith('controle_'):
+                continue
+            elif key.startswith('servico_'):
+                continue
+            else:
+                return True
+
+        return False
+
     def fromdict(self, data_dict):
         for key, value in data_dict.items():
-            if not key.startswith('controle') and not key.startswith('servico'):
-                if hasattr(self, key):
-                    setattr(self, key, value) 
+            if hasattr(self, key):
+                setattr(self, key, value) 
 
     def carregar(self, registro_str):
         for campo in self._campos.values():

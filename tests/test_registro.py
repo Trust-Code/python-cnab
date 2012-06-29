@@ -89,8 +89,7 @@ class TestRegistro(unittest.TestCase):
 
         seg_t = bb.registros.SegmentoT(**REGISTRO_T_DICT)
         self.assertEqual(seg_t.valor_tarifas, Decimal('2.64'))
-        self.assertNotEqual(seg_t.controle_banco, 40)
-        self.assertEqual(seg_t.controle_banco, 33)
-
+        self.assertEqual(seg_t.controle_banco, 40)
+ 
 if __name__ == '__main__':
     unittest.main()

@@ -121,7 +121,7 @@ class EventoBase(object):
         return self._segmentos
     
     def __getattribute__(self, name):
-        for segmento in object.__getattribute__(self,'_segmentos'):
+        for segmento in object.__getattribute__(self, '_segmentos'):
             if hasattr(segmento, name):
                 return getattr(segmento, name)
         return object.__getattribute__(self, name)
