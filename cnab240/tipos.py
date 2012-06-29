@@ -112,28 +112,21 @@ class ArquivoBase(object):
 
 
 class EventoBase(object):
-    segmentos_validos = {} 
-
     def __init__(self, **kwargs):
-        if not self.segmentos_validos:
-            raise NotImplementedError
-
-        self._segmentos = dict.fromkeys(self.segmentos_validos.keys())
+        self._segmentos = [] 
        
-    def adicionar_segmento(self, segmento):
-    
-        if not isinstance(segmento, self.segmentos_validos.values()):
-            raise TypeError
-
-        self._segmentos.update({segmento.servico_segmento: segmento})
-
     @property
     def segmentos(self):    
         return self._segmentos
-        
+    
+    def __getattribute__(self, name):
+        for segmento in object.__getattribute__(self,'_segmentos'):
+            if hasattr(segmento, name):
+                return getattr(segmento, name)
+        return object.__getattribute__(self, name)
+    
     def __unicode__(self):
-        return u'\n'.join(unicode(seg) for seg in self._segmentos.values()
-                          if seg) 
+        return u'\n'.join(unicode(seg) for seg in self._segmentos)
 
 
 class LoteBase(object):
