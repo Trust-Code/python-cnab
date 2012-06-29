@@ -4,7 +4,8 @@ import unittest
 from decimal import Decimal
 from cnab240 import errors
 from cnab240.bancos import bb
-from tests.data import HEADER_ARQUIVO_STR, REGISTRO_T
+from tests.data import HEADER_ARQUIVO_STR, HEADER_ARQUIVO_DICT, \
+                                            REGISTRO_T_STR, REGISTRO_T_DICT
 
 
 
@@ -15,7 +16,7 @@ class TestRegistro(unittest.TestCase):
         self.header_arquivo.carregar(HEADER_ARQUIVO_STR)
         
         self.seg_t = bb.registros.SegmentoT()
-        self.seg_t.carregar(REGISTRO_T)
+        self.seg_t.carregar(REGISTRO_T_STR)
 
     def test_leitura_campo_num_decimal(self):
         self.assertEqual(self.seg_t.valor_titulo, Decimal('43.50'))  
@@ -79,6 +80,17 @@ class TestRegistro(unittest.TestCase):
         # Testa que o valor atribuido foi guardado no objeto 
         self.header_arquivo.empresa_nome = u'tracy' 
         self.assertEqual(self.header_arquivo.empresa_nome, 'tracy')
-     
+    
+    def test_fromdict(self):
+        header_arquivo = bb.registros.HeaderArquivo(**HEADER_ARQUIVO_DICT)
+        self.assertEqual(header_arquivo.empresa_nome, 
+                                                u'Tracy Tecnologias LTDA ME')
+        self.assertEqual(header_arquivo.nome_do_banco, u'Banco do Brasil')
+
+        seg_t = bb.registros.SegmentoT(**REGISTRO_T_DICT)
+        self.assertEqual(seg_t.valor_tarifas, Decimal('2.64'))
+        self.assertNotEqual(seg_t.controle_banco, 40)
+        self.assertEqual(seg_t.controle_banco, 33)
+
 if __name__ == '__main__':
     unittest.main()

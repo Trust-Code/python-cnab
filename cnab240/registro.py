@@ -75,13 +75,17 @@ class Campo(object):
 
 class RegistroBase(object):
 
-    def fromdict(self, dict_):
-        pass
+    def __init__(self, **kwargs):
+        self.fromdict(kwargs)
+
+    def fromdict(self, data_dict):
+        for key, value in data_dict.items():
+            if not key.startswith('controle') and not key.startswith('servico'):
+                if hasattr(self, key):
+                    setattr(self, key, value) 
 
     def carregar(self, registro_str):
-
         for campo in self._campos.values():
-
             valor = registro_str[campo.inicio:campo.fim].strip()
             if campo.formato == 'num' and campo.decimais:
                 exponente = campo.decimais * -1

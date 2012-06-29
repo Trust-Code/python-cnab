@@ -112,8 +112,9 @@ class ArquivoBase(object):
 
 
 class EventoBase(object):
-    def __init__(self, **kwargs):
-        self._segmentos = [] 
+    def __init__(self, banco):
+        self._segmentos = []
+        self.banco = banco 
        
     @property
     def segmentos(self):    

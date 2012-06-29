@@ -1,5 +1,65 @@
 
+from decimal import Decimal
+
+HEADER_ARQUIVO_DICT = {
+    'controle_banco': 1,
+    'controle_lote': 2,
+    'controle_registro': 0,
+    'cnab1': u'',
+    'empresa_inscricao_tipo': 2,
+    'empresa_inscricao_numero': 12345678901234,
+    'empresa_convenio': u'abcdefghijklmnopqrst',
+    'empresa_conta_agencia_codigo': 2891,
+    'empresa_conta_agencia_dv': u'6',
+    'empresa_conta_numero': 14262,
+    'empresa_conta_dv': u'X',
+    'empresa_agencia_conta_dv': u'7',
+    'empresa_nome': u'Tracy Tecnologias LTDA ME',
+    'nome_do_banco': u'Banco do Brasil',
+    'cnab2': u'',
+    'arquivo_codigo': 0,
+    'arquivo_data_de_geracao': 20120713,
+    'arquivo_hora_de_geracao': 220000,
+    'arquivo_sequencia': 123456,
+    'arquivo_layout': 85,
+    'arquivo_densidade': 12345,
+    'reservado_banco': u'',
+    'reservado_empresa': u'',
+    'cnab3': u'',
+}
+
+REGISTRO_T_DICT =  {
+    u'controle_banco': 40,
+    u'controle_lote': 6774,
+    u'controle_registro': 3,
+    u'servico_numero_registro': 1,
+    u'servico_segmento': u'T',
+    u'servico_cnab': u'',
+    u'servico_codigo_movimento': 17,
+    u'conta_agencia_codigo': 2260,
+    u'conta_agencia_dv': u'8',
+    u'conta_numero': 13000401,
+    u'conta_dv': u'1',
+    u'conta_agencia_conta_dv': u'0',
+    u'nosso_numero': u'00000000000000000060',
+    u'carteira': 1,
+    u'numero_documento': u'',
+    u'vencimento_titulo': 4082011,
+    u'valor_titulo': Decimal('43.50'),
+    u'banco_cobrador': 1,
+    u'agencia_cobradora': 30,
+    u'agencia_cobradora_dv': u'8',
+    u'identificacao_titulo': u'',
+    u'codigo_moeda': 0,
+    u'sacado_inscricao_tipo': 2,
+    u'sacado_inscricao_numero': 0,
+    u'sacado_nome': u'',
+    u'numero_contrato': 130004011,
+    u'valor_tarifas': Decimal('2.64'),
+    u'motivo_ocorrencia': u'0400000000',
+    u'cnab': u'',
+}
 
 HEADER_ARQUIVO_STR = u'00100020         212345678901234abcdefghijklmnopqrst028916000000014262X7TRACY TECNOLOGIA LTDA ME      BANCO DO BRASIL                         02012071322000012345608512345                                                                     '
 
-REGISTRO_T = u'0336774300001T 1702260800001300040110000000000000000000601               04082011000000000004350001000308                         002000000000000000                                        01300040110000000000002640400000000                 '
+REGISTRO_T_STR = u'0336774300001T 1702260800001300040110000000000000000000601               04082011000000000004350001000308                         002000000000000000                                        01300040110000000000002640400000000                 '

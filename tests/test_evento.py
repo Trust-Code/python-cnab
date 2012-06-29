@@ -1,10 +1,11 @@
 
 import unittest
 from cnab240.tipos import EventoBase
+from cnab240.bancos import bb
 
 class TestEvento(unittest.TestCase):
     def setUp(self):
-        self.evento = EventoBase() 
+        self.evento = EventoBase(bb) 
     
     def test_getattributes(self):
         self.assertEquals(self.evento._segmentos, [])
