@@ -90,6 +90,18 @@ class TestRegistro(unittest.TestCase):
         seg_t = bb.registros.SegmentoT(**REGISTRO_T_DICT)
         self.assertEqual(seg_t.valor_tarifas, Decimal('2.64'))
         self.assertEqual(seg_t.controle_banco, 40)
+
+    def test_todict(self):
+        header_arquivo = bb.registros.HeaderArquivo(**HEADER_ARQUIVO_DICT)
+        data_dict = header_arquivo.todict()
+
+        for key, value in HEADER_ARQUIVO_DICT.items():
+            if value:
+                self.assertEqual(value, data_dict.get(key))
+        
+        for key, value in data_dict.items():
+            if value:
+                self.assertEqual(value, HEADER_ARQUIVO_DICT.get(key))
  
     def test_necessario(self):
         seg_t_1 = bb.registros.SegmentoT(**REGISTRO_T_DICT)
@@ -106,3 +118,4 @@ class TestRegistro(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

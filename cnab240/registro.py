@@ -103,7 +103,6 @@ class RegistroBase(object):
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
 
-
     def necessario(self):
         for campo in self._campos.values():
             eh_controle = campo.nome.startswith('controle_') or \
@@ -113,6 +112,13 @@ class RegistroBase(object):
 
         return False
 
+    def todict(self):
+        data_dict = dict()
+        for campo in self._campos.values():
+            if campo.valor:
+                data_dict[campo.nome] = campo.valor  
+        return data_dict
+    
     def fromdict(self, data_dict):
         for key, value in data_dict.items():
             if hasattr(self, key):
