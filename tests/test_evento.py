@@ -7,8 +7,8 @@ from tests.data import REGISTRO_T_DICT
 
 class TestEvento(unittest.TestCase):
     def setUp(self):
-        self.evento = EventoBase(bb) 
-    
+        self.evento = EventoBase(bb)
+   
     def test_getattributes(self):
         self.assertEquals(self.evento._segmentos, [])
 

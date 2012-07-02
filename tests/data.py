@@ -1,5 +1,11 @@
 
+import os
+import codecs
 from decimal import Decimal
+from cnab240.bancos import itau
+
+TESTS_DIRPATH = os.path.abspath(os.path.dirname(__file__))
+ARQS_DIRPATH = os.path.join(TESTS_DIRPATH, 'arquivos')
 
 HEADER_ARQUIVO_DICT = {
     'controle_banco': 1,
@@ -63,3 +69,57 @@ REGISTRO_T_DICT =  {
 HEADER_ARQUIVO_STR = u'00100020         212345678901234abcdefghijklmnopqrst028916000000014262X7TRACY TECNOLOGIA LTDA ME      BANCO DO BRASIL                         02012071322000012345608512345                                                                     '
 
 REGISTRO_T_STR = u'0336774300001T 1702260800001300040110000000000000000000601               04082011000000000004350001000308                         002000000000000000                                        01300040110000000000002640400000000                 '
+
+# Dados Itau
+COBRANCA_ITAU_REM_FILE = codecs.open(
+            os.path.join(ARQS_DIRPATH, 'cobranca.itau.rem'), "r", "utf-8")
+
+SEG_P_ITAU_DICT = {
+    u'aceite_titulo': u'A',
+    u'agencia_cobradora': 0,
+    u'agencia_cobradora_dv': u'0',
+    u'carteira_numero': 109,
+    u'codigo_baixa': 0,
+    u'codigo_protesto': 3,
+    u'conta_agencia_codigo': 4459,
+    u'conta_agencia_conta_dv': u'6',
+    u'conta_agencia_dv': u'',
+    u'conta_dv': u'',
+    u'conta_numero': 17600,
+    u'controle_banco': 341,
+    u'controle_lote': 1,
+    u'controle_registro': 3,
+    u'data_emissao_titulo': 27062012,
+    u'desconto1_codigo': 0,
+    u'desconto1_data': 0,
+    u'desconto1_percentual': Decimal('0.00'),
+    u'especie_titulo': 8,
+    u'identificacao_titulo': u'',
+    u'juros_mora_codigo': 0,
+    u'juros_mora_data': 0,
+    u'juros_mora_taxa_dia': Decimal('2.00'),
+    u'nosso_numero': u'90000000',
+    u'nosso_numero_dv': u'2',
+    u'numero_documento': u'9999999998',
+    u'prazo_baixa': 0,
+    u'prazo_protesto': 0,
+    u'reservado1': 0,
+    u'reservado2': 0,
+    u'reservado3': u'',
+    u'reservado4': 0,
+    u'reservado5': u'',
+    u'reservado6': 0,
+    u'reservado7': u'',
+    u'servico_cnab': u'',
+    u'servico_codigo_movimento': 1,
+    u'servico_numero_registro': 1,
+    u'servico_segmento': u'P',
+    u'valor_abatimento': Decimal('0.00'),
+    u'valor_iof': Decimal('0.00'),
+    u'valor_titulo': Decimal('100.00'),
+    u'vencimento_titulo': 30062012
+}
+
+SEG_P_ITAU_STR = u'3410001300001P 0104459 000000017600 6109900000002        000009999999998     3006201200000000001000000000008A27062012000000000000000000000200000000000000000000000000000000000000000000000000000000                         3000000000000000000 '
+
+COBRANCA_ITAU_RET_FILE = open(os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret'))

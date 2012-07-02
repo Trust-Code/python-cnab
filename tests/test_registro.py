@@ -3,10 +3,10 @@ import unittest
 
 from decimal import Decimal
 from cnab240 import errors
-from cnab240.bancos import bb
+from cnab240.bancos import bb, itau
 from tests.data import HEADER_ARQUIVO_STR, HEADER_ARQUIVO_DICT, \
-                                            REGISTRO_T_STR, REGISTRO_T_DICT
-
+                       REGISTRO_T_STR, REGISTRO_T_DICT, \
+                       SEG_P_ITAU_DICT, SEG_P_ITAU_STR
 
 
 class TestRegistro(unittest.TestCase):
@@ -17,6 +17,9 @@ class TestRegistro(unittest.TestCase):
         
         self.seg_t = bb.registros.SegmentoT()
         self.seg_t.carregar(REGISTRO_T_STR)
+
+        self.seg_p = itau.registros.SegmentoP()
+        self.seg_p.carregar(SEG_P_ITAU_STR)
 
     def test_leitura_campo_num_decimal(self):
         self.assertEqual(self.seg_t.valor_titulo, Decimal('43.50'))  
@@ -90,7 +93,7 @@ class TestRegistro(unittest.TestCase):
         seg_t = bb.registros.SegmentoT(**REGISTRO_T_DICT)
         self.assertEqual(seg_t.valor_tarifas, Decimal('2.64'))
         self.assertEqual(seg_t.controle_banco, 40)
-
+                
     def test_todict(self):
         header_arquivo = bb.registros.HeaderArquivo(**HEADER_ARQUIVO_DICT)
         data_dict = header_arquivo.todict()
@@ -115,6 +118,14 @@ class TestRegistro(unittest.TestCase):
 
         seg_t_2.conta_agencia_codigo = 1020   
         self.assertTrue(seg_t_2.necessario())
+
+    def test_unicode(self):
+        seg_p_str = unicode(self.seg_p)
+        
+        self.assertEqual(len(seg_p_str), 240)
+        self.assertEqual(len(SEG_P_ITAU_STR), 240)
+        
+        self.assertEqual(seg_p_str, SEG_P_ITAU_STR)
 
 if __name__ == '__main__':
     unittest.main()

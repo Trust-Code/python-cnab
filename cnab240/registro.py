@@ -45,15 +45,22 @@ class CampoBase(object):
     
 
     def __unicode__(self):
-        if not self._valor:
-            raise errors.CampoObrigatorioError(self.nome)
-        
-        valor = self._valor
+        if self._valor is None:
+            if self.default is not None:
+                valor = self.default
+            else:
+                raise errors.CampoObrigatorioError(self.nome)
+        else:
+            valor = self._valor
+
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
                 valor = unicode(valor).replace('.', '')
-            chars_faltantes = self.digitos - len(valor)
-            return valor + (u' ' * chars_faltantes)
+                chars_faltantes = self.digitos - len(valor)
+                return (u'0' * chars_faltantes) + valor
+            else:
+                chars_faltantes = self.digitos - len(valor)
+                return valor + (u' ' * chars_faltantes)
 
         return u'{0:0{1}d}'.format(valor, self.digitos)
 
@@ -115,7 +122,7 @@ class RegistroBase(object):
     def todict(self):
         data_dict = dict()
         for campo in self._campos.values():
-            if campo.valor:
+            if campo.valor is not None:
                 data_dict[campo.nome] = campo.valor  
         return data_dict
     
