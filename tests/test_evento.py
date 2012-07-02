@@ -2,7 +2,6 @@
 import unittest
 from cnab240.bancos import bb
 from cnab240.tipos import EventoBase
-from cnab240.eventos.cobranca import EventoInclusao
 from tests.data import REGISTRO_T_DICT
 
 class TestEvento(unittest.TestCase):
