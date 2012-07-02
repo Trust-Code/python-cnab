@@ -1,0 +1,92 @@
+{
+  "nome": "SegmentoY04",
+  "campos": {
+    "01.3Y": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num"
+    },
+
+    "02.3Y": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3Y": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3Y": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3Y": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "Y"
+    },
+
+    "06.3Y": {
+      "nome": "servico_cnab",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa"
+    },
+
+    "07.3Y": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "08.3Y": {
+      "nome": "codigo_registro_opcional",
+      "posicao_inicio": 18,
+      "posicao_fim": 19,
+      "formato": "num",
+      "default": 3
+    },
+
+    "09.3Y": {
+      "nome": "destinatario_email",
+      "posicao_inicio": 20,
+      "posicao_fim": 69,
+      "formato": "alfa"
+    },
+
+    "10.3Y": {
+      "nome": "destinatario_celular_ddd",
+      "posicao_inicio": 70,
+      "posicao_fim": 71,
+      "formato": "num"
+    },
+
+    "11.3Y": {
+      "nome": "destinatario_celular_numero",
+      "posicao_inicio": 72,
+      "posicao_fim": 79,
+      "formato": "num"
+    },
+
+    "12.3Y": {
+      "nome": "cnab",
+      "posicao_inicio": 80,
+      "posicao_fim": 240,
+      "formato": "alfa"
+    }
+    
+  }
+}
