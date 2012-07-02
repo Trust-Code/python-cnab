@@ -8,20 +8,13 @@ from collections import OrderedDict
 from cnab240 import errors
 
 
-class Campo(object):
-    def __init__(self, spec):
-        self.nome = spec.get('nome')
-        self.inicio = spec.get('posicao_inicio') - 1
-        self.fim = spec.get('posicao_fim') 
-        self.digitos = self.fim - self.inicio
-        self.formato = spec.get('formato', 'alfa')
-        self.decimais = spec.get('decimais', 0)
-        self.default = spec.get('default')
+class CampoBase(object):
+    def __init__(self):
         self._valor = None
-    
-    @property    
+
+    @property
     def valor(self):
-        return self._valor 
+        return self._valor
 
     @valor.setter
     def valor(self, valor):
@@ -49,6 +42,7 @@ class Campo(object):
                 raise errors.NumDigitosExcedidoError(self, valor)
         
         self._valor = valor
+    
 
     def __unicode__(self):
         if not self._valor:
@@ -73,18 +67,48 @@ class Campo(object):
         return self.valor
 
 
-class RegistroBase(object):
+def criar_classe_campo(spec):
 
+    nome = spec.get('nome')
+    inicio =  spec.get('posicao_inicio') - 1
+    fim = spec.get('posicao_fim') 
+
+    attrs = {
+        'nome': nome, 
+        'inicio': inicio, 
+        'fim': fim, 
+        'digitos': fim - inicio,
+        'formato': spec.get('formato', 'alfa'),
+        'decimais': spec.get('decimais', 0),
+        'default': spec.get('default'),
+    }
+    
+    return type(nome.encode('utf8'), (CampoBase,), attrs)
+
+
+class RegistroBase(object):
+        
+    def __new__(cls, **kwargs):
+        campos = OrderedDict()
+        attrs = {'_campos': campos}
+
+        for Campo in cls._campos_cls.values():
+            campo = Campo()
+            campos.update({campo.nome: campo}) 
+            attrs.update({campo.nome: campo})
+
+        new_cls = type(cls.__name__, (cls, ), attrs)
+        return super(RegistroBase, cls).__new__(new_cls, **kwargs)
+    
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
 
-    def necessario(self, data_dict):
-        for key, value in data_dict.items():
-            if key.startswith('controle_'):
-                continue
-            elif key.startswith('servico_'):
-                continue
-            else:
+
+    def necessario(self):
+        for campo in self._campos.values():
+            eh_controle = campo.nome.startswith('controle_') or \
+                                            campo.nome.startswith('servico_')
+            if not eh_controle and campo.valor:
                 return True
 
         return False
@@ -97,7 +121,7 @@ class RegistroBase(object):
     def carregar(self, registro_str):
         for campo in self._campos.values():
             valor = registro_str[campo.inicio:campo.fim].strip()
-            if campo.formato == 'num' and campo.decimais:
+            if campo.decimais:
                 exponente = campo.decimais * -1
                 dec = valor[:exponente] + '.' + valor[exponente:]
                 try:
@@ -133,17 +157,16 @@ class Registros(object):
 
 
     def criar_classe_registro(self, spec):
-
         campos = OrderedDict()
-        attrs = {'_campos': campos}
+        attrs = {'_campos_cls': campos}
         cls_name = spec.get('nome').encode('utf8')
 
         campo_specs = spec.get('campos', {})
         for key in sorted(campo_specs.iterkeys()):
-            campo = Campo(campo_specs[key])
-            entrada = {campo.nome: campo}
+            Campo = criar_classe_campo(campo_specs[key])
+            entrada = {Campo.nome: Campo}
 
             campos.update(entrada)
-            attrs.update(entrada)
         
         return type(cls_name, (RegistroBase, ), attrs)
+
