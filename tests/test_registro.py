@@ -91,5 +91,18 @@ class TestRegistro(unittest.TestCase):
         self.assertEqual(seg_t.valor_tarifas, Decimal('2.64'))
         self.assertEqual(seg_t.controle_banco, 40)
  
+    def test_necessario(self):
+        seg_t_1 = bb.registros.SegmentoT(**REGISTRO_T_DICT)
+        self.assertTrue(seg_t_1.necessario())
+        
+        seg_t_2 = bb.registros.SegmentoT()
+        self.assertFalse(seg_t_2.necessario())
+    
+        seg_t_2.controle_banco = 33    
+        self.assertFalse(seg_t_2.necessario())
+
+        seg_t_2.conta_agencia_codigo = 1020   
+        self.assertTrue(seg_t_2.necessario())
+
 if __name__ == '__main__':
     unittest.main()

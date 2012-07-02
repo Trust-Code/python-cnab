@@ -26,3 +26,4 @@ class TestEvento(unittest.TestCase):
         self.assertEquals(unicode(self.evento), u'test_1') 
         self.evento._segmentos.append('test_2') 
         self.assertEquals(unicode(self.evento), u'test_1\ntest_2') 
+
