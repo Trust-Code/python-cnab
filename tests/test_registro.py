@@ -6,7 +6,8 @@ from cnab240 import errors
 from cnab240.bancos import bb, itau
 from tests.data import HEADER_ARQUIVO_STR, HEADER_ARQUIVO_DICT, \
                        REGISTRO_T_STR, REGISTRO_T_DICT, \
-                       SEG_P_ITAU_DICT, SEG_P_ITAU_STR
+                       SEG_P_ITAU_DICT, SEG_P_ITAU_STR, \
+                       SEG_Q_ITAU_DICT, SEG_Q_ITAU_STR
 
 
 class TestRegistro(unittest.TestCase):
@@ -117,14 +118,17 @@ class TestRegistro(unittest.TestCase):
         self.assertTrue(seg_t_2.necessario())
 
     def test_unicode(self):
-        seg_p = itau.registros.SegmentoP(**SEG_P_ITAU_DICT)
+        def unicode_test(SegCls, seg_dict, seg_str):
+            seg_instance = SegCls(**seg_dict)
+            seg_gen_str = unicode(seg_instance)
+            
+            self.assertEqual(len(seg_gen_str), 240)
+            self.assertEqual(len(seg_str), 240)
+            
+            self.assertEqual(seg_gen_str, seg_str) 
 
-        seg_p_str = unicode(seg_p)
-        
-        self.assertEqual(len(seg_p_str), 240)
-        self.assertEqual(len(SEG_P_ITAU_STR), 240)
-        
-        self.assertEqual(seg_p_str, SEG_P_ITAU_STR)
+        unicode_test(itau.registros.SegmentoP, SEG_P_ITAU_DICT, SEG_P_ITAU_STR)
+        unicode_test(itau.registros.SegmentoQ, SEG_Q_ITAU_DICT, SEG_Q_ITAU_STR)
 
 if __name__ == '__main__':
     unittest.main()

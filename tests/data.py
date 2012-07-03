@@ -111,4 +111,27 @@ SEG_P_ITAU_DICT = {
 
 SEG_P_ITAU_STR = u'3410001300001P 0104459 000000017600 6109900000002        000009999999998     3006201200000000001000000000008A27062012000000000000000000000200000000000000000000000000000000000000000000000000000000                         3000000000000000000 '
 
+SEG_Q_ITAU_DICT = {
+    u'controle_banco': 341,
+    u'controle_lote': 1,
+    u'controle_registro': 3,
+    u'sacado_bairro': u'JD PALMARES',
+    u'sacado_cep': 14092,
+    u'sacado_cep_sufixo': 530,
+    u'sacado_cidade': u'RIBEIRAO PRETO',
+    u'sacado_endereco': u'RUA ARLINDO CATELLI 735 AP 12',
+    u'sacado_inscricao_numero': 36644661874L,
+    u'sacado_inscricao_tipo': 1,
+    u'sacado_nome': u'DAVI OLIVEIRA CAMPOS',
+    u'sacado_uf': u'SP',
+    u'sacador_inscricao_numero': 15594050000111L,
+    u'sacador_inscricao_tipo': 2,
+    u'sacador_nome': u'TRACY TECNOLOGIA LTDA ME',
+    u'servico_codigo_movimento': 1,
+    u'servico_numero_registro': 2,
+    u'servico_segmento': u'Q'
+}
+
+SEG_Q_ITAU_STR = u'3410001300002Q 011000036644661874DAVI OLIVEIRA CAMPOS                    RUA ARLINDO CATELLI 735 AP 12           JD PALMARES    14092530RIBEIRAO PRETO SP2015594050000111TRACY TECNOLOGIA LTDA ME                000                            '
+
 COBRANCA_ITAU_RET_FILE = open(os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret'))
