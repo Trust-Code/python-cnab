@@ -29,8 +29,7 @@
       "nome": "reservado1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
 
     "05.9": {
@@ -48,19 +47,17 @@
     },
 
     "07.9": {
-      "nome": "totais_quantidade_contas_conciliadas",
+      "nome": "reservado2",
       "posicao_inicio": 30,
       "posicao_fim": 35,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "08.9": {
-      "nome": "cnab2",
+      "nome": "reservado3",
       "posicao_inicio": 36,
       "posicao_fim": 240,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     }
   }
 }
