@@ -26,7 +26,7 @@
     },
 
     "04.0": {
-      "nome": "cnab1",
+      "nome": "reservado1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
       "formato": "alfa",
@@ -34,21 +34,21 @@
     },
 
     "05.0": {
-      "nome": "empresa_inscricao_tipo",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num"
     },
 
     "06.0": {
-      "nome": "empresa_inscricao_numero",
+      "nome": "cedente_inscricao_numero",
       "posicao_inicio": 19,
       "posicao_fim": 32,
       "formato": "num"
     },
 
     "07.0": {
-      "nome": "empresa_convenio",
+      "nome": "cedente_convenio",
       "posicao_inicio": 33,
       "posicao_fim": 52,
       "formato": "alfa",
@@ -56,7 +56,7 @@
     },
 
     "08.0": {
-      "nome": "reservado1",
+      "nome": "reservado2",
       "posicao_inicio": 53,
       "posicao_fim": 53,
       "formato": "num",
@@ -64,14 +64,14 @@
     },
 
     "09.0": {
-      "nome": "empresa_conta_agencia_codigo",
+      "nome": "cedente_agencia",
       "posicao_inicio": 54,
       "posicao_fim": 57,
       "formato": "num"
     },
 
     "10.0": {
-      "nome": "empresa_conta_agencia_dv",
+      "nome": "reservado3",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "alfa",
@@ -79,7 +79,7 @@
     },
 
     "11.0": {
-      "nome": "reservado2",
+      "nome": "reservado4",
       "posicao_inicio": 59,
       "posicao_fim": 65,
       "formato": "num",
@@ -87,14 +87,14 @@
     },
 
     "12.0": {
-      "nome": "empresa_conta_numero",
+      "nome": "cedente_conta",
       "posicao_inicio": 66,
       "posicao_fim": 70,
       "formato": "num"
     },
 
     "13.0": {
-      "nome": "empresa_conta_dv",
+      "nome": "reservado5",
       "posicao_inicio": 71,
       "posicao_fim": 71,
       "formato": "alfa",
@@ -102,14 +102,14 @@
     },
 
     "14.0": {
-      "nome": "empresa_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "alfa"
     },
 
     "15.0": {
-      "nome": "empresa_nome",
+      "nome": "cedente_nome",
       "posicao_inicio": 73,
       "posicao_fim": 102,
       "formato": "alfa"
@@ -124,7 +124,7 @@
     },
     
     "17.0": {
-      "nome": "reservado3",
+      "nome": "reservado6",
       "posicao_inicio": 133,
       "posicao_fim": 142,
       "formato": "alfa",
@@ -168,7 +168,7 @@
     },
 
     "23.0": {
-      "nome": "reservado4",
+      "nome": "reservado7",
       "posicao_inicio": 167,
       "posicao_fim": 171,
       "formato": "num",
@@ -176,15 +176,15 @@
     },
 
     "24.0": {
-      "nome": "reservado5",
-      "posicao_inicio": 171,
+      "nome": "reservado8",
+      "posicao_inicio": 172,
       "posicao_fim": 225,
       "formato": "alfa",
       "default": ""
     },
 
     "25.0": {
-      "nome": "reservado6",
+      "nome": "reservado9",
       "posicao_inicio": 226,
       "posicao_fim": 228,
       "formato": "num",
@@ -192,7 +192,7 @@
     },
 
     "26.0": {
-      "nome": "reservado7",
+      "nome": "reservado10",
       "posicao_inicio": 229,
       "posicao_fim": 240,
       "formato": "alfa",
