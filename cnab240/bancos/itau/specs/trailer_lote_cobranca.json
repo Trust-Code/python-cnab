@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 341
     },
 
     "02.5": {
@@ -24,7 +25,7 @@
     },
 
     "04.5": {
-      "nome": "cnab1",
+      "nome": "reservado1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
       "formato": "alfa"
@@ -68,44 +69,21 @@
     },
 
     "10.5": {
-      "nome": "cobrancacaucionada_quantidade_titulos",
+      "nome": "reservado2",
       "posicao_inicio": 70,
-      "posicao_fim": 75,
+      "posicao_fim": 115,
       "formato": "num"
     },
 
     "11.5": {
-      "nome": "cobrancacaucionada_valor_titulos",
-      "posicao_inicio": 76,
-      "posicao_fim": 92,
-      "formato": "num",
-      "decimais": 2
-    },
-
-    "12.5": {
-      "nome": "cobrancadescontada_quantidade_titulos",
-      "posicao_inicio": 93,
-      "posicao_fim": 98,
-      "formato": "num"
-    },
-
-    "13.5": {
-      "nome": "cobrancadescontada_valor_titulos",
-      "posicao_inicio": 99,
-      "posicao_fim": 115,
-      "formato": "num",
-      "decimais": 2
-    },
-
-    "14.5": {
       "nome": "numero_aviso",
       "posicao_inicio": 116,
       "posicao_fim": 123,
       "formato": "alfa"
     },
 
-    "15.5": {
-      "nome": "cnab2",
+    "12.5": {
+      "nome": "reservado3",
       "posicao_inicio": 124,
       "posicao_fim": 240,
       "formato": "alfa"
