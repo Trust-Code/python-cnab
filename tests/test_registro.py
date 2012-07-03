@@ -18,9 +18,6 @@ class TestRegistro(unittest.TestCase):
         self.seg_t = bb.registros.SegmentoT()
         self.seg_t.carregar(REGISTRO_T_STR)
 
-        self.seg_p = itau.registros.SegmentoP()
-        self.seg_p.carregar(SEG_P_ITAU_STR)
-
     def test_leitura_campo_num_decimal(self):
         self.assertEqual(self.seg_t.valor_titulo, Decimal('43.50'))  
     
@@ -120,7 +117,9 @@ class TestRegistro(unittest.TestCase):
         self.assertTrue(seg_t_2.necessario())
 
     def test_unicode(self):
-        seg_p_str = unicode(self.seg_p)
+        seg_p = itau.registros.SegmentoP(**SEG_P_ITAU_DICT)
+
+        seg_p_str = unicode(seg_p)
         
         self.assertEqual(len(seg_p_str), 240)
         self.assertEqual(len(SEG_P_ITAU_STR), 240)
