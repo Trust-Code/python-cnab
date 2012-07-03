@@ -28,7 +28,8 @@
       "nome": "reservado1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "05.5": {
@@ -72,7 +73,8 @@
       "nome": "reservado2",
       "posicao_inicio": 70,
       "posicao_fim": 115,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "11.5": {
@@ -86,7 +88,8 @@
       "nome": "reservado3",
       "posicao_inicio": 124,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
 
   }

@@ -43,7 +43,8 @@
       "nome": "servico_cnab",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.3Q": {
@@ -78,7 +79,8 @@
       "nome": "reservado1",
       "posicao_inicio": 64,
       "posicao_fim": 73,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "12.3Q": {
@@ -148,21 +150,24 @@
       "nome": "reservado2",
       "posicao_inicio": 200,
       "posicao_fim": 209,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "22.3Q": {
       "nome": "reservado3",
       "posicao_inicio": 210,
       "posicao_fim": 212,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "23.3Q": {
       "nome": "reservado4",
       "posicao_inicio": 213,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
     
   }

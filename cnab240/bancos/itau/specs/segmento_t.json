@@ -57,7 +57,8 @@
       "nome": "reservado1",
       "posicao_inicio": 18,
       "posicao_fim": 18,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "09.3T": {
@@ -71,7 +72,8 @@
       "nome": "reservado2",
       "posicao_inicio": 23,
       "posicao_fim": 30,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "11.3T": {
@@ -85,7 +87,8 @@
       "nome": "reservado3",
       "posicao_inicio": 36,
       "posicao_fim": 36,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.3T": {
@@ -120,14 +123,16 @@
       "nome": "reservado4",
       "posicao_inicio": 50,
       "posicao_fim": 57,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "18.3T": {
       "nome": "reservado5",
       "posicao_inicio": 58,
       "posicao_fim": 58,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "19.3T": {
@@ -141,7 +146,8 @@
       "nome": "reservado6",
       "posicao_inicio": 69,
       "posicao_fim": 73,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "21.3T": {
@@ -163,7 +169,8 @@
       "nome": "reservado7",
       "posicao_inicio": 97,
       "posicao_fim": 99,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "24.3T": {
@@ -191,7 +198,8 @@
       "nome": "reservado8",
       "posicao_inicio": 131,
       "posicao_fim": 132,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "28.3T": {
@@ -219,14 +227,16 @@
       "nome": "reservado9",
       "posicao_inicio": 179,
       "posicao_fim": 188,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "32.3T": {
       "nome": "reservado10",
       "posicao_inicio": 189,
       "posicao_fim": 198,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "33.3T": {
@@ -255,7 +265,8 @@
       "nome": "reservado11",
       "posicao_inicio": 224,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
 
   }
