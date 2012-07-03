@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 341
     },
 
     "02.3Q": {
@@ -39,7 +40,7 @@
     },
 
     "06.3Q": {
-      "nome": "servico_cnab",
+      "nome": "reservado1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa"
@@ -69,90 +70,97 @@
     "10.3Q": {
       "nome": "sacado_nome",
       "posicao_inicio": 34,
-      "posicao_fim": 73,
+      "posicao_fim": 63,
       "formato": "alfa"
     },
 
     "11.3Q": {
+      "nome": "reservado2",
+      "posicao_inicio": 64,
+      "posicao_fim": 73,
+      "formato": "alfa"
+    },
+
+    "12.3Q": {
       "nome": "sacado_endereco",
       "posicao_inicio": 74,
       "posicao_fim": 113,
       "formato": "alfa"
     },
 
-    "12.3Q": {
+    "13.3Q": {
       "nome": "sacado_bairro",
       "posicao_inicio": 114,
       "posicao_fim": 128,
       "formato": "alfa"
     },
 
-    "13.3Q": {
+    "14.3Q": {
       "nome": "sacado_cep",
       "posicao_inicio": 129,
       "posicao_fim": 133,
       "formato": "num"
     },
 
-    "14.3Q": {
+    "15.3Q": {
       "nome": "sacado_cep_sufixo",
       "posicao_inicio": 134,
       "posicao_fim": 136,
       "formato": "num"
     },
 
-    "15.3Q": {
+    "16.3Q": {
       "nome": "sacado_cidade",
       "posicao_inicio": 137,
       "posicao_fim": 151,
       "formato": "alfa"
     },
     
-    "16.3Q": {
+    "17.3Q": {
       "nome": "sacado_uf",
       "posicao_inicio": 152,
       "posicao_fim": 153,
       "formato": "alfa"
     },
 
-    "17.3Q": {
-      "nome": "sacadoravalista_inscricao_tipo",
+    "18.3Q": {
+      "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
       "posicao_fim": 154,
       "formato": "num"
     },
 
-    "18.3Q": {
-      "nome": "sacadoravalista_inscricao_numero",
+    "19.3Q": {
+      "nome": "sacador_inscricao_numero",
       "posicao_inicio": 155,
       "posicao_fim": 169,
       "formato": "num"
     },
 
-    "19.3Q": {
-      "nome": "sacadoravalista_nome",
+    "20.3Q": {
+      "nome": "sacador_nome",
       "posicao_inicio": 170,
+      "posicao_fim": 199,
+      "formato": "alfa"
+    },
+
+    "21.3Q": {
+      "nome": "reservado3",
+      "posicao_inicio": 200,
       "posicao_fim": 209,
       "formato": "alfa"
     },
 
-    "20.3Q": {
-      "nome": "banco_correspondente",
+    "22.3Q": {
+      "nome": "reservado4",
       "posicao_inicio": 210,
       "posicao_fim": 212,
       "formato": "num"
     },
 
-    "21.3Q": {
-      "nome": "nosso_numero_banco_correspondente",
+    "23.3Q": {
+      "nome": "reservado5",
       "posicao_inicio": 213,
-      "posicao_fim": 232,
-      "formato": "alfa"
-    },
-
-    "22.3Q": {
-      "nome": "cnab",
-      "posicao_inicio": 233,
       "posicao_fim": 240,
       "formato": "alfa"
     }
