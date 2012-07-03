@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 341
     },
 
     "02.3U": {
@@ -39,7 +40,7 @@
     },
 
     "06.3U": {
-      "nome": "servico_cnab",
+      "nome": "reservado1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa"
@@ -101,51 +102,41 @@
     },
 
     "14.3U": {
-      "nome": "outras_despesas",
+      "nome": "reservado2",
       "posicao_inicio": 108,
-      "posicao_fim": 122,
-      "formato": "num",
-      "decimais": 2
+      "posicao_fim": 137,
+      "formato": "num"
     },
 
     "15.3U": {
-      "nome": "outros_creditos",
-      "posicao_inicio": 123,
-      "posicao_fim": 137,
-      "formato": "num",
-      "decimais": 2
-    },
-
-    "16.3U": {
       "nome": "data_ocorrencia",
       "posicao_inicio": 138,
       "posicao_fim": 145,
       "formato": "num"
     },
 
-    "17.3U": {
+    "16.3U": {
       "nome": "data_credito",
       "posicao_inicio": 146,
       "posicao_fim": 153,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
-    "18.3U": {
+    "17.3U": {
       "nome": "ocorrencia_codigo",
       "posicao_inicio": 154,
       "posicao_fim": 157,
-      "formato": "alfa"
+      "formato": "num"
     },
 
-    "19.3U": {
+    "18.3U": {
       "nome": "ocorrencia_data",
       "posicao_inicio": 158,
       "posicao_fim": 165,
-      "formato": "alfa"
+      "formato": "num"
     },
 
-    "20.3U": {
+    "19.3U": {
       "nome": "ocorrencia_valor",
       "posicao_inicio": 166,
       "posicao_fim": 180,
@@ -153,29 +144,22 @@
       "decimais": 2
     },
 
-    "21.3U": {
-      "nome": "ocorrencia_complemento",
+    "20.3U": {
+      "nome": "reservado3",
       "posicao_inicio": 181,
       "posicao_fim": 210,
       "formato": "alfa"
     },
 
-    "22.3U": {
-      "nome": "banco_correspondente_codigo",
+    "21.3U": {
+      "nome": "reservado4",
       "posicao_inicio": 211,
-      "posicao_fim": 213,
-      "formato": "num"
-    },
-
-    "23.3U": {
-      "nome": "banco_correspondente_nosso_numero",
-      "posicao_inicio": 214,
       "posicao_fim": 233,
       "formato": "num"
     },
 
-    "24.3U": {
-      "nome": "cnab",
+    "22.3U": {
+      "nome": "reservado5",
       "posicao_inicio": 234,
       "posicao_fim": 240,
       "formato": "alfa"
