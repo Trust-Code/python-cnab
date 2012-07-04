@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 341
     },
 
     "02.1": {
@@ -27,7 +28,8 @@
       "nome": "servico_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "R"
     },
 
     "05.1": {
@@ -39,10 +41,11 @@
     },
 
     "06.1": {
-      "nome": "servico_cnab",
+      "nome": "reservado1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.1": {
@@ -54,115 +57,130 @@
     },
 
     "08.1": {
-      "nome": "cnab",
+      "nome": "reservado2",
       "posicao_inicio": 17,
       "posicao_fim": 17,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "09.1": {
-      "nome": "empresa_inscricao_tipo",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num"
     },
 
     "10.1": {
-      "nome": "empresa_inscricao_numero",
+      "nome": "cedente_inscricao_numero",
       "posicao_inicio": 19,
       "posicao_fim": 33,
       "formato": "num"
     },
 
     "11.1": {
-      "nome": "empresa_convenio",
+      "nome": "reservado3",
       "posicao_inicio": 34,
       "posicao_fim": 53,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "12.1": {
-      "nome": "empresa_conta_agencia_codigo",
+      "nome": "reservado4",
       "posicao_inicio": 54,
+      "posicao_fim": 54,
+      "formato": "num",
+      "default": 0
+    },
+
+    "13.1": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 55,
       "posicao_fim": 58,
       "formato": "num"
     },
 
-    "13.1": {
-      "nome": "empresa_conta_agencia_dv",
+    "14.1": {
+      "nome": "reservado5",
       "posicao_inicio": 59,
       "posicao_fim": 59,
-      "formato": "alfa"
-    },
-
-    "14.1": {
-      "nome": "empresa_conta_numero",
-      "posicao_inicio": 60,
-      "posicao_fim": 71,
-      "formato": "num"
+      "formato": "alfa",
+      "default": ""
     },
 
     "15.1": {
-      "nome": "empresa_conta_dv",
-      "posicao_inicio": 72,
-      "posicao_fim": 72,
-      "formato": "alfa"
+      "nome": "reservado6",
+      "posicao_inicio": 60,
+      "posicao_fim": 66,
+      "formato": "num",
+      "default": 0
     },
 
     "16.1": {
-      "nome": "empresa_agencia_conta_dv",
+      "nome": "cedente_conta",
+      "posicao_inicio": 67,
+      "posicao_fim": 71,
+      "formato": "alfa"
+    },
+
+    "17.1": {
+      "nome": "reservado7",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "18.1": {
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 73,
       "posicao_fim": 73,
       "formato": "alfa"
     },
 
-    "17.1": {
-      "nome": "empresa_nome",
+    "19.1": {
+      "nome": "cedente_nome",
       "posicao_inicio": 74,
       "posicao_fim": 103,
       "formato": "alfa"
     },
 
-    "18.1": {
-      "nome": "informacao1",
-      "posicao_inicio": 104,
-      "posicao_fim": 143,
-      "formato": "alfa"
-    },
-
-    "19.1": {
-      "nome": "informacao2",
-      "posicao_inicio": 144,
-      "posicao_fim": 183,
-      "formato": "alfa"
-    },
-
     "20.1": {
+      "nome": "reservado8",
+      "posicao_inicio": 104,
+      "posicao_fim": 183,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "21.1": {
       "nome": "controlecob_numero",
       "posicao_inicio": 184,
       "posicao_fim": 191,
       "formato": "num"
     },
 
-    "21.1": {
+    "22.1": {
       "nome": "controlecob_data_gravacao",
       "posicao_inicio": 192,
       "posicao_fim": 199,
       "formato": "num"
     },
 
-    "22.1": {
+    "23.1": {
       "nome": "data_credito",
       "posicao_inicio": 200,
       "posicao_fim": 207,
       "formato": "num"
     },
 
-    "23.1": {
-      "nome": "cnab",
+    "24.1": {
+      "nome": "reservado9",
       "posicao_inicio": 208,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
 
   }

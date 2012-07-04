@@ -28,7 +28,8 @@
       "nome": "servico_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "R"
     },
 
     "05.1": {
@@ -63,63 +64,63 @@
     },
 
     "09.1": {
-      "nome": "empresa_inscricao_tipo",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num"
     },
 
     "10.1": {
-      "nome": "empresa_inscricao_numero",
+      "nome": "cedente_inscricao_numero",
       "posicao_inicio": 19,
       "posicao_fim": 33,
       "formato": "num"
     },
 
     "11.1": {
-      "nome": "empresa_convenio",
+      "nome": "cedente_convenio",
       "posicao_inicio": 34,
       "posicao_fim": 53,
       "formato": "alfa"
     },
 
     "12.1": {
-      "nome": "empresa_conta_agencia_codigo",
+      "nome": "cedente_agencia",
       "posicao_inicio": 54,
       "posicao_fim": 58,
       "formato": "num"
     },
 
     "13.1": {
-      "nome": "empresa_conta_agencia_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "alfa"
     },
 
     "14.1": {
-      "nome": "empresa_conta_numero",
+      "nome": "cedente_conta",
       "posicao_inicio": 60,
       "posicao_fim": 71,
       "formato": "num"
     },
 
     "15.1": {
-      "nome": "empresa_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "alfa"
     },
 
     "16.1": {
-      "nome": "empresa_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 73,
       "posicao_fim": 73,
       "formato": "alfa"
     },
 
     "17.1": {
-      "nome": "empresa_nome",
+      "nome": "cedente_nome",
       "posicao_inicio": 74,
       "posicao_fim": 103,
       "formato": "alfa"
