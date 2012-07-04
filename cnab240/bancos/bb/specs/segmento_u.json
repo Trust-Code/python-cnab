@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "02.3U": {
@@ -42,7 +43,8 @@
       "nome": "servico_cnab",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.3U": {
@@ -127,8 +129,7 @@
       "nome": "data_credito",
       "posicao_inicio": 146,
       "posicao_fim": 153,
-      "formato": "num",
-      "decimais": 2
+      "formato": "num"
     },
 
     "18.3U": {
@@ -178,7 +179,8 @@
       "nome": "cnab",
       "posicao_inicio": 234,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
 
   }
