@@ -62,7 +62,7 @@
     },
 
     "09.3T": {
-      "nome": "conta_agencia_codigo",
+      "nome": "cedente_agencia",
       "posicao_inicio": 19,
       "posicao_fim": 22,
       "formato": "num"
@@ -77,7 +77,7 @@
     },
 
     "11.3T": {
-      "nome": "conta_numero",
+      "nome": "cedente_conta",
       "posicao_inicio": 31,
       "posicao_fim": 35,
       "formato": "num"
@@ -92,14 +92,14 @@
     },
 
     "13.3T": {
-      "nome": "conta_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
       "formato": "num"
     },
 
     "14.3T": {
-      "nome": "carteira_numero",
+      "nome": "cobranca_carteira",
       "posicao_inicio": 38,
       "posicao_fim": 40,
       "formato": "num"
