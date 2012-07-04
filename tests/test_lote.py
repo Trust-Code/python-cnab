@@ -5,14 +5,15 @@ from cnab240 import errors
 from cnab240.bancos import itau
 from cnab240.lotes.cobranca import LoteCobranca 
 from cnab240.eventos.cobranca import EventoInclusao
-
+from tests.data import HEADER_COB_ITAU_DICT, SEG_P_ITAU_DICT, SEG_Q_ITAU_DICT
 
 class TestLote(unittest.TestCase):
 
     def setUp(self):
-        self.lote_itau = LoteCobranca(itau)
-        self.inclusao = EventoInclusao(itau) 
-
+        self.lote_itau = LoteCobranca(itau, **HEADER_COB_ITAU_DICT)
+        args = dict(SEG_P_ITAU_DICT.items() + SEG_Q_ITAU_DICT.items())
+        self.inclusao = EventoInclusao(itau, **args) 
+    
     def test_init(self):
         self.assertEqual(self.lote_itau.eventos, []) 
         self.assertEqual(self.lote_itau.trailer.quantidade_registros, 2) 
@@ -31,14 +32,17 @@ class TestLote(unittest.TestCase):
         with self.assertRaises(errors.NenhumEventoError):
             unicode(self.lote_itau)
     
+        self.lote_itau.adicionar_evento(self.inclusao)
+        self.lote_itau.codigo = 129
+        unicode(self.lote_itau)
+         
     def test_definir_codigo(self):
         self.lote_itau.adicionar_evento(self.inclusao)
-        self.lote_itau.codigo = 129 
+        self.lote_itau.codigo = 129
 
         self.assertEqual(self.lote_itau.header.controle_lote, 129)
         self.assertEqual(self.lote_itau.trailer.controle_lote, 129)
         for evento in self.lote_itau.eventos:
             for seg in evento.segmentos:
                 self.assertEqual(seg.controle_lote, 129)
-    
-    
+ 

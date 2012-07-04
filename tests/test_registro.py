@@ -66,25 +66,25 @@ class TestRegistro(unittest.TestCase):
         self.assertEqual(self.header_arquivo.controle_banco, 5)
          
     def test_leitura_campo_alfa(self):
-        self.assertEqual(self.header_arquivo.empresa_nome, 
+        self.assertEqual(self.header_arquivo.cedente_nome, 
                          u'TRACY TECNOLOGIA LTDA ME')
     
     def test_escrita_campo_alfa(self):
         # Testa que serao aceitos apenas unicode objects
         with self.assertRaises(errors.TipoError):
-            self.header_arquivo.empresa_nome = 'tracy' 
+            self.header_arquivo.cedente_nome = 'tracy' 
 
         # Testa que strings mais longas que obj.digitos nao serao aceitas 
         with self.assertRaises(errors.NumDigitosExcedidoError):
-            self.header_arquivo.empresa_convenio = u'123456789012345678901'
+            self.header_arquivo.cedente_convenio = u'123456789012345678901'
        
         # Testa que o valor atribuido foi guardado no objeto 
-        self.header_arquivo.empresa_nome = u'tracy' 
-        self.assertEqual(self.header_arquivo.empresa_nome, 'tracy')
+        self.header_arquivo.cedente_nome = u'tracy' 
+        self.assertEqual(self.header_arquivo.cedente_nome, 'tracy')
     
     def test_fromdict(self):
         header_arquivo = bb.registros.HeaderArquivo(**HEADER_ARQUIVO_DICT)
-        self.assertEqual(header_arquivo.empresa_nome, 
+        self.assertEqual(header_arquivo.cedente_nome, 
                                                 u'Tracy Tecnologias LTDA ME')
         self.assertEqual(header_arquivo.nome_do_banco, u'Banco do Brasil')
 
@@ -114,7 +114,7 @@ class TestRegistro(unittest.TestCase):
         seg_t_2.controle_banco = 33    
         self.assertFalse(seg_t_2.necessario())
 
-        seg_t_2.conta_agencia_codigo = 1020   
+        seg_t_2.codigo_moeda = 2   
         self.assertTrue(seg_t_2.necessario())
 
     def test_unicode(self):
