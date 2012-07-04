@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "02.9": {
@@ -28,7 +29,8 @@
       "nome": "cnab",
       "posicao_inicio": 9,
       "posicao_fim": 17,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "" 
     },
 
     "05.9": {
@@ -56,7 +58,8 @@
       "nome": "cnab2",
       "posicao_inicio": 36,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "" 
     }
   }
 }
