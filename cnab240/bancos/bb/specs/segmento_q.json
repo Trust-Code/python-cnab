@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "02.3Q": {
@@ -42,7 +43,8 @@
       "nome": "servico_cnab",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.3Q": {
@@ -116,21 +118,21 @@
     },
 
     "17.3Q": {
-      "nome": "sacadoravalista_inscricao_tipo",
+      "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
       "posicao_fim": 154,
       "formato": "num"
     },
 
     "18.3Q": {
-      "nome": "sacadoravalista_inscricao_numero",
+      "nome": "sacador_inscricao_numero",
       "posicao_inicio": 155,
       "posicao_fim": 169,
       "formato": "num"
     },
 
     "19.3Q": {
-      "nome": "sacadoravalista_nome",
+      "nome": "sacador_nome",
       "posicao_inicio": 170,
       "posicao_fim": 209,
       "formato": "alfa"
@@ -154,7 +156,8 @@
       "nome": "cnab",
       "posicao_inicio": 233,
       "posicao_fim": 240,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     }
     
   }
