@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 1
+      "default": 399
     },
 
     "02.9": {
@@ -51,7 +51,8 @@
       "nome": "totais_quantidade_contas_conciliadas",
       "posicao_inicio": 30,
       "posicao_fim": 35,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "08.9": {
@@ -59,7 +60,7 @@
       "posicao_inicio": 36,
       "posicao_fim": 240,
       "formato": "alfa",
-      "default": "" 
+      "default": ""
     }
   }
 }

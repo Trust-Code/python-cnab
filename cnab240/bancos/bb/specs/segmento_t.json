@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "02.3T": {
@@ -42,7 +43,8 @@
       "nome": "servico_cnab",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.3T": {
@@ -53,35 +55,35 @@
     },
 
     "08.3T": {
-      "nome": "conta_agencia_codigo",
+      "nome": "cedente_agencia",
       "posicao_inicio": 18,
       "posicao_fim": 22,
       "formato": "num"
     },
 
     "09.3T": {
-      "nome": "conta_agencia_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "alfa"
     },
 
     "10.3T": {
-      "nome": "conta_numero",
+      "nome": "cedente_conta",
       "posicao_inicio": 24,
       "posicao_fim": 35,
       "formato": "num"
     },
 
     "11.3T": {
-      "nome": "conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
       "posicao_fim": 36,
       "formato": "alfa"
     },
 
     "12.3T": {
-      "nome": "conta_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
       "formato": "alfa"
@@ -95,7 +97,7 @@
     },
 
     "14.3T": {
-      "nome": "carteira",
+      "nome": "cobranca_carteira",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "num"
