@@ -40,7 +40,7 @@
     },
 
     "06.3U": {
-      "nome": "servico_cnab",
+      "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -176,7 +176,7 @@
     },
 
     "24.3U": {
-      "nome": "cnab",
+      "nome": "vazio2",
       "posicao_inicio": 234,
       "posicao_fim": 240,
       "formato": "alfa",

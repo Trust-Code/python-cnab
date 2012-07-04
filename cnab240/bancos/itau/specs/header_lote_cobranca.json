@@ -41,7 +41,7 @@
     },
 
     "06.1": {
-      "nome": "reservado1",
+      "nome": "vazio1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
       "formato": "alfa",
@@ -57,7 +57,7 @@
     },
 
     "08.1": {
-      "nome": "reservado2",
+      "nome": "vazio2",
       "posicao_inicio": 17,
       "posicao_fim": 17,
       "formato": "alfa",
@@ -79,7 +79,7 @@
     },
 
     "11.1": {
-      "nome": "reservado3",
+      "nome": "vazio3",
       "posicao_inicio": 34,
       "posicao_fim": 53,
       "formato": "alfa",
@@ -87,7 +87,7 @@
     },
 
     "12.1": {
-      "nome": "reservado4",
+      "nome": "vazio4",
       "posicao_inicio": 54,
       "posicao_fim": 54,
       "formato": "num",
@@ -102,7 +102,7 @@
     },
 
     "14.1": {
-      "nome": "reservado5",
+      "nome": "vazio5",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "alfa",
@@ -110,7 +110,7 @@
     },
 
     "15.1": {
-      "nome": "reservado6",
+      "nome": "vazio6",
       "posicao_inicio": 60,
       "posicao_fim": 66,
       "formato": "num",
@@ -125,7 +125,7 @@
     },
 
     "17.1": {
-      "nome": "reservado7",
+      "nome": "vazio7",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "alfa",
@@ -147,7 +147,7 @@
     },
 
     "20.1": {
-      "nome": "reservado8",
+      "nome": "vazio8",
       "posicao_inicio": 104,
       "posicao_fim": 183,
       "formato": "alfa",
@@ -176,7 +176,7 @@
     },
 
     "24.1": {
-      "nome": "reservado9",
+      "nome": "vazio9",
       "posicao_inicio": 208,
       "posicao_fim": 240,
       "formato": "alfa",

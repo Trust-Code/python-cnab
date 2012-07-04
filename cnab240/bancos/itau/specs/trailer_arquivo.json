@@ -26,7 +26,7 @@
     },
 
     "04.9": {
-      "nome": "reservado1",
+      "nome": "vazio1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
       "formato": "alfa",
@@ -48,7 +48,7 @@
     },
 
     "07.9": {
-      "nome": "reservado2",
+      "nome": "vazio2",
       "posicao_inicio": 30,
       "posicao_fim": 35,
       "formato": "num",
@@ -56,7 +56,7 @@
     },
 
     "08.9": {
-      "nome": "reservado3",
+      "nome": "vazio3",
       "posicao_inicio": 36,
       "posicao_fim": 240,
       "formato": "alfa",

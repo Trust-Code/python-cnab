@@ -57,7 +57,7 @@
     },
 
     "08.1": {
-      "nome": "cnab",
+      "nome": "vazio1",
       "posicao_inicio": 17,
       "posicao_fim": 17,
       "formato": "alfa"
@@ -170,7 +170,7 @@
     },
 
     "24.1": {
-      "nome": "cnab",
+      "nome": "vazio2",
       "posicao_inicio": 219,
       "posicao_fim": 240,
       "formato": "alfa"

@@ -40,7 +40,7 @@
     },
 
     "06.3P": {
-      "nome": "reservado1",
+      "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -55,7 +55,7 @@
     },
 
     "08.3P": {
-      "nome": "reservado2",
+      "nome": "vazio2",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num",
@@ -70,7 +70,7 @@
     },
 
     "10.3P": {
-      "nome": "reservado3",
+      "nome": "vazio3",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "alfa",
@@ -78,7 +78,7 @@
     },
     
     "11.3P": {
-      "nome": "reservado4",
+      "nome": "vazio4",
       "posicao_inicio": 24,
       "posicao_fim": 30,
       "formato": "num",
@@ -93,7 +93,7 @@
     },
 
     "13.3P": {
-      "nome": "reservado5",
+      "nome": "vazio5",
       "posicao_inicio": 36,
       "posicao_fim": 36,
       "formato": "alfa",
@@ -129,7 +129,7 @@
     },
 
     "18.3P": {
-      "nome": "reservado6",
+      "nome": "vazio6",
       "posicao_inicio": 50,
       "posicao_fim": 57,
       "formato": "alfa",
@@ -137,7 +137,7 @@
     },
 
     "19.3P": {
-      "nome": "reservado7",
+      "nome": "vazio7",
       "posicao_inicio": 58,
       "posicao_fim": 62,
       "formato": "num",
@@ -152,7 +152,7 @@
     },
     
     "21.3P": {
-      "nome": "reservado8",
+      "nome": "vazio8",
       "posicao_inicio": 73,
       "posicao_fim": 77,
       "formato": "alfa",
@@ -212,7 +212,7 @@
     },
 
     "29.3P": {
-      "nome": "reservado9",
+      "nome": "vazio9",
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num",
@@ -237,7 +237,7 @@
     },
 
     "32.3P": {
-      "nome": "reservado10",
+      "nome": "vazio10",
       "posicao_inicio": 142,
       "posicao_fim": 142,
       "formato": "num",
@@ -313,7 +313,7 @@
     },
 
     "42.3P": {
-      "nome": "reservado11",
+      "nome": "vazio11",
       "posicao_inicio": 227,
       "posicao_fim": 239,
       "formato": "num",
@@ -321,7 +321,7 @@
     },
 
     "43.3P": {
-      "nome": "reservado12",
+      "nome": "vazio12",
       "posicao_inicio": 240,
       "posicao_fim": 240,
       "formato": "alfa",

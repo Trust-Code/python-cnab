@@ -40,7 +40,7 @@
     },
 
     "06.3U": {
-      "nome": "reservado1",
+      "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -103,7 +103,7 @@
     },
 
     "14.3U": {
-      "nome": "reservado2",
+      "nome": "vazio2",
       "posicao_inicio": 108,
       "posicao_fim": 137,
       "formato": "num",
@@ -147,7 +147,7 @@
     },
 
     "20.3U": {
-      "nome": "reservado3",
+      "nome": "vazio3",
       "posicao_inicio": 181,
       "posicao_fim": 210,
       "formato": "alfa",
@@ -155,7 +155,7 @@
     },
 
     "21.3U": {
-      "nome": "reservado4",
+      "nome": "vazio4",
       "posicao_inicio": 211,
       "posicao_fim": 233,
       "formato": "num",
@@ -163,7 +163,7 @@
     },
 
     "22.3U": {
-      "nome": "reservado5",
+      "nome": "vazio5",
       "posicao_inicio": 234,
       "posicao_fim": 240,
       "formato": "alfa",

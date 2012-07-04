@@ -26,7 +26,7 @@
     },
 
     "04.0": {
-      "nome": "cnab1",
+      "nome": "vazio1",
       "posicao_inicio": 9,
       "posicao_fim": 17,
       "formato": "alfa",
@@ -105,7 +105,7 @@
     },
 
     "15.0": {
-      "nome": "cnab2",
+      "nome": "vazio2",
       "posicao_inicio": 133,
       "posicao_fim": 142,
       "formato": "alfa",
@@ -164,7 +164,7 @@
     },
 
     "23.0": {
-      "nome": "nao_utilizado",
+      "nome": "vazio3",
       "posicao_inicio": 173,
       "posicao_fim": 191,
       "formato": "alfa",
@@ -180,7 +180,7 @@
     },
 
     "25.0": {
-      "nome": "cnab3",
+      "nome": "vazio4",
       "posicao_inicio": 212,
       "posicao_fim": 240,
       "formato": "alfa",

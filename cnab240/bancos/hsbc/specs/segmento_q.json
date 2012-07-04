@@ -40,7 +40,7 @@
     },
 
     "06.3Q": {
-      "nome": "servico_cnab",
+      "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -166,7 +166,7 @@
     },
 
     "23.3Q": {
-      "nome": "cnab",
+      "nome": "vazio2",
       "posicao_inicio": 233,
       "posicao_fim": 240,
       "formato": "alfa",
