@@ -71,8 +71,6 @@ HEADER_ARQUIVO_STR = u'00100020         212345678901234abcdefghijklmnopqrst02891
 REGISTRO_T_STR = u'0336774300001T 1702260800001300040110000000000000000000601               04082011000000000004350001000308                         002000000000000000                                        01300040110000000000002640400000000                 '
 
 # Dados Itau
-COBRANCA_ITAU_REM_FILE = codecs.open(
-            os.path.join(ARQS_DIRPATH, 'cobranca.itau.rem'), "r", "utf-8")
 
 SEG_P_ITAU_DICT = {
     u'aceite_titulo': u'A',
@@ -130,34 +128,37 @@ SEG_Q_ITAU_DICT = {
     u'servico_segmento': u'Q'
 }
 
+HEADER_COB_ITAU_DICT = {
+    u'controle_banco': 341,
+    u'controle_lote': 1,
+    u'controle_registro': 1,
+    u'controlecob_data_gravacao': 27062012,
+    u'controlecob_numero': 90000001,
+    u'data_credito': 0,
+    u'cedente_agencia_conta_dv': u'6',
+    u'cedente_agencia': 4459,
+    u'cedente_agencia_dv': u'',
+    u'cedente_conta': 17600,
+    u'cedente_inscricao_numero': 15594050000111L,
+    u'cedente_inscricao_tipo': 2,
+    u'cedente_nome': u'TRACY TECNOLOGIA LTDA ME',
+    u'servico_layout': 30,
+    u'servico_operacao': u'R',
+    u'servico_servico': 1
+}
+
+TRAILER_COB_ITAU_DICT = {
+    u'cobrancasimples_quantidade_titulos': 2,
+    u'cobrancasimples_valor_titulos': Decimal('300.00'),
+    u'cobrancavinculada_quantidade_titulos': 0,
+    u'cobrancavinculada_valor_titulos': Decimal('0.00'),
+    u'controle_banco': 341,
+    u'controle_lote': 1,
+    u'controle_registro': 5,
+    u'numero_aviso': u'',
+}
+
 SEG_P_ITAU_STR = u'3410001300001P 0104459 000000017600 6109900000002        000009999999998     3006201200000000001000000000008A27062012000000000000000000000200000000000000000000000000000000000000000000000000000000                         3000000000000000000 '
 
 SEG_Q_ITAU_STR = u'3410001300002Q 011000036644661874DAVI OLIVEIRA CAMPOS                    RUA ARLINDO CATELLI 735 AP 12           JD PALMARES    14092530RIBEIRAO PRETO SP2015594050000111TRACY TECNOLOGIA LTDA ME                000                            '
-
-HEADER_COB_ITAU_DICT = {
-u'cnab': u'',
- u'controle_banco': 341,
- u'controle_lote': 1,
- u'controle_registro': 1,
- u'controlecob_data_gravacao': 27062012,
- u'controlecob_numero': 90000001,
- u'data_credito': 0,
- u'cedente_agencia_conta_dv': u'6',
- u'cedente_agencia': 4459,
- u'cedente_agencia_dv': u'',
- u'cedente_conta': 17600,
- u'cedente_conta_dv': u'',
- u'cedente_convenio': u'',
- u'cedente_inscricao_numero': 15594050000111L,
- u'cedente_inscricao_tipo': 2,
- u'cedente_nome': u'TRACY TECNOLOGIA LTDA ME',
- u'informacao1': u'',
- u'informacao2': u'',
- u'servico_cnab': u'',
- u'servico_layout': 30,
- u'servico_operacao': u'R',
- u'servico_servico': 1
-}
-
-COBRANCA_ITAU_RET_FILE = open(os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret'))
 

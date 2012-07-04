@@ -45,24 +45,22 @@ class CampoBase(object):
     
 
     def __unicode__(self):
-        if self._valor is None:
+        if self.valor is None:
             if self.default is not None:
-                valor = self.default
+                self.valor = self.default
             else:
                 raise errors.CampoObrigatorioError(self.nome)
-        else:
-            valor = self._valor
-
+        
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
-                valor = unicode(valor).replace('.', '')
+                valor = unicode(self.valor).replace('.', '')
                 chars_faltantes = self.digitos - len(valor)
                 return (u'0' * chars_faltantes) + valor
             else:
-                chars_faltantes = self.digitos - len(valor)
-                return valor + (u' ' * chars_faltantes)
+                chars_faltantes = self.digitos - len(self.valor)
+                return self.valor + (u' ' * chars_faltantes)
 
-        return u'{0:0{1}d}'.format(valor, self.digitos)
+        return u'{0:0{1}d}'.format(self.valor, self.digitos)
 
     def __repr__(self):
         return unicode(self)
