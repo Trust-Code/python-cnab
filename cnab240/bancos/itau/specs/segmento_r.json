@@ -40,7 +40,7 @@
     },
 
     "06.3R": {
-      "nome": "servico_cnab",
+      "nome": "reservado1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -55,7 +55,7 @@
     },
 
     "08.3R": {
-      "nome": "reservado1",
+      "nome": "reservado2",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num",
@@ -66,7 +66,8 @@
       "nome": "desc2_data",
       "posicao_inicio": 19,
       "posicao_fim": 26,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "10.3R": {
@@ -74,11 +75,12 @@
       "posicao_inicio": 27,
       "posicao_fim": 41,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "11.3R": {
-      "nome": "reservado2",
+      "nome": "reservado3",
       "posicao_inicio": 42,
       "posicao_fim": 42,
       "formato": "num",
@@ -89,7 +91,8 @@
       "nome": "desc3_data",
       "posicao_inicio": 43,
       "posicao_fim": 50,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "13.3R": {
@@ -97,11 +100,12 @@
       "posicao_inicio": 51,
       "posicao_fim": 65,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "14.3R": {
-      "nome": "reservado3",
+      "nome": "reservado4",
       "posicao_inicio": 66,
       "posicao_fim": 89,
       "formato": "num",
@@ -109,7 +113,7 @@
     },
 
     "15.3R": {
-      "nome": "reservado4",
+      "nome": "reservado5",
       "posicao_inicio": 90,
       "posicao_fim": 99,
       "formato": "alfa",
@@ -117,14 +121,15 @@
     },
     
     "16.3R": {
-      "nome": "informacao3",
+      "nome": "informacao6",
       "posicao_inicio": 100,
       "posicao_fim": 139,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "17.3R": {
-      "nome": "reservado5",
+      "nome": "reservado7",
       "posicao_inicio": 140,
       "posicao_fim": 199,
       "formato": "alfa",
@@ -139,7 +144,7 @@
     },
 
     "19.3R": {
-      "nome": "reservado6",
+      "nome": "reservado8",
       "posicao_inicio": 208,
       "posicao_fim": 215,
       "formato": "num",
@@ -147,7 +152,7 @@
     },
 
     "20.3R": {
-      "nome": "reservado7",
+      "nome": "reservado9",
       "posicao_inicio": 216,
       "posicao_fim": 216,
       "formato": "alfa",
@@ -155,7 +160,7 @@
     },
 
     "21.3R": {
-      "nome": "reservado8",
+      "nome": "reservado10",
       "posicao_inicio": 217,
       "posicao_fim": 228,
       "formato": "num",
@@ -163,7 +168,7 @@
     },
 
     "22.3R": {
-      "nome": "reservado9",
+      "nome": "reservado11",
       "posicao_inicio": 229,
       "posicao_fim": 230,
       "formato": "alfa",
@@ -171,7 +176,7 @@
     },
 
     "23.3R": {
-      "nome": "reservado10",
+      "nome": "reservado12",
       "posicao_inicio": 231,
       "posicao_fim": 231,
       "formato": "num",
@@ -179,7 +184,7 @@
     },
 
     "24.3R": {
-      "nome": "reservado11",
+      "nome": "reservado13",
       "posicao_inicio": 232,
       "posicao_fim": 240,
       "formato": "alfa",
