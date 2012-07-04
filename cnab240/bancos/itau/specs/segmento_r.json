@@ -140,7 +140,8 @@
       "nome": "codigo_ocorrencia_sacado",
       "posicao_inicio": 200,
       "posicao_fim": 207,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "19.3R": {
