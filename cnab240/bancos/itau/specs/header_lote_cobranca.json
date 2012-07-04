@@ -121,7 +121,7 @@
       "nome": "cedente_conta",
       "posicao_inicio": 67,
       "posicao_fim": 71,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "17.1": {
