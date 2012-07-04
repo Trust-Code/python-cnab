@@ -43,7 +43,8 @@
       "nome": "servico_cnab",
       "posicao_inicio": 15,
       "posicao_fim": 15,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": 0
     },
 
     "07.3P": {
@@ -54,35 +55,35 @@
     },
 
     "08.3P": {
-      "nome": "conta_agencia_codigo",
+      "nome": "cedente_agencia",
       "posicao_inicio": 18,
       "posicao_fim": 22,
       "formato": "num"
     },
 
     "09.3P": {
-      "nome": "conta_agencia_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "alfa"
     },
 
     "10.3P": {
-      "nome": "conta_numero",
+      "nome": "cedente_conta",
       "posicao_inicio": 24,
       "posicao_fim": 35,
       "formato": "num"
     },
 
     "11.3P": {
-      "nome": "conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
       "posicao_fim": 36,
       "formato": "alfa"
     },
 
     "12.3P": {
-      "nome": "conta_agencia_conta_dv",
+      "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
       "formato": "alfa"
@@ -92,7 +93,7 @@
       "nome": "nosso_numero",
       "posicao_inicio": 38,
       "posicao_fim": 57,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "14.3P": {
@@ -193,14 +194,16 @@
       "nome": "juros_mora_codigo",
       "posicao_inicio": 118,
       "posicao_fim": 118,
-      "formato": "num"
+      "formato": "num",
+      "default": 3
     },
 
     "28.3P": {
       "nome": "juros_mora_data",
       "posicao_inicio": 119,
       "posicao_fim": 126,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "29.3P": {
@@ -208,21 +211,24 @@
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "30.3P": {
       "nome": "desconto1_codigo",
       "posicao_inicio": 142,
       "posicao_fim": 142,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "31.3P": {
       "nome": "desconto1_data",
       "posicao_inicio": 143,
       "posicao_fim": 150,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "32.3P": {
@@ -230,7 +236,8 @@
       "posicao_inicio": 151,
       "posicao_fim": 165,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "33.3P": {
