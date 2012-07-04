@@ -7,8 +7,8 @@ from cnab240 import errors
 from cnab240.bancos import itau
 from cnab240.tipos import Lote 
 from cnab240.eventos.cobranca import EventoInclusao
-from tests.data import HEADER_COB_ITAU_DICT, TRAILER_COB_ITAU_DICT, \
-                                ARQS_DIRPATH, SEG_P_ITAU_DICT, SEG_Q_ITAU_DICT
+from tests.data import get_itau_data 
+
 
 class TestLote(unittest.TestCase):
 
@@ -17,84 +17,43 @@ class TestLote(unittest.TestCase):
         self.maxDiff = None        
 
     def setUp(self):
-        rem_itau_path = os.path.join(ARQS_DIRPATH, 'cobranca.itau.rem')
-        self.arquivo_itau = codecs.open(rem_itau_path, encoding='ascii') 
-        
-        self.arquivo_itau.readline() # Ignorando o header do arquivo
-        self.header_cob_itau_str = self.arquivo_itau.readline().strip()
-        self.seg_p_1_str = self.arquivo_itau.readline().strip()
-        self.seg_q_1_str = self.arquivo_itau.readline().strip()
-        self.seg_p_2_str = self.arquivo_itau.readline().strip()
-        self.seg_q_2_str = self.arquivo_itau.readline().strip()
-        self.trailer_cob_itau_str = self.arquivo_itau.readline().strip() 
-        
-        header_lote = itau.registros.HeaderLoteCobranca()
-        header_lote.carregar(self.header_cob_itau_str)
-
-        trailer_lote = itau.registros.TrailerLoteCobranca()
-        trailer_lote.carregar(self.trailer_cob_itau_str)
-
-        seg_p_1 = itau.registros.SegmentoP()
-        seg_p_1.carregar(self.seg_p_1_str)
-        seg_p_1_dict = seg_p_1.todict()
-
-        seg_q_1 = itau.registros.SegmentoQ()
-        seg_q_1.carregar(self.seg_q_1_str)
-        seg_q_1_dict = seg_q_1.todict()
-
-        seg_p_2 = itau.registros.SegmentoP()
-        seg_p_2.carregar(self.seg_p_2_str)
-        seg_p_2_dict = seg_p_2.todict()
-
-        seg_q_2 = itau.registros.SegmentoQ()
-        seg_q_2.carregar(self.seg_q_2_str)
-        seg_q_2_dict = seg_q_2.todict()
-
-        self.lote_itau = Lote(itau, header_lote, trailer_lote)
-         
-        args_evento_1 = dict(seg_p_1_dict.items() + seg_q_1_dict.items())
-        args_evento_2 = dict(seg_p_2_dict.items() + seg_q_2_dict.items())
-
-        self.evento_1 = EventoInclusao(itau, **args_evento_1) 
-        self.evento_2 = EventoInclusao(itau, **args_evento_2) 
-        
-        self.arquivo_itau.seek(0)
+        itau_data = get_itau_data()
+        self.lote = itau_data['lote_cob'] 
+        self.evento_1 = itau_data['evento_cob1']
+        self.evento_2 = itau_data['evento_cob2']
+        self.remessa = itau_data['remessa']
     
     def test_init(self):
-        self.assertEqual(self.lote_itau.eventos, []) 
-        self.assertEqual(self.lote_itau.trailer.quantidade_registros, 2) 
+        self.assertEqual(self.lote.eventos, []) 
+        self.assertEqual(self.lote.trailer.quantidade_registros, 2) 
    
     def test_adicionar_evento(self):
         with self.assertRaises(TypeError):
-            self.lote_itau.adicionar_evento(None)
+            self.lote.adicionar_evento(None)
 
-        self.lote_itau.adicionar_evento(self.evento_1)
-        self.assertEqual(self.lote_itau.trailer.quantidade_registros, 4)
+        self.lote.adicionar_evento(self.evento_1)
+        self.assertEqual(self.lote.trailer.quantidade_registros, 4)
         
-        self.lote_itau.adicionar_evento(self.evento_2)
-        self.assertEqual(self.lote_itau.trailer.quantidade_registros, 6)
+        self.lote.adicionar_evento(self.evento_2)
+        self.assertEqual(self.lote.trailer.quantidade_registros, 6)
     
     def test_unicode(self):
         with self.assertRaises(errors.NenhumEventoError):
-            unicode(self.lote_itau)
+            unicode(self.lote)
     
-        self.lote_itau.adicionar_evento(self.evento_1)
-        self.lote_itau.adicionar_evento(self.evento_2)
-        self.lote_itau.codigo = 1
+        self.lote.adicionar_evento(self.evento_1)
+        self.lote.adicionar_evento(self.evento_2)
+        self.lote.codigo = 1
    
-        arquivo_itau_lines = self.arquivo_itau.readlines() 
-        lote_lines = arquivo_itau_lines[1:-1] 
-        lote_str = u''.join(lote_lines).strip('\r\n')
-
-        self.assertEqual(unicode(self.lote_itau), lote_str)
+        self.assertIn(unicode(self.lote), self.remessa)
         
     def test_definir_codigo(self):
-        self.lote_itau.adicionar_evento(self.evento_1)
-        self.lote_itau.codigo = 129
+        self.lote.adicionar_evento(self.evento_1)
+        self.lote.codigo = 129
 
-        self.assertEqual(self.lote_itau.header.controle_lote, 129)
-        self.assertEqual(self.lote_itau.trailer.controle_lote, 129)
-        for evento in self.lote_itau.eventos:
+        self.assertEqual(self.lote.header.controle_lote, 129)
+        self.assertEqual(self.lote.trailer.controle_lote, 129)
+        for evento in self.lote.eventos:
             for seg in evento.segmentos:
                 self.assertEqual(seg.controle_lote, 129)
  

@@ -112,7 +112,7 @@ class RegistroBase(object):
         for campo in self._campos.values():
             eh_controle = campo.nome.startswith('controle_') or \
                                             campo.nome.startswith('servico_')
-            if not eh_controle and campo.valor:
+            if not eh_controle and campo.valor != None:
                 return True
 
         return False
