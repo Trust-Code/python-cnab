@@ -43,7 +43,8 @@
       "nome": "cobrancasimples_quantidade_titulos",
       "posicao_inicio": 24,
       "posicao_fim": 29,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "07.5": {
@@ -51,14 +52,16 @@
       "posicao_inicio": 30,
       "posicao_fim": 46,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "08.5": {
       "nome": "cobrancavinculada_quantidade_titulos",
       "posicao_inicio": 47,
       "posicao_fim": 52,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "09.5": {
@@ -66,7 +69,8 @@
       "posicao_inicio": 53,
       "posicao_fim": 69,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "10.5": {
@@ -74,6 +78,7 @@
       "posicao_inicio": 70,
       "posicao_fim": 115,
       "formato": "num",
+      "default": 0,
       "default": 0
     },
 
@@ -81,7 +86,8 @@
       "nome": "numero_aviso",
       "posicao_inicio": 116,
       "posicao_fim": 123,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "12.5": {

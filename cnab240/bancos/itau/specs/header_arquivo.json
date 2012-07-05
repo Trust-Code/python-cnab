@@ -135,7 +135,8 @@
       "nome": "arquivo_codigo",
       "posicao_inicio": 143,
       "posicao_fim": 143,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "19.0": {
