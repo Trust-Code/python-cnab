@@ -117,11 +117,20 @@ class Arquivo(object):
 
         self._lotes = []
         self.banco = banco
-        
+      
         self.header = self.banco.registros.HeaderArquivo(**kwargs) 
         self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
         self.trailer.totais_quantidade_lotes = 0        
         self.trailer.totais_quantidade_registros = 2
+
+        if self.header.arquivo_data_de_geracao is None:
+            now = datetime.now()
+            self.header.arquivo_data_de_geracao = int(now.strftime("%d%m%Y"))
+
+        if self.header.arquivo_hora_de_geracao is None:
+            if now is None:
+                now = datetime.now()
+            self.header.arquivo_hora_de_geracao = int(now.strftime("%H%M%S"))
         
     @property
     def lotes(self):
@@ -129,7 +138,7 @@ class Arquivo(object):
 
     def incluir_cobranca(self, **kwargs):
         codigo_evento = 1
-        evento = Evento(self.banco, 1) 
+        evento = Evento(self.banco, codigo_evento) 
             
         seg_p = self.banco.registros.SegmentoP(**kwargs)
         evento.adicionar_segmento(seg_p)
@@ -142,15 +151,23 @@ class Arquivo(object):
             evento.adicionar_segmento(seg_r)
 
         # 1 eh o codigo de cobranca
-        lote_cobranca = self.encontrar_lote(1)
+        lote_cobranca = self.encontrar_lote(codigo_evento)
         
         if lote_cobranca is None:
             header = self.banco.registros.HeaderLoteCobranca(**self.header.todict())
             trailer = self.banco.registros.TrailerLoteCobranca()
             lote_cobranca = Lote(self.banco, header, trailer) 
+            self.adicionar_lote(lote_cobranca)
+
+            if header.controlecob_numero is None:
+                controlecob_numero = str(self.header.arquivo_sequencia).lstrip('0')
+                controlecob_numero += str(lote_cobranca.codigo).lstrip('0')
+                header.controlecob_numero = int(controlecob_numero)
+
+            if header.controlecob_data_gravacao is None:
+                header.controlecob_data_gravacao = self.header.arquivo_data_de_geracao
    
         lote_cobranca.adicionar_evento(evento)
-        self.adicionar_lote(lote_cobranca)
  
     def encontrar_lote(self, codigo_servico):
         for lote in self.lotes:
