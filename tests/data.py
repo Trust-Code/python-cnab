@@ -1,9 +1,8 @@
 
 import os
 import codecs
-from cnab240.tipos import Lote
 from cnab240.bancos import itau
-from cnab240.eventos.cobranca import EventoInclusao 
+from cnab240.tipos import Lote, Evento
 
 TESTS_DIRPATH = os.path.abspath(os.path.dirname(__file__))
 ARQS_DIRPATH = os.path.join(TESTS_DIRPATH, 'arquivos')
@@ -50,12 +49,13 @@ def get_itau_data():
 
     itau_data['lote_cob'] = Lote(itau, itau_data['header_lote'],
                                                     itau_data['trailer_lote'])
-    itau_data['evento_cob1'] = EventoInclusao(itau, **dict(
-                                        itau_data['seg_p1'].todict().items() + 
-                                        itau_data['seg_q1'].todict().items()))
-    itau_data['evento_cob2'] = EventoInclusao(itau, **dict(
-                                        itau_data['seg_p2'].todict().items() + 
-                                        itau_data['seg_q2'].todict().items()))
+    itau_data['evento_cob1'] = Evento(itau, 1)
+    itau_data['evento_cob1'].adicionar_segmento(itau_data['seg_p1'])
+    itau_data['evento_cob1'].adicionar_segmento(itau_data['seg_q1'])
+
+    itau_data['evento_cob2'] = Evento(itau, 1)
+    itau_data['evento_cob2'].adicionar_segmento(itau_data['seg_p2'])
+    itau_data['evento_cob2'].adicionar_segmento(itau_data['seg_q2'])
    
     arquivo_remessa.close() 
     return itau_data

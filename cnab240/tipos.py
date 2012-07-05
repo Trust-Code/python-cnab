@@ -5,7 +5,7 @@ from datetime import datetime
 from cnab240 import errors
 
 
-class EventoBase(object):
+class Evento(object):
 
     def __init__(self, banco, codigo_evento):
         self._segmentos = []
@@ -21,15 +21,6 @@ class EventoBase(object):
     @property
     def segmentos(self):    
         return self._segmentos
-
-    def clean_kwargs(self, data_dict):
-        ignore_fields = lambda key: any((
-            key.startswith('vazio'), 
-            key.startswith('servico_'),
-            key.startswith('controle_'),
-        ))
-        return dict((key, value) for key, value in data_dict.items()
-                         if not ignore_fields(key))
     
     def __getattribute__(self, name):
         for segmento in object.__getattribute__(self, '_segmentos'):
@@ -95,9 +86,9 @@ class Lote(object):
         return self._eventos   
  
     def adicionar_evento(self, evento):
-        if not isinstance(evento, EventoBase):
+        if not isinstance(evento, Evento):
             raise TypeError
-        
+
         self._eventos.append(evento)
         self.trailer.quantidade_registros += len(evento)
         self.atualizar_codigo_registros()        
@@ -127,18 +118,45 @@ class Arquivo(object):
         self._lotes = []
         self.banco = banco
         
-        arg_dict = dict((key, value) for key, value in kwargs.items()
-                         if not key.startswith('vazio'))
-         
-        self.header = self.banco.registros.HeaderArquivo(**args_dict) 
-        self.trailer = self.banco.registros.TrailerArquivo(**args_dict)
+        self.header = self.banco.registros.HeaderArquivo(**kwargs) 
+        self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
         self.trailer.totais_quantidade_lotes = 0        
         self.trailer.totais_quantidade_registros = 2
         
     @property
     def lotes(self):
-        return lotes
+        return self._lotes
+
+    def incluir_cobranca(self, **kwargs):
+        codigo_evento = 1
+        evento = Evento(self.banco, 1) 
+            
+        seg_p = self.banco.registros.SegmentoP(**kwargs)
+        evento.adicionar_segmento(seg_p)
+            
+        seg_q = self.banco.registros.SegmentoQ(**kwargs)
+        evento.adicionar_segmento(seg_q)
         
+        seg_r = self.banco.registros.SegmentoR(**kwargs)
+        if seg_r.necessario():
+            evento.adicionar_segmento(seg_r)
+
+        # 1 eh o codigo de cobranca
+        lote_cobranca = self.encontrar_lote(1)
+        
+        if lote_cobranca is None:
+            header = self.banco.registros.HeaderLoteCobranca(**self.header.todict())
+            trailer = self.banco.registros.TrailerLoteCobranca()
+            lote_cobranca = Lote(self.banco, header, trailer) 
+   
+        lote_cobranca.adicionar_evento(evento)
+        self.adicionar_lote(lote_cobranca)
+ 
+    def encontrar_lote(self, codigo_servico):
+        for lote in self.lotes:
+            if lote.header.servico_servico == codigo_servico:
+                return lote
+ 
     def adicionar_lote(self, lote):
         if not isinstance(lote, Lote):
             raise TypeError('Objeto deve ser instancia de "Lote"')

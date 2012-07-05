@@ -1,12 +1,12 @@
 
 import unittest
 from cnab240.bancos import itau
-from cnab240.tipos import EventoBase
+from cnab240.tipos import Evento
 from tests.data import get_itau_data
 
 class TestEvento(unittest.TestCase):
     def setUp(self):
-        self.evento = EventoBase(itau, 1)
+        self.evento = Evento(itau, 1)
    
     def test_getattributes(self):
         self.assertEquals(self.evento._segmentos, [])

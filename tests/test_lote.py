@@ -5,8 +5,7 @@ import unittest
 
 from cnab240 import errors
 from cnab240.bancos import itau
-from cnab240.tipos import Lote 
-from cnab240.eventos.cobranca import EventoInclusao
+from cnab240.tipos import Lote
 from tests.data import get_itau_data 
 
 

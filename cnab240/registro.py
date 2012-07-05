@@ -125,8 +125,14 @@ class RegistroBase(object):
         return data_dict
     
     def fromdict(self, data_dict):
+        ignore_fields = lambda key: any((                                        
+            key.startswith('vazio'),                                             
+            key.startswith('servico_'),                                          
+            key.startswith('controle_'),                                         
+        ))
+
         for key, value in data_dict.items():
-            if hasattr(self, key):
+            if hasattr(self, key) and not ignore_fields(key):
                 setattr(self, key, value) 
 
     def carregar(self, registro_str):
