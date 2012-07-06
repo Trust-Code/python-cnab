@@ -129,21 +129,24 @@
       "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
       "posicao_fim": 154,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "19.3Q": {
       "nome": "sacador_inscricao_numero",
       "posicao_inicio": 155,
       "posicao_fim": 169,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "20.3Q": {
       "nome": "sacador_nome",
       "posicao_inicio": 170,
       "posicao_fim": 199,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "21.3Q": {
