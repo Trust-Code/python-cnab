@@ -2,7 +2,7 @@
 import unittest
 from cnab240.bancos import itau
 from cnab240.tipos import Evento
-from tests.data import get_itau_data
+from tests.data import get_itau_data_from_file
 
 class TestEvento(unittest.TestCase):
     def setUp(self):

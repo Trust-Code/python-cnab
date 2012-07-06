@@ -6,7 +6,7 @@ import unittest
 from cnab240 import errors
 from cnab240.bancos import itau
 from cnab240.tipos import Lote
-from tests.data import get_itau_data 
+from tests.data import get_itau_data_from_file 
 
 
 class TestLote(unittest.TestCase):
@@ -16,7 +16,7 @@ class TestLote(unittest.TestCase):
         self.maxDiff = None        
 
     def setUp(self):
-        itau_data = get_itau_data()
+        itau_data = get_itau_data_from_file()
         self.lote = itau_data['lote_cob'] 
         self.evento_1 = itau_data['evento_cob1']
         self.evento_2 = itau_data['evento_cob2']

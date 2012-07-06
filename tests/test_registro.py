@@ -4,13 +4,13 @@ import unittest
 from decimal import Decimal
 from cnab240 import errors
 from cnab240.bancos import itau
-from tests.data import get_itau_data
+from tests.data import get_itau_data_from_file
 
 
 class TestRegistro(unittest.TestCase):
     
     def setUp(self):
-        itau_data = get_itau_data()
+        itau_data = get_itau_data_from_file()
         self.header_arquivo = itau_data['header_arquivo']
         self.seg_p = itau_data['seg_p1']
         self.seg_p_str = itau_data['seg_p1_str']
