@@ -47,7 +47,11 @@ class CampoBase(object):
     def __unicode__(self):
         if self.valor is None:
             if self.default is not None:
-                self.valor = self.default
+                if self.decimais:
+                    self.valor = Decimal('{0:0.{1}f}'.format(self.default, 
+                                                                self.decimais))
+                else:
+                    self.valor = self.default
             else:
                 raise errors.CampoObrigatorioError(self.nome)
         
