@@ -1,6 +1,8 @@
 # -*- encoding: utf8 -*-
 
+import codecs
 import importlib
+
 from datetime import datetime
 from cnab240 import errors
 
@@ -117,7 +119,10 @@ class Arquivo(object):
 
         self._lotes = []
         self.banco = banco
-      
+        arquivo = kwargs.get('arquivo')
+        if isinstance(arquivo, (file, codecs.StreamReaderWriter)):
+            return self.carregar_retorno(arquivo)
+                  
         self.header = self.banco.registros.HeaderArquivo(**kwargs) 
         self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
         self.trailer.totais_quantidade_lotes = 0        
@@ -131,7 +136,57 @@ class Arquivo(object):
             if now is None:
                 now = datetime.now()
             self.header.arquivo_hora_de_geracao = int(now.strftime("%H%M%S"))
+
+    def carregar_retorno(self, arquivo):
         
+        lote_aberto = None 
+        evento_aberto = None
+
+        for linha in arquivo:
+            tipo_registro = linha[7]
+
+            if tipo_registro == '0':
+                self.header = self.banco.registros.HeaderArquivo()
+                self.header.carregar(linha)
+
+            elif tipo_registro == '1':
+                codigo_servico = linha[9:11]
+
+                if codigo_servico == '01':
+                    header_lote = self.banco.registros.HeaderLoteCobranca()
+                    header_lote.carregar(linha)
+                    trailer_lote = self.banco.registros.TrailerLoteCobranca()
+                    lote_aberto = Lote(self.banco, header_lote, trailer_lote)
+                    self._lotes.append(lote_aberto)
+    
+            elif tipo_registro == '3':
+                tipo_segmento = linha[13]
+                codigo_evento = linha[15:17]
+ 
+                if tipo_segmento == 'T':                    
+                    seg_t = self.banco.registros.SegmentoT()
+                    seg_t.carregar(linha)
+
+                    evento_aberto = Evento(self.banco, int(codigo_evento))
+                    lote_aberto._eventos.append(evento_aberto)
+                    evento_aberto._segmentos.append(seg_t)
+
+                elif tipo_segmento == 'U':
+                    seg_u = self.banco.registros.SegmentoU()
+                    seg_u.carregar(linha)
+                    evento_aberto._segmentos.append(seg_u)
+                    evento_aberto = None
+
+            elif tipo_registro == '5':
+                if trailer_lote is not None:
+                    lote_aberto.trailer.carregar(linha)
+                else:
+                    raise Exception 
+
+            elif tipo_registro == '9':            
+                self.trailer = self.banco.registros.TrailerArquivo()
+                self.trailer.carregar(linha)
+
     @property
     def lotes(self):
         return self._lotes

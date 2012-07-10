@@ -1,10 +1,13 @@
 
+import os
+import codecs
 import unittest
 
 from cnab240 import errors
 from cnab240.bancos import itau
 from cnab240.tipos import Arquivo
-from tests.data import get_itau_data_from_dict, get_itau_file_remessa
+from tests.data import get_itau_data_from_dict, get_itau_file_remessa, \
+                                                                ARQS_DIRPATH
 
 
 class TestCnab240(unittest.TestCase):
@@ -24,6 +27,13 @@ class TestCnab240(unittest.TestCase):
     def test_empty_data(self):
         arquivo = Arquivo(itau)
         self.assertRaises(errors.ArquivoVazioError, unicode, arquivo)
+
+    def test_leitura(self):
+        return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret')
+        ret_file = codecs.open(return_file_path, encoding='ascii')
+        arquivo = Arquivo(itau, arquivo=ret_file)
+        ret_file.seek(0)
+        self.assertEqual(ret_file.read(), unicode(arquivo))
 
 if __name__ == '__main__':
     unittest.main()
