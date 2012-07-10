@@ -137,6 +137,7 @@ class Arquivo(object):
         return self._lotes
 
     def incluir_cobranca(self, **kwargs):
+        # 1 eh o codigo de cobranca
         codigo_evento = 1
         evento = Evento(self.banco, codigo_evento) 
             
@@ -150,7 +151,6 @@ class Arquivo(object):
         if seg_r.necessario():
             evento.adicionar_segmento(seg_r)
 
-        # 1 eh o codigo de cobranca
         lote_cobranca = self.encontrar_lote(codigo_evento)
         
         if lote_cobranca is None:
@@ -160,14 +160,16 @@ class Arquivo(object):
             self.adicionar_lote(lote_cobranca)
 
             if header.controlecob_numero is None:
-                controlecob_numero = str(self.header.arquivo_sequencia).lstrip('0')
-                controlecob_numero += str(lote_cobranca.codigo).lstrip('0')
-                header.controlecob_numero = int(controlecob_numero)
+                header.controlecob_numero = int('{0}{1:02}'.format(
+                    self.header.arquivo_sequencia,
+                    lote_cobranca.codigo))
 
             if header.controlecob_data_gravacao is None:
                 header.controlecob_data_gravacao = self.header.arquivo_data_de_geracao
    
         lote_cobranca.adicionar_evento(evento)
+        # Incrementar numero de registros no trailer do arquivo
+        self.trailer.totais_quantidade_registros += len(evento)
  
     def encontrar_lote(self, codigo_servico):
         for lote in self.lotes:
@@ -198,5 +200,7 @@ class Arquivo(object):
         result.append(unicode(self.header))
         result.extend(unicode(lote) for lote in self._lotes)
         result.append(unicode(self.trailer))
-        return u'\n'.join(result)
+        # Adicionar elemento vazio para arquivo terminar com \r\n
+        result.append(u'')
+        return u'\r\n'.join(result)
 
