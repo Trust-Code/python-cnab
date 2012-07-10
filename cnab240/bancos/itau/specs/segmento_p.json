@@ -104,7 +104,7 @@
       "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 37,
       "posicao_fim": 37,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "15.3P": {

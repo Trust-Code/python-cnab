@@ -136,7 +136,7 @@
       "nome": "cedente_agencia_conta_dv",
       "posicao_inicio": 73,
       "posicao_fim": 73,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "19.1": {
