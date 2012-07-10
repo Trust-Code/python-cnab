@@ -266,7 +266,8 @@
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "36.3P": {
