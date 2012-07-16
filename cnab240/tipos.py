@@ -245,7 +245,7 @@ class Arquivo(object):
         self.trailer.totais_quantidade_registros += len(lote)
 
     def escrever(self, file_):
-        file_.write(unicode(self.encode('ascii')))
+        file_.write(unicode(self).encode('ascii'))
 
     def __unicode__(self):
         if not self._lotes:
