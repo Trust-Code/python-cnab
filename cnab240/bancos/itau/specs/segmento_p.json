@@ -275,7 +275,8 @@
       "posicao_inicio": 181,
       "posicao_fim": 195,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
     
     "37.3P": {
@@ -289,28 +290,32 @@
       "nome": "codigo_protesto",
       "posicao_inicio": 221,
       "posicao_fim": 221,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "39.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
       "posicao_fim": 223,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "40.3P": {
       "nome": "codigo_baixa",
       "posicao_inicio": 224,
       "posicao_fim": 224,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "41.3P": {
       "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 226,
-      "formato": "num"
+      "formato": "num",
+      "default": 0
     },
 
     "42.3P": {
