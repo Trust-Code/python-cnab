@@ -5,3 +5,6 @@ python:
   - "3.2"
 # command to run tests
 script: ./run_tests.sh
+notifications:
+  irc:
+    - "irc.freenode.org#tracy-web-tech"
