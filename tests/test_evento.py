@@ -1,5 +1,9 @@
 
-import unittest
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
+
 from cnab240.bancos import itau
 from cnab240.tipos import Evento
 from tests.data import get_itau_data_from_file
