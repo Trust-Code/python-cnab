@@ -5,6 +5,7 @@ python:
 #  - "3.2": Not supported yet
 install: 
   - "pip install unittest2 --use-mirrors" 
+  - "pip install importlib --use-mirrors" 
 script: ./run_tests.sh
 notifications:
   irc:
