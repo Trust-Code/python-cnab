@@ -3,7 +3,8 @@ python:
   - "2.6"
   - "2.7"
   - "3.2"
-# command to run tests
+install: 
+  - "pip install unittest2 --use-mirrors" 
 script: ./run_tests.sh
 notifications:
   irc:
