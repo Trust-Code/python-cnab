@@ -1,7 +1,11 @@
 
+try:                                                                             
+    import unittest2 as unittest
+except ImportError:                                                              
+    import unittest
+
 import os
 import codecs
-import unittest
 
 from cnab240 import errors
 from cnab240.bancos import itau

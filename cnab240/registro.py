@@ -4,7 +4,12 @@ import json
 
 from glob import iglob
 from decimal import Decimal, InvalidOperation
-from collections import OrderedDict
+try:
+    from collections import OrderedDict
+except ImportError:
+    # Fallback for python 2.6
+    from ordereddict import OrderedDict
+
 from cnab240 import errors
 
 
