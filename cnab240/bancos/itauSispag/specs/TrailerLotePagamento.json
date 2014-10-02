@@ -2,21 +2,21 @@
   "nome": "TrailerLotePagamento",
   "campos": {
     "00.5": {
-      "nome": "codigo_banco",
+      "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
       "default": 341
     },
     "01.5": {
-      "nome": "codigo_lote",
+      "nome": "controle_lote",
       "posicao_inicio": 4,
       "posicao_fim": 7,
       "formato": "num",
       "default": 0
     },
     "02.5": {
-      "nome": "tipo_registro",
+      "nome": "controle_registro",
       "posicao_inicio": 8,
       "posicao_fim": 8,
       "formato": "num",
