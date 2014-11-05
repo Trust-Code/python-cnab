@@ -60,7 +60,8 @@ class Lote(object):
         self.header = header
         self.trailer = trailer 
         self._codigo = None
-        self.trailer.quantidade_registros = 2
+        if self.trailer != None:
+            self.trailer.quantidade_registros = 2
         self._eventos = [] 
 
     @property
@@ -70,8 +71,10 @@ class Lote(object):
     @codigo.setter
     def codigo(self, valor):
         self._codigo = valor
-        self.header.controle_lote = valor
-        self.trailer.controle_lote = valor
+        if self.header != None:
+            self.header.controle_lote = valor
+        if self.trailer != None:
+            self.trailer.controle_lote = valor
         self.atualizar_codigo_eventos()
 
     def atualizar_codigo_eventos(self):
@@ -92,7 +95,8 @@ class Lote(object):
             raise TypeError
 
         self._eventos.append(evento)
-        self.trailer.quantidade_registros += len(evento)
+        if self.trailer != None and hasattr(self.trailer, 'quantidade_registros'):
+            self.trailer.quantidade_registros += len(evento)
         self.atualizar_codigo_registros()        
         
         if self._codigo:
@@ -103,13 +107,18 @@ class Lote(object):
             raise errors.NenhumEventoError()
     
         result = [] 
-        result.append(unicode(self.header))
+        if self.header != None:
+            result.append(unicode(self.header))
         result.extend(unicode(evento) for evento in self._eventos)
-        result.append(unicode(self.trailer))
+        if self.trailer != None:
+            result.append(unicode(self.trailer))
         return '\r\n'.join(result)
 
     def __len__(self):
-        return self.trailer.quantidade_registros
+        if self.trailer != None and hasattr(self.trailer, 'quantidade_registros'):
+            return self.trailer.quantidade_registros
+        else:
+            return len(self._eventos)
 
 
 class Arquivo(object):
@@ -238,11 +247,14 @@ class Arquivo(object):
         self._lotes.append(lote)
         lote.codigo = len(self._lotes)
 
-        # Incrementar numero de lotes no trailer do arquivo
-        self.trailer.totais_quantidade_lotes += 1
+        if self.trailer != None:
+            if hasattr(self.trailer, 'totais_quantidade_lotes'):
+                # Incrementar numero de lotes no trailer do arquivo
+                self.trailer.totais_quantidade_lotes += 1
 
-        # Incrementar numero de registros no trailer do arquivo
-        self.trailer.totais_quantidade_registros += len(lote)
+            if hasattr(self.trailer, 'totais_quantidade_registros'):
+                # Incrementar numero de registros no trailer do arquivo
+                self.trailer.totais_quantidade_registros += len(lote)
 
     def escrever(self, file_):
         file_.write(unicode(self).encode('ascii'))
