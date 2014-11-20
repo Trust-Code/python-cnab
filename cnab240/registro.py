@@ -32,11 +32,11 @@ class CampoBase(object):
         elif self.decimais:
             if not isinstance(valor, Decimal):
                 raise errors.TipoError(self, valor)
-            
+
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
                 raise errors.NumDecimaisError(self, valor)
-            
+
             if len(str(valor).replace('.', '')) > self.digitos:
                 raise errors.NumDigitosExcedidoError(self, valor)
 
@@ -45,21 +45,22 @@ class CampoBase(object):
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
                 raise errors.NumDigitosExcedidoError(self, valor)
-        
+
         self._valor = valor
-    
 
     def __unicode__(self):
         if self.valor is None:
             if self.default is not None:
                 if self.decimais:
-                    self.valor = Decimal('{0:0.{1}f}'.format(self.default, 
-                                                                self.decimais))
+                    self.valor = Decimal(
+                        '{0:0.{1}f}'.format(self.default,
+                                            self.decimais)
+                    )
                 else:
                     self.valor = self.default
             else:
                 raise errors.CampoObrigatorioError(self.nome)
-        
+
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
                 valor = unicode(self.valor).replace('.', '')
@@ -84,43 +85,42 @@ class CampoBase(object):
 def criar_classe_campo(spec):
 
     nome = spec.get('nome')
-    inicio =  spec.get('posicao_inicio') - 1
-    fim = spec.get('posicao_fim') 
+    inicio = spec.get('posicao_inicio') - 1
+    fim = spec.get('posicao_fim')
 
     attrs = {
-        'nome': nome, 
-        'inicio': inicio, 
-        'fim': fim, 
+        'nome': nome,
+        'inicio': inicio,
+        'fim': fim,
         'digitos': fim - inicio,
         'formato': spec.get('formato', 'alfa'),
         'decimais': spec.get('decimais', 0),
         'default': spec.get('default'),
     }
-    
+
     return type(nome.encode('utf8'), (CampoBase,), attrs)
 
 
 class RegistroBase(object):
-        
+
     def __new__(cls, **kwargs):
         campos = OrderedDict()
         attrs = {'_campos': campos}
 
         for Campo in cls._campos_cls.values():
             campo = Campo()
-            campos.update({campo.nome: campo}) 
+            campos.update({campo.nome: campo})
             attrs.update({campo.nome: campo})
 
         new_cls = type(cls.__name__, (cls, ), attrs)
         return super(RegistroBase, cls).__new__(new_cls, **kwargs)
-    
+
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
 
     def necessario(self):
         for campo in self._campos.values():
-            eh_controle = campo.nome.startswith('controle_') or \
-                                            campo.nome.startswith('servico_')
+            eh_controle = campo.nome.startswith('controle_') or campo.nome.startswith('servico_')
             if not eh_controle and campo.valor != None:
                 return True
 
@@ -130,19 +130,19 @@ class RegistroBase(object):
         data_dict = dict()
         for campo in self._campos.values():
             if campo.valor is not None:
-                data_dict[campo.nome] = campo.valor  
+                data_dict[campo.nome] = campo.valor
         return data_dict
-    
+
     def fromdict(self, data_dict):
-        ignore_fields = lambda key: any((                                        
-            key.startswith('vazio'),                                             
-            key.startswith('servico_'),                                          
-            key.startswith('controle_'),                                         
+        ignore_fields = lambda key: any((
+            key.startswith('vazio'),
+            key.startswith('servico_'),
+            key.startswith('controle_'),
         ))
 
         for key, value in data_dict.items():
             if hasattr(self, key) and not ignore_fields(key):
-                setattr(self, key, value) 
+                setattr(self, key, value)
 
     def carregar(self, registro_str):
         for campo in self._campos.values():
@@ -153,7 +153,7 @@ class RegistroBase(object):
                 try:
                     campo.valor = Decimal(dec)
                 except InvalidOperation:
-                    raise # raise custom?
+                    raise  # raise custom?
 
             elif campo.formato == 'num':
                 try:
@@ -181,7 +181,6 @@ class Registros(object):
 
             setattr(self, spec.get('nome'), self.criar_classe_registro(spec))
 
-
     def criar_classe_registro(self, spec):
         campos = OrderedDict()
         attrs = {'_campos_cls': campos}
@@ -193,6 +192,5 @@ class Registros(object):
             entrada = {Campo.nome: Campo}
 
             campos.update(entrada)
-        
-        return type(cls_name, (RegistroBase, ), attrs)
 
+        return type(cls_name, (RegistroBase, ), attrs)

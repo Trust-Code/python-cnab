@@ -14,15 +14,14 @@ for campo in campos.values():
     campo_nome = campo.get('nome')
     campo_formato = campo.get('formato')
     campo_decimais = campo.get('decimais')
-    
+
     if campo_decimais:
         tipo = 'Decimal ({0} digitos)'.format(campo_decimais)
-    elif campo_formato == 'alfa':   
+    elif campo_formato == 'alfa':
         tipo = 'str'
     else:
         tipo = 'int'
-    
-    print (' '* 8) + ':param {0}:'.format(campo_nome)
-    print (' '* 8) + ':type {0}: {1}'.format(campo_nome, tipo)
-    print 
- 
+
+    print (' ' * 8) + ':param {0}:'.format(campo_nome)
+    print (' ' * 8) + ':type {0}: {1}'.format(campo_nome, tipo)
+    print
