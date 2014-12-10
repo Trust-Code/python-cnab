@@ -25,25 +25,32 @@ class CampoBase(object):
     def valor(self, valor):
         if self.formato == 'alfa':
             if not isinstance(valor, unicode):
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.NumDecimaisError(self, valor)
 
             if len(str(valor).replace('.', '')) > self.digitos:
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         else:
             if not isinstance(valor, (int, long)):
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
+                print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         self._valor = valor
