@@ -12,30 +12,27 @@
       "nome": "totais_quantidade_registros",
       "posicao_inicio": 2,
       "posicao_fim": 7,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
     "02.9": {
-      "nome": "total_valor_pagtos",
+      "nome": "total_valor_arq",
       "posicao_inicio": 8,
       "posicao_fim": 24,
       "formato": "num",
-      "default": 0,
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
     "03.9": {
       "nome": "vazio1",
       "posicao_inicio": 25,
       "posicao_fim": 494,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
     "04.9": {
-      "nome": "sequencial",
+      "nome": "sequencial_trailer",
       "posicao_inicio": 495,
       "posicao_fim": 500,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     }
   }
 }

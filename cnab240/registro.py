@@ -65,6 +65,11 @@ class CampoBase(object):
                     )
                 else:
                     self.valor = self.default
+            elif (self.default is None) & (self.valor is None):
+                if self.decimais or self.formato == 'num':
+                    self.valor = 0
+                else:
+                    self.valor = u''
             else:
                 raise errors.CampoObrigatorioError(self.nome)
 
@@ -76,6 +81,7 @@ class CampoBase(object):
             else:
                 chars_faltantes = self.digitos - len(self.valor)
                 return self.valor + (u' ' * chars_faltantes)
+
 
         return u'{0:0{1}d}'.format(self.valor, self.digitos)
 

@@ -102,6 +102,7 @@ class Lote(object):
         if self._codigo:
             self.atualizar_codigo_eventos()
 
+    # Breakpoint
     def __unicode__(self):
         if not self._eventos:
             raise errors.NenhumEventoError()
@@ -270,3 +271,39 @@ class Arquivo(object):
         # Adicionar elemento vazio para arquivo terminar com \r\n
         result.append(u'')
         return u'\r\n'.join(result)
+
+    def encontrar_lote_pag(self, codigo_servico):
+        for lote in self.lotes:
+            if lote.header.tipo_de_servico == codigo_servico:
+                return lote
+
+    # Implementação para Pag_For
+    def incluir_pagamento(self, **kwargs):
+        # 20: PAGTO FORNECEDORES
+        codigo_evento = 20
+        evento = Evento(self.banco, codigo_evento)
+
+        t_pag_for = self.banco.registros.TransacaoPagFor(**kwargs)
+        evento.adicionar_segmento(t_pag_for)
+
+        lote_pag = self.encontrar_lote_pag(codigo_evento)
+
+        if lote_pag is None:
+            # header = self.banco.registros.HeaderLoteCobranca(**self.header.todict())
+            # trailer = self.banco.registros.TrailerLoteCobranca()
+            header = None
+            trailer = None
+            lote_pag = Lote(self.banco, header, trailer)
+            self.adicionar_lote(lote_pag)
+
+            # if header.controlecob_numero is None:
+            #     header.controlecob_numero = int('{0}{1:02}'.format(
+            #         self.header.arquivo_sequencia,
+            #         lote_pag.codigo))
+
+            # if header.controlecob_data_gravacao is None:
+            #     header.controlecob_data_gravacao = self.header.arquivo_data_de_geracao
+
+        lote_pag.adicionar_evento(evento)
+        # Incrementar numero de registros no trailer do arquivo
+        self.trailer.totais_quantidade_registros += len(evento)
