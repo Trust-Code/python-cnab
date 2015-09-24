@@ -23,6 +23,8 @@ class CampoBase(object):
 
     @valor.setter
     def valor(self, valor):
+        if self.nome == u'vazio1':
+            breakpoint = 1
         if self.formato == 'alfa':
             if not isinstance(valor, unicode):
                 print "{0} - {1}".format(self.nome, self.valor)
@@ -56,6 +58,8 @@ class CampoBase(object):
         self._valor = valor
 
     def __unicode__(self):
+        if self.nome == 'desconto1_data' or self.nome == 'juros_mora_data':
+            a = 0
         if self.valor is None:
             if self.default is not None:
                 if self.decimais:
@@ -65,6 +69,11 @@ class CampoBase(object):
                     )
                 else:
                     self.valor = self.default
+            elif (self.default is None) & (self.valor is None):
+                if self.decimais or self.formato == 'num':
+                    self.valor = 0
+                else:
+                    self.valor = u''
             else:
                 raise errors.CampoObrigatorioError(self.nome)
 
@@ -76,6 +85,7 @@ class CampoBase(object):
             else:
                 chars_faltantes = self.digitos - len(self.valor)
                 return self.valor + (u' ' * chars_faltantes)
+
 
         return u'{0:0{1}d}'.format(self.valor, self.digitos)
 

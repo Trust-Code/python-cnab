@@ -102,6 +102,7 @@ class Lote(object):
         if self._codigo:
             self.atualizar_codigo_eventos()
 
+    # Breakpoint
     def __unicode__(self):
         if not self._eventos:
             raise errors.NenhumEventoError()
