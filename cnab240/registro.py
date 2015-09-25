@@ -58,7 +58,7 @@ class CampoBase(object):
         self._valor = valor
 
     def __unicode__(self):
-        if self.nome == 'desconto1_data' or self.nome == 'juros_mora_data':
+        if self.nome == 'reservado_banco_campo22' or self.nome == 'nome_do_banco':
             a = 0
         if self.valor is None:
             if self.default is not None:
