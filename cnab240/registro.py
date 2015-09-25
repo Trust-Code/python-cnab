@@ -23,8 +23,6 @@ class CampoBase(object):
 
     @valor.setter
     def valor(self, valor):
-        if self.nome == u'vazio1':
-            breakpoint = 1
         if self.formato == 'alfa':
             if not isinstance(valor, unicode):
                 print "{0} - {1}".format(self.nome, self.valor)
