@@ -1,0 +1,181 @@
+{
+  "nome": "HeaderLoteCobranca",
+  "campos": {
+    "01.1": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.1": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 1
+    },
+
+    "04.1": {
+      "nome": "servico_operacao",
+      "posicao_inicio": 9,
+      "posicao_fim": 9,
+      "formato": "alfa"
+    },
+
+    "05.1": {
+      "nome": "servico_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num"
+    },
+
+    "06.1": {
+      "nome": "servico_cnab_exclusivo_campo06dot1",
+      "posicao_inicio": 12,
+      "posicao_fim": 13,
+      "formato": "num",
+      "default": 0
+    },
+
+    "07.1": {
+      "nome": "servico_layout",
+      "posicao_inicio": 14,
+      "posicao_fim": 16,
+      "formato": "num",
+      "default": 30
+    },
+
+    "08.1": {
+      "nome": "cnab_exclusivo_campo08dot1",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.1": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "10.1": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 33,
+      "formato": "num"
+    },
+
+    "11.1": {
+      "nome": "cedente_convenio",
+      "posicao_inicio": 34,
+      "posicao_fim": 39,
+      "formato": "num"
+    },
+
+    "11.2": {
+      "nome": "cedente_caixa_exclusivo_campo11dot1M",
+      "posicao_inicio": 40,
+      "posicao_fim": 53,
+      "formato": "num",
+      "default": 0
+    },
+
+    "12.1": {
+      "nome": "cedente_agencia_cod",
+      "posicao_inicio": 54,
+      "posicao_fim": 58,
+      "formato": "num"
+    },
+
+    "13.1": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 59,
+      "posicao_fim": 59,
+      "formato": "alfa"
+    },
+
+    "14.1": {
+      "nome": "cedente_cod_cedente",
+      "posicao_inicio": 60,
+      "posicao_fim": 65,
+      "formato": "num"
+    },
+
+    "15.1": {
+      "nome": "cedente_codModelo",
+      "posicao_inicio": 66,
+      "posicao_fim": 72,
+      "formato": "num"
+    },
+
+    "16.1": {
+      "nome": "cedente_caixa_exclusivo_campo16dot1M",
+      "posicao_inicio": 73,
+      "posicao_fim": 73,
+      "formato": "num",
+      "default": 0
+    },
+
+    "17.1": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 74,
+      "posicao_fim": 103,
+      "formato": "alfa"
+    },
+
+    "18.1": {
+      "nome": "informacao1",
+      "posicao_inicio": 104,
+      "posicao_fim": 143,
+      "formato": "alfa"
+    },
+
+    "19.1": {
+      "nome": "informacao2",
+      "posicao_inicio": 144,
+      "posicao_fim": 183,
+      "formato": "alfa"
+    },
+
+    "20.1": {
+      "nome": "controleCobranca_remessaRetorno",
+      "posicao_inicio": 184,
+      "posicao_fim": 191,
+      "formato": "num"
+    },
+
+    "21.1": {
+      "nome": "controleCobranca_dataGravacao",
+      "posicao_inicio": 192,
+      "posicao_fim": 199,
+      "formato": "num"
+    },
+
+    "22.1": {
+      "nome": "dataCredito",
+      "posicao_inicio": 200,
+      "posicao_fim": 207,
+      "formato": "num"
+    },
+
+    "23.1": {
+      "nome": "cnab_exclusivo_campo23dot1",
+      "posicao_inicio": 208,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+
+  }
+}

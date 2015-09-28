@@ -1,0 +1,42 @@
+{
+  "nome": "TrailerArquivo",
+  "campos": {
+    "00.9": {
+      "nome": "controle_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 9
+    },
+    "01.9": {
+      "nome": "totais_quantidade_registros",
+      "posicao_inicio": 2,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.9": {
+      "nome": "total_valor_pagtos",
+      "posicao_inicio": 8,
+      "posicao_fim": 24,
+      "formato": "num",
+      "default": 0,
+      "decimais": 2
+    },
+    "03.9": {
+      "nome": "vazio1",
+      "posicao_inicio": 25,
+      "posicao_fim": 494,
+      "formato": "alfa",
+      "default": ""
+    },
+    "04.9": {
+      "nome": "sequencial",
+      "posicao_inicio": 495,
+      "posicao_fim": 500,
+      "formato": "num",
+      "default": 0
+    }
+  }
+}
+
