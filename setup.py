@@ -9,7 +9,7 @@ setup(
     url='https://github.com/TracyWebTech/cnab240',
     packages=find_packages(),
     package_data={
-        'cnab240': ['bancos/*/*/*.json']
+        'cnab': ['bancos/*/*/*.json']
     },
     zip_safe=False,
     install_requires=[],
