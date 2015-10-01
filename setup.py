@@ -20,7 +20,7 @@ setup(
     description='Classe para gerar arquivo de remessa e leitura de retorno no '
                                                             'padrão CNAB',
     long_description=open('README.md', 'r').read(),
-    download_url='https://github.com/TracyWebTech/cnab240',
+    download_url='https://github.com/kmee/cnab',
     scripts=[],
     classifiers=[],
     platforms='any',
