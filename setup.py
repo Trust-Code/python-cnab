@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cnab240',
+    name='cnab',
     version='0.01',
     author='Tracy Web Technologies',
     author_email='contato@tracy.com.br',
@@ -14,11 +14,11 @@ setup(
     zip_safe=False,
     install_requires=[],
     provides=[
-        'cnab240'
+        'cnab'
     ],
     license='LGPL',
     description='Classe para gerar arquivo de remessa e leitura de retorno no '
-                                                            'padrão CNAB240',
+                                                            'padrão CNAB',
     long_description=open('README.md', 'r').read(),
     download_url='https://github.com/TracyWebTech/cnab240',
     scripts=[],
