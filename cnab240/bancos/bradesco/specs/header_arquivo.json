@@ -112,35 +112,35 @@
     },
 
     "16.0": {
-      "nome": "arq_cod",
+      "nome": "arquivo_codigo",
       "posicao_inicio": 143,
       "posicao_fim": 143,
       "formato": "num"
     },
     
     "17.0": {
-      "nome": "arq_data",
+      "nome": "arquivo_data_de_geracao",
       "posicao_inicio": 144,
       "posicao_fim": 151,
       "formato": "num"
     },
 
     "18.0": {
-      "nome": "arq_hora",
+      "nome": "arquivo_hora_de_geracao",
       "posicao_inicio": 152,
       "posicao_fim": 157,
       "formato": "num"
     },
 
     "19.0": {
-      "nome": "arq_seq",
+      "nome": "arquivo_sequencia",
       "posicao_inicio": 158,
       "posicao_fim": 163,
       "formato": "num"
     },
 
     "20.0": {
-      "nome": "arq_layout",
+      "nome": "arquivo_layout",
       "posicao_inicio": 164,
       "posicao_fim": 166,
       "formato": "num",
@@ -148,7 +148,7 @@
     },
 
     "21.0": {
-      "nome": "arq_densidade",
+      "nome": "arquivo_densidade",
       "posicao_inicio": 167,
       "posicao_fim": 171,
       "formato": "num"

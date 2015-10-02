@@ -46,11 +46,12 @@
     },
 
     "07.5": {
-      "nome": "tot_cobranca_simples_valor",
+      "nome": "cobrancasimples_valor_titulos",
       "posicao_inicio": 30,
       "posicao_fim": 46,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "08.5": {
@@ -65,7 +66,8 @@
       "posicao_inicio": 53,
       "posicao_fim": 69,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "10.5": {
@@ -80,7 +82,8 @@
       "posicao_inicio": 76,
       "posicao_fim": 92,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "12.5": {
@@ -95,7 +98,8 @@
       "posicao_inicio": 99,
       "posicao_fim": 115,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "14.5": {

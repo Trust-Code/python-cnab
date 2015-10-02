@@ -202,7 +202,7 @@
     },
 
     "29.3P": {
-      "nome": "juros_mora_valor",
+      "nome": "juros_mora_taxa_dia",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
@@ -210,21 +210,21 @@
     },
 
     "30.3P": {
-      "nome": "desc1_cod",
+      "nome": "desconto1_cod",
       "posicao_inicio": 142,
       "posicao_fim": 142,
       "formato": "num"
     },
 
     "31.3P": {
-      "nome": "desc1_data",
+      "nome": "desconto1_data",
       "posicao_inicio": 143,
       "posicao_fim": 150,
       "formato": "num"
     },
 
     "32.3P": {
-      "nome": "desc1_valor",
+      "nome": "desconto1_percentual",
       "posicao_inicio": 151,
       "posicao_fim": 156,
       "formato": "num",

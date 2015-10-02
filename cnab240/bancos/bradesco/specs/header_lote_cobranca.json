@@ -140,14 +140,14 @@
     },
 
     "20.1": {
-      "nome": "cont_num_r",
+      "nome": "controlecob_numero",
       "posicao_inicio": 184,
       "posicao_fim": 191,
       "formato": "num"
     },
 
     "21.1": {
-      "nome": "controle_data",
+      "nome": "controlecob_data_gravacao",
       "posicao_inicio": 192,
       "posicao_fim": 199,
       "formato": "num"
