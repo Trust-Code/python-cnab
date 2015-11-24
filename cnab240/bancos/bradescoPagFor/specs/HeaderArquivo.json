@@ -15,7 +15,7 @@
       "formato": "num"
     },
     "02.0": {
-      "nome": "tipo_inscricao_empresa",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 10,
       "posicao_fim": 10,
       "formato": "num"
@@ -33,7 +33,7 @@
       "formato": "num"
     },
     "05.0": {
-      "nome": "controle",
+      "nome": "controle_cnpj",
       "posicao_inicio": 24,
       "posicao_fim": 25,
       "formato": "num"
@@ -114,8 +114,7 @@
       "nome": "reservado_empresa",
       "posicao_inicio": 107,
       "posicao_fim": 180,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
     "18.0": {
       "nome": "reservado_banco1",
