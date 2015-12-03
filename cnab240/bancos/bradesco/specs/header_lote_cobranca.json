@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 231
       },
 
     "02.1": {
@@ -31,7 +32,7 @@
     },
 
     "05.1": {
-      "nome": "serv_serv",
+      "nome": "servico_servico",
       "posicao_inicio": 10,
       "posicao_fim": 11,
       "formato": "num",
