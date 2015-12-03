@@ -64,7 +64,7 @@
     },
 
     "09.3P": {
-      "nome": "cedente_agencia_conta_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "alfa"
@@ -220,8 +220,7 @@
       "nome": "juros_cod_mora",
       "posicao_inicio": 118,
       "posicao_fim": 118,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "28.3P": {

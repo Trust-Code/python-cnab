@@ -75,13 +75,13 @@ class CampoBase(object):
 
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
+            # if self.formato == 'num':
                 valor = unicode(self.valor).replace('.', '')
                 chars_faltantes = self.digitos - len(valor)
                 return (u'0' * chars_faltantes) + valor
             else:
                 chars_faltantes = self.digitos - len(self.valor)
                 return self.valor + (u' ' * chars_faltantes)
-
 
         return u'{0:0{1}d}'.format(self.valor, self.digitos)
 

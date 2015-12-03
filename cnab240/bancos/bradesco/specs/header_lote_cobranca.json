@@ -24,7 +24,7 @@
     },
 
     "04.1": {
-      "nome": "serv_operacao",
+      "nome": "servico_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
       "formato": "alfa"
@@ -47,7 +47,7 @@
     },
 
     "07.1": {
-      "nome": "serv_layout",
+      "nome": "servico_layout",
       "posicao_inicio": 14,
       "posicao_fim": 16,
       "formato": "num",
@@ -63,14 +63,14 @@
     },
 
     "09.1": {
-      "nome": "cedente_insc_tipo",
+      "nome": "cedente_inscricao_tipo",
       "posicao_inicio": 18,
       "posicao_fim": 18,
       "formato": "num"
     },
 
     "10.1": {
-      "nome": "cedente_insc_num",
+      "nome": "cedente_inscricao_numero",
       "posicao_inicio": 19,
       "posicao_fim": 33,
       "formato": "num"
@@ -84,35 +84,35 @@
     },
 
     "12.1": {
-      "nome": "cedente_cc_ag_cod",
+      "nome": "cedente_agencia",
       "posicao_inicio": 54,
       "posicao_fim": 58,
       "formato": "num"
     },
 
     "13.1": {
-      "nome": "cedente_cc_ag_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "alfa"
     },
 
     "14.1": {
-      "nome": "cedente_cc_conta_num",
+      "nome": "cedente_conta",
       "posicao_inicio": 60,
       "posicao_fim": 71,
       "formato": "num"
     },
 
     "15.1": {
-      "nome": "cedente_cc_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "alfa"
     },
 
     "16.1": {
-      "nome": "cedente_cc_dv",
+      "nome": "cedente_dv_ag_cc",
       "posicao_inicio": 73,
       "posicao_fim": 73,
       "formato": "alfa"
@@ -126,14 +126,14 @@
     },
 
     "18.1": {
-      "nome": "info1",
+      "nome": "informacao1",
       "posicao_inicio": 104,
       "posicao_fim": 143,
       "formato": "alfa"
     },
 
     "19.1": {
-      "nome": "info2",
+      "nome": "informacao2",
       "posicao_inicio": 144,
       "posicao_fim": 183,
       "formato": "alfa"
@@ -154,7 +154,7 @@
     },
 
     "22.1": {
-      "nome": "data_credito",
+      "nome": "data_credito_hd_lote",
       "posicao_inicio": 200,
       "posicao_fim": 207,
       "formato": "num"

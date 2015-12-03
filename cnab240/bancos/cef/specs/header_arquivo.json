@@ -63,7 +63,7 @@
     },
 
     "09.0": {
-      "nome": "cedente_codigo_agencia_digito",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "alfa"

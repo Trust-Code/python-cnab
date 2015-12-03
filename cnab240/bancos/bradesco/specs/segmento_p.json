@@ -39,7 +39,7 @@
     },
 
     "06.3P": {
-      "nome": "febraban_cnab_06d3P",
+      "nome": "vazio1",
       "posicao_inicio": 15,
       "posicao_fim": 15,
       "formato": "alfa",
@@ -54,21 +54,21 @@
     },
 
     "08.3P": {
-      "nome": "cedente_ag_cod",
+      "nome": "cedente_agencia",
       "posicao_inicio": 18,
       "posicao_fim": 22,
       "formato": "num"
     },
 
     "09.3P": {
-      "nome": "cedente_ag_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 23,
       "posicao_fim": 23,
       "formato": "alfa"
     },
 
     "10.3P": {
-      "nome": "cedente_conta_num",
+      "nome": "cedente_conta",
       "posicao_inicio": 24,
       "posicao_fim": 35,
       "formato": "num"
@@ -82,63 +82,63 @@
     },
 
     "12.3P": {
-      "nome": "cedente_dv",
+      "nome": "cedente_dv_ag_cc",
       "posicao_inicio": 37,
       "posicao_fim": 37,
       "formato": "alfa"
     },
 
     "13.3P": {
-      "nome": "ident_titu",
+      "nome": "identificacao_titulo_banco",
       "posicao_inicio": 38,
       "posicao_fim": 57,
       "formato": "num"
     },
 
     "14.3P": {
-      "nome": "cobr_carteira",
+      "nome": "cobranca_carteira",
       "posicao_inicio": 58,
       "posicao_fim": 58,
       "formato": "num"
     },
 
     "15.3P": {
-      "nome": "cobr_cadastramento",
+      "nome": "cobranca_cadastramento",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "num"
     },
 
     "16.3P": {
-      "nome": "cobr_documento",
+      "nome": "cobranca_documentoTipo",
       "posicao_inicio": 60,
       "posicao_fim": 60,
       "formato": "alfa"
     },
 
     "17.3P": {
-      "nome": "cobr_emissao_bloqueto",
+      "nome": "cobranca_emissaoBloqueto",
       "posicao_inicio": 61,
       "posicao_fim": 61,
       "formato": "num"
     },
 
     "18.3P": {
-      "nome": "cobr_distrib_bloqueto",
+      "nome": "cobranca_distribuicaoBloqueto",
       "posicao_inicio": 62,
       "posicao_fim": 62,
       "formato": "alfa"
     },
 
     "19.3P": {
-      "nome": "num_doc",
+      "nome": "numero_documento",
       "posicao_inicio": 63,
       "posicao_fim": 77,
       "formato": "alfa"
     },
     
     "20.3P": {
-      "nome": "vencimento",
+      "nome": "vencimento_titulo",
       "posicao_inicio": 78,
       "posicao_fim": 85,
       "formato": "num"
@@ -153,28 +153,28 @@
     },
 
     "22.3P": {
-      "nome": "ag_cobradora",
+      "nome": "agencia_cobradora",
       "posicao_inicio": 101,
       "posicao_fim": 105,
       "formato": "num"
     },
 
     "23.3P": {
-      "nome": "ag_cobradora_dv",
+      "nome": "agencia_cobradora_dv",
       "posicao_inicio": 106,
       "posicao_fim": 106,
       "formato": "alfa"
     },
 
     "24.3P": {
-      "nome": "esp_titulo",
+      "nome": "especie_titulo",
       "posicao_inicio": 107,
       "posicao_fim": 108,
       "formato": "num"
     },
 
     "25.3P": {
-      "nome": "ident_aceite",
+      "nome": "aceite_titulo",
       "posicao_inicio": 109,
       "posicao_fim": 109,
       "formato": "alfa"
@@ -188,14 +188,14 @@
     },
 
     "27.3P": {
-      "nome": "juros_cod",
+      "nome": "juros_cod_mora",
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num"
     },
 
     "28.3P": {
-      "nome": "juros_data",
+      "nome": "juros_mora_data",
       "posicao_inicio": 119,
       "posicao_fim": 126,
       "formato": "num"
@@ -226,7 +226,7 @@
     "32.3P": {
       "nome": "desconto1_percentual",
       "posicao_inicio": 151,
-      "posicao_fim": 156,
+      "posicao_fim": 165,
       "formato": "num",
       "decimais": 2
     },
@@ -248,7 +248,7 @@
     },
 
     "35.3P": {
-      "nome": "uso_empresa_cedente",
+      "nome": "identificacao_titulo_empresa",
       "posicao_inicio": 196,
       "posicao_fim": 220,
       "formato": "alfa"
@@ -269,7 +269,7 @@
     },
 
     "38.3P": {
-      "nome": "codigo_baixa_dev",
+      "nome": "codigo_baixa",
       "posicao_inicio": 224,
       "posicao_fim": 224,
       "formato": "num"

@@ -24,14 +24,14 @@
     },
 
     "04.3U": {
-      "nome": "serv_num",
+      "nome": "servico_numero_registro",
       "posicao_inicio": 9,
       "posicao_fim": 13,
       "formato": "num"
     },
 
     "05.3U": {
-      "nome": "serv_seg",
+      "nome": "servico_segmento",
       "posicao_inicio": 14,
       "posicao_fim": 14,
       "formato": "alfa",
@@ -47,14 +47,14 @@
     },
 
     "07.3U": {
-      "nome": "serv_cod",
+      "nome": "servico_codigo_movimento",
       "posicao_inicio": 16,
       "posicao_fim": 17,
       "formato": "num"
     },
 
     "08.3U": {
-      "nome": "dados_titu_acresc",
+      "nome": "titulo_acrescimos",
       "posicao_inicio": 18,
       "posicao_fim": 32,
       "formato": "num",
@@ -62,7 +62,7 @@
     },
 
     "09.3U": {
-      "nome": "dados_titu_desconto",
+      "nome": "titulo_desconto",
       "posicao_inicio": 33,
       "posicao_fim": 47,
       "formato": "num",
@@ -70,7 +70,7 @@
     },
 
     "10.3U": {
-      "nome": "dados_titu_abatimento",
+      "nome": "titulo_abatimento",
       "posicao_inicio": 48,
       "posicao_fim": 62,
       "formato": "num",
@@ -78,7 +78,7 @@
     },
 
     "11.3U": {
-      "nome": "dados_titu_iof",
+      "nome": "titulo_iof",
       "posicao_inicio": 63,
       "posicao_fim": 77,
       "formato": "num",
@@ -86,7 +86,7 @@
     },
 
     "12.3U": {
-      "nome": "dados_titu_valor_pg",
+      "nome": "titulo_pago",
       "posicao_inicio": 78,
       "posicao_fim": 92,
       "formato": "num",
@@ -94,7 +94,7 @@
     },
 
     "13.3U": {
-      "nome": "dados_titu_valor_liq",
+      "nome": "titulo_liquido",
       "posicao_inicio": 93,
       "posicao_fim": 107,
       "formato": "num",
@@ -118,14 +118,14 @@
     },
 
     "16.3U": {
-      "nome": "data_ocorr",
+      "nome": "data_ocorrencia",
       "posicao_inicio": 138,
       "posicao_fim": 145,
       "formato": "num"
     },
 
     "17.3U": {
-      "nome": "data_cred",
+      "nome": "data_credito",
       "posicao_inicio": 146,
       "posicao_fim": 153,
       "formato": "num"
