@@ -6,8 +6,8 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 104
-    },
+      "default": 231
+      },
 
     "02.1": {
       "nome": "controle_lote",
@@ -35,15 +35,16 @@
       "nome": "servico_servico",
       "posicao_inicio": 10,
       "posicao_fim": 11,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
 
     "06.1": {
-      "nome": "vazio1",
+      "nome": "febraban_cnab06d1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.1": {
@@ -51,11 +52,11 @@
       "posicao_inicio": 14,
       "posicao_fim": 16,
       "formato": "num",
-      "default": 30
+      "default": 42
     },
 
     "08.1": {
-      "nome": "vazio2",
+      "nome": "febraban_cnab08d1",
       "posicao_inicio": 17,
       "posicao_fim": 17,
       "formato": "alfa",
@@ -79,17 +80,8 @@
     "11.1": {
       "nome": "cedente_convenio",
       "posicao_inicio": 34,
-      "posicao_fim": 39,
-      "formato": "num",
-      "default": 0
-    },
-
-    "11.2": {
-      "nome": "vazio4",
-      "posicao_inicio": 40,
       "posicao_fim": 53,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "12.1": {
@@ -100,32 +92,31 @@
     },
 
     "13.1": {
-      "nome": "cedente_conta_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "alfa"
     },
 
     "14.1": {
-      "nome": "cedente_codigo_codCedente",
+      "nome": "cedente_conta",
       "posicao_inicio": 60,
-      "posicao_fim": 65,
+      "posicao_fim": 71,
       "formato": "num"
     },
 
     "15.1": {
-      "nome": "cedente_codModelo",
-      "posicao_inicio": 66,
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "16.1": {
-      "nome": "cedente_caixa_exclusivo_campo16dot1M",
+      "nome": "cedente_dv_ag_cc",
       "posicao_inicio": 73,
       "posicao_fim": 73,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "17.1": {
@@ -171,12 +162,11 @@
     },
 
     "23.1": {
-      "nome": "vazio9",
+      "nome": "febraban_cnab23d1",
       "posicao_inicio": 208,
       "posicao_fim": 240,
       "formato": "alfa",
       "default": ""
     }
-
   }
 }

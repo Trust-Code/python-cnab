@@ -6,8 +6,8 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 104
-    },
+      "default": 231
+      },
 
     "02.0": {
       "nome": "controle_lote",
@@ -48,11 +48,11 @@
     },
 
     "07.0": {
-      "nome": "vazio2",
+      "nome": "cedente_convenio",
       "posicao_inicio": 33,
       "posicao_fim": 52,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa",
+      "default": ""
     },
 
     "08.0": {
@@ -70,26 +70,24 @@
     },
 
     "10.0": {
-      "nome": "cedente_codigo_codCedente",
+      "nome": "cedente_conta",
       "posicao_inicio": 59,
-      "posicao_fim": 64,
+      "posicao_fim": 70,
       "formato": "num"
     },
 
     "11.0": {
-      "nome": "cedente_campoExclusivoCaixa",
-      "posicao_inicio": 65,
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 71,
       "posicao_fim": 71,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "12.0": {
-      "nome": "cedente_campoExclusivoCaixa2",
+      "nome": "cedente_dv_ag_cc",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "13.0": {
@@ -100,14 +98,14 @@
     },
 
     "14.0": {
-      "nome": "nome_do_banco",
+      "nome": "nome_banco",
       "posicao_inicio": 103,
       "posicao_fim": 132,
       "formato": "alfa"
     },
 
     "15.0": {
-      "nome": "cnab_exclusivo_campo15",
+      "nome": "febraban_cnab15d0",
       "posicao_inicio": 133,
       "posicao_fim": 142,
       "formato": "alfa",
@@ -147,41 +145,33 @@
       "posicao_inicio": 164,
       "posicao_fim": 166,
       "formato": "num",
-      "default": 50
+      "default": 84
     },
 
     "21.0": {
       "nome": "arquivo_densidade",
       "posicao_inicio": 167,
       "posicao_fim": 171,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "22.0": {
-      "nome": "reservado_banco_campo22",
+      "nome": "reservado_banco",
       "posicao_inicio": 172,
       "posicao_fim": 191,
       "formato": "alfa"
     },
 
     "23.0": {
-      "nome": "reservado_cedente_campo23",
+      "nome": "reservado_empresa",
       "posicao_inicio": 192,
       "posicao_fim": 211,
       "formato": "alfa"
     },
 
     "24.0": {
-      "nome": "versaoAplicativo_campo24",
+      "nome": "febraban_cnab24d0",
       "posicao_inicio": 212,
-      "posicao_fim": 215,
-      "formato": "alfa"
-    },
-
-    "25.0": {
-      "nome": "cnab_exclusivo_campo25",
-      "posicao_inicio": 216,
       "posicao_fim": 240,
       "formato": "alfa",
       "default": ""

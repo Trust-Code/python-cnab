@@ -6,8 +6,8 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 104
-    },
+      "default": 231
+      },
 
     "02.3P": {
       "nome": "controle_lote",
@@ -28,8 +28,7 @@
       "nome": "servico_numero_registro",
       "posicao_inicio": 9,
       "posicao_fim": 13,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "05.3P": {
@@ -52,8 +51,7 @@
       "nome": "servico_codigo_movimento",
       "posicao_inicio": 16,
       "posicao_fim": 17,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "08.3P": {
@@ -71,97 +69,73 @@
     },
 
     "10.3P": {
-      "nome": "cedente_codigoCedente",
+      "nome": "cedente_conta",
       "posicao_inicio": 24,
-      "posicao_fim": 29,
-      "formato": "num",
-      "default": 1
+      "posicao_fim": 35,
+      "formato": "num"
     },
     
     "11.3P": {
-      "nome": "vazio4",
-      "posicao_inicio": 30,
-      "posicao_fim": 37,
-      "formato": "num",
-      "default": 0
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 36,
+      "posicao_fim": 36,
+      "formato": "alfa"
     },
 
     "12.3P": {
-      "nome": "vazio5",
-      "posicao_inicio": 38,
-      "posicao_fim": 40,
-      "formato": "num",
-      "default": 0
+      "nome": "cedente_dv_ag_cc",
+      "posicao_inicio": 37,
+      "posicao_fim": 37,
+      "formato": "alfa"
     },
 
     "13.3P": {
-      "nome": "carteira_numero",
-      "posicao_inicio": 41,
-      "posicao_fim": 42,
+      "nome": "identificacao_titulo_banco",
+      "posicao_inicio": 38,
+      "posicao_fim": 57,
       "formato": "num"
     },
 
-    "13.3.2P": {
-      "nome": "carteira_titulo",
-      "posicao_inicio": 43,
-      "posicao_fim": 57,
-      "formato": "num",
-      "default": 1
-    },
-
     "14.3P": {
-      "nome": "cobranca_carteiraCod",
+      "nome": "cobranca_carteira",
       "posicao_inicio": 58,
       "posicao_fim": 58,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "15.3P": {
       "nome": "cobranca_cadastramento",
       "posicao_inicio": 59,
       "posicao_fim": 59,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "16.3P": {
       "nome": "cobranca_documentoTipo",
       "posicao_inicio": 60,
       "posicao_fim": 60,
-      "formato": "alfa",
-      "default": "2"
+      "formato": "alfa"
     },
 
     "17.3P": {
       "nome": "cobranca_emissaoBloqueto",
       "posicao_inicio": 61,
       "posicao_fim": 61,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "18.3P": {
       "nome": "cobranca_distribuicaoBloqueto",
       "posicao_inicio": 62,
       "posicao_fim": 62,
-      "formato": "alfa",
-      "default": "A"
+      "formato": "alfa"
     },
 
     "19.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 63,
-      "posicao_fim": 73,
-      "formato": "alfa"
-    },
-
-    "19.3.2P": {
-      "nome": "vazio7",
-      "posicao_inicio": 74,
       "posicao_fim": 77,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
     
     "20.3P": {
@@ -183,16 +157,14 @@
       "nome": "agencia_cobradora",
       "posicao_inicio": 101,
       "posicao_fim": 105,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "23.3P": {
       "nome": "agencia_cobradora_dv",
       "posicao_inicio": 106,
       "posicao_fim": 106,
-      "formato": "alfa",
-      "default": "0"
+      "formato": "alfa"
     },
 
     "24.3P": {
@@ -242,8 +214,7 @@
       "nome": "desconto1_cod",
       "posicao_inicio": 142,
       "posicao_fim": 142,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "31.3P": {
@@ -278,7 +249,7 @@
     },
 
     "35.3P": {
-      "nome": "identificacao_titulo",
+      "nome": "identificacao_titulo_empresa",
       "posicao_inicio": 196,
       "posicao_fim": 220,
       "formato": "alfa"
@@ -320,20 +291,19 @@
     },
 
     "41.3P": {
-      "nome": "vazio11",
+      "nome": "num_contrato",
       "posicao_inicio": 230,
       "posicao_fim": 239,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "42.3P": {
-      "nome": "vazio12",
+      "nome": "febraban_cnab_42d3P",
       "posicao_inicio": 240,
       "posicao_fim": 240,
       "formato": "alfa",
       "default": ""
     }
-
+    
   }
 }
