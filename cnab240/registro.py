@@ -56,6 +56,7 @@ class CampoBase(object):
         self._valor = valor
 
     def __unicode__(self):
+
         if self.valor is None:
             if self.default is not None:
                 if self.decimais:

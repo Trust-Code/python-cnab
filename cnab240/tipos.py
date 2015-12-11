@@ -274,7 +274,11 @@ class Arquivo(object):
 
     def encontrar_lote_pag(self, codigo_servico):
         for lote in self.lotes:
-            if lote.header.tipo_de_servico == codigo_servico:
+            # FIXME
+            if codigo_servico == 20:
+                return lote
+            #
+            if lote.header.servico_servico == codigo_servico:
                 return lote
 
     # Implementação para Pag_For
