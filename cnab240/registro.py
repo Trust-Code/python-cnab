@@ -29,7 +29,11 @@ class CampoBase(object):
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
                 print "{0} - {1}".format(self.nome, self.valor)
-                raise errors.NumDigitosExcedidoError(self, valor)
+                # raise errors.NumDigitosExcedidoError(self, valor)
+                # reduz o len(valor)
+                cortar = len(valor) - self.digitos
+                valor = valor[:-(cortar)]
+
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
