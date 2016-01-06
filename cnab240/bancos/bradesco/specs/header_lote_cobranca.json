@@ -28,7 +28,8 @@
       "nome": "servico_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "R"
     },
 
     "05.1": {
