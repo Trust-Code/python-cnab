@@ -1,0 +1,196 @@
+{
+  "nome": "HeaderLotePagamento",
+  "campos": {
+    "00.1": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.1": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 1
+    },
+    "03.1": {
+      "nome": "servico_operacao",
+      "posicao_inicio": 9,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "C"
+    },
+    "04.1": {
+      "nome": "tipo_pagamento",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 98
+    },
+    "05.1": {
+      "nome": "forma_pagamento",
+      "posicao_inicio": 12,
+      "posicao_fim": 13,
+      "formato": "num", 
+      "default": 1
+    },
+    "06.1": {
+      "nome": "servico_servico",
+      "posicao_inicio": 14,
+      "posicao_fim": 16,
+      "formato": "num",
+      "default": 40
+    },
+    "07.1": {
+      "nome": "vazio1",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+    "08.1": {
+      "nome": "tipo_inscricao",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num",
+      "default": 2
+    },
+    "09.1": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+    "10.1": {
+      "nome": "identificacao_lancamento",
+      "posicao_inicio": 33,
+      "posicao_fim": 36,
+      "formato": "alfa",
+      "default": ""
+    },
+    "11.1": {
+      "nome": "vazio2",
+      "posicao_inicio": 37,
+      "posicao_fim": 52,
+      "formato": "alfa",
+      "default": ""
+    },
+    "12.1": {
+      "nome": "numero_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+    "13.1": {
+      "nome": "vazio3",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa",
+      "default": ""
+    },
+    "14.1": {
+      "nome": "numero_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+    "15.1": {
+      "nome": "vazio4",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa",
+      "default": ""
+    },
+    "16.1": {
+      "nome": "agencia_conta_dv",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "num"
+    },
+    "17.1": {
+      "nome": "nome_empresa",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa",
+      "default": ""
+    },
+    "18.1": {
+      "nome": "finalidade_lote",
+      "posicao_inicio": 103,
+      "posicao_fim": 132,
+      "formato": "alfa",
+      "default": ""
+    },
+    "19.1": {
+      "nome": "historico_cc_debitada",
+      "posicao_inicio": 133,
+      "posicao_fim": 142,
+      "formato": "alfa",
+      "default": ""
+    },
+    "20.1": {
+      "nome": "endereco_logradouro",
+      "posicao_inicio": 143,
+      "posicao_fim": 172,
+      "formato": "alfa",
+      "default": ""
+    },
+    "21.1": {
+      "nome": "endereco_numero",
+      "posicao_inicio": 173,
+      "posicao_fim": 177,
+      "formato": "num"
+    },
+    "22.1": {
+      "nome": "endereco_complemento",
+      "posicao_inicio": 178,
+      "posicao_fim": 192,
+      "formato": "alfa",
+      "default": ""
+    },
+    "23.1": {
+      "nome": "endereco_cidade",
+      "posicao_inicio": 193,
+      "posicao_fim": 212,
+      "formato": "alfa",
+      "default": ""
+    },
+    "24.1": {
+      "nome": "endereco_cep",
+      "posicao_inicio": 213,
+      "posicao_fim": 220,
+      "formato": "num"
+    },
+    "25.1": {
+      "nome": "endereco_estado",
+      "posicao_inicio": 221,
+      "posicao_fim": 222,
+      "formato": "alfa",
+      "default": ""
+    },
+    "26.1": {
+      "nome": "vazio5",
+      "posicao_inicio": 223,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+    "27.1": {
+      "nome": "ocorencias",
+      "posicao_inicio": 231,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

@@ -1,0 +1,140 @@
+{
+  "nome": "SegmentoC",
+  "campos": {
+    "00.3C": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.3C": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.3C": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+    "03.3C": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+    "04.3C": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "A"
+    },
+    "05.3C": {
+      "nome": "valor_csll",
+      "posicao_inicio": 15,
+      "posicao_fim": 29,
+      "formato": "num"
+    },
+    "06.3C": {
+      "nome": "vazio1",
+      "posicao_inicio": 30,
+      "posicao_fim": 37,
+      "formato": "alfa",
+      "default": ""
+    },
+    "07.3C": {
+      "nome": "data_vencimento",
+      "posicao_inicio": 38,
+      "posicao_fim": 45,
+      "formato": "alfa",
+      "default": ""
+    },
+    "08.3C": {
+      "nome": "valor_documento",
+      "posicao_inicio": 46,
+      "posicao_fim": 60,
+      "formato": "num"
+    },
+    "09.3C": {
+      "nome": "valor_pis",
+      "posicao_inicio": 61,
+      "posicao_fim": 75,
+      "formato": "num"
+    },
+    "10.3C": {
+      "nome": "valor_ir",
+      "posicao_inicio": 76,
+      "posicao_fim": 90,
+      "formato": "num"
+    },
+    "11.3C": {
+      "nome": "valor_iss",
+      "posicao_inicio": 91,
+      "posicao_fim": 105,
+      "formato": "num"
+    },
+    "12.3C": {
+      "nome": "valor_cofins",
+      "posicao_inicio": 106,
+      "posicao_fim": 120,
+      "formato": "num"
+    },
+    "13.3C": {
+      "nome": "desconto",
+      "posicao_inicio": 121,
+      "posicao_fim": 135,
+      "formato": "num"
+    },
+    "14.3C": {
+      "nome": "abatimento",
+      "posicao_inicio": 136,
+      "posicao_fim": 150,
+      "formato": "num"
+    },
+    "15.3C": {
+      "nome": "outras_deducoes",
+      "posicao_inicio": 151,
+      "posicao_fim": 165,
+      "formato": "num"
+    },
+    "16.3C": {
+      "nome": "mora",
+      "posicao_inicio": 166,
+      "posicao_fim": 180,
+      "formato": "num"
+    },
+    "17.3C": {
+      "nome": "multa",
+      "posicao_inicio": 181,
+      "posicao_fim": 195,
+      "formato": "num"
+    },
+    "18.3C": {
+      "nome": "outros_acrescimos",
+      "posicao_inicio": 196,
+      "posicao_fim": 210,
+      "formato": "num"
+    },
+    "19.3C": {
+      "nome": "fatura_documento",
+      "posicao_inicio": 211,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+    "20.3C": {
+      "nome": "vazio2",
+      "posicao_inicio": 231,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

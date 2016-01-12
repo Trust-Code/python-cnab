@@ -1,0 +1,190 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "01.0": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.0": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.0": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 0
+    },
+
+    "04.0": {
+      "nome": "vazio1",
+      "posicao_inicio": 9,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "05.0": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "06.0": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "07.0": {
+      "nome": "vazio2",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.0": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+
+    "09.0": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa"
+    },
+
+    "10.0": {
+      "nome": "cedente_codigo_codCedente",
+      "posicao_inicio": 59,
+      "posicao_fim": 64,
+      "formato": "num"
+    },
+
+    "11.0": {
+      "nome": "cedente_campoExclusivoCaixa",
+      "posicao_inicio": 65,
+      "posicao_fim": 71,
+      "formato": "num",
+      "default": 0
+    },
+
+    "12.0": {
+      "nome": "cedente_campoExclusivoCaixa2",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "num",
+      "default": 0
+    },
+
+    "13.0": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa"
+    },
+
+    "14.0": {
+      "nome": "nome_do_banco",
+      "posicao_inicio": 103,
+      "posicao_fim": 132,
+      "formato": "alfa"
+    },
+
+    "15.0": {
+      "nome": "cnab_exclusivo_campo15",
+      "posicao_inicio": 133,
+      "posicao_fim": 142,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.0": {
+      "nome": "arquivo_codigo",
+      "posicao_inicio": 143,
+      "posicao_fim": 143,
+      "formato": "num"
+    },
+    
+    "17.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 144,
+      "posicao_fim": 151,
+      "formato": "num"
+    },
+
+    "18.0": {
+      "nome": "arquivo_hora_de_geracao",
+      "posicao_inicio": 152,
+      "posicao_fim": 157,
+      "formato": "num"
+    },
+
+    "19.0": {
+      "nome": "arquivo_sequencia",
+      "posicao_inicio": 158,
+      "posicao_fim": 163,
+      "formato": "num"
+    },
+
+    "20.0": {
+      "nome": "arquivo_layout",
+      "posicao_inicio": 164,
+      "posicao_fim": 166,
+      "formato": "num",
+      "default": 50
+    },
+
+    "21.0": {
+      "nome": "arquivo_densidade",
+      "posicao_inicio": 167,
+      "posicao_fim": 171,
+      "formato": "num",
+      "default": 0
+    },
+
+    "22.0": {
+      "nome": "reservado_banco_campo22",
+      "posicao_inicio": 172,
+      "posicao_fim": 191,
+      "formato": "alfa"
+    },
+
+    "23.0": {
+      "nome": "reservado_cedente_campo23",
+      "posicao_inicio": 192,
+      "posicao_fim": 211,
+      "formato": "alfa"
+    },
+
+    "24.0": {
+      "nome": "versaoAplicativo_campo24",
+      "posicao_inicio": 212,
+      "posicao_fim": 215,
+      "formato": "alfa"
+    },
+
+    "25.0": {
+      "nome": "cnab_exclusivo_campo25",
+      "posicao_inicio": 216,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}

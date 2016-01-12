@@ -1,0 +1,153 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "00.0": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.0": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.0": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 0
+    },
+    "03.0": {
+      "nome": "vazio1",
+      "posicao_inicio": 9,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": ""
+    },
+    "04.0": {
+      "nome": "layout_arquivo",
+      "posicao_inicio": 15,
+      "posicao_fim": 17,
+      "formato": "num",
+      "default": 81
+    },
+    "05.0": {
+      "nome": "tipo_inscricao",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num",
+      "default": 2
+    },
+    "06.0": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+    "07.0": {
+      "nome": "vazio2",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "alfa",
+      "default": ""
+    },
+    "08.0": {
+      "nome": "numero_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+    "09.0": {
+      "nome": "vazio3",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa",
+      "default": ""
+    },
+    "10.0": {
+      "nome": "numero_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+    "11.0": {
+      "nome": "vazio4",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa",
+      "default": ""
+    },
+    "12.0": {
+      "nome": "agencia_conta_dv",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "num"
+    },
+    "13.0": {
+      "nome": "nome_empresa",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa",
+      "default": ""
+    },
+    "14.0": {
+      "nome": "nome_banco",
+      "posicao_inicio": 103,
+      "posicao_fim": 132,
+      "formato": "alfa",
+      "default": ""
+    },
+    "15.0": {
+      "nome": "vazio5",
+      "posicao_inicio": 133,
+      "posicao_fim": 142,
+      "formato": "alfa",
+      "default": ""
+    },
+    "16.0": {
+      "nome": "arquivo_codigo",
+      "posicao_inicio": 143,
+      "posicao_fim": 143,
+      "formato": "num"
+    },
+    "17.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 144,
+      "posicao_fim": 151,
+      "formato": "num"
+    },
+    "18.0": {
+      "nome": "arquivo_hora_de_geracao",
+      "posicao_inicio": 152,
+      "posicao_fim": 157,
+      "formato": "num"
+    },
+    "19.0": {
+      "nome": "vazio6",
+      "posicao_inicio": 158,
+      "posicao_fim": 166,
+      "formato": "num",
+      "default": 0
+    },
+    "20.0": {
+      "nome": "densidade",
+      "posicao_inicio": 167,
+      "posicao_fim": 171,
+      "formato": "num",
+      "default": 0
+    },
+    "21.0": {
+      "nome": "vazio7",
+      "posicao_inicio": 172,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

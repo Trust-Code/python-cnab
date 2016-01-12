@@ -1,0 +1,250 @@
+{
+  "nome": "SegmentoT",
+  "campos": {
+    "01.3T": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.3T": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3T": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3T": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3T": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "T"
+    },
+
+    "06.3T": {
+      "nome": "cnab_exclusivo_campo06dot3T",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3T": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "08.3T": {
+      "nome": "codigo_agencia_cod",
+      "posicao_inicio": 18,
+      "posicao_fim": 22,
+      "formato": "num",
+      "default": 0
+    },
+
+    "09.3T": {
+      "nome": "codigo_agenvia_dv",
+      "posicao_inicio": 23,
+      "posicao_fim": 23,
+      "formato": "num",
+      "default": 0
+    },
+
+    "10.3T": {
+      "nome": "codigo_cedente",
+      "posicao_inicio": 24,
+      "posicao_fim": 29,
+      "formato": "num"
+    },
+
+    "11.3T": {
+      "nome": "caixa_exclusivo_campo11dot3T",
+      "posicao_inicio": 30,
+      "posicao_fim": 32,
+      "formato": "num",
+      "default": 0
+    },
+
+    "11.3T2": {
+      "nome": "numero_banco_sacados",
+      "posicao_inicio": 33,
+      "posicao_fim": 35,
+      "formato": "num"
+    },
+
+    "12.3T": {
+      "nome": "caixa_exclusivo_campo12dot3T",
+      "posicao_inicio": 36,
+      "posicao_fim": 39,
+      "formato": "num",
+      "default": 0
+    },
+
+    "13.3T": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 40,
+      "posicao_fim": 41,
+      "formato": "num"
+    },
+
+    "13.3T": {
+      "nome": "nosso_numero_identificacao",
+      "posicao_inicio": 42,
+      "posicao_fim": 56,
+      "formato": "num"
+    },
+
+    "13.3T3": {
+      "nome": "caixa_exclusivo_campo13dot3T3",
+      "posicao_inicio": 57,
+      "posicao_fim": 57,
+      "formato": "num",
+      "default": 0
+    },
+
+    "14.3T": {
+      "nome": "carteira_cod",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "num"
+    },
+
+    "15.3T": {
+      "nome": "numero_documento",
+      "posicao_inicio": 59,
+      "posicao_fim": 69,
+      "formato": "alfa"
+    },
+
+    "15.3T2": {
+      "nome": "caixa_exclusivo_campo15dot3T2",
+      "posicao_inicio": 70,
+      "posicao_fim": 73,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.3T": {
+      "nome": "vencimento_titulo",
+      "posicao_inicio": 74,
+      "posicao_fim": 81,
+      "formato": "num"
+    },
+
+    "17.3T": {
+      "nome": "valor_titulo",
+      "posicao_inicio": 82,
+      "posicao_fim": 96,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "18.3T": {
+      "nome": "banco_cobrador_recebedor",
+      "posicao_inicio": 97,
+      "posicao_fim": 99,
+      "formato": "num"
+    },
+
+    "19.3T": {
+      "nome": "agencia_cobradora_recebedora",
+      "posicao_inicio": 100,
+      "posicao_fim": 104,
+      "formato": "num"
+    },
+
+    "20.3T": {
+      "nome": "agencia_cobradora_recebedora_dv",
+      "posicao_inicio": 105,
+      "posicao_fim": 105,
+      "formato": "num"
+    },
+
+    "21.3T": {
+      "nome": "uso_empresa",
+      "posicao_inicio": 106,
+      "posicao_fim": 130,
+      "formato": "alfa"
+    },
+
+    "22.3T": {
+      "nome": "codigo_moeda",
+      "posicao_inicio": 131,
+      "posicao_fim": 132,
+      "formato": "num"
+    },
+
+    "23.3T": {
+      "nome": "sacado_inscricao_tipo",
+      "posicao_inicio": 133,
+      "posicao_fim": 133,
+      "formato": "num"
+    },
+
+    "24.3T": {
+      "nome": "sacado_inscricao_numero",
+      "posicao_inicio": 134,
+      "posicao_fim": 148,
+      "formato": "num"
+    },
+
+    "25.3T": {
+      "nome": "sacado_nome",
+      "posicao_inicio": 149,
+      "posicao_fim": 188,
+      "formato": "alfa"
+    },
+
+    "26.3T": {
+      "nome": "cnab_exclusivo_campo26dot3T",
+      "posicao_inicio": 189,
+      "posicao_fim": 198,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "27.3T": {
+      "nome": "valor_tarifas",
+      "posicao_inicio": 199,
+      "posicao_fim": 213,
+      "formato": "num",
+      "decimais": 0
+    },
+
+    "28.3T": {
+      "nome": "motivo_ocorrencia",
+      "posicao_inicio": 214,
+      "posicao_fim": 223,
+      "formato": "alfa"
+    },
+
+    "29.3T": {
+      "nome": "cnab_exclusivo_campo29dot3T",
+      "posicao_inicio": 224,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+
+  }
+}

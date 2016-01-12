@@ -16,7 +16,7 @@ setup(
     provides=[
         'cnab'
     ],
-    license='LGPL',
+    license='MIT',
     description='Classe para gerar arquivo de remessa e leitura de retorno no '
                                                             'padrão CNAB',
     long_description=open('README.md', 'r').read(),
