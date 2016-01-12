@@ -73,255 +73,251 @@
     },
     
     "11.3P": {
-      "nome": "cedente_conta_dv",
-      "posicao_inicio": 36,
-      "posicao_fim": 36,
-      "formato": "alfa"
+      "nome": "percentual_multa",
+      "posicao_inicio": 67,
+      "posicao_fim": 70,
+      "formato": "num",
+      "decimais": 2
     },
 
     "12.3P": {
-      "nome": "cedente_dv_ag_cc",
-      "posicao_inicio": 37,
-      "posicao_fim": 37,
-      "formato": "alfa"
-    },
-
-    "13.3P": {
       "nome": "identificacao_titulo_banco",
-      "posicao_inicio": 38,
-      "posicao_fim": 57,
+      "posicao_inicio": 71,
+      "posicao_fim": 81,
       "formato": "num"
     },
 
+    "13.3P": {
+      "nome": "digito_conferencia_numero_bancario",
+      "posicao_inicio": 82,
+      "posicao_fim": 82,
+      "formato": "alfa"
+    },
+
     "14.3P": {
-      "nome": "cobranca_carteira",
-      "posicao_inicio": 58,
-      "posicao_fim": 58,
+      "nome": "desconto_bonificacao_dia",
+      "posicao_inicio": 83,
+      "posicao_fim": 92,
       "formato": "num"
     },
 
     "15.3P": {
-      "nome": "cobranca_cadastramento",
-      "posicao_inicio": 59,
-      "posicao_fim": 59,
-      "formato": "num"
+      "nome": "condicao_emissao_papeleta",
+      "posicao_inicio": 93,
+      "posicao_fim": 93,
+      "formato": "alfa"
     },
 
     "16.3P": {
-      "nome": "cobranca_documentoTipo",
-      "posicao_inicio": 60,
-      "posicao_fim": 60,
+      "nome": "identificacao_boleto_debito_automatico",
+      "posicao_inicio": 94,
+      "posicao_fim": 94,
       "formato": "alfa"
     },
 
     "17.3P": {
-      "nome": "cobranca_emissaoBloqueto",
-      "posicao_inicio": 61,
-      "posicao_fim": 61,
-      "formato": "num"
+      "nome": "indicador_rateio_credito",
+      "posicao_inicio": 105,
+      "posicao_fim": 105,
+      "formato": "alfa"
     },
 
     "18.3P": {
-      "nome": "cobranca_distribuicaoBloqueto",
-      "posicao_inicio": 62,
-      "posicao_fim": 62,
-      "formato": "alfa"
+      "nome": "enderecamento_aviso_debito_automatico_cc",
+      "posicao_inicio": 106,
+      "posicao_fim": 106,
+      "formato": "num"
     },
 
     "19.3P": {
-      "nome": "numero_documento",
-      "posicao_inicio": 63,
-      "posicao_fim": 77,
-      "formato": "alfa"
+      "nome": "brancos",
+      "posicao_inicio": 107,
+      "posicao_fim": 108,
+      "formato": "alfa",
+      "default": ""
     },
     
     "20.3P": {
-      "nome": "vencimento_titulo",
-      "posicao_inicio": 78,
-      "posicao_fim": 85,
+      "nome": "identificacao_ocorrencia",
+      "posicao_inicio": 109,
+      "posicao_fim": 110,
       "formato": "num"
     },
     
     "21.3P": {
-      "nome": "valor_titulo",
-      "posicao_inicio": 86,
-      "posicao_fim": 100,
-      "formato": "num",
-      "decimais": 2
+      "nome": "numero_documento",
+      "posicao_inicio": 111,
+      "posicao_fim": 120,
+      "formato": "alfa"
     },
 
     "22.3P": {
-      "nome": "agencia_cobradora",
-      "posicao_inicio": 101,
-      "posicao_fim": 105,
-      "formato": "num"
-    },
-
-    "23.3P": {
-      "nome": "agencia_cobradora_dv",
-      "posicao_inicio": 106,
-      "posicao_fim": 106,
-      "formato": "alfa"
-    },
-
-    "24.3P": {
-      "nome": "especie_titulo",
-      "posicao_inicio": 107,
-      "posicao_fim": 108,
-      "formato": "num"
-    },
-
-    "25.3P": {
-      "nome": "aceite_titulo",
-      "posicao_inicio": 109,
-      "posicao_fim": 109,
-      "formato": "alfa"
-    },
-
-    "26.3P": {
-      "nome": "data_emissao_titulo",
-      "posicao_inicio": 110,
-      "posicao_fim": 117,
-      "formato": "num"
-    },
-
-    "27.3P": {
-      "nome": "juros_cod_mora",
-      "posicao_inicio": 118,
-      "posicao_fim": 118,
-      "formato": "num"
-    },
-
-    "28.3P": {
-      "nome": "juros_mora_data",
-      "posicao_inicio": 119,
+      "nome": "vencimento_titulo",
+      "posicao_inicio": 121,
       "posicao_fim": 126,
       "formato": "num"
     },
 
-    "29.3P": {
-      "nome": "juros_mora_taxa_dia",
+    "23.3P": {
+      "nome": "valor_titulo",
       "posicao_inicio": 127,
-      "posicao_fim": 141,
+      "posicao_fim": 139,
       "formato": "num",
       "decimais": 2
     },
 
-    "30.3P": {
-      "nome": "desconto1_cod",
-      "posicao_inicio": 142,
+    "24.3P": {
+      "nome": "banco_encarregado_cobranca",
+      "posicao_inicio": 140,
       "posicao_fim": 142,
+      "formato": "num",
+      "default": 0
+    },
+
+    "25.3P": {
+      "nome": "agencia_depositaria",
+      "posicao_inicio": 143,
+      "posicao_fim": 147,
+      "formato": "alfa",
+      "default": 0
+    },
+
+    "26.3P": {
+      "nome": "especie_titulo",
+      "posicao_inicio": 148,
+      "posicao_fim": 149,
+      "formato": "num"
+    },
+
+    "27.3P": {
+      "nome": "identificacao",
+      "posicao_inicio": 150,
+      "posicao_fim": 150,
+      "formato": "alfa",
+      "default": "N"
+    },
+
+    "28.3P": {
+      "nome": "data_emissao_titulo",
+      "posicao_inicio": 151,
+      "posicao_fim": 156,
+      "formato": "num"
+    },
+
+    "29.3P": {
+      "nome": "primeira_instrucao",
+      "posicao_inicio": 157,
+      "posicao_fim": 158,
+      "formato": "num"
+    },
+
+    "30.3P": {
+      "nome": "segunda_instrucao",
+      "posicao_inicio": 159,
+      "posicao_fim": 160,
       "formato": "num"
     },
 
     "31.3P": {
-      "nome": "desconto1_data",
-      "posicao_inicio": 143,
-      "posicao_fim": 150,
-      "formato": "num"
-    },
-
-    "32.3P": {
-      "nome": "desconto1_percentual",
-      "posicao_inicio": 151,
-      "posicao_fim": 165,
+      "nome": "juros_mora_taxa_dia",
+      "posicao_inicio": 161,
+      "posicao_fim": 173,
       "formato": "num",
       "decimais": 2
     },
 
+    "32.3P": {
+      "nome": "data_limite_desconto",
+      "posicao_inicio": 174,
+      "posicao_fim": 179,
+      "formato": "num"
+    },
+
     "33.3P": {
-      "nome": "valor_iof",
-      "posicao_inicio": 166,
-      "posicao_fim": 180,
+      "nome": "valor_desconto",
+      "posicao_inicio": 180,
+      "posicao_fim": 192,
       "formato": "num",
       "decimais": 2
     },
 
     "34.3P": {
-      "nome": "valor_abatimento",
-      "posicao_inicio": 181,
-      "posicao_fim": 195,
+      "nome": "valor_iof",
+      "posicao_inicio": 193,
+      "posicao_fim": 205,
       "formato": "num",
       "decimais": 2
     },
 
     "35.3P": {
-      "nome": "identificacao_titulo_empresa",
-      "posicao_inicio": 196,
-      "posicao_fim": 220,
-      "formato": "alfa"
+      "nome": "valor_abatimento_concedido_cancelado",
+      "posicao_inicio": 206,
+      "posicao_fim": 218,
+      "formato": "num",
+      "decimais": 2
     },
 
     "36.3P": {
-      "nome": "codigo_protesto",
-      "posicao_inicio": 221,
-      "posicao_fim": 221,
+      "nome": "sacado_inscricao_tipo",
+      "posicao_inicio": 219,
+      "posicao_fim": 220,
       "formato": "num"
     },
     
     "37.3P": {
-      "nome": "prazo_protesto",
-      "posicao_inicio": 222,
-      "posicao_fim": 223,
+      "nome": "sacado_inscricao_numero",
+      "posicao_inicio": 221,
+      "posicao_fim": 234,
       "formato": "num"
     },
 
     "38.3P": {
-      "nome": "codigo_baixa",
-      "posicao_inicio": 224,
-      "posicao_fim": 224,
-      "formato": "num"
+      "nome": "sacado_nome",
+      "posicao_inicio": 235,
+      "posicao_fim": 274,
+      "formato": "alfa"
     },
 
     "39.3P": {
-      "nome": "prazo_baixa",
-      "posicao_inicio": 225,
-      "posicao_fim": 227,
+      "nome": "sacado_endereco",
+      "posicao_inicio": 275,
+      "posicao_fim": 314,
       "formato": "alfa"
     },
 
     "40.3P": {
-      "nome": "codigo_moeda",
-      "posicao_inicio": 228,
-      "posicao_fim": 229,
-      "formato": "num"
+      "nome": "primeira_mensagem",
+      "posicao_inicio": 315,
+      "posicao_fim": 326,
+      "formato": "alfa"
     },
 
     "41.3P": {
-      "nome": "num_contrato",
-      "posicao_inicio": 230,
-      "posicao_fim": 239,
+      "nome": "sacado_cep",
+      "posicao_inicio": 327,
+      "posicao_fim": 331,
       "formato": "num"
     },
 
     "42.3P": {
-      "nome": "febraban_cnab_42d3P",
-      "posicao_inicio": 240,
-      "posicao_fim": 240,
-      "formato": "alfa",
-      "default": ""
+      "nome": "sacado_cep_sufixo",
+      "posicao_inicio": 332,
+      "posicao_fim": 334,
+      "formato": "num"
     },
 
     "43.3P": {
-      "nome": "num_contrato",
-      "posicao_inicio": 230,
-      "posicao_fim": 239,
-      "formato": "num"
+      "nome": "sacador_avalista",
+      "posicao_inicio": 335,
+      "posicao_fim": 394,
+      "formato": "alfa"
     },
 
     "44.3P": {
-      "nome": "num_contrato",
-      "posicao_inicio": 230,
-      "posicao_fim": 239,
-      "formato": "num"
-    },
-
-    "45.3P": {
-      "nome": "num_contrato",
-      "posicao_inicio": 230,
-      "posicao_fim": 239,
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
       "formato": "num"
     }
-    
   }
 }
