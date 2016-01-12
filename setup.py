@@ -2,25 +2,25 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cnab240',
+    name='cnab',
     version='0.01',
     author='Tracy Web Technologies',
     author_email='contato@tracy.com.br',
     url='https://github.com/TracyWebTech/cnab240',
     packages=find_packages(),
     package_data={
-        'cnab240': ['bancos/*/*/*.json']
+        'cnab': ['bancos/*/*/*.json']
     },
     zip_safe=False,
     install_requires=[],
     provides=[
-        'cnab240'
+        'cnab'
     ],
     license='MIT',
     description='Classe para gerar arquivo de remessa e leitura de retorno no '
-                                                            'padrão CNAB240',
+                                                            'padrão CNAB',
     long_description=open('README.md', 'r').read(),
-    download_url='https://github.com/TracyWebTech/cnab240',
+    download_url='https://github.com/kmee/cnab',
     scripts=[],
     classifiers=[],
     platforms='any',
