@@ -363,7 +363,7 @@
       "default": ""
     },
     "57.1": {
-      "nome": "sequencial",
+      "nome": "sequencial_transacao",
       "posicao_inicio": 495,
       "posicao_fim": 500,
       "formato": "num"

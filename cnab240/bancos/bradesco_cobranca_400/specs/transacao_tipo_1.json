@@ -105,7 +105,7 @@
       "nome": "condicao_emissao_papeleta",
       "posicao_inicio": 93,
       "posicao_fim": 93,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "16.3P": {
@@ -113,6 +113,14 @@
       "posicao_inicio": 94,
       "posicao_fim": 94,
       "formato": "alfa"
+    },
+
+    "17.3P": {
+      "nome": "identificacao_operacao_banco",
+      "posicao_inicio": 95,
+      "posicao_fim": 104,
+      "formato": "alfa",
+      "default": ""
     },
 
     "17.3P": {
@@ -141,7 +149,8 @@
       "nome": "identificacao_ocorrencia",
       "posicao_inicio": 109,
       "posicao_fim": 110,
-      "formato": "num"
+      "formato": "num",
+      "default": 1
     },
     
     "21.3P": {
@@ -178,7 +187,7 @@
       "nome": "agencia_depositaria",
       "posicao_inicio": 143,
       "posicao_fim": 147,
-      "formato": "alfa",
+      "formato": "num",
       "default": 0
     },
 

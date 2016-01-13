@@ -90,7 +90,8 @@
       "nome": "identificacao_sistema",
       "posicao_inicio": 109,
       "posicao_fim": 110,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "MX"
     },
 
     "13.0": {
