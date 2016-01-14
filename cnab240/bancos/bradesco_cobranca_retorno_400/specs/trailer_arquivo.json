@@ -1,0 +1,215 @@
+{
+  "nome": "TrailerArquivo",
+  "campos": {
+    "01.9": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 9
+      },
+
+    "02.9": {
+      "nome": "indentificacao_retorno",
+      "posicao_inicio": 2,
+      "posicao_fim": 2,
+      "formato": "num",
+      "default": 2
+    },
+
+    "03.9": {
+      "nome": "identificacao_tipo_registro",
+      "posicao_inicio": 3,
+      "posicao_fim": 4,
+      "formato": "num",
+      "default": 1
+    },
+
+    "04.9": {
+      "nome": "codigo_banco",
+      "posicao_inicio": 5,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 237
+    },
+
+    "05.9": {
+      "nome": "branco_01",
+      "posicao_inicio": 8,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "06.9": {
+      "nome": "quantidade_titulos_cobranca",
+      "posicao_inicio": 18,
+      "posicao_fim": 25,
+      "formato": "num"
+    },
+
+    "07.9": {
+      "nome": "valor_total_cobranca",
+      "posicao_inicio": 26,
+      "posicao_fim": 39,
+      "formato": "num"
+    },
+
+    "08.9": {
+      "nome": "numero_aviso_bancario",
+      "posicao_inicio": 40,
+      "posicao_fim": 47,
+      "formato": "num" 
+    },
+
+    "09.9": {
+      "nome": "branco_02",
+      "posicao_inicio": 48,
+      "posicao_fim": 57,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "10.9": {
+      "nome": "quantidade_registros_ocorrencia_02_confirmacao",
+      "posicao_inicio": 58,
+      "posicao_fim": 62,
+      "formato": "num"
+    },
+
+    "11.9": {
+      "nome": "valor_registros_ocorrencia_02_confirmacao",
+      "posicao_inicio": 63,
+      "posicao_fim": 74,
+      "formato": "num"
+    },
+
+    "12.9": {
+      "nome": "valor_registros_ocorrencia_06_liquidacao",
+      "posicao_inicio": 75,
+      "posicao_fim": 86,
+      "formato": "num"
+    },
+
+    "13.9": {
+      "nome": "quantidade_registros_ocorrencia_06_liquidacao",
+      "posicao_inicio": 87,
+      "posicao_fim": 91,
+      "formato": "num"
+    },
+
+    "14.9": {
+      "nome": "valor_registros_ocorrencia_06",
+      "posicao_inicio": 92,
+      "posicao_fim": 103,
+      "formato": "num"
+    },
+
+    "15.9": {
+      "nome": "quantidade_registros_ocorrencia_09_10",
+      "posicao_inicio": 104,
+      "posicao_fim": 108,
+      "formato": "num" 
+    },
+
+    "16.9": {
+      "nome": "valor_registros_ocorrencia_09_10",
+      "posicao_inicio": 109,
+      "posicao_fim": 120,
+      "formato": "num"
+    },
+
+    "17.9": {
+      "nome": "quantidade_registros_ocorrencia_13",
+      "posicao_inicio": 121,
+      "posicao_fim": 125,
+      "formato": "num"
+    },
+
+    "18.9": {
+      "nome": "valor_registros_ocorrencia_13",
+      "posicao_inicio": 126,
+      "posicao_fim": 137,
+      "formato": "num"
+    },
+
+    "18.9": {
+      "nome": "quantidade_registros_ocorrencia_14",
+      "posicao_inicio": 138,
+      "posicao_fim": 142,
+      "formato": "num"
+    },
+
+    "19.9": {
+      "nome": "valor_registros_ocorrencia_14",
+      "posicao_inicio": 143,
+      "posicao_fim": 154,
+      "formato": "num"
+    },
+
+    "20.9": {
+      "nome": "quantidade_registros_ocorrencia_12",
+      "posicao_inicio": 155,
+      "posicao_fim": 159,
+      "formato": "num"
+    },
+
+    "21.9": {
+      "nome": "valor_registros_ocorrencia_12",
+      "posicao_inicio": 160,
+      "posicao_fim": 171,
+      "formato": "num"
+    },
+
+    "22.9": {
+      "nome": "quantidade_registros_ocorrencia_19",
+      "posicao_inicio": 172,
+      "posicao_fim": 176,
+      "formato": "num"
+    },
+
+    "23.9": {
+      "nome": "valor_registros_ocorrencia_19",
+      "posicao_inicio": 177,
+      "posicao_fim": 188,
+      "formato": "num"
+    },
+
+    "24.9": {
+      "nome": "branco_03",
+      "posicao_inicio": 189,
+      "posicao_fim": 362,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "25.9": {
+      "nome": "valor_total_rateios_efetuados",
+      "posicao_inicio": 363,
+      "posicao_fim": 377,
+      "formato": "num"
+    },
+
+    "26.9": {
+      "nome": "quantidade_total_rateios_efetuados",
+      "posicao_inicio": 378,
+      "posicao_fim": 385,
+      "formato": "num"
+    },
+
+    "27.9": {
+      "nome": "branco_04",
+      "posicao_inicio": 386,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "28.9": {
+      "nome": "numero_sequencial_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }
+  }
+}

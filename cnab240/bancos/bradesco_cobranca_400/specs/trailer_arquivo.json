@@ -1,0 +1,27 @@
+{
+  "nome": "TrailerArquivo",
+  "campos": {
+    "01.9": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 9
+      },
+
+    "02.9": {
+      "nome": "branco",
+      "posicao_inicio": 2,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "03.9": {
+      "nome": "num_seq_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }
+  }
+}

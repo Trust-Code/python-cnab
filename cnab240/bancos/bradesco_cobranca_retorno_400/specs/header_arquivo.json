@@ -1,0 +1,126 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "01.0": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 0
+      },
+
+    "02.0": {
+      "nome": "identificacao_arquivo_retorno",
+      "posicao_inicio": 2,
+      "posicao_fim": 2,
+      "formato": "num",
+      "default": 2
+    },
+
+    "03.0": {
+      "nome": "literal_retorno",
+      "posicao_inicio": 3,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "RETORNO"
+    },
+
+    "04.0": {
+      "nome": "codigo_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 1
+    },
+
+    "05.0": {
+      "nome": "literal_servico",
+      "posicao_inicio": 12,
+      "posicao_fim": 26,
+      "formato": "alfa",
+      "default": "COBRANCA"
+    },
+
+    "06.0": {
+      "nome": "codigo_empresa",
+      "posicao_inicio": 27,
+      "posicao_fim": 46,
+      "formato": "num"
+    },
+
+    "07.0": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 47,
+      "posicao_fim": 76,
+      "formato": "alfa"
+    },
+
+    "08.0": {
+      "nome": "numero_bradesco_camara_compensacao",
+      "posicao_inicio": 77,
+      "posicao_fim": 79,
+      "formato": "num",
+      "default": 237
+    },
+
+    "09.0": {
+      "nome": "nome_banco",
+      "posicao_inicio": 80,
+      "posicao_fim": 94,
+      "formato": "alfa",
+      "default": "BRADESCO"
+    },
+
+    "10.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 95,
+      "posicao_fim": 100,
+      "formato": "num"
+    },
+
+    "11.0": {
+      "nome": "zeros",
+      "posicao_inicio": 101,
+      "posicao_fim": 108,
+      "formato": "num",
+      "default": 0
+    },
+
+    "12.0": {
+      "nome": "numero_aviso_bancario",
+      "posicao_inicio": 109,
+      "posicao_fim": 113,
+      "formato": "num"
+    },
+
+    "13.0": {
+      "nome": "branco_01",
+      "posicao_inicio": 114,
+      "posicao_fim": 379,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "14.0": {
+      "nome": "data_credito",
+      "posicao_inicio": 380,
+      "posicao_fim": 385,
+      "formato": "num"
+    },
+
+    "15.0": {
+      "nome": "branco_02",
+      "posicao_inicio": 386,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.0":{
+      "nome": "numero_sequencial_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }
+  }
+}

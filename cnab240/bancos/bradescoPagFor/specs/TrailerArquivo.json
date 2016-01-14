@@ -29,7 +29,7 @@
       "formato": "alfa"
     },
     "04.9": {
-      "nome": "sequencial_trailer",
+      "nome": "sequencial_transacao",
       "posicao_inicio": 495,
       "posicao_fim": 500,
       "formato": "num"
