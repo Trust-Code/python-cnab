@@ -52,7 +52,7 @@
     },
 
     "08.3P": {
-      "nome": "controle_participante",
+      "nome": "participante_controle",
       "posicao_inicio": 38,
       "posicao_fim": 62,
       "formato": "alfa"
@@ -123,21 +123,21 @@
       "default": ""
     },
 
-    "17.3P": {
+    "18.3P": {
       "nome": "indicador_rateio_credito",
       "posicao_inicio": 105,
       "posicao_fim": 105,
       "formato": "alfa"
     },
 
-    "18.3P": {
+    "19.3P": {
       "nome": "enderecamento_aviso_debito_automatico_cc",
       "posicao_inicio": 106,
       "posicao_fim": 106,
-      "formato": "num"
+      "formato": "alfa"
     },
 
-    "19.3P": {
+    "20.3P": {
       "nome": "brancos",
       "posicao_inicio": 107,
       "posicao_fim": 108,
@@ -145,29 +145,28 @@
       "default": ""
     },
     
-    "20.3P": {
+    "21.3P": {
       "nome": "identificacao_ocorrencia",
       "posicao_inicio": 109,
       "posicao_fim": 110,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
     
-    "21.3P": {
+    "22.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 111,
       "posicao_fim": 120,
       "formato": "alfa"
     },
 
-    "22.3P": {
+    "23.3P": {
       "nome": "vencimento_titulo",
       "posicao_inicio": 121,
       "posicao_fim": 126,
       "formato": "num"
     },
 
-    "23.3P": {
+    "24.3P": {
       "nome": "valor_titulo",
       "posicao_inicio": 127,
       "posicao_fim": 139,
@@ -175,7 +174,7 @@
       "decimais": 2
     },
 
-    "24.3P": {
+    "25.3P": {
       "nome": "banco_encarregado_cobranca",
       "posicao_inicio": 140,
       "posicao_fim": 142,
@@ -183,7 +182,7 @@
       "default": 0
     },
 
-    "25.3P": {
+    "26.3P": {
       "nome": "agencia_depositaria",
       "posicao_inicio": 143,
       "posicao_fim": 147,
@@ -191,14 +190,14 @@
       "default": 0
     },
 
-    "26.3P": {
+    "27.3P": {
       "nome": "especie_titulo",
       "posicao_inicio": 148,
       "posicao_fim": 149,
       "formato": "num"
     },
 
-    "27.3P": {
+    "28.3P": {
       "nome": "identificacao",
       "posicao_inicio": 150,
       "posicao_fim": 150,
@@ -206,28 +205,28 @@
       "default": "N"
     },
 
-    "28.3P": {
+    "29.3P": {
       "nome": "data_emissao_titulo",
       "posicao_inicio": 151,
       "posicao_fim": 156,
       "formato": "num"
     },
 
-    "29.3P": {
+    "30.3P": {
       "nome": "primeira_instrucao",
       "posicao_inicio": 157,
       "posicao_fim": 158,
       "formato": "num"
     },
 
-    "30.3P": {
+    "31.3P": {
       "nome": "segunda_instrucao",
       "posicao_inicio": 159,
       "posicao_fim": 160,
       "formato": "num"
     },
 
-    "31.3P": {
+    "32.3P": {
       "nome": "juros_mora_taxa_dia",
       "posicao_inicio": 161,
       "posicao_fim": 173,
@@ -235,14 +234,14 @@
       "decimais": 2
     },
 
-    "32.3P": {
+    "33.3P": {
       "nome": "data_limite_desconto",
       "posicao_inicio": 174,
       "posicao_fim": 179,
       "formato": "num"
     },
 
-    "33.3P": {
+    "34.3P": {
       "nome": "valor_desconto",
       "posicao_inicio": 180,
       "posicao_fim": 192,
@@ -250,7 +249,7 @@
       "decimais": 2
     },
 
-    "34.3P": {
+    "35.3P": {
       "nome": "valor_iof",
       "posicao_inicio": 193,
       "posicao_fim": 205,
@@ -258,7 +257,7 @@
       "decimais": 2
     },
 
-    "35.3P": {
+    "36.3P": {
       "nome": "valor_abatimento_concedido_cancelado",
       "posicao_inicio": 206,
       "posicao_fim": 218,
@@ -266,64 +265,64 @@
       "decimais": 2
     },
 
-    "36.3P": {
+    "37.3P": {
       "nome": "sacado_inscricao_tipo",
       "posicao_inicio": 219,
       "posicao_fim": 220,
       "formato": "num"
     },
     
-    "37.3P": {
+    "38.3P": {
       "nome": "sacado_inscricao_numero",
       "posicao_inicio": 221,
       "posicao_fim": 234,
       "formato": "num"
     },
 
-    "38.3P": {
+    "39.3P": {
       "nome": "sacado_nome",
       "posicao_inicio": 235,
       "posicao_fim": 274,
       "formato": "alfa"
     },
 
-    "39.3P": {
+    "40.3P": {
       "nome": "sacado_endereco",
       "posicao_inicio": 275,
       "posicao_fim": 314,
       "formato": "alfa"
     },
 
-    "40.3P": {
+    "41.3P": {
       "nome": "primeira_mensagem",
       "posicao_inicio": 315,
       "posicao_fim": 326,
       "formato": "alfa"
     },
 
-    "41.3P": {
+    "42.3P": {
       "nome": "sacado_cep",
       "posicao_inicio": 327,
       "posicao_fim": 331,
       "formato": "num"
     },
 
-    "42.3P": {
+    "43.3P": {
       "nome": "sacado_cep_sufixo",
       "posicao_inicio": 332,
       "posicao_fim": 334,
       "formato": "num"
     },
 
-    "43.3P": {
+    "44.3P": {
       "nome": "sacador_avalista",
       "posicao_inicio": 335,
       "posicao_fim": 394,
       "formato": "alfa"
     },
 
-    "44.3P": {
-      "nome": "servico_numero_registro",
+    "45.3P": {
+      "nome": "numero_registro_servico",
       "posicao_inicio": 395,
       "posicao_fim": 400,
       "formato": "num"
