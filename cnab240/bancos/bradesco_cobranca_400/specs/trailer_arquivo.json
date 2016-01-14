@@ -18,7 +18,7 @@
     },
 
     "03.9": {
-      "nome": "numero_sequencial_registro",
+      "nome": "num_seq_registro",
       "posicao_inicio": 395,
       "posicao_fim": 400,
       "formato": "num"

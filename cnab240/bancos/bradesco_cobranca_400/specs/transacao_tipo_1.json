@@ -322,7 +322,7 @@
     },
 
     "45.3P": {
-      "nome": "numero_registro_servico",
+      "nome": "num_seq_registro",
       "posicao_inicio": 395,
       "posicao_fim": 400,
       "formato": "num"

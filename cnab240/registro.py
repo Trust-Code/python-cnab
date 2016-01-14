@@ -23,6 +23,7 @@ class CampoBase(object):
 
     @valor.setter
     def valor(self, valor):
+
         if self.formato == 'alfa':
             if not isinstance(valor, unicode):
                 print "{0} - {1}".format(self.nome, self.valor)
