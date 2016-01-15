@@ -33,7 +33,7 @@
       "formato": "num"
     },
     "05.0": {
-      "nome": "controle_cnpj",
+      "nome": "sufixo_cnpj",
       "posicao_inicio": 24,
       "posicao_fim": 25,
       "formato": "num"
