@@ -27,7 +27,7 @@
       "formato": "num"
     },
     "04.1": {
-      "nome": "controle_cnpj_cpf_forn",
+      "nome": "cnpj_cpf_forn_sufixo",
       "posicao_inicio": 16,
       "posicao_fim": 17,
       "formato": "num"
