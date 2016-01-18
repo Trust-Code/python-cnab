@@ -71,11 +71,10 @@
       "formato": "num"
     },
     "11.1": {
-      "nome": "digito_agencia_forn",
+      "nome": "digito_agencia_forn_transacao",
       "posicao_inicio": 104,
       "posicao_fim": 104,
-      "formato": "alfa",
-      "default": ""
+      "formato": "alfa"
     },
     "12.1": {
       "nome": "conta_corrente_forn",
@@ -84,7 +83,7 @@
       "formato": "num"
     },
     "13.1": {
-      "nome": "digito_conta_forn",
+      "nome": "digito_conta_forn_transacao",
       "posicao_inicio": 118,
       "posicao_fim": 119,
       "formato": "alfa",
