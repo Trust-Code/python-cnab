@@ -93,7 +93,7 @@
       "nome": "numero_pagamento",
       "posicao_inicio": 120,
       "posicao_fim": 135,
-      "formato": "num"
+      "formato": "alfa"
     },
     "15.1": {
       "nome": "carteira",
