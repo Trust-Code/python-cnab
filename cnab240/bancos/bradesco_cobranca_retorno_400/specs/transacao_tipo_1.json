@@ -244,7 +244,7 @@
       "nome": "data_credito",
       "posicao_inicio": 296,
       "posicao_fim": 301,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "35.3P": {
