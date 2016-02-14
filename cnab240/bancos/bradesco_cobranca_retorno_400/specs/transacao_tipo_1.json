@@ -121,7 +121,7 @@
     },
 
     "17.3P": {
-      "nome": "identificacao_titulo_banco",
+      "nome": "identificacao_titulo_banco_2",
       "posicao_inicio": 127,
       "posicao_fim": 146,
       "formato": "alfa"
@@ -259,7 +259,7 @@
       "nome": "motivo_rejeicao_ocorrencia_109_110",
       "posicao_inicio": 319,
       "posicao_fim": 328,
-      "formato": "num"
+      "formato": "alfa"
     },
     
     "37.3P": {
