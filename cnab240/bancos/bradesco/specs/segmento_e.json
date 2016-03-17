@@ -1,0 +1,205 @@
+{
+  "nome": "SegmentoE",
+  "campos": {
+    "01.3E": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num"
+      },
+
+    "02.3E": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3E": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3E": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3E": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "E"
+    },
+
+     "06.3E": {
+      "nome": "febraban_cnab_6d3E",
+      "posicao_inicio": 15,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3E": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "08.3E": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "09.3E": {
+      "nome": "cedente_convenio",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "alfa"
+    },
+
+    "10.3E": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+
+    "11.3E": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa"
+    },
+
+    "12.3E": {
+      "nome": "cedente_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+
+    "13.3E": {
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa"
+    },
+
+    "14.3E": {
+      "nome": "cedente_dv_ag_cc",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "alfa"
+    },
+
+    "15.3E": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa"
+    },
+
+    "16.3E": {
+      "nome": "febraban_cnab_16d3E",
+      "posicao_inicio": 103,
+      "posicao_fim": 108,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "17.3E": {
+      "nome": "natureza",
+      "posicao_inicio": 109,
+      "posicao_fim": 111,
+      "formato": "alfa"
+    },
+
+    "18.3E": {
+      "nome": "tipo_complemento",
+      "posicao_inicio": 112,
+      "posicao_fim": 113,
+      "formato": "num"
+    },
+
+    "19.3E": {
+      "nome": "complemento",
+      "posicao_inicio": 114,
+      "posicao_fim": 133,
+      "formato": "alfa"
+    },
+
+    "20.3E": {
+      "nome": "cpmf",
+      "posicao_inicio": 134,
+      "posicao_fim": 134,
+      "formato": "alfa"
+    },
+
+    "21.3E": {
+      "nome": "data",
+      "posicao_inicio": 135,
+      "posicao_fim": 142,
+      "formato": "num"
+    },
+
+    "22.3E": {
+      "nome": "lancamento_data",
+      "posicao_inicio": 143,
+      "posicao_fim": 150,
+      "formato": "num"
+    },
+
+    "23.3E": {
+      "nome": "lancamento_valor",
+      "posicao_inicio": 151,
+      "posicao_fim": 168,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "24.3E": {
+      "nome": "lancamento_tipo",
+      "posicao_inicio": 169,
+      "posicao_fim": 169,
+      "formato": "alfa"
+    },
+
+    "25.3E": {
+      "nome": "lancamento_categoria",
+      "posicao_inicio": 170,
+      "posicao_fim": 172,
+      "formato": "num"
+    },
+
+    "26.3E": {
+      "nome": "lancamento_codigo_historico",
+      "posicao_inicio": 173,
+      "posicao_fim": 176,
+      "formato": "alfa"
+    },
+
+    "27.3E": {
+      "nome": "historico",
+      "posicao_inicio": 177,
+      "posicao_fim": 201,
+      "formato": "alfa"
+    },
+
+    "28.3E": {
+      "nome": "numero_documento",
+      "posicao_inicio": 202,
+      "posicao_fim": 240,
+      "formato": "alfa"
+    }
+  }
+}
