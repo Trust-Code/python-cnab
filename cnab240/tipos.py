@@ -168,6 +168,12 @@ class Arquivo(object):
                     trailer_lote = self.banco.registros.TrailerLoteCobranca()
                     lote_aberto = Lote(self.banco, header_lote, trailer_lote)
                     self._lotes.append(lote_aberto)
+                elif codigo_servico == '04':
+                    header_lote = self.banco.registros.HeaderLoteExtrato()
+                    header_lote.carregar(linha)
+                    trailer_lote = self.banco.registros.TrailerLoteExtrato()
+                    lote_aberto = Lote(self.banco, header_lote, trailer_lote)
+                    self._lotes.append(lote_aberto)
 
             elif tipo_registro == '3':
                 tipo_segmento = linha[13]
@@ -186,6 +192,15 @@ class Arquivo(object):
                     seg_u.carregar(linha)
                     evento_aberto._segmentos.append(seg_u)
                     evento_aberto = None
+
+                elif tipo_segmento == 'E':
+                    seg_e = self.banco.registros.SegmentoE()
+                    seg_e.carregar(linha)
+                    if codigo_evento == '  ':
+                        codigo_evento = 0
+                    evento_aberto = Evento(self.banco, int(codigo_evento))
+                    lote_aberto._eventos.append(evento_aberto)
+                    evento_aberto._segmentos.append(seg_e)
 
             elif tipo_registro == '5':
                 if trailer_lote is not None:

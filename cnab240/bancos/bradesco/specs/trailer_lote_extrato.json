@@ -108,7 +108,7 @@
       "posicao_inicio": 107,
       "posicao_fim": 124,
       "formato": "num",
-      "decimais": "2"
+      "decimais": 2
     },
 
     "16.5": {
@@ -116,7 +116,7 @@
       "posicao_inicio": 125,
       "posicao_fim": 142,
       "formato": "num",
-      "decimais": "2"
+      "decimais": 2
     },
 
     "17.5": {
@@ -131,7 +131,7 @@
       "posicao_inicio": 151,
       "posicao_fim": 168,
       "formato": "num",
-      "decimais": "2"
+      "decimais": 2
     },
 
     "19.5": {
