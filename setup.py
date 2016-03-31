@@ -8,11 +8,9 @@ setup(
     author_email='contato@tracy.com.br',
     url='https://github.com/TracyWebTech/cnab240',
     packages=find_packages(),
-    package_data={
-        'cnab': ['bancos/*/*/*.json']
-    },
+    include_package_data=True,
     zip_safe=False,
-    install_requires=[],
+    install_requires=['setuptools-git'],
     provides=[
         'cnab'
     ],
