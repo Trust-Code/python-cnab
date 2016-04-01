@@ -105,6 +105,31 @@ CODIGO_MOTIVOS_OCORRENCIA = {
         '20': 'Titulo Baixado e Transferido para Desconto',
     },
 
+    '12': {
+        'codigo_ocorrencia': '12',
+        'texto': 'Abatimento Concedido',
+        '00': 'N/A',
+    },
+
+    '14': {
+        'codigo_ocorrencia': '14',
+        'texto': 'Vencimento Alterado',
+        '00': 'N/A',
+    },
+
+    '15': {
+        'codigo_ocorrencia': '15',
+        'texto': 'Liquidação em cartório',
+        '00': 'Título pago com dinheiro',
+        '15':'Título pago com cheque',
+    },
+
+    '16': {
+        'codigo_ocorrencia': '16',
+        'texto': 'Título pago em cheque',
+        '00': 'Vinculado',
+    },
+
     '19': {
         'codigo_ocorrencia': '19',
         'texto': 'Confirmação Receb. Inst. de Protesto',
@@ -115,6 +140,13 @@ CODIGO_MOTIVOS_OCORRENCIA = {
         'codigo_ocorrencia': '23',
         'texto': 'Entrada do Título em Cartório',
         '00': 'N/A',
+    },
+
+    '24': {
+        'codigo_ocorrencia': '24',
+        'texto': 'Entrada rejeitada por CEP Irregular',
+        '00': '',
+        '48': 'CEP inválido',
     },
 
     '28': {
