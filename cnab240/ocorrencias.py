@@ -130,6 +130,13 @@ CODIGO_MOTIVOS_OCORRENCIA = {
         '00': 'Vinculado',
     },
 
+    '17': {
+        'codigo_ocorrencia': '17',
+        'texto': 'Liquidação após baixa ou Título não registrado Motivo',
+        '00': 'Título pago com dinheiro',
+        '15': 'Título pago com cheque'
+    },
+
     '19': {
         'codigo_ocorrencia': '19',
         'texto': 'Confirmação Receb. Inst. de Protesto',
