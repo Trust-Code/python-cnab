@@ -132,7 +132,7 @@ CODIGO_MOTIVOS_OCORRENCIA = {
 
     '17': {
         'codigo_ocorrencia': '17',
-        'texto': 'Liquidação após baixa ou Título não registrado Motivo',
+        'texto': 'Liquidação após baixa ou Título não registrado',
         '00': 'Título pago com dinheiro',
         '15': 'Título pago com cheque'
     },
