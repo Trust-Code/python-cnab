@@ -200,6 +200,13 @@
       "posicao_inicio": 202,
       "posicao_fim": 240,
       "formato": "alfa"
+    },
+
+    "29.3E": {
+      "nome": "valor_pago",
+      "posicao_inicio": 254,
+      "posicao_fim": 266,
+      "formato": "num"
     }
   }
 }
