@@ -45,8 +45,8 @@
             "nome": "vazio1",
             "posicao_inicio": 12,
             "posicao_fim": 13,
-            "formato": "num",
-            "default": 0
+            "formato": "alfa",
+            "default": ""
         },
 
         "07.1": {
@@ -124,14 +124,14 @@
             "default": ""
         },
 
-        "19.1": {
+        "17.1": {
             "nome": "cedente_nome",
             "posicao_inicio": 74,
             "posicao_fim": 103,
             "formato": "alfa"
         },
 
-        "20.1": {
+        "18.1": {
             "nome": "mensagem_um",
             "posicao_inicio": 104,
             "posicao_fim": 143,
@@ -139,7 +139,7 @@
             "default": ""
         },
 
-        "21.1": {
+        "19.1": {
             "nome": "mensagem_dois",
             "posicao_inicio": 144,
             "posicao_fim": 183,
@@ -147,21 +147,21 @@
             "default": ""
         },
 
-        "22.1": {
+        "20.1": {
             "nome": "controlecob_numero",
             "posicao_inicio": 184,
             "posicao_fim": 191,
             "formato": "num"
         },
 
-        "23.1": {
+        "21.1": {
             "nome": "controlecob_data_gravacao",
             "posicao_inicio": 192,
             "posicao_fim": 199,
             "formato": "num"
         },
 
-        "23.1": {
+        "22.1": {
             "nome": "vazio8",
             "posicao_inicio": 200,
             "posicao_fim": 207,
@@ -169,7 +169,7 @@
             "default": 0
         },
 
-        "24.1": {
+        "23.1": {
             "nome": "vazio9",
             "posicao_inicio": 208,
             "posicao_fim": 240,

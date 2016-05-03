@@ -96,7 +96,7 @@
             "nome": "nosso_numero",
             "posicao_inicio": 38,
             "posicao_fim": 57,
-            "formato": "num"
+            "formato": "alfa"
         },
 
         "14.3P": {
@@ -173,8 +173,8 @@
             "nome": "agencia_cobradora_dv",
             "posicao_inicio": 106,
             "posicao_fim": 106,
-            "formato": "num",
-            "default": 0
+            "formato": "alfa",
+            "default": ""
         },
 
         "24.3P": {
@@ -289,7 +289,7 @@
             "default": 0
         },
 
-        "28.3P": {
+        "38.3P": {
             "nome": "codigo_baixa",
             "posicao_inicio": 224,
             "posicao_fim": 224,
