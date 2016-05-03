@@ -181,7 +181,7 @@
             "posicao_inicio": 211,
             "posicao_fim": 215,
             "formato": "num",
-            "default":
+            "default": 0
         },
 
         "24.3R": {

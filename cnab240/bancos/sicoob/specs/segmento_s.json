@@ -29,7 +29,7 @@
             "nome": "servico_numero_registro",
             "posicao_inicio": 9,
             "posicao_fim": 13,
-            "formato": "num",
+            "formato": "num"
         },
 
         "05.3S": {
@@ -68,35 +68,35 @@
             "nome": "informacao5",
             "posicao_inicio": 19,
             "posicao_fim": 58,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "10.3S": {
             "nome": "informacao6",
             "posicao_inicio": 59,
             "posicao_fim": 98,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "11.3S": {
             "nome": "informacao7",
             "posicao_inicio": 99,
             "posicao_fim": 138,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "12.3S": {
             "nome": "informacao8",
             "posicao_inicio": 139,
             "posicao_fim": 178,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "13.3S": {
             "nome": "informacao9",
             "posicao_inicio": 179,
             "posicao_fim": 218,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "14.3S": {
@@ -105,6 +105,6 @@
             "posicao_fim": 240,
             "formato": "alfa",
             "default": ""
-        },
+        }
     }
 }

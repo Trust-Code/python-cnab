@@ -54,7 +54,7 @@
             "posicao_inicio": 14,
             "posicao_fim": 16,
             "formato": "num",
-            "default": 40
+            "default": 45
         },
 
         "08.1": {
@@ -106,14 +106,14 @@
             "nome": "cedente_conta",
             "posicao_inicio": 60,
             "posicao_fim": 71,
-            "formato": "num",
+            "formato": "num"
         },
 
         "15.1": {
             "nome": "cedente_conta_dv",
             "posicao_inicio": 72,
             "posicao_fim": 72,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "16.1": {
@@ -122,21 +122,6 @@
             "posicao_fim": 73,
             "formato": "alfa",
             "default": ""
-        },
-
-        "17.1": {
-            "nome": "cedente_nome",
-            "posicao_inicio": 74,
-            "posicao_fim": 103,
-            "formato": "alfa",
-            "default": ""
-        },
-
-        "18.1": {
-            "nome": "cedente_agencia_conta_dv",
-            "posicao_inicio": 73,
-            "posicao_fim": 73,
-            "formato": "num"
         },
 
         "19.1": {
@@ -163,7 +148,7 @@
         },
 
         "22.1": {
-            "nome": "controlecob_numero_remret",
+            "nome": "controlecob_numero",
             "posicao_inicio": 184,
             "posicao_fim": 191,
             "formato": "num"
@@ -177,7 +162,7 @@
         },
 
         "23.1": {
-            "nome": "data_credito",
+            "nome": "vazio8",
             "posicao_inicio": 200,
             "posicao_fim": 207,
             "formato": "num",
@@ -191,6 +176,5 @@
             "formato": "alfa",
             "default": ""
         }
-
     }
 }

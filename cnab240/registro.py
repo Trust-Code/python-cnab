@@ -25,7 +25,7 @@ class CampoBase(object):
     def valor(self, valor):
 
         if self.formato == 'alfa':
-            if not isinstance(valor, unicode):
+            if not isinstance(valor, basestring):
                 print "{0} - {1}".format(self.nome, self.valor)
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
@@ -135,6 +135,7 @@ class RegistroBase(object):
         return super(RegistroBase, cls).__new__(new_cls, **kwargs)
 
     def __init__(self, **kwargs):
+        print kwargs
         self.fromdict(kwargs)
 
     def necessario(self):

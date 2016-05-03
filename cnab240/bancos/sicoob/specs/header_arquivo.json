@@ -51,8 +51,8 @@
             "nome": "vazio2",
             "posicao_inicio": 33,
             "posicao_fim": 52,
-            "formato": "alfa",
-            "default": ""
+            "formato": "num",
+            "default": 0
         },
 
         "08.0": {
@@ -67,15 +67,14 @@
             "nome": "cedente_agencia_dv",
             "posicao_inicio": 58,
             "posicao_fim": 58,
-            "formato": "alfa",
+            "formato": "alfa"
         },
 
         "10.0": {
             "nome": "cedente_conta",
             "posicao_inicio": 59,
             "posicao_fim": 70,
-            "formato": "alfa",
-            "default": ""
+            "formato": "num"
         },
 
         "11.0": {
@@ -151,15 +150,15 @@
             "posicao_inicio": 164,
             "posicao_fim": 166,
             "formato": "alfa",
-            "default": "081"
+            "default": "087"
         },
 
         "21.0": {
             "nome": "vazio5",
             "posicao_inicio": 167,
             "posicao_fim": 171,
-            "formato": "alfa",
-            "default": "0000"
+            "formato": "num",
+            "default": 0
         },
 
         "22.0": {
