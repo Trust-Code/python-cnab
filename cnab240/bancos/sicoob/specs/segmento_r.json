@@ -122,10 +122,11 @@
         },
 
         "16.3R": {
-            "nome": "valor_multa",
+            "nome": "juros_multa",
             "posicao_inicio": 75,
             "posicao_fim": 89,
-            "formato": "num"
+            "formato": "num",
+            "decimais": 2
         },
 
         "17.3R": {

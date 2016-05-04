@@ -135,7 +135,6 @@ class RegistroBase(object):
         return super(RegistroBase, cls).__new__(new_cls, **kwargs)
 
     def __init__(self, **kwargs):
-        print kwargs
         self.fromdict(kwargs)
 
     def necessario(self):

@@ -54,7 +54,7 @@
             "posicao_inicio": 14,
             "posicao_fim": 16,
             "formato": "num",
-            "default": 45
+            "default": 40
         },
 
         "08.1": {

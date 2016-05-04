@@ -216,7 +216,7 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, **kwargs):
+    def incluir_cobranca(self, header, **kwargs):
         # 1 eh o codigo de cobranca
         codigo_evento = 1
         evento = Evento(self.banco, codigo_evento)
@@ -234,7 +234,7 @@ class Arquivo(object):
         lote_cobranca = self.encontrar_lote(codigo_evento)
 
         if lote_cobranca is None:
-            header = self.banco.registros.HeaderLoteCobranca(**self.header.todict())
+            header = self.banco.registros.HeaderLoteCobranca(**header)
             trailer = self.banco.registros.TrailerLoteCobranca()
             lote_cobranca = Lote(self.banco, header, trailer)
             self.adicionar_lote(lote_cobranca)

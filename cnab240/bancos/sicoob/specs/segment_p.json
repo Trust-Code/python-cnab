@@ -215,7 +215,7 @@
         },
 
         "29.3P": {
-            "nome": "juros_mora_taxa_dia",
+            "nome": "juros_mora_taxa",
             "posicao_inicio": 127,
             "posicao_fim": 141,
             "formato": "num",
