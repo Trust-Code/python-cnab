@@ -7,7 +7,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 341
+      "default": 756
     },
 
     "02.3U": {
@@ -104,42 +104,50 @@
     },
 
     "14.3U": {
-      "nome": "vazio2",
+      "nome": "outras_despesas",
       "posicao_inicio": 108,
-      "posicao_fim": 137,
+      "posicao_fim": 122,
       "formato": "num",
-      "default": 0
+      "decimais": 2
     },
 
     "15.3U": {
+      "nome": "outros_creditos",
+      "posicao_inicio": 123,
+      "posicao_fim": 137,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "16.3U": {
       "nome": "data_ocorrencia",
       "posicao_inicio": 138,
       "posicao_fim": 145,
       "formato": "num"
     },
 
-    "16.3U": {
+    "17.3U": {
       "nome": "data_credito",
       "posicao_inicio": 146,
       "posicao_fim": 153,
       "formato": "num"
     },
 
-    "17.3U": {
+    "18.3U": {
       "nome": "ocorrencia_codigo",
       "posicao_inicio": 154,
       "posicao_fim": 157,
-      "formato": "num"
-    },
-
-    "18.3U": {
-      "nome": "ocorrencia_data",
-      "posicao_inicio": 158,
-      "posicao_fim": 165,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "19.3U": {
+      "nome": "ocorrencia_data",
+      "posicao_inicio": 158,
+      "posicao_fim": 165,
+      "formato": "alfa"
+    },
+
+    "20.3U": {
       "nome": "ocorrencia_valor",
       "posicao_inicio": 166,
       "posicao_fim": 180,
@@ -147,7 +155,7 @@
       "decimais": 2
     },
 
-    "20.3U": {
+    "21.3U": {
       "nome": "vazio3",
       "posicao_inicio": 181,
       "posicao_fim": 210,
@@ -155,15 +163,22 @@
       "default": ""
     },
 
-    "21.3U": {
+    "22.3U": {
       "nome": "vazio4",
       "posicao_inicio": 211,
-      "posicao_fim": 233,
+      "posicao_fim": 213,
       "formato": "num",
       "default": 0
     },
 
-    "22.3U": {
+    "23.3U": {
+      "nome": "vazio4",
+      "posicao_inicio": 214,
+      "posicao_fim": 233,
+      "formato": "num"
+    },
+
+    "24.3U": {
       "nome": "vazio5",
       "posicao_inicio": 234,
       "posicao_fim": 240,

@@ -23,6 +23,16 @@ class AtribuicaoCampoError(Cnab240Error):
                 repr(self.valor),
             )
 
+    def __str__(self):
+        return 'campo:{0} formato:{1} decimais:{2} digitos:{3} - valor:{4}'.\
+            format(
+                self.campo.nome,
+                self.campo.formato,
+                self.campo.decimais,
+                self.campo.digitos,
+                repr(self.valor),
+            )
+
 
 class NumDigitosExcedidoError(AtribuicaoCampoError):
     """Tentativa de atribuicao de valor mais longo que o campo suportaia"""
