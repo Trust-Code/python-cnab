@@ -1,0 +1,189 @@
+{
+  "nome": "HeaderLoteExtrato",
+  "campos": {
+    "01.1": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num"
+      },
+
+    "02.1": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 1
+    },
+
+    "04.1": {
+      "nome": "servico_operacao",
+      "posicao_inicio": 9,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "E"
+    },
+
+    "05.1": {
+      "nome": "servico_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 4
+    },
+
+    "06.1": {
+      "nome": "servico_forma_lancamento",
+      "posicao_inicio": 12,
+      "posicao_fim": 13,
+      "formato": "num",
+      "default": 40
+    },
+
+    "07.1": {
+      "nome": "servico_layout",
+      "posicao_inicio": 14,
+      "posicao_fim": 16,
+      "formato": "num",
+      "default": 50
+    },
+
+    "08.1": {
+      "nome": "febraban_cnab08d1",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.1": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "10.1": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "11.1": {
+      "nome": "cedente_convenio",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "alfa"
+    },
+
+    "12.1": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+
+    "13.1": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa"
+    },
+
+    "14.1": {
+      "nome": "cedente_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "alfa"
+    },
+
+    "15.1": {
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa"
+    },
+
+    "16.1": {
+      "nome": "cedente_dv_ag_cc",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "alfa"
+    },
+
+    "17.1": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa"
+    },
+
+    "18.1": {
+      "nome": "febraban_cnab18d1",
+      "posicao_inicio": 103,
+      "posicao_fim": 142,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "19.1": {
+      "nome": "saldo_inicial_data",
+      "posicao_inicio": 143,
+      "posicao_fim": 150,
+      "formato": "num"
+    },
+
+    "20.1": {
+      "nome": "saldo_inicial_valor",
+      "posicao_inicio": 151,
+      "posicao_fim": 168,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "21.1": {
+      "nome": "saldo_inicial_situacao",
+      "posicao_inicio": 169,
+      "posicao_fim": 169,
+      "formato": "alfa"
+    },
+
+    "22.1": {
+      "nome": "saldo_inicial_status",
+      "posicao_inicio": 170,
+      "posicao_fim": 170,
+      "formato": "alfa"
+    },
+
+    "23.1": {
+      "nome": "saldo_inicial_tipo_moeda",
+      "posicao_inicio": 171,
+      "posicao_fim": 173,
+      "formato": "alfa"
+    },
+
+    "24.1": {
+      "nome": "saldo_inicial_sequencia_extrato",
+      "posicao_inicio": 174,
+      "posicao_fim": 178,
+      "formato": "num"
+    },
+
+    "25.1": {
+      "nome": "febraban_cnab25d1",
+      "posicao_inicio": 179,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "00.0": {
+      "nome": "controle_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 0
+    },
+    "01.0": {
+      "nome": "codigo_comunicacao",
+      "posicao_inicio": 2,
+      "posicao_fim": 9,
+      "formato": "num"
+    },
+    "02.0": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 10,
+      "posicao_fim": 10,
+      "formato": "num"
+    },
+    "03.0": {
+      "nome": "cnpj_cpf_base",
+      "posicao_inicio": 11,
+      "posicao_fim": 19,
+      "formato": "num"
+    },
+    "04.0": {
+      "nome": "cnpj_cpf_filial",
+      "posicao_inicio": 20,
+      "posicao_fim": 23,
+      "formato": "num"
+    },
+    "05.0": {
+      "nome": "sufixo_cnpj",
+      "posicao_inicio": 24,
+      "posicao_fim": 25,
+      "formato": "num"
+    },
+    "06.0": {
+      "nome": "nome_empresa_pagadora",
+      "posicao_inicio": 26,
+      "posicao_fim": 65,
+      "formato": "alfa",
+      "default": ""
+    },
+    "07.0": {
+      "nome": "tipo_de_servico",
+      "posicao_inicio": 66,
+      "posicao_fim": 67,
+      "formato": "num",
+      "default": 20
+    },
+    "08.0": {
+      "nome": "codigo_origem_arquivo",
+      "posicao_inicio": 68,
+      "posicao_fim": 68,
+      "formato": "num",
+      "default": 1
+    },
+    "09.0": {
+      "nome": "numero_remessa",
+      "posicao_inicio": 69,
+      "posicao_fim": 73,
+      "formato": "num"
+    },
+    "10.0": {
+      "nome": "numero_retorno",
+      "posicao_inicio": 74,
+      "posicao_fim": 78,
+      "formato": "num"
+    },
+    "11.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 79,
+      "posicao_fim": 86,
+      "formato": "num"
+    },
+    "12.0": {
+      "nome": "arquivo_hora_de_geracao",
+      "posicao_inicio": 87,
+      "posicao_fim": 92,
+      "formato": "num"
+    },
+    "13.0": {
+      "nome": "densidade_gravacao_arquivofita",
+      "posicao_inicio": 93,
+      "posicao_fim": 97,
+      "formato": "alfa",
+      "default": ""
+    },
+    "14.0": {
+      "nome": "unidade_densidade_gravacao",
+      "posicao_inicio": 98,
+      "posicao_fim": 100,
+      "formato": "alfa",
+      "default": ""
+    },
+    "15.0": {
+      "nome": "identificacao_modulo_micro",
+      "posicao_inicio": 101,
+      "posicao_fim": 105,
+      "formato": "alfa",
+      "default": ""
+    },
+    "16.0": {
+      "nome": "tipo_processamento",
+      "posicao_inicio": 106,
+      "posicao_fim": 106,
+      "formato": "num"
+    },
+    "17.0": {
+      "nome": "reservado_empresa",
+      "posicao_inicio": 107,
+      "posicao_fim": 180,
+      "formato": "alfa"
+    },
+    "18.0": {
+      "nome": "reservado_banco1",
+      "posicao_inicio": 181,
+      "posicao_fim": 260,
+      "formato": "alfa",
+      "default": ""
+    },
+    "19.0": {
+      "nome": "reservado_banco2",
+      "posicao_inicio": 261,
+      "posicao_fim": 477,
+      "formato": "alfa",
+      "default": ""
+    },
+    "20.0": {
+      "nome": "numero_lista_debito",
+      "posicao_inicio": 478,
+      "posicao_fim": 486,
+      "formato": "num"
+    },
+    "21.0": {
+      "nome": "reservado_banco3",
+      "posicao_inicio": 487,
+      "posicao_fim": 494,
+      "formato": "alfa",
+      "default": ""
+    },
+    "22.0": {
+      "nome": "sequencial",
+      "posicao_inicio": 495,
+      "posicao_fim": 500,
+      "formato": "num"
+    }
+  }
+}
+

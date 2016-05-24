@@ -1,0 +1,75 @@
+{
+  "nome": "SegmentoZ",
+  "campos": {
+    "00.3Z": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.3Z": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.3Z": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+    "03.3Z": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+    "04.3Z": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "A"
+    },
+    "05.3Z": {
+      "nome": "autenticacao",
+      "posicao_inicio": 15,
+      "posicao_fim": 78,
+      "formato": "alfa",
+      "default": ""
+    },
+    "06.3Z": {
+      "nome": "seu_numero",
+      "posicao_inicio": 79,
+      "posicao_fim": 98,
+      "formato": "alfa",
+      "default": ""
+    },
+    "07.3Z": {
+      "nome": "vazio1",
+      "posicao_inicio": 99,
+      "posicao_fim": 103,
+      "formato": "alfa",
+      "default": ""
+    },
+    "08.3Z": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 104,
+      "posicao_fim": 118,
+      "formato": "alfa",
+      "default": ""
+    },
+    "09.3Z": {
+      "nome": "vazio2",
+      "posicao_inicio": 119,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

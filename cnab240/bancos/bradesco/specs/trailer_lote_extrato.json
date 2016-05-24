@@ -1,0 +1,184 @@
+{
+  "nome": "TrailerLoteExtrato",
+  "campos": {
+    "01.5": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num"
+      },
+
+    "02.5": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.5": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 5
+    },
+
+    "04.5": {
+      "nome": "febraban_cnab04d5",
+      "posicao_inicio": 9,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "05.5": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "06.5": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "07.5": {
+      "nome": "cedente_convenio",
+      "posicao_inicio": 33,
+      "posicao_fim": 52,
+      "formato": "alfa"
+    },
+
+    "08.5": {
+      "nome": "cedente_agencia",
+      "posicao_inicio": 53,
+      "posicao_fim": 57,
+      "formato": "num"
+    },
+
+    "09.5": {
+      "nome": "cedente_agencia_dv",
+      "posicao_inicio": 58,
+      "posicao_fim": 58,
+      "formato": "alfa"
+    },
+
+    "10.5": {
+      "nome": "cedente_conta",
+      "posicao_inicio": 59,
+      "posicao_fim": 70,
+      "formato": "num"
+    },
+
+    "11.5": {
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 71,
+      "posicao_fim": 71,
+      "formato": "alfa"
+    },
+
+    "12.5": {
+      "nome": "cedente_dv_ag_cc",
+      "posicao_inicio": 72,
+      "posicao_fim": 72,
+      "formato": "alfa"
+    },
+
+    "13.5": {
+      "nome": "febraban_cnab13d5",
+      "posicao_inicio": 73,
+      "posicao_fim": 88,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "14.5": {
+      "nome": "valores_bloqueado_acima_24h",
+      "posicao_inicio": 89,
+      "posicao_fim": 106,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "15.5": {
+      "nome": "valores_limite",
+      "posicao_inicio": 107,
+      "posicao_fim": 124,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "16.5": {
+      "nome": "valores_bloqueado_ate_24h",
+      "posicao_inicio": 125,
+      "posicao_fim": 142,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "17.5": {
+      "nome": "saldo_final_data",
+      "posicao_inicio": 143,
+      "posicao_fim": 150,
+      "formato": "num"
+    },
+
+    "18.5": {
+      "nome": "saldo_final_valor",
+      "posicao_inicio": 151,
+      "posicao_fim": 168,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "19.5": {
+      "nome": "saldo_final_situacao",
+      "posicao_inicio": 169,
+      "posicao_fim":169 ,
+      "formato": "alfa"
+    },
+
+    "20.5": {
+      "nome": "saldo_final_status",
+      "posicao_inicio": 170,
+      "posicao_fim": 170,
+      "formato": "alfa"
+    },
+
+    "21.5": {
+      "nome": "totais_registros",
+      "posicao_inicio": 171,
+      "posicao_fim": 176,
+      "formato": "num"
+    },
+
+    "22.5": {
+      "nome": "totais_valor_debitos",
+      "posicao_inicio": 177,
+      "posicao_fim": 194,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "23.5": {
+      "nome": "totais_valor_creditos",
+      "posicao_inicio": 195,
+      "posicao_fim": 212,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "24.5": {
+      "nome": "febraban_cnab24d5",
+      "posicao_inicio": 213,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+
+
+  }
+}

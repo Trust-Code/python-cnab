@@ -1,0 +1,199 @@
+{
+  "nome": "SegmentoA",
+  "campos": {
+    "00.3A": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.3A": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.3A": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+    "03.3A": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+    "04.3A": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "A"
+    },
+    "05.3A": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 15,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+    "06.3A": {
+      "nome": "camara",
+      "posicao_inicio": 18,
+      "posicao_fim": 20,
+      "formato": "num"
+    },
+    "07.3A": {
+      "nome": "banco_favorecido",
+      "posicao_inicio": 21,
+      "posicao_fim": 23,
+      "formato": "num"
+    },
+    "08.3A": {
+      "nome": "numero_agencia_conta",
+      "posicao_inicio": 24,
+      "posicao_fim": 43,
+      "formato": "alfa",
+      "default": ""
+    },
+    "09.3A": {
+      "nome": "nome_favorecido",
+      "posicao_inicio": 44,
+      "posicao_fim": 73,
+      "formato": "alfa",
+      "default": ""
+    },
+    "10.3A": {
+      "nome": "seu_numero",
+      "posicao_inicio": 74,
+      "posicao_fim": 93,
+      "formato": "alfa",
+      "default": ""
+    },
+    "11.3A": {
+      "nome": "data_pagto",
+      "posicao_inicio": 94,
+      "posicao_fim": 101,
+      "formato": "num"
+    },
+    "12.3A": {
+      "nome": "tipo_moeda",
+      "posicao_inicio": 102,
+      "posicao_fim": 104,
+      "formato": "alfa",
+      "default": "REA"
+    },
+    "13.3A": {
+      "nome": "codigo_ispb",
+      "posicao_inicio": 105,
+      "posicao_fim": 112,
+      "formato": "num"
+    },
+    "14.3A": {
+      "nome": "ZEROS",
+      "posicao_inicio": 113,
+      "posicao_fim": 119,
+      "formato": "num",
+      "default": 0
+    },
+    "15.3A": {
+      "nome": "valor_pagto",
+      "posicao_inicio": 120,
+      "posicao_fim": 134,
+      "formato": "num",
+      "decimais": 2
+    },
+    "16.3A": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 135,
+      "posicao_fim": 149,
+      "formato": "alfa",
+      "default": ""
+    },
+    "17.3A": {
+      "nome": "vazio1",
+      "posicao_inicio": 150,
+      "posicao_fim": 154,
+      "formato": "alfa",
+      "default": ""
+    },
+    "18.3A": {
+      "nome": "data_efetiva",
+      "posicao_inicio": 155,
+      "posicao_fim": 162,
+      "formato": "num"
+    },
+    "19.3A": {
+      "nome": "valor_efetivo",
+      "posicao_inicio": 163,
+      "posicao_fim": 177,
+      "formato": "num"
+    },
+    "20.3A": {
+      "nome": "detalhe_finalidade",
+      "posicao_inicio": 178,
+      "posicao_fim": 195,
+      "formato": "alfa",
+      "default": ""
+    },
+    "21.3A": {
+      "nome": "vazio2",
+      "posicao_inicio": 196,
+      "posicao_fim": 197,
+      "formato": "alfa",
+      "default": ""
+    },
+    "22.3A": {
+      "nome": "numero_documento",
+      "posicao_inicio": 198,
+      "posicao_fim": 203,
+      "formato": "num"
+    },
+    "23.3A": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 204,
+      "posicao_fim": 217,
+      "formato": "num"
+    },
+    "24.3A": {
+      "nome": "finalidade_doc_status_func",
+      "posicao_inicio": 218,
+      "posicao_fim": 219,
+      "formato": "alfa",
+      "default": ""
+    },
+    "25.3A": {
+      "nome": "finalidade_ted",
+      "posicao_inicio": 220,
+      "posicao_fim": 224,
+      "formato": "alfa",
+      "default": ""
+    },
+    "26.3A": {
+      "nome": "vazio3",
+      "posicao_inicio": 225,
+      "posicao_fim": 229,
+      "formato": "alfa",
+      "default": ""
+    },
+    "27.3A": {
+      "nome": "aviso",
+      "posicao_inicio": 230,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+    "28.3A": {
+      "nome": "ocorencias",
+      "posicao_inicio": 231,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

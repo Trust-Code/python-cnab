@@ -1,0 +1,280 @@
+{
+  "nome": "TransacaoTipo1",
+  "campos": {
+    "01.3P": {
+      "nome": "identificacao_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 1
+      },
+
+    "02.3P": {
+      "nome": "tipo_inscricao_empresa",
+      "posicao_inicio": 2,
+      "posicao_fim": 3,
+      "formato": "num"
+    },
+
+    "03.3P": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 4,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "04.3P": {
+      "nome": "zeros",
+      "posicao_inicio": 18,
+      "posicao_fim": 20,
+      "formato": "alfa",
+      "default": "0"
+    },
+
+    "05.3P": {
+      "nome": "identificacao_empresa_cedente_banco",
+      "posicao_inicio": 21,
+      "posicao_fim": 37,
+      "formato": "alfa"
+    },
+
+    "06.3P": {
+      "nome": "controle_participante",
+      "posicao_inicio": 38,
+      "posicao_fim": 62,
+      "formato": "alfa"
+    },
+
+    "07.3P": {
+      "nome": "zeros",
+      "posicao_inicio": 63,
+      "posicao_fim": 70,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.3P": {
+      "nome": "identificacao_titulo_banco",
+      "posicao_inicio": 71,
+      "posicao_fim": 82,
+      "formato": "alfa"
+    },
+
+    "09.3P": {
+      "nome": "uso_banco_01",
+      "posicao_inicio": 83,
+      "posicao_fim": 92,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "10.3P": {
+      "nome": "uso_banco_02",
+      "posicao_inicio": 93,
+      "posicao_fim": 104,
+      "formato": "alfa",
+      "default": "0"
+    },
+    
+    "11.3P": {
+      "nome": "indicador_rateio_credito",
+      "posicao_inicio": 105,
+      "posicao_fim": 105,
+      "formato": "alfa",
+      "default": "R"
+    },
+
+    "12.3P": {
+      "nome": "zeros",
+      "posicao_inicio": 106,
+      "posicao_fim": 107,
+      "formato": "num",
+      "default": 0
+    },
+
+    "13.3P": {
+      "nome": "carteira",
+      "posicao_inicio": 108,
+      "posicao_fim": 108,
+      "formato": "num"
+    },
+
+    "14.3P": {
+      "nome": "identificacao_ocorrencia",
+      "posicao_inicio": 109,
+      "posicao_fim": 110,
+      "formato": "num"
+    },
+
+    "15.3P": {
+      "nome": "data_ocorrencia_banco",
+      "posicao_inicio": 111,
+      "posicao_fim": 116,
+      "formato": "num"
+    },
+
+    "16.3P": {
+      "nome": "numero_documento",
+      "posicao_inicio": 117,
+      "posicao_fim": 126,
+      "formato": "alfa"
+    },
+
+    "17.3P": {
+      "nome": "identificacao_titulo_banco_2",
+      "posicao_inicio": 127,
+      "posicao_fim": 146,
+      "formato": "alfa"
+    },
+
+    "18.3P": {
+      "nome": "data_vencimento_titulo",
+      "posicao_inicio": 147,
+      "posicao_fim": 152,
+      "formato": "num"
+    },
+
+    "19.3P": {
+      "nome": "valor_titulo",
+      "posicao_inicio": 153,
+      "posicao_fim": 165,
+      "formato": "num"
+    },
+    
+    "20.3P": {
+      "nome": "banco_cobrador",
+      "posicao_inicio": 166,
+      "posicao_fim": 168,
+      "formato": "num"
+    },
+    
+    "21.3P": {
+      "nome": "agencia_cobradora",
+      "posicao_inicio": 169,
+      "posicao_fim": 173,
+      "formato": "num"
+    },
+
+    "22.3P": {
+      "nome": "especie_titulo",
+      "posicao_inicio": 174,
+      "posicao_fim": 175,
+      "formato": "alfa"
+    },
+
+    "23.3P": {
+      "nome": "despesas_cobranca_para_codigos_ocorrencia",
+      "posicao_inicio": 176,
+      "posicao_fim": 188,
+      "formato": "num"
+    },
+
+    "24.3P": {
+      "nome": "outras_despesas",
+      "posicao_inicio": 189,
+      "posicao_fim": 201,
+      "formato": "num"
+    },
+
+    "25.3P": {
+      "nome": "juros_operacao_atraso",
+      "posicao_inicio": 202,
+      "posicao_fim": 214,
+      "formato": "num"
+    },
+
+    "26.3P": {
+      "nome": "iof_devido",
+      "posicao_inicio": 215,
+      "posicao_fim": 227,
+      "formato": "num"
+    },
+
+    "27.3P": {
+      "nome": "valor_abatimento",
+      "posicao_inicio": 228,
+      "posicao_fim": 240,
+      "formato": "num"
+    },
+
+    "28.3P": {
+      "nome": "valor_desconto",
+      "posicao_inicio": 241,
+      "posicao_fim": 253,
+      "formato": "num"
+    },
+
+    "29.3P": {
+      "nome": "valor_pago",
+      "posicao_inicio": 254,
+      "posicao_fim": 266,
+      "formato": "num"
+    },
+
+    "30.3P": {
+      "nome": "juros_mora",
+      "posicao_inicio": 267,
+      "posicao_fim": 279,
+      "formato": "num"
+    },
+
+    "31.3P": {
+      "nome": "outros_creditos",
+      "posicao_inicio": 280,
+      "posicao_fim": 292,
+      "formato": "num"
+    },
+
+    "32.3P": {
+      "nome": "branco_01",
+      "posicao_inicio": 293,
+      "posicao_fim": 294,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "33.3P": {
+      "nome": "motivo_codigo_ocorrencia_19",
+      "posicao_inicio": 295,
+      "posicao_fim": 295,
+      "formato": "alfa"
+    },
+
+    "34.3P": {
+      "nome": "data_credito",
+      "posicao_inicio": 296,
+      "posicao_fim": 301,
+      "formato": "alfa"
+    },
+
+    "35.3P": {
+      "nome": "branco_02",
+      "posicao_inicio": 302,
+      "posicao_fim": 318,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "36.3P": {
+      "nome": "motivo_rejeicao_ocorrencia_109_110",
+      "posicao_inicio": 319,
+      "posicao_fim": 328,
+      "formato": "alfa"
+    },
+    
+    "37.3P": {
+      "nome": "branco_03",
+      "posicao_inicio": 329,
+      "posicao_fim": 394,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "38.3P": {
+      "nome": "sequencial_registro",
+      "posicao_inicio": 395,
+      "posicao_fim": 400,
+      "formato": "num"
+    }  
+  }
+}

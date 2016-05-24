@@ -1,0 +1,237 @@
+{
+    "nome": "SegmentoR",
+    "campos": {
+        "01.3R": {
+            "nome": "controle_banco",
+            "posicao_inicio": 1,
+            "posicao_fim": 3,
+            "formato": "num",
+            "default": 756
+        },
+
+        "02.3R": {
+            "nome": "controle_lote",
+            "posicao_inicio": 4,
+            "posicao_fim": 7,
+            "formato": "num",
+            "default": 1
+        },
+
+        "03.3R": {
+            "nome": "controle_registro",
+            "posicao_inicio": 8,
+            "posicao_fim": 8,
+            "formato": "num",
+            "default": 3
+        },
+
+        "04.3R": {
+            "nome": "servico_numero_registro",
+            "posicao_inicio": 9,
+            "posicao_fim": 13,
+            "formato": "num"
+        },
+
+        "05.3R": {
+            "nome": "servico_segmento",
+            "posicao_inicio": 14,
+            "posicao_fim": 14,
+            "formato": "alfa",
+            "default": "R"
+        },
+
+        "06.3R": {
+            "nome": "vazio1",
+            "posicao_inicio": 15,
+            "posicao_fim": 15,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "07.3R": {
+            "nome": "servico_codigo_movimento",
+            "posicao_inicio": 16,
+            "posicao_fim": 17,
+            "formato": "num",
+            "default": 1
+        },
+
+        "08.3R": {
+            "nome": "desc2_codigo",
+            "posicao_inicio": 18,
+            "posicao_fim": 18,
+            "formato": "num",
+            "default": 0
+        },
+
+        "09.3R": {
+            "nome": "desc2_data",
+            "posicao_inicio": 19,
+            "posicao_fim": 26,
+            "formato": "num",
+            "default": 0
+        },
+
+        "10.3R": {
+            "nome": "desc2_percentual",
+            "posicao_inicio": 27,
+            "posicao_fim": 41,
+            "formato": "num",
+            "decimais": 2,
+            "default": 0
+        },
+
+        "11.3R": {
+            "nome": "desc3_codigo",
+            "posicao_inicio": 42,
+            "posicao_fim": 42,
+            "formato": "num",
+            "default": 0
+        },
+
+        "12.3R": {
+            "nome": "desc3_data",
+            "posicao_inicio": 43,
+            "posicao_fim": 50,
+            "formato": "num",
+            "default": 0
+        },
+
+        "13.3R": {
+            "nome": "desc3_percentual",
+            "posicao_inicio": 51,
+            "posicao_fim": 65,
+            "formato": "num",
+            "decimais": 2,
+            "default": 0
+        },
+
+        "14.3R": {
+            "nome": "codigo_multa",
+            "posicao_inicio": 66,
+            "posicao_fim": 66,
+            "formato": "alfa",
+            "default": "2"
+        },
+
+        "15.3R": {
+            "nome": "data_multa",
+            "posicao_inicio": 67,
+            "posicao_fim": 74,
+            "formato": "num"
+        },
+
+        "16.3R": {
+            "nome": "juros_multa",
+            "posicao_inicio": 75,
+            "posicao_fim": 89,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "17.3R": {
+            "nome": "vazio2",
+            "posicao_inicio": 90,
+            "posicao_fim": 99,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "18.3R": {
+            "nome": "informacao3",
+            "posicao_inicio": 100,
+            "posicao_fim": 139,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "19.3R": {
+            "nome": "informacao4",
+            "posicao_inicio": 140,
+            "posicao_fim": 179,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "20.3R": {
+            "nome": "vazio3",
+            "posicao_inicio": 180,
+            "posicao_fim": 199,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "21.3R": {
+            "nome": "codigo_ocorrencia_sacado",
+            "posicao_inicio": 200,
+            "posicao_fim": 207,
+            "formato": "num",
+            "default": 0
+        },
+
+        "22.3R": {
+            "nome": "vazio4",
+            "posicao_inicio": 208,
+            "posicao_fim": 210,
+            "formato": "num",
+            "default": 0
+        },
+
+        "23.3R": {
+            "nome": "vazio5",
+            "posicao_inicio": 211,
+            "posicao_fim": 215,
+            "formato": "num",
+            "default": 0
+        },
+
+        "24.3R": {
+            "nome": "vazio6",
+            "posicao_inicio": 216,
+            "posicao_fim": 216,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "25.3R": {
+            "nome": "vazio7",
+            "posicao_inicio": 217,
+            "posicao_fim": 228,
+            "formato": "num",
+            "default": 0
+        },
+
+        "26.3R": {
+            "nome": "vazio8",
+            "posicao_inicio": 229,
+            "posicao_fim": 229,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "27.3R": {
+            "nome": "vazio9",
+            "posicao_inicio": 230,
+            "posicao_fim": 230,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "28.3R": {
+            "nome": "vazio10",
+            "posicao_inicio": 231,
+            "posicao_fim": 231,
+            "formato": "num",
+            "default": 0
+        },
+
+        "29.3R": {
+            "nome": "vazio11",
+            "posicao_inicio": 232,
+            "posicao_fim": 240,
+            "formato": "alfa",
+            "default": ""
+        }
+
+    }
+}

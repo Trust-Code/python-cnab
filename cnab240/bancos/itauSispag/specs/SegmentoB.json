@@ -1,0 +1,127 @@
+{
+  "nome": "SegmentoB",
+  "campos": {
+    "00.3B": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.3B": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.3B": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+    "03.3B": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+    "04.3B": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "A"
+    },
+    "05.3B": {
+      "nome": "vazio1",
+      "posicao_inicio": 15,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+    "06.3B": {
+      "nome": "tipo_inscricao",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+    "07.3B": {
+      "nome": "numero_inscricao",
+      "posicao_inicio": 19,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+    "08.3B": {
+      "nome": "endereco_logradouro",
+      "posicao_inicio": 33,
+      "posicao_fim": 62,
+      "formato": "alfa",
+      "default": ""
+    },
+    "09.3B": {
+      "nome": "endereco_numero",
+      "posicao_inicio": 63,
+      "posicao_fim": 67,
+      "formato": "num"
+    },
+    "10.3B": {
+      "nome": "endereco_complemento",
+      "posicao_inicio": 68,
+      "posicao_fim": 82,
+      "formato": "alfa",
+      "default": ""
+    },
+    "11.3B": {
+      "nome": "endereco_bairro",
+      "posicao_inicio": 83,
+      "posicao_fim": 97,
+      "formato": "alfa",
+      "default": ""
+    },
+    "12.3B": {
+      "nome": "endereco_cidade",
+      "posicao_inicio": 98,
+      "posicao_fim": 117,
+      "formato": "alfa",
+      "default": ""
+    },
+    "13.3B": {
+      "nome": "endereco_cep",
+      "posicao_inicio": 118,
+      "posicao_fim": 125,
+      "formato": "num"
+    },
+    "14.3B": {
+      "nome": "endereco_estado",
+      "posicao_inicio": 126,
+      "posicao_fim": 127,
+      "formato": "alfa",
+      "default": ""
+    },
+    "15.3B": {
+      "nome": "email",
+      "posicao_inicio": 128,
+      "posicao_fim": 227,
+      "formato": "alfa",
+      "default": ""
+    },
+    "16.3B": {
+      "nome": "vazio2",
+      "posicao_inicio": 228,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+    "17.3B": {
+      "nome": "ocorencias",
+      "posicao_inicio": -231,
+      "posicao_fim": -240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+

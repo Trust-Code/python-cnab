@@ -1,0 +1,180 @@
+{
+    "nome": "HeaderLoteCobranca",
+    "campos": {
+        "01.1": {
+            "nome": "controle_banco",
+            "posicao_inicio": 1,
+            "posicao_fim": 3,
+            "formato": "num",
+            "default": 756
+        },
+
+        "02.1": {
+            "nome": "controle_lote",
+            "posicao_inicio": 4,
+            "posicao_fim": 7,
+            "formato": "num",
+            "default": 1
+        },
+
+        "03.1": {
+            "nome": "controle_registro",
+            "posicao_inicio": 8,
+            "posicao_fim": 8,
+            "formato": "num",
+            "default": 1
+        },
+
+        "04.1": {
+            "nome": "servico_operacao",
+            "posicao_inicio": 9,
+            "posicao_fim": 9,
+            "formato": "alfa",
+            "default": "R"
+        },
+
+        "05.1": {
+            "nome": "servico_servico",
+            "posicao_inicio": 10,
+            "posicao_fim": 11,
+            "formato": "num",
+            "default": 1
+        },
+
+        "06.1": {
+            "nome": "vazio1",
+            "posicao_inicio": 12,
+            "posicao_fim": 13,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "07.1": {
+            "nome": "servico_layout",
+            "posicao_inicio": 14,
+            "posicao_fim": 16,
+            "formato": "num",
+            "default": 40
+        },
+
+        "08.1": {
+            "nome": "vazio2",
+            "posicao_inicio": 17,
+            "posicao_fim": 17,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "09.1": {
+            "nome": "cedente_inscricao_tipo",
+            "posicao_inicio": 18,
+            "posicao_fim": 18,
+            "formato": "num"
+        },
+
+        "10.1": {
+            "nome": "cedente_inscricao_numero",
+            "posicao_inicio": 19,
+            "posicao_fim": 33,
+            "formato": "num"
+        },
+
+        "11.1": {
+            "nome": "vazio3",
+            "posicao_inicio": 34,
+            "posicao_fim": 53,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "12.1": {
+            "nome": "cedente_agencia",
+            "posicao_inicio": 54,
+            "posicao_fim": 58,
+            "formato": "num",
+            "default": 3069
+        },
+
+        "13.1": {
+            "nome": "cedente_agencia_dv",
+            "posicao_inicio": 59,
+            "posicao_fim": 59,
+            "formato": "alfa"
+        },
+
+        "14.1": {
+            "nome": "cedente_conta",
+            "posicao_inicio": 60,
+            "posicao_fim": 71,
+            "formato": "num"
+        },
+
+        "15.1": {
+            "nome": "cedente_conta_dv",
+            "posicao_inicio": 72,
+            "posicao_fim": 72,
+            "formato": "alfa"
+        },
+
+        "16.1": {
+            "nome": "vazio4",
+            "posicao_inicio": 73,
+            "posicao_fim": 73,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "17.1": {
+            "nome": "cedente_nome",
+            "posicao_inicio": 74,
+            "posicao_fim": 103,
+            "formato": "alfa"
+        },
+
+        "18.1": {
+            "nome": "mensagem_um",
+            "posicao_inicio": 104,
+            "posicao_fim": 143,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "19.1": {
+            "nome": "mensagem_dois",
+            "posicao_inicio": 144,
+            "posicao_fim": 183,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "20.1": {
+            "nome": "controlecob_numero",
+            "posicao_inicio": 184,
+            "posicao_fim": 191,
+            "formato": "num"
+        },
+
+        "21.1": {
+            "nome": "controlecob_data_gravacao",
+            "posicao_inicio": 192,
+            "posicao_fim": 199,
+            "formato": "num"
+        },
+
+        "22.1": {
+            "nome": "vazio8",
+            "posicao_inicio": 200,
+            "posicao_fim": 207,
+            "formato": "num",
+            "default": 0
+        },
+
+        "23.1": {
+            "nome": "vazio9",
+            "posicao_inicio": 208,
+            "posicao_fim": 240,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

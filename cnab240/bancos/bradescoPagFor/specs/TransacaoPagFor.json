@@ -1,0 +1,372 @@
+{
+  "nome": "TransacaoPagFor",
+  "campos": {
+    "00.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 1,
+      "posicao_fim": 1,
+      "formato": "num",
+      "default": 1
+    },
+    "01.1": {
+      "nome": "tipo_inscricao",
+      "posicao_inicio": 2,
+      "posicao_fim": 2,
+      "formato": "num"
+    },
+    "02.1": {
+      "nome": "cnpj_cpf_base_forn",
+      "posicao_inicio": 3,
+      "posicao_fim": 11,
+      "formato": "num"
+    },
+    "03.1": {
+      "nome": "cnpj_cpf_filial_forn",
+      "posicao_inicio": 12,
+      "posicao_fim": 15,
+      "formato": "num"
+    },
+    "04.1": {
+      "nome": "cnpj_cpf_forn_sufixo",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+    "05.1": {
+      "nome": "nome_forn",
+      "posicao_inicio": 18,
+      "posicao_fim": 47,
+      "formato": "alfa",
+      "default": ""
+    },
+    "06.1": {
+      "nome": "endereco_forn",
+      "posicao_inicio": 48,
+      "posicao_fim": 87,
+      "formato": "alfa",
+      "default": ""
+    },
+    "07.1": {
+      "nome": "cep_forn",
+      "posicao_inicio": 88,
+      "posicao_fim": 92,
+      "formato": "num"
+    },
+    "08.1": {
+      "nome": "cep_complemento_forn",
+      "posicao_inicio": 93,
+      "posicao_fim": 95,
+      "formato": "num"
+    },
+    "09.1": {
+      "nome": "codigo_banco_forn",
+      "posicao_inicio": 96,
+      "posicao_fim": 98,
+      "formato": "num"
+    },
+    "10.1": {
+      "nome": "codigo_agencia_forn",
+      "posicao_inicio": 99,
+      "posicao_fim": 103,
+      "formato": "num"
+    },
+    "11.1": {
+      "nome": "digito_agencia_forn_transacao",
+      "posicao_inicio": 104,
+      "posicao_fim": 104,
+      "formato": "alfa"
+    },
+    "12.1": {
+      "nome": "conta_corrente_forn",
+      "posicao_inicio": 105,
+      "posicao_fim": 117,
+      "formato": "num"
+    },
+    "13.1": {
+      "nome": "digito_conta_forn_transacao",
+      "posicao_inicio": 118,
+      "posicao_fim": 119,
+      "formato": "alfa",
+      "default": ""
+    },
+    "14.1": {
+      "nome": "numero_pagamento",
+      "posicao_inicio": 120,
+      "posicao_fim": 135,
+      "formato": "alfa"
+    },
+    "15.1": {
+      "nome": "carteira",
+      "posicao_inicio": 136,
+      "posicao_fim": 138,
+      "formato": "num"
+    },
+    "16.1": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 139,
+      "posicao_fim": 150,
+      "formato": "num"
+    },
+    "17.1": {
+      "nome": "numero_documento",
+      "posicao_inicio": 151,
+      "posicao_fim": 165,
+      "formato": "alfa",
+      "default": ""
+    },
+    "18.1": {
+      "nome": "vencimento_titulo",
+      "posicao_inicio": 166,
+      "posicao_fim": 173,
+      "formato": "num"
+    },
+    "19.1": {
+      "nome": "data_emissao_titulo",
+      "posicao_inicio": 174,
+      "posicao_fim": 181,
+      "formato": "num"
+    },
+    "20.1": {
+      "nome": "data_limite_desconto",
+      "posicao_inicio": 182,
+      "posicao_fim": 189,
+      "formato": "num"
+    },
+    "21.1": {
+      "nome": "vazio",
+      "posicao_inicio": 190,
+      "posicao_fim": 190,
+      "formato": "num",
+      "default": 0
+    },
+    "22.1": {
+      "nome": "fator_vencimento",
+      "posicao_inicio": 191,
+      "posicao_fim": 194,
+      "formato": "num"
+    },
+    "23.1": {
+      "nome": "valor_titulo",
+      "posicao_inicio": 195,
+      "posicao_fim": 204,
+      "formato": "num",
+      "decimais": 2
+    },
+    "24.1": {
+      "nome": "valor_pagto",
+      "posicao_inicio": 205,
+      "posicao_fim": 219,
+      "formato": "num",
+      "decimais": 2
+    },
+    "25.1": {
+      "nome": "valor_desconto",
+      "posicao_inicio": 220,
+      "posicao_fim": 234,
+      "formato": "num",
+      "decimais": 2
+    },
+    "26.1": {
+      "nome": "valor_acrescimo",
+      "posicao_inicio": 235,
+      "posicao_fim": 249,
+      "formato": "num",
+      "decimais": 2
+    },
+    "27.1": {
+      "nome": "tipo_documento",
+      "posicao_inicio": 250,
+      "posicao_fim": 251,
+      "formato": "num"
+    },
+    "28.1": {
+      "nome": "numero_nf",
+      "posicao_inicio": 252,
+      "posicao_fim": 261,
+      "formato": "num"
+    },
+    "29.1": {
+      "nome": "serie_documento",
+      "posicao_inicio": 262,
+      "posicao_fim": 263,
+      "formato": "alfa",
+      "default": ""
+    },
+    "30.1": {
+      "nome": "modalidade_pagamento",
+      "posicao_inicio": 264,
+      "posicao_fim": 265,
+      "formato": "num"
+    },
+    "31.1": {
+      "nome": "data_para_efetivacao_pag",
+      "posicao_inicio": 266,
+      "posicao_fim": 273,
+      "formato": "num"
+    },
+    "32.1": {
+      "nome": "moeda_codigo_cnab",
+      "posicao_inicio": 274,
+      "posicao_fim": 276,
+      "formato": "alfa",
+      "default": ""
+    },
+    "33.1": {
+      "nome": "situacao_agendamento",
+      "posicao_inicio": 277,
+      "posicao_fim": 278,
+      "formato": "num",
+      "default": 1
+    },
+    "34.1": {
+      "nome": "inf_retorno1",
+      "posicao_inicio": 279,
+      "posicao_fim": 280,
+      "formato": "alfa"
+    },
+    "35.1": {
+      "nome": "inf_retorno2",
+      "posicao_inicio": 281,
+      "posicao_fim": 282,
+      "formato": "alfa"
+    },
+    "36.1": {
+      "nome": "inf_retorno3",
+      "posicao_inicio": 283,
+      "posicao_fim": 284,
+      "formato": "alfa"
+    },
+    "37.1": {
+      "nome": "inf_retorno4",
+      "posicao_inicio": 285,
+      "posicao_fim": 286,
+      "formato": "alfa"
+    },
+    "38.1": {
+      "nome": "inf_retorno5",
+      "posicao_inicio": 287,
+      "posicao_fim": 288,
+      "formato": "alfa"
+    },
+    "39.1": {
+      "nome": "tipo_movimento",
+      "posicao_inicio": 289,
+      "posicao_fim": 289,
+      "formato": "num"
+    },
+    "40.1": {
+      "nome": "codigo_movimento",
+      "posicao_inicio": 290,
+      "posicao_fim": 291,
+      "formato": "num"
+    },
+    "41.1": {
+      "nome": "horario_consulta_saldo",
+      "posicao_inicio": 292,
+      "posicao_fim": 295,
+      "formato": "alfa"
+    },
+    "42.1": {
+      "nome": "saldo_momento_consulta",
+      "posicao_inicio": 296,
+      "posicao_fim": 310,
+      "formato": "alfa"
+    },
+    "43.1": {
+      "nome": "valor_taxa_prefunding",
+      "posicao_inicio": 311,
+      "posicao_fim": 325,
+      "formato": "alfa"
+    },
+    "44.1": {
+      "nome": "reserva1",
+      "posicao_inicio": 326,
+      "posicao_fim": 331,
+      "formato": "alfa",
+      "default": ""
+    },
+    "45.1": {
+      "nome": "sacador_avalista",
+      "posicao_inicio": 332,
+      "posicao_fim": 371,
+      "formato": "alfa"
+    },
+    "46.1": {
+      "nome": "reserva2",
+      "posicao_inicio": 372,
+      "posicao_fim": 372,
+      "formato": "alfa",
+      "default": ""
+    },
+    "47.1": {
+      "nome": "nivel_informacao_retorno",
+      "posicao_inicio": 373,
+      "posicao_fim": 373,
+      "formato": "alfa"
+    },
+    "48.1": {
+      "nome": "informacoes_complementares",
+      "posicao_inicio": 374,
+      "posicao_fim": 413,
+      "formato": "alfa"
+    },
+    "49.1": {
+      "nome": "codigo_area_empresa",
+      "posicao_inicio": 414,
+      "posicao_fim": 415,
+      "formato": "num"
+    },
+    "50.1": {
+      "nome": "campo_uso_empresa",
+      "posicao_inicio": 416,
+      "posicao_fim": 450,
+      "formato": "alfa"
+    },
+    "51.1": {
+      "nome": "reserva3",
+      "posicao_inicio": 451,
+      "posicao_fim": 472,
+      "formato": "alfa",
+      "default": ""
+    },
+    "52.1": {
+      "nome": "codigo_lancamento",
+      "posicao_inicio": 473,
+      "posicao_fim": 477,
+      "formato": "num"
+    },
+    "53.1": {
+      "nome": "reserva4",
+      "posicao_inicio": 478,
+      "posicao_fim": 478,
+      "formato": "alfa",
+      "default": ""
+    },
+    "54.1": {
+      "nome": "tipo_conta_fornecedor",
+      "posicao_inicio": 479,
+      "posicao_fim": 479,
+      "formato": "num"
+    },
+    "55.1": {
+      "nome": "conta_complementar",
+      "posicao_inicio": 480,
+      "posicao_fim": 486,
+      "formato": "num"
+    },
+    "56.1": {
+      "nome": "reserva5",
+      "posicao_inicio": 487,
+      "posicao_fim": 494,
+      "formato": "alfa",
+      "default": ""
+    },
+    "57.1": {
+      "nome": "sequencial_transacao",
+      "posicao_inicio": 495,
+      "posicao_fim": 500,
+      "formato": "num"
+    }
+  }
+}
+
