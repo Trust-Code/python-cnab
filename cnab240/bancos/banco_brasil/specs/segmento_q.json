@@ -1,0 +1,164 @@
+{
+  "nome": "SegmentoQ",
+  "campos": {
+    "01.3Q": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.3Q": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3Q": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3Q": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3Q": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "Q"
+    },
+
+    "06.3Q": {
+      "nome": "servico_cnab_exclusivo",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3Q": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "08.3Q": {
+      "nome": "sacado_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "09.3Q": {
+      "nome": "sacado_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 33,
+      "formato": "num"
+    },
+
+    "10.3Q": {
+      "nome": "sacado_nome",
+      "posicao_inicio": 34,
+      "posicao_fim": 73,
+      "formato": "alfa"
+    },
+
+    "11.3Q": {
+      "nome": "sacado_endereco",
+      "posicao_inicio": 74,
+      "posicao_fim": 113,
+      "formato": "alfa"
+    },
+
+    "12.3Q": {
+      "nome": "sacado_bairro",
+      "posicao_inicio": 114,
+      "posicao_fim": 128,
+      "formato": "alfa"
+    },
+
+    "13.3Q": {
+      "nome": "sacado_cep",
+      "posicao_inicio": 129,
+      "posicao_fim": 133,
+      "formato": "num"
+    },
+
+    "14.3Q": {
+      "nome": "sacado_cep_sufixo",
+      "posicao_inicio": 134,
+      "posicao_fim": 136,
+      "formato": "num"
+    },
+
+    "15.3Q": {
+      "nome": "sacado_cidade",
+      "posicao_inicio": 137,
+      "posicao_fim": 151,
+      "formato": "alfa"
+    },
+
+    "16.3Q": {
+      "nome": "sacado_uf",
+      "posicao_inicio": 152,
+      "posicao_fim": 153,
+      "formato": "alfa"
+    },
+    
+    "17.3Q": {
+      "nome": "sacador_inscricao_tipo",
+      "posicao_inicio": 154,
+      "posicao_fim": 154,
+      "formato": "num"
+    },
+
+    "18.3Q": {
+      "nome": "sacador_inscricao_numero",
+      "posicao_inicio": 155,
+      "posicao_fim": 169,
+      "formato": "num"
+    },
+
+    "19.3Q": {
+      "nome": "sacador_nome",
+      "posicao_inicio": 170,
+      "posicao_fim": 209,
+      "formato": "alfa"
+    },
+
+    "20.3Q": {
+      "nome": "banco_correspondente",
+      "posicao_inicio": 210,
+      "posicao_fim": 212,
+      "formato": "num"
+    },
+
+    "21.3Q": {
+      "nome": "numero_no_bancoCorrespondente",
+      "posicao_inicio": 213,
+      "posicao_fim": 232,
+      "formato": "alfa"
+    },
+
+    "22.3Q": {
+      "nome": "cnab_exclusivo_campo22dot3Q",
+      "posicao_inicio": 233,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+	    
+  }
+}

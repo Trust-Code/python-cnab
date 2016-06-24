@@ -1,0 +1,110 @@
+{
+    "nome": "SegmentoS",
+    "campos": {
+        "01.3S": {
+            "nome": "controle_banco",
+            "posicao_inicio": 1,
+            "posicao_fim": 3,
+            "formato": "num",
+            "default": 756
+        },
+
+        "02.3S": {
+            "nome": "controle_lote",
+            "posicao_inicio": 4,
+            "posicao_fim": 7,
+            "formato": "num",
+            "default": 1
+        },
+
+        "03.3S": {
+            "nome": "controle_registro",
+            "posicao_inicio": 8,
+            "posicao_fim": 8,
+            "formato": "num",
+            "default": 3
+        },
+
+        "04.3S": {
+            "nome": "servico_numero_registro",
+            "posicao_inicio": 9,
+            "posicao_fim": 13,
+            "formato": "num"
+        },
+
+        "05.3S": {
+            "nome": "servico_segmento",
+            "posicao_inicio": 14,
+            "posicao_fim": 14,
+            "formato": "alfa",
+            "default": "S"
+        },
+
+        "06.3S": {
+            "nome": "vazio1",
+            "posicao_inicio": 15,
+            "posicao_fim": 15,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "07.3S": {
+            "nome": "servico_codigo_movimento",
+            "posicao_inicio": 16,
+            "posicao_fim": 17,
+            "formato": "num",
+            "default": 1
+        },
+
+        "08.3S": {
+            "nome": "tipo_impressao",
+            "posicao_inicio": 18,
+            "posicao_fim": 18,
+            "formato": "num",
+            "default": 3
+        },
+
+        "09.3S": {
+            "nome": "informacao5",
+            "posicao_inicio": 19,
+            "posicao_fim": 58,
+            "formato": "alfa"
+        },
+
+        "10.3S": {
+            "nome": "informacao6",
+            "posicao_inicio": 59,
+            "posicao_fim": 98,
+            "formato": "alfa"
+        },
+
+        "11.3S": {
+            "nome": "informacao7",
+            "posicao_inicio": 99,
+            "posicao_fim": 138,
+            "formato": "alfa"
+        },
+
+        "12.3S": {
+            "nome": "informacao8",
+            "posicao_inicio": 139,
+            "posicao_fim": 178,
+            "formato": "alfa"
+        },
+
+        "13.3S": {
+            "nome": "informacao9",
+            "posicao_inicio": 179,
+            "posicao_fim": 218,
+            "formato": "alfa"
+        },
+
+        "14.3S": {
+            "nome": "controle_banco",
+            "posicao_inicio": 219,
+            "posicao_fim": 240,
+            "formato": "alfa",
+            "default": ""
+        }
+    }
+}

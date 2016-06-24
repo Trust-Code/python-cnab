@@ -1,0 +1,214 @@
+{
+  "nome": "SegmentoU",
+  "campos": {
+    "01.3U": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 104
+    },
+
+    "02.3U": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3U": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3U": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3U": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "U"
+    },
+
+    "06.3U": {
+      "nome": "servico_cnab_exclusivo",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3U": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "08.3U": {
+      "nome": "titulo_acrescimos",
+      "posicao_inicio": 18,
+      "posicao_fim": 32,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "09.3U": {
+      "nome": "titulo_desconto",
+      "posicao_inicio": 33,
+      "posicao_fim": 47,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "10.3U": {
+      "nome": "titulo_abatimento",
+      "posicao_inicio": 48,
+      "posicao_fim": 62,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "11.3U": {
+      "nome": "titulo_iof",
+      "posicao_inicio": 63,
+      "posicao_fim": 77,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "12.3U": {
+      "nome": "titulo_pago",
+      "posicao_inicio": 78,
+      "posicao_fim": 92,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "13.3U": {
+      "nome": "titulo_liquido",
+      "posicao_inicio": 93,
+      "posicao_fim": 107,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "14.3U": {
+      "nome": "outras_despesas",
+      "posicao_inicio": 108,
+      "posicao_fim": 122,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "15.3U": {
+      "nome": "outros_creditos",
+      "posicao_inicio": 123,
+      "posicao_fim": 137,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "16.3U": {
+      "nome": "data_ocorrencia",
+      "posicao_inicio": 138,
+      "posicao_fim": 145,
+      "formato": "num"
+    },
+
+    "17.3U": {
+      "nome": "data_credito",
+      "posicao_inicio": 146,
+      "posicao_fim": 153,
+      "formato": "num"
+    },
+
+    "18.3U": {
+      "nome": "numero_banco_sacados",
+      "posicao_inicio": 154,
+      "posicao_fim": 156,
+      "formato": "num"
+    },
+
+    "19.3U": {
+      "nome": "nome_banco_sacados",
+      "posicao_inicio": 157,
+      "posicao_fim": 176,
+      "formato": "alfa"
+    },
+
+    "20.3U": {
+      "nome": "ajuste_vencimento",
+      "posicao_inicio": 177,
+      "posicao_fim": 177,
+      "formato": "alfa"
+    },
+
+    "21.3U": {
+      "nome": "ajuste_emissao",
+      "posicao_inicio": 178,
+      "posicao_fim": 178,
+      "formato": "alfa"
+    },
+
+    "22.3U": {
+      "nome": "id_mod_bloqueto",
+      "posicao_inicio": 179,
+      "posicao_fim": 180,
+      "formato": "alfa"
+    },
+
+    "23.3U": {
+      "nome": "id_viaEntrega",
+      "posicao_inicio": 181,
+      "posicao_fim": 181,
+      "formato": "alfa"
+    },
+
+    "24.3U": {
+      "nome": "especie_titulo",
+      "posicao_inicio": 182,
+      "posicao_fim": 183,
+      "formato": "alfa"
+    },
+
+    "25.3U": {
+      "nome": "id_aceite",
+      "posicao_inicio": 184,
+      "posicao_fim": 184,
+      "formato": "alfa"
+    },
+
+    "26.3U": {
+      "nome": "codigo_sacado_noBanco",
+      "posicao_inicio": 185,
+      "posicao_fim": 199,
+      "formato": "alfa"
+    },
+
+    "27.3U": {
+      "nome": "caixa_exclusivo",
+      "posicao_inicio": 200,
+      "posicao_fim": 210,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "28.3U": {
+      "nome": "cnab_exclusivo_campo28dot3U",
+      "posicao_inicio": 211,
+      "posicao_fim": 240,
+      "formato": "alfa"
+    }
+
+  }
+}
