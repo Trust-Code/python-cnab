@@ -77,7 +77,7 @@
       "formato": "num",
       "default": 1
     },
-    
+
     "11.3P": {
       "nome": "vazio4",
       "posicao_inicio": 30,
@@ -163,14 +163,14 @@
       "formato": "alfa",
       "default": ""
     },
-    
+
     "20.3P": {
       "nome": "vencimento_titulo",
       "posicao_inicio": 78,
       "posicao_fim": 85,
       "formato": "num"
     },
-    
+
     "21.3P": {
       "nome": "valor_titulo",
       "posicao_inicio": 86,
@@ -258,7 +258,6 @@
       "posicao_inicio": 151,
       "posicao_fim": 165,
       "formato": "num",
-      "decimais": 2
     },
 
     "33.3P": {
@@ -266,7 +265,6 @@
       "posicao_inicio": 166,
       "posicao_fim": 180,
       "formato": "num",
-      "decimais": 2
     },
 
     "34.3P": {
@@ -290,7 +288,7 @@
       "posicao_fim": 221,
       "formato": "num"
     },
-    
+
     "37.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
