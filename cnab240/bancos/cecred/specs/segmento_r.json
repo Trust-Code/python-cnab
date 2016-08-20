@@ -73,7 +73,8 @@
       "posicao_inicio": 27,
       "posicao_fim": 41,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "11.3R": {
@@ -95,25 +96,26 @@
       "posicao_inicio": 51,
       "posicao_fim": 65,
       "formato": "num",
-      "decimais": 2
+      "decimais": 2,
+      "default": 0
     },
 
     "14.3R": {
-      "nome": "multa_codigo",
+      "nome": "codigo_multa",
       "posicao_inicio": 66,
       "posicao_fim": 66,
       "formato": "alfa"
     },
 
     "15.3R": {
-      "nome": "multa_data",
+      "nome": "data_multa",
       "posicao_inicio": 67,
       "posicao_fim": 74,
       "formato": "num"
     },
 
     "16.3R": {
-      "nome": "multa_percentual",
+      "nome": "juros_multa",
       "posicao_inicio": 75,
       "posicao_fim": 89,
       "formato": "num",

@@ -44,8 +44,7 @@
       "nome": "vazio1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "07.1": {
@@ -144,7 +143,7 @@
     },
 
     "20.1": {
-      "nome": "controlecob_numero",
+      "nome": "arquivo_sequencia",
       "posicao_inicio": 184,
       "posicao_fim": 191,
       "formato": "num"

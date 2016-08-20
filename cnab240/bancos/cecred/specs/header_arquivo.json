@@ -48,7 +48,7 @@
         },
 
         "07.0": {
-            "nome": "codigo_convenio_banco",
+            "nome": "cedente_convenio",
             "posicao_inicio": 33,
             "posicao_fim": 52,
             "formato": "alfa"
@@ -69,24 +69,24 @@
         },
 
         "10.0": {
-            "nome": "numero_conta_corrente",
+            "nome": "cedente_conta",
             "posicao_inicio": 59,
             "posicao_fim": 70,
             "formato": "num"
         },
 
         "11.0": {
-            "nome": "numero_conta_corrente_dv",
+            "nome": "cedente_conta_dv",
             "posicao_inicio": 71,
             "posicao_fim": 71,
-            "formato": "num"
+            "formato": "alfa"
         },
 
         "12.0": {
             "nome": "dv_agencia_conta",
             "posicao_inicio": 72,
             "posicao_fim": 72,
-            "formato": "num"
+            "formato": "alfa"
         },
 
         "13.0": {
@@ -112,7 +112,7 @@
         },
 
         "16.0": {
-            "nome": "codigo_remessa_retorno",
+            "nome": "arquivo_codigo",
             "posicao_inicio": 143,
             "posicao_fim": 143,
             "formato": "num"
