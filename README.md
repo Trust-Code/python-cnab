@@ -1,4 +1,4 @@
-Cnab 240
+Python Cnab
 =======
 
 [![Build Status](https://travis-ci.org/Trust-Code/python-cnab.svg?branch=master)](https://travis-ci.org/Trust-Code/python-cnab)
@@ -7,6 +7,12 @@ Cnab 240
 
 
 - cnab240
+
+Instalação
+------------
+Você pode instalar ``python-cnab`` com ``pip``:
+
+    $ pip install python-cnab
 
 
 Mantido por Trustcode
