@@ -1,13 +1,12 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
-#  - "3.2": Not supported yet
-install: 
-  - "pip install unittest2 --use-mirrors"
-  - "pip install ordereddict --use-mirrors || echo \"It's ok...\"" 
-  - "pip install importlib --use-mirrors || echo \"It's ok...\"" 
-script: ./run_tests.sh
-notifications:
-  irc:
-    - "irc.freenode.org#tracy-web-tech"
+virtual_env:
+  system_site_packages: true
+install:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+script:
+  coverage run --source=pytrustnfe setup.py nosetests
+after_success:
+  coveralls

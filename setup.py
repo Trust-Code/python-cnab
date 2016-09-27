@@ -22,6 +22,9 @@ setup(
     scripts=[],
     classifiers=[],
     platforms='any',
-    test_suite='',
-    tests_require=[],
+    test_suite='nose.collector',
+    tests_require=[
+        'nose',
+        'mock',
+    ],
 )
