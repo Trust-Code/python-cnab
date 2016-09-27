@@ -6,12 +6,12 @@ except ImportError:
 
 from cnab240.bancos import itau
 from cnab240.tipos import Evento
-from tests.data import get_itau_data_from_file
+
 
 class TestEvento(unittest.TestCase):
     def setUp(self):
         self.evento = Evento(itau, 1)
-   
+
     def test_getattributes(self):
         self.assertEquals(self.evento._segmentos, [])
 
@@ -23,10 +23,9 @@ class TestEvento(unittest.TestCase):
         self.assertNotEqual(self.evento.test_attr, 'Goodbye World')
         self.assertEqual(self.evento.test_attr, 'Hello World')
 
-    def test_unicode(self):  
+    def test_unicode(self):
         self.assertEquals(unicode(self.evento), u'')
         self.evento._segmentos.append('test_1')
-        self.assertEquals(unicode(self.evento), u'test_1') 
-        self.evento._segmentos.append('test_2') 
-        self.assertEquals(unicode(self.evento), u'test_1\r\ntest_2') 
-
+        self.assertEquals(unicode(self.evento), u'test_1')
+        self.evento._segmentos.append('test_2')
+        self.assertEquals(unicode(self.evento), u'test_1\r\ntest_2')

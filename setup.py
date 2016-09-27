@@ -2,25 +2,29 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cnab',
-    version='0.01',
-    author='Tracy Web Technologies',
-    author_email='contato@tracy.com.br',
-    url='https://github.com/TracyWebTech/cnab240',
-    packages=find_packages(),
+    name='python-cnab',
+    version='0.1.0',
+    author='Trustcode',
+    author_email='suporte@trustcode.com.br',
+    url='https://github.com/Trust-Code/python-cnab',
+    keywords=['cnab', 'cnab240'],
+    packages=find_packages(exclude=['*tests*']),
     include_package_data=True,
-    zip_safe=False,
-    install_requires=['setuptools-git'],
-    provides=[
-        'cnab'
+    install_requires=[
+        'setuptools-git'
     ],
     license='MIT',
-    description='Classe para gerar arquivo de remessa e leitura de retorno no '
-                                                            'padrão CNAB',
+    description='Lib para gerar arquivo CNAB - Integração bancária',
     long_description=open('README.md', 'r').read(),
     download_url='https://github.com/kmee/cnab',
-    scripts=[],
-    classifiers=[],
+    classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Environment :: Plugins',
+        'Intended Audience :: Developers',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+    ],
     platforms='any',
     test_suite='nose.collector',
     tests_require=[

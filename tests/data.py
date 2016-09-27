@@ -8,10 +8,11 @@ from cnab240.tipos import Lote, Evento
 TESTS_DIRPATH = os.path.abspath(os.path.dirname(__file__))
 ARQS_DIRPATH = os.path.join(TESTS_DIRPATH, 'arquivos')
 
+
 def get_itau_data_from_file():
     itau_data = dict()
-    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH, 
-                                     'cobranca.itau.rem'), encoding='ascii')
+    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH,
+                                  'cobranca.itau.rem'), encoding='ascii')
 
     itau_data['remessa'] = arquivo_remessa.read()
     arquivo_remessa.seek(0)
@@ -49,7 +50,7 @@ def get_itau_data_from_file():
     itau_data['trailer_arquivo'].carregar(itau_data['trailer_arquivo_str'])
 
     itau_data['lote_cob'] = Lote(itau, itau_data['header_lote'],
-                                                    itau_data['trailer_lote'])
+                                 itau_data['trailer_lote'])
     itau_data['evento_cob1'] = Evento(itau, 1)
     itau_data['evento_cob1'].adicionar_segmento(itau_data['seg_p1'])
     itau_data['evento_cob1'].adicionar_segmento(itau_data['seg_q1'])
@@ -57,9 +58,10 @@ def get_itau_data_from_file():
     itau_data['evento_cob2'] = Evento(itau, 1)
     itau_data['evento_cob2'].adicionar_segmento(itau_data['seg_p2'])
     itau_data['evento_cob2'].adicionar_segmento(itau_data['seg_q2'])
-   
-    arquivo_remessa.close() 
+
+    arquivo_remessa.close()
     return itau_data
+
 
 def get_itau_data_from_dict():
     itau_data = dict()
@@ -108,12 +110,13 @@ def get_itau_data_from_dict():
 
     itau_data['arquivo'] = dict_arquivo
     itau_data['cobranca'] = dict_cobranca
-    
+
     return itau_data
-    
+
+
 def get_itau_file_remessa():
-    arquivo_remessa = codecs.open(os.path.join(ARQS_DIRPATH, 
-                                    'cobranca_dict.itau.rem'), encoding='ascii')
+    arquivo_remessa = codecs.open(
+        os.path.join(ARQS_DIRPATH, 'cobranca_dict.itau.rem'), encoding='ascii')
     arquivo_data = arquivo_remessa.read()
     arquivo_remessa.close()
     return arquivo_data

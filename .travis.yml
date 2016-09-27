@@ -7,6 +7,6 @@ install:
   - pip install --upgrade pip
   - pip install -r requirements.txt
 script:
-  coverage run --source=pytrustnfe setup.py nosetests
+  coverage run --source=cnab240 setup.py nosetests
 after_success:
   coveralls
