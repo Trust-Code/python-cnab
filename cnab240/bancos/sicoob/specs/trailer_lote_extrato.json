@@ -156,8 +156,7 @@
             "nome": "quantidade_registros",
             "posicao_inicio": 171,
             "posicao_fim": 176,
-            "formato": "num",
-            "decimais": 2
+            "formato": "num"
         },
 
         "22.1": {

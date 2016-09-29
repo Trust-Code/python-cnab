@@ -150,7 +150,8 @@
             "nome": "valor_saldo_inicial",
             "posicao_inicio": 151,
             "posicao_fim": 168,
-            "formato": "num"
+            "formato": "num",
+            "decimais": 2
         },
 
         "21.1": {
@@ -164,8 +165,7 @@
             "nome": "posicao_saldo_inicial",
             "posicao_inicio": 170,
             "posicao_fim": 170,
-            "formato": "num",
-            "default": 0
+            "formato": "alfa"
         },
 
         "23.1": {
@@ -183,7 +183,7 @@
         },
 
         "25.1": {
-            "nome": "moeda",
+            "nome": "vazio8",
             "posicao_inicio": 179,
             "posicao_fim": 240,
             "formato": "alfa"
