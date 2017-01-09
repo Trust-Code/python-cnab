@@ -133,7 +133,7 @@
     },
 
     "18.1": {
-      "nome": "cedente_agencia_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 73,
       "posicao_fim": 73,
       "formato": "num"
