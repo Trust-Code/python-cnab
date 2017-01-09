@@ -102,7 +102,7 @@
     },
 
     "14.0": {
-      "nome": "cedente_agencia_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 72,
       "posicao_fim": 72,
       "formato": "num"
