@@ -3,13 +3,16 @@ from setuptools import setup, find_packages
 
 setup(
     name='python-cnab',
-    version='0.1.3',
+    version='0.1.4',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
     url='https://github.com/Trust-Code/python-cnab',
     keywords=['cnab', 'cnab240'],
     packages=find_packages(exclude=['*tests*']),
     include_package_data=True,
+    package_data={
+        'cnab240': ['*.json'],
+    },
     install_requires=[
         'setuptools-git'
     ],
