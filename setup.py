@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='python-cnab',
-    version='0.1.4',
+    version='0.1.5',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
     url='https://github.com/Trust-Code/python-cnab',
@@ -11,7 +11,19 @@ setup(
     packages=find_packages(exclude=['*tests*']),
     include_package_data=True,
     package_data={
-        'cnab240': ['*.json'],
+        'cnab240': [
+            'bancos/banco_brasil/specs/*.json',
+            'bancos/bradesco/specs/*.json',
+            'bancos/bradesco_cobranca_400/specs/*.json',
+            'bancos/bradesco_cobranca_retorno_400/specs/*.json',
+            'bancos/bradescoPagFor/specs/*.json',
+            'bancos/cecred/specs/*.json',
+            'bancos/cef/specs/*.json',
+            'bancos/hsbc/specs/*.json',
+            'bancos/itau/specs/*.json',
+            'bancos/itauSispag/specs/*.json',
+            'bancos/sicoob/specs/*.json',
+        ],
     },
     install_requires=[
         'setuptools-git'
