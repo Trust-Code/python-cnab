@@ -1,0 +1,52 @@
+{
+  "nome": "TrailerLoteCobranca",
+  "campos": {
+    "01.5": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.5": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.5": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 5
+    },
+
+    "04.5": {
+      "nome": "vazio1",
+      "posicao_inicio": 9,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "05.5": {
+      "nome": "quantidade_registros",
+      "posicao_inicio": 18,
+      "posicao_fim": 23,
+      "formato": "num",
+      "default": 0
+    },
+
+    "06.5": {
+      "nome": "vazio2",
+      "posicao_inicio": 24,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}

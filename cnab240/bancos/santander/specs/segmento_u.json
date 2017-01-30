@@ -1,0 +1,188 @@
+{
+  "nome": "SegmentoU",
+  "campos": {
+    "01.3U": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.3U": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.3U": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3U": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num",
+      "default": 0
+    },
+
+    "05.3U": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "U"
+    },
+
+    "06.3U": {
+      "nome": "vazio1",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3U": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.3U": {
+      "nome": "titulo_acrescimos",
+      "posicao_inicio": 18,
+      "posicao_fim": 32,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "09.3U": {
+      "nome": "titulo_desconto",
+      "posicao_inicio": 33,
+      "posicao_fim": 47,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "10.3U": {
+      "nome": "titulo_abatimento",
+      "posicao_inicio": 48,
+      "posicao_fim": 62,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "11.3U": {
+      "nome": "titulo_iof",
+      "posicao_inicio": 63,
+      "posicao_fim": 77,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "12.3U": {
+      "nome": "titulo_pago",
+      "posicao_inicio": 78,
+      "posicao_fim": 92,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "13.3U": {
+      "nome": "titulo_liquido",
+      "posicao_inicio": 93,
+      "posicao_fim": 107,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "14.3U": {
+      "nome": "vazio2",
+      "posicao_inicio": 108,
+      "posicao_fim": 137,
+      "formato": "num",
+      "default": 0
+    },
+
+    "15.3U": {
+      "nome": "data_ocorrencia",
+      "posicao_inicio": 138,
+      "posicao_fim": 145,
+      "formato": "num",
+      "default": 0
+    },
+
+    "16.3U": {
+      "nome": "data_credito",
+      "posicao_inicio": 146,
+      "posicao_fim": 153,
+      "formato": "num",
+      "default": 0
+    },
+
+    "17.3U": {
+      "nome": "ocorrencia_codigo",
+      "posicao_inicio": 154,
+      "posicao_fim": 157,
+      "formato": "num",
+      "default": 0
+    },
+
+    "18.3U": {
+      "nome": "ocorrencia_data",
+      "posicao_inicio": 158,
+      "posicao_fim": 165,
+      "formato": "num",
+      "default": 0
+    },
+
+    "19.3U": {
+      "nome": "ocorrencia_valor",
+      "posicao_inicio": 166,
+      "posicao_fim": 180,
+      "formato": "num",
+      "decimais": 2,
+      "default": 0
+    },
+
+    "20.3U": {
+      "nome": "vazio3",
+      "posicao_inicio": 181,
+      "posicao_fim": 210,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "21.3U": {
+      "nome": "vazio4",
+      "posicao_inicio": 211,
+      "posicao_fim": 233,
+      "formato": "num",
+      "default": 0
+    },
+
+    "22.3U": {
+      "nome": "vazio5",
+      "posicao_inicio": 234,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+
+  }
+}

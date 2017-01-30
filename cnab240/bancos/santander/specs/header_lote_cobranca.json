@@ -1,0 +1,149 @@
+{
+  "nome": "HeaderLoteCobranca",
+  "campos": {
+    "01.1": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.1": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.1": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 1
+    },
+
+    "04.1": {
+      "nome": "servico_operacao",
+      "posicao_inicio": 9,
+      "posicao_fim": 9,
+      "formato": "alfa",
+      "default": "R"
+    },
+
+    "05.1": {
+      "nome": "servico_servico",
+      "posicao_inicio": 10,
+      "posicao_fim": 11,
+      "formato": "num",
+      "default": 1
+    },
+
+    "06.1": {
+      "nome": "vazio1",
+      "posicao_inicio": 12,
+      "posicao_fim": 13,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.1": {
+      "nome": "servico_layout",
+      "posicao_inicio": 14,
+      "posicao_fim": 16,
+      "formato": "num",
+      "default": 30
+    },
+
+    "08.1": {
+      "nome": "vazio2",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.1": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num"
+    },
+
+    "10.1": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 33,
+      "formato": "num"
+    },
+
+    "11.1": {
+      "nome": "vazio3",
+      "posicao_inicio": 34,
+      "posicao_fim": 53,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "12.1": {
+      "nome": "codigo_transmissao",
+      "posicao_inicio": 54,
+      "posicao_fim": 68,
+      "formato": "num"
+    },
+
+    "13.1": {
+      "nome": "vazio4",
+      "posicao_inicio": 69,
+      "posicao_fim": 73,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "14.1": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 74,
+      "posicao_fim": 103,
+      "formato": "alfa"
+    },
+
+    "15.1": {
+      "nome": "mensagem1",
+      "posicao_inicio": 104,
+      "posicao_fim": 143,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.1": {
+      "nome": "mensagem2",
+      "posicao_inicio": 144,
+      "posicao_fim": 183,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "17.1": {
+      "nome": "controlecob_numero",
+      "posicao_inicio": 184,
+      "posicao_fim": 191,
+      "formato": "num"
+    },
+
+    "18.1": {
+      "nome": "controlecob_data_gravacao",
+      "posicao_inicio": 192,
+      "posicao_fim": 199,
+      "formato": "num"
+    },
+
+    "19.1": {
+      "nome": "vazio5",
+      "posicao_inicio": 200,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
