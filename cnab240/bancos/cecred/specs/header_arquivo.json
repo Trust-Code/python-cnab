@@ -100,7 +100,8 @@
             "nome": "nome_do_banco",
             "posicao_inicio": 103,
             "posicao_fim": 132,
-            "formato": "alfa"
+            "formato": "alfa",
+            "default": "CECRED"
         },
 
         "15.0": {
