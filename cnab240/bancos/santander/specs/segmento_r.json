@@ -1,0 +1,146 @@
+{
+  "nome": "SegmentoR",
+  "campos": {
+    "01.3R": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.3R": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num"
+    },
+
+    "03.3R": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3R": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+
+    "05.3R": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "R"
+    },
+
+    "06.3R": {
+      "nome": "vazio1",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3R": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.3R": {
+      "nome": "desc2_codigo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num",
+      "default": 0
+    },
+
+    "09.3R": {
+      "nome": "desc2_data",
+      "posicao_inicio": 19,
+      "posicao_fim": 26,
+      "formato": "num",
+      "default": 0
+    },
+
+    "10.3R": {
+      "nome": "desc2_percentual",
+      "posicao_inicio": 27,
+      "posicao_fim": 41,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "11.3R": {
+      "nome": "vazio2",
+      "posicao_inicio": 42,
+      "posicao_fim": 65,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "12.3R": {
+      "nome": "multa_codigo",
+      "posicao_inicio": 66,
+      "posicao_fim": 66,
+      "formato": "num",
+      "default": 0
+    },
+
+    "13.3R": {
+      "nome": "multa_data",
+      "posicao_inicio": 67,
+      "posicao_fim": 74,
+      "formato": "num",
+      "default": 0
+    },
+
+    "14.3R": {
+      "nome": "multa_valor_percentual",
+      "posicao_inicio": 75,
+      "posicao_fim": 89,
+      "formato": "num",
+      "default": 0
+    },
+
+    "15.3R": {
+      "nome": "vazio3",
+      "posicao_inicio": 90,
+      "posicao_fim": 99,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.3R": {
+      "nome": "informacao3",
+      "posicao_inicio": 100,
+      "posicao_fim": 139,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "17.3R": {
+      "nome": "informacao4",
+      "posicao_inicio": 140,
+      "posicao_fim": 179,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "19.3R": {
+      "nome": "vazio4",
+      "posicao_inicio": 180,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}

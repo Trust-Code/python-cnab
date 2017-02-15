@@ -1,0 +1,196 @@
+{
+  "nome": "SegmentoQ",
+  "campos": {
+    "01.3Q": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.3Q": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.3Q": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+
+    "04.3Q": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num",
+      "default": 0
+    },
+
+    "05.3Q": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "Q"
+    },
+
+    "06.3Q": {
+      "nome": "vazio1",
+      "posicao_inicio": 15,
+      "posicao_fim": 15,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "07.3Q": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 16,
+      "posicao_fim": 17,
+      "formato": "num",
+      "default": 0
+    },
+
+    "08.3Q": {
+      "nome": "sacado_inscricao_tipo",
+      "posicao_inicio": 18,
+      "posicao_fim": 18,
+      "formato": "num",
+      "default": 0
+    },
+
+    "09.3Q": {
+      "nome": "sacado_inscricao_numero",
+      "posicao_inicio": 19,
+      "posicao_fim": 33,
+      "formato": "num",
+      "default": 0
+    },
+
+    "10.3Q": {
+      "nome": "sacado_nome",
+      "posicao_inicio": 34,
+      "posicao_fim": 73,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "11.3Q": {
+      "nome": "sacado_endereco",
+      "posicao_inicio": 74,
+      "posicao_fim": 113,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "12.3Q": {
+      "nome": "sacado_bairro",
+      "posicao_inicio": 114,
+      "posicao_fim": 128,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "13.3Q": {
+      "nome": "sacado_cep",
+      "posicao_inicio": 129,
+      "posicao_fim": 133,
+      "formato": "num",
+      "default": 0
+    },
+
+    "14.3Q": {
+      "nome": "sacado_cep_sufixo",
+      "posicao_inicio": 134,
+      "posicao_fim": 136,
+      "formato": "num",
+      "default": 0
+    },
+
+    "15.3Q": {
+      "nome": "sacado_cidade",
+      "posicao_inicio": 137,
+      "posicao_fim": 151,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "16.3Q": {
+      "nome": "sacado_uf",
+      "posicao_inicio": 152,
+      "posicao_fim": 153,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "17.3Q": {
+      "nome": "sacador_inscricao_tipo",
+      "posicao_inicio": 154,
+      "posicao_fim": 154,
+      "formato": "num",
+      "default": 0
+    },
+
+    "18.3Q": {
+      "nome": "sacador_inscricao_numero",
+      "posicao_inicio": 155,
+      "posicao_fim": 169,
+      "formato": "num",
+      "default": 0
+    },
+
+    "19.3Q": {
+      "nome": "sacador_nome",
+      "posicao_inicio": 170,
+      "posicao_fim": 209,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "20.3Q": {
+      "nome": "carne_identificador",
+      "posicao_inicio": 210,
+      "posicao_fim": 212,
+      "formato": "num",
+      "default": 0
+    },
+
+    "21.3Q": {
+      "nome": "parcela_numero",
+      "posicao_inicio": 213,
+      "posicao_fim": 215,
+      "formato": "num",
+      "default": 0
+    },
+
+    "22.3Q": {
+      "nome": "parcela_quantidade",
+      "posicao_inicio": 216,
+      "posicao_fim": 218,
+      "formato": "num",
+      "default": 0
+    },
+
+    "23.3Q": {
+      "nome": "plano_numero",
+      "posicao_inicio": 219,
+      "posicao_fim": 221,
+      "formato": "num",
+      "default": 0
+    },
+
+    "24.3Q": {
+      "nome": "vazio2",
+      "posicao_inicio": 222,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}

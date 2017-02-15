@@ -1,0 +1,134 @@
+{
+  "nome": "HeaderArquivo",
+  "campos": {
+    "01.0": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.0": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.0": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 0
+    },
+
+    "04.0": {
+      "nome": "vazio1",
+      "posicao_inicio": 9,
+      "posicao_fim": 16,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "05.0": {
+      "nome": "cedente_inscricao_tipo",
+      "posicao_inicio": 17,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+
+    "06.0": {
+      "nome": "cedente_inscricao_numero",
+      "posicao_inicio": 18,
+      "posicao_fim": 32,
+      "formato": "num"
+    },
+
+    "07.0": {
+      "nome": "codigo_transmissao",
+      "posicao_inicio": 33,
+      "posicao_fim": 47,
+      "formato": "num"
+    },
+
+    "08.0": {
+      "nome": "vazio2",
+      "posicao_inicio": 48,
+      "posicao_fim": 72,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "09.0": {
+      "nome": "cedente_nome",
+      "posicao_inicio": 73,
+      "posicao_fim": 102,
+      "formato": "alfa"
+    },
+
+    "10.0": {
+      "nome": "nome_do_banco",
+      "posicao_inicio": 103,
+      "posicao_fim": 132,
+      "formato": "alfa",
+      "default": "BANCO SANTANDER"
+    },
+
+    "11.0": {
+      "nome": "vazio3",
+      "posicao_inicio": 133,
+      "posicao_fim": 142,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "12.0": {
+      "nome": "codigo_remessa",
+      "posicao_inicio": 143,
+      "posicao_fim": 143,
+      "formato": "num",
+      "default": 1
+    },
+
+    "13.0": {
+      "nome": "arquivo_data_de_geracao",
+      "posicao_inicio": 144,
+      "posicao_fim": 151,
+      "formato": "num"
+    },
+
+    "14.0": {
+      "nome": "vazio4",
+      "posicao_inicio": 152,
+      "posicao_fim": 157,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "15.0": {
+      "nome": "arquivo_sequencia",
+      "posicao_inicio": 158,
+      "posicao_fim": 163,
+      "formato": "num"
+    },
+
+    "16.0": {
+      "nome": "arquivo_layout",
+      "posicao_inicio": 164,
+      "posicao_fim": 166,
+      "formato": "num",
+      "default": 40
+    },
+
+    "17.0": {
+      "nome": "vazio5",
+      "posicao_inicio": 167,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
