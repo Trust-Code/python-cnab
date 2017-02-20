@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='python-cnab',
-    version='0.1.7',
+    version='0.1.8',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
     url='https://github.com/Trust-Code/python-cnab',
@@ -26,7 +26,7 @@ setup(
         ],
     },
     install_requires=[
-        'setuptools-git'
+        'setuptools-git==1.1'
     ],
     license='MIT',
     description='Lib para gerar arquivo CNAB - Integração bancária',
