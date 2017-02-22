@@ -69,14 +69,14 @@
 		},
 
 		"10.0": {
-			"nome": "numero_conta_corrente",
+			"nome": "cedente_conta",
 			"posicao_inicio": 59,
 			"posicao_fim": 70,
 			"formato": "num"
 		},
 
 		"11.0": {
-			"nome": "numero_conta_corrente_dv",
+			"nome": "cedente_conta_dv",
 			"posicao_inicio": 71,
 			"posicao_fim": 71,
 			"formato": "num"
