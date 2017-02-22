@@ -80,8 +80,7 @@
       "nome": "codigo_convenio_banco",
       "posicao_inicio": 34,
       "posicao_fim": 53,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "12.1": {
