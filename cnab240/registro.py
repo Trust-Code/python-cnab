@@ -29,7 +29,7 @@ class CampoBase(object):
                 print "{0} - {1}".format(self.nome, valor)
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
-                print "Truncating - {0} - {1}".format(self.nome, valor)
+                print u"truncating - {0} - {1}".format(self.nome, valor)
                 # raise errors.NumDigitosExcedidoError(self, valor)
                 # reduz o len(valor)
                 cortar = len(valor) - self.digitos
@@ -37,24 +37,24 @@ class CampoBase(object):
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
-                print "{0} - {1}".format(self.nome, valor)
+                print u"{0} - {1}".format(self.nome, valor)
                 raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
-                print "{0} - {1}".format(self.nome, valor)
+                print u"{0} - {1}".format(self.nome, valor)
                 raise errors.NumDecimaisError(self, valor)
 
             if len(str(valor).replace('.', '')) > self.digitos:
-                print "{0} - {1}".format(self.nome, valor)
+                print u"{0} - {1}".format(self.nome, valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         else:
             if not isinstance(valor, (int, long)):
-                print "{0} - {1}".format(self.nome, valor)
+                print u"{0} - {1}".format(self.nome, valor)
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
-                print "{0} - {1}".format(self.nome, valor)
+                print u"{0} - {1}".format(self.nome, valor)
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         self._valor = valor
@@ -80,7 +80,6 @@ class CampoBase(object):
 
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
-            # if self.formato == 'num':
                 valor = unicode(self.valor).replace('.', '')
                 chars_faltantes = self.digitos - len(valor)
                 return (u'0' * chars_faltantes) + valor
