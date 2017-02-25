@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 104
+      "default": 1
     },
 
     "02.3R": {
@@ -111,7 +111,7 @@
       "posicao_fim": 74,
       "formato": "num"
     },
-    
+
     "16.3R": {
       "nome": "multa_percentual",
       "posicao_inicio": 75,

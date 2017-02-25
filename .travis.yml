@@ -17,4 +17,3 @@ deploy:
     branch: master
 
   distributions: "bdist_wheel"
-  

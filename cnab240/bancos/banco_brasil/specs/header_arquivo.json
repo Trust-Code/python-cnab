@@ -79,14 +79,14 @@
 			"nome": "cedente_conta_dv",
 			"posicao_inicio": 71,
 			"posicao_fim": 71,
-			"formato": "num"
+			"formato": "alfa"
 		},
 
 		"12.0": {
 			"nome": "dv_agencia_conta",
 			"posicao_inicio": 72,
 			"posicao_fim": 72,
-			"formato": "num"
+			"formato": "alfa"
 		},
 
 		"13.0": {
