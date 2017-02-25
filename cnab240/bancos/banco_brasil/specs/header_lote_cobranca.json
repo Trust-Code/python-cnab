@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 104
+      "default": 1
     },
 
     "02.1": {
@@ -28,7 +28,8 @@
       "nome": "servico_operacao",
       "posicao_inicio": 9,
       "posicao_fim": 9,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": "R"
     },
 
     "05.1": {
@@ -91,32 +92,31 @@
     },
 
     "13.1": {
-      "nome": "cedente_conta_dv",
+      "nome": "cedente_agencia_dv",
       "posicao_inicio": 59,
       "posicao_fim": 59,
       "formato": "alfa"
     },
 
     "14.1": {
-      "nome": "cedente_codigo_codCedente",
+      "nome": "cedente_conta",
       "posicao_inicio": 60,
-      "posicao_fim": 65,
+      "posicao_fim": 71,
       "formato": "num"
     },
 
     "15.1": {
-      "nome": "cedente_codModelo",
-      "posicao_inicio": 66,
+      "nome": "cedente_conta_dv",
+      "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "16.1": {
-      "nome": "cedente_caixa_exclusivo_campo16dot1M",
+      "nome": "dv_agencia_conta",
       "posicao_inicio": 73,
       "posicao_fim": 73,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa"
     },
 
     "17.1": {
