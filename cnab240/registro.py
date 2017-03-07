@@ -29,8 +29,7 @@ class CampoBase(object):
                 print "{0} - {1}".format(self.nome, valor)
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
-                print u"truncating - {0} - {1}".format(self.nome, valor)
-                # raise errors.NumDigitosExcedidoError(self, valor)
+                print u"truncating - {0}".format(self.nome)
                 # reduz o len(valor)
                 cortar = len(valor) - self.digitos
                 valor = valor[:-(cortar)]
