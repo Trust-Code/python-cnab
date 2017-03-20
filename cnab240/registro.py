@@ -1,6 +1,7 @@
 
 import os
 import json
+import unicodedata
 
 from glob import iglob
 from decimal import Decimal, InvalidOperation
@@ -83,8 +84,10 @@ class CampoBase(object):
                 chars_faltantes = self.digitos - len(valor)
                 return (u'0' * chars_faltantes) + valor
             else:
-                chars_faltantes = self.digitos - len(self.valor)
-                return self.valor + (u' ' * chars_faltantes)
+                valor = unicodedata.normalize('NFKD', unicode(self.valor))
+                valor = valor.encode('ascii', 'ignore')
+                chars_faltantes = self.digitos - len(valor)
+                return valor + (u' ' * chars_faltantes)
 
         return u'{0:0{1}d}'.format(self.valor, self.digitos)
 
