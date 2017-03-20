@@ -81,7 +81,7 @@
     "11.3P": {
       "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
-      "posicao_fim": 37,
+      "posicao_fim": 36,
       "formato": "alfa"
     },
 
@@ -129,7 +129,7 @@
       "posicao_inicio": 61,
       "posicao_fim": 61,
       "formato": "num",
-      "default": 1
+      "default": 4
     },
 
     "18.3P": {
