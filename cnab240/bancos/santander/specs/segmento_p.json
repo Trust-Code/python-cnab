@@ -76,7 +76,7 @@
     },
 
     "11.3P": {
-      "nome": "cedente_agencia_conta_dv",
+      "nome": "cedente_conta_dv",
       "posicao_inicio": 32,
       "posicao_fim": 32,
       "formato": "num"
@@ -225,11 +225,11 @@
     },
 
     "30.3P": {
-      "nome": "codigo_juros_mora",
+      "nome": "codigo_juros",
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num",
-      "default": 0
+      "default": 2
     },
 
     "31.3P": {
@@ -241,7 +241,7 @@
     },
 
     "32.3P": {
-      "nome": "juros_mora_taxa_dia",
+      "nome": "juros_mora_taxa",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",

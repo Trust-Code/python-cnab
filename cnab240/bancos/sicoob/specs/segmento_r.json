@@ -110,8 +110,8 @@
             "nome": "codigo_multa",
             "posicao_inicio": 66,
             "posicao_fim": 66,
-            "formato": "alfa",
-            "default": "2"
+            "formato": "num",
+            "default": 2
         },
 
         "15.3R": {
