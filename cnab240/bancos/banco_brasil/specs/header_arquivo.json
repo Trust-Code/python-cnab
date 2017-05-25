@@ -100,7 +100,8 @@
 			"nome": "nome_do_banco",
 			"posicao_inicio": 103,
 			"posicao_fim": 132,
-			"formato": "alfa"
+			"formato": "alfa",
+            "default": "BANCO DO BRASIL SA"
 		},
 
 		"15.0": {
@@ -115,7 +116,8 @@
 			"nome": "codigo_remessa_retorno",
 			"posicao_inicio": 143,
 			"posicao_fim": 143,
-			"formato": "num"
+			"formato": "num",
+            "default": 1
 		},
 
 		"17.0": {
@@ -144,7 +146,7 @@
 			"posicao_inicio": 164,
 			"posicao_fim": 166,
 			"formato": "num",
-			"default": 83
+			"default": 0
 		},
 
 		"21.0": {
