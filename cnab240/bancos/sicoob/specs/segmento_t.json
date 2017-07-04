@@ -117,7 +117,7 @@
     },
 
     "17.3T": {
-      "nome": "valor_titulo",
+      "nome": "valor_lancamento",
       "posicao_inicio": 82,
       "posicao_fim": 96,
       "formato": "num",
