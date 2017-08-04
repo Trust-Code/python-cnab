@@ -77,7 +77,7 @@
       "formato": "num",
       "default": 1
     },
-    
+
     "11.3P": {
       "nome": "vazio4",
       "posicao_inicio": 30,
@@ -101,7 +101,7 @@
       "formato": "num"
     },
 
-    "13.3.2P": {
+    "14.3P": {
       "nome": "carteira_titulo",
       "posicao_inicio": 43,
       "posicao_fim": 57,
@@ -109,7 +109,7 @@
       "default": 1
     },
 
-    "14.3P": {
+    "15.3P": {
       "nome": "cobranca_carteiraCod",
       "posicao_inicio": 58,
       "posicao_fim": 58,
@@ -117,7 +117,7 @@
       "default": 1
     },
 
-    "15.3P": {
+    "16.3P": {
       "nome": "cobranca_cadastramento",
       "posicao_inicio": 59,
       "posicao_fim": 59,
@@ -125,7 +125,7 @@
       "default": 1
     },
 
-    "16.3P": {
+    "17.3P": {
       "nome": "cobranca_documentoTipo",
       "posicao_inicio": 60,
       "posicao_fim": 60,
@@ -133,7 +133,7 @@
       "default": "2"
     },
 
-    "17.3P": {
+    "18.3P": {
       "nome": "cobranca_emissaoBloqueto",
       "posicao_inicio": 61,
       "posicao_fim": 61,
@@ -141,7 +141,7 @@
       "default": 1
     },
 
-    "18.3P": {
+    "19.3P": {
       "nome": "cobranca_distribuicaoBloqueto",
       "posicao_inicio": 62,
       "posicao_fim": 62,
@@ -149,29 +149,29 @@
       "default": "A"
     },
 
-    "19.3P": {
+    "20.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 63,
       "posicao_fim": 73,
       "formato": "alfa"
     },
 
-    "19.3.2P": {
+    "21.3P": {
       "nome": "vazio7",
       "posicao_inicio": 74,
       "posicao_fim": 77,
       "formato": "alfa",
       "default": ""
     },
-    
-    "20.3P": {
+
+    "22.3P": {
       "nome": "vencimento_titulo",
       "posicao_inicio": 78,
       "posicao_fim": 85,
       "formato": "num"
     },
-    
-    "21.3P": {
+
+    "23.3P": {
       "nome": "valor_titulo",
       "posicao_inicio": 86,
       "posicao_fim": 100,
@@ -179,7 +179,7 @@
       "decimais": 2
     },
 
-    "22.3P": {
+    "24.3P": {
       "nome": "agencia_cobradora",
       "posicao_inicio": 101,
       "posicao_fim": 105,
@@ -187,7 +187,7 @@
       "default": 0
     },
 
-    "23.3P": {
+    "25.3P": {
       "nome": "agencia_cobradora_dv",
       "posicao_inicio": 106,
       "posicao_fim": 106,
@@ -195,42 +195,42 @@
       "default": "0"
     },
 
-    "24.3P": {
+    "26.3P": {
       "nome": "especie_titulo",
       "posicao_inicio": 107,
       "posicao_fim": 108,
       "formato": "num"
     },
 
-    "25.3P": {
+    "27.3P": {
       "nome": "aceite_titulo",
       "posicao_inicio": 109,
       "posicao_fim": 109,
       "formato": "alfa"
     },
 
-    "26.3P": {
+    "28.3P": {
       "nome": "data_emissao_titulo",
       "posicao_inicio": 110,
       "posicao_fim": 117,
       "formato": "num"
     },
 
-    "27.3P": {
+    "29.3P": {
       "nome": "juros_cod_mora",
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num"
     },
 
-    "28.3P": {
+    "30.3P": {
       "nome": "juros_mora_data",
       "posicao_inicio": 119,
       "posicao_fim": 126,
       "formato": "num"
     },
 
-    "29.3P": {
+    "31.3P": {
       "nome": "juros_mora_taxa_dia",
       "posicao_inicio": 127,
       "posicao_fim": 141,
@@ -238,7 +238,7 @@
       "decimais": 2
     },
 
-    "30.3P": {
+    "32.3P": {
       "nome": "desconto1_cod",
       "posicao_inicio": 142,
       "posicao_fim": 142,
@@ -246,14 +246,14 @@
       "default": 1
     },
 
-    "31.3P": {
+    "33.3P": {
       "nome": "desconto1_data",
       "posicao_inicio": 143,
       "posicao_fim": 150,
       "formato": "num"
     },
 
-    "32.3P": {
+    "34.3P": {
       "nome": "desconto1_percentual",
       "posicao_inicio": 151,
       "posicao_fim": 165,
@@ -261,7 +261,7 @@
       "decimais": 2
     },
 
-    "33.3P": {
+    "35.3P": {
       "nome": "valor_iof",
       "posicao_inicio": 166,
       "posicao_fim": 180,
@@ -269,7 +269,7 @@
       "decimais": 2
     },
 
-    "34.3P": {
+    "36.3P": {
       "nome": "valor_abatimento",
       "posicao_inicio": 181,
       "posicao_fim": 195,
@@ -277,49 +277,49 @@
       "decimais": 2
     },
 
-    "35.3P": {
+    "37.3P": {
       "nome": "identificacao_titulo",
       "posicao_inicio": 196,
       "posicao_fim": 220,
       "formato": "alfa"
     },
 
-    "36.3P": {
+    "38.3P": {
       "nome": "codigo_protesto",
       "posicao_inicio": 221,
       "posicao_fim": 221,
       "formato": "num"
     },
-    
-    "37.3P": {
+
+    "39.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
       "posicao_fim": 223,
       "formato": "num"
     },
 
-    "38.3P": {
+    "40.3P": {
       "nome": "codigo_baixa",
       "posicao_inicio": 224,
       "posicao_fim": 224,
       "formato": "num"
     },
 
-    "39.3P": {
+    "41.3P": {
       "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 227,
       "formato": "alfa"
     },
 
-    "40.3P": {
+    "42.3P": {
       "nome": "codigo_moeda",
       "posicao_inicio": 228,
       "posicao_fim": 229,
       "formato": "num"
     },
 
-    "41.3P": {
+    "43.3P": {
       "nome": "vazio11",
       "posicao_inicio": 230,
       "posicao_fim": 239,
@@ -327,7 +327,7 @@
       "default": 0
     },
 
-    "42.3P": {
+    "44.3P": {
       "nome": "vazio12",
       "posicao_inicio": 240,
       "posicao_fim": 240,

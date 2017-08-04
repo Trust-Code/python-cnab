@@ -77,7 +77,7 @@
     },
 
     "11.1": {
-      "nome": "cedente_convenio",
+      "nome": "cedente_beneficiario",
       "posicao_inicio": 34,
       "posicao_fim": 39,
       "formato": "num",
@@ -107,7 +107,7 @@
     },
 
     "14.1": {
-      "nome": "cedente_codigo_codCedente",
+      "nome": "cedente_convenio",
       "posicao_inicio": 60,
       "posicao_fim": 65,
       "formato": "num"
