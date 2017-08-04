@@ -116,7 +116,7 @@
       "posicao_fim": 153,
       "formato": "alfa"
     },
-    
+
     "17.3Q": {
       "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
@@ -142,7 +142,8 @@
       "nome": "banco_correspondente",
       "posicao_inicio": 210,
       "posicao_fim": 212,
-      "formato": "num"
+      "formato": "alfa",
+      "default": ""
     },
 
     "21.3Q": {
@@ -159,6 +160,6 @@
       "formato": "alfa",
       "default": ""
     }
-	    
+
   }
 }
