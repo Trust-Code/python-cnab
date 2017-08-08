@@ -71,7 +71,7 @@
     },
 
     "10.3P": {
-      "nome": "cedente_codigoCedente",
+      "nome": "cedente_beneficiario",
       "posicao_inicio": 24,
       "posicao_fim": 29,
       "formato": "num",
