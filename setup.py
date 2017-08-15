@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='python-cnab',
-    version='0.1.16',
+    version='0.1.17',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
     url='https://github.com/Trust-Code/python-cnab',
@@ -24,6 +24,7 @@ setup(
             'bancos/itauSispag/specs/*.json',
             'bancos/santander/specs/*.json',
             'bancos/sicoob/specs/*.json',
+            'bancos/sicredi/specs/*.json',
         ],
     },
     install_requires=[
