@@ -1,0 +1,186 @@
+{
+    "nome": "TrailerLoteExtrato",
+    "campos": {
+        "01.5": {
+            "nome": "controle_banco",
+            "posicao_inicio": 1,
+            "posicao_fim": 3,
+            "formato": "num",
+            "default": 748
+        },
+
+        "02.5": {
+            "nome": "controle_lote",
+            "posicao_inicio": 4,
+            "posicao_fim": 7,
+            "formato": "num"
+        },
+
+        "03.5": {
+            "nome": "controle_registro",
+            "posicao_inicio": 8,
+            "posicao_fim": 8,
+            "formato": "num",
+            "default": 5
+        },
+
+        "04.5": {
+            "nome": "vazio1",
+            "posicao_inicio": 9,
+            "posicao_fim": 17,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "05.1": {
+            "nome": "cedente_inscricao_tipo",
+            "posicao_inicio": 18,
+            "posicao_fim": 18,
+            "formato": "num"
+        },
+
+        "06.1": {
+            "nome": "cedente_inscricao_numero",
+            "posicao_inicio": 19,
+            "posicao_fim": 32,
+            "formato": "num"
+        },
+
+        "07.1": {
+            "nome": "cedente_convenio",
+            "posicao_inicio": 33,
+            "posicao_fim": 52,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "08.1": {
+            "nome": "cedente_agencia",
+            "posicao_inicio": 53,
+            "posicao_fim": 57,
+            "formato": "num",
+            "default": 3069
+        },
+
+        "09.1": {
+            "nome": "cedente_agencia_dv",
+            "posicao_inicio": 58,
+            "posicao_fim": 58,
+            "formato": "alfa"
+        },
+
+        "10.1": {
+            "nome": "cedente_conta",
+            "posicao_inicio": 59,
+            "posicao_fim": 70,
+            "formato": "num"
+        },
+
+        "11.1": {
+            "nome": "cedente_conta_dv",
+            "posicao_inicio": 71,
+            "posicao_fim": 71,
+            "formato": "alfa"
+        },
+
+        "12.1": {
+            "nome": "vazio4",
+            "posicao_inicio": 72,
+            "posicao_fim": 72,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "13.1": {
+            "nome": "vazio4",
+            "posicao_inicio": 73,
+            "posicao_fim": 88,
+            "formato": "alfa",
+            "default": ""
+        },
+
+        "14.1": {
+            "nome": "saldo_bloqueado_acima_24_horas",
+            "posicao_inicio": 89,
+            "posicao_fim": 106,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "15.5": {
+            "nome": "limite_conta",
+            "posicao_inicio": 107,
+            "posicao_fim": 124,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "16.5": {
+            "nome": "saldo_bloqueado_ate_24_horas",
+            "posicao_inicio": 125,
+            "posicao_fim": 142,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "17.1": {
+            "nome": "data_saldo_final",
+            "posicao_inicio": 143,
+            "posicao_fim": 150,
+            "formato": "num"
+        },
+
+        "18.1": {
+            "nome": "valor_saldo_final",
+            "posicao_inicio": 151,
+            "posicao_fim": 168,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "19.1": {
+            "nome": "situacao_saldo_final",
+            "posicao_inicio": 169,
+            "posicao_fim": 169,
+            "formato": "alfa"
+        },
+
+        "20.1": {
+            "nome": "posicao_saldo_final",
+            "posicao_inicio": 170,
+            "posicao_fim": 170,
+            "formato": "alfa"
+        },
+
+        "21.1": {
+            "nome": "quantidade_registros",
+            "posicao_inicio": 171,
+            "posicao_fim": 176,
+            "formato": "num"
+        },
+
+        "22.1": {
+            "nome": "valor_debitos",
+            "posicao_inicio": 177,
+            "posicao_fim": 194,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "23.1": {
+            "nome": "valor_creditos",
+            "posicao_inicio": 195,
+            "posicao_fim": 212,
+            "formato": "num",
+            "decimais": 2
+        },
+
+        "24.1": {
+            "nome": "vazio5",
+            "posicao_inicio": 213,
+            "posicao_fim": 240,
+            "formato": "alfa"
+        }
+
+    }
+}
