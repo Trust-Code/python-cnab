@@ -24,6 +24,7 @@ setup(
             'bancos/itauSispag/specs/*.json',
             'bancos/santander/specs/*.json',
             'bancos/sicoob/specs/*.json',
+            'bancos/sicredi/specs/*.json',
         ],
     },
     install_requires=[
