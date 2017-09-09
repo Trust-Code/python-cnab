@@ -5,7 +5,7 @@ import json
 from collections import OrderedDict
 
 fname = sys.argv[1]
-f = file(fname)
+f = open(fname, "r", encoding="utf-8")
 spec = json.load(f, object_pairs_hook=OrderedDict)
 f.close()
 

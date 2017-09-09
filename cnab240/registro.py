@@ -4,7 +4,7 @@ import json
 import unicodedata
 
 from glob import iglob
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal
 from collections import OrderedDict
 from cnab240 import errors
 
@@ -134,7 +134,7 @@ class RegistroBase(object):
     def necessario(self):
         for campo in list(self._campos.values()):
             eh_controle = campo.nome.startswith('controle_') or campo.nome.startswith('servico_')
-            if not eh_controle and campo.valor != None:
+            if not eh_controle and campo.valor is not None:
                 return True
 
         return False

@@ -1,7 +1,6 @@
 # -*- encoding: utf8 -*-
 
 import codecs
-import importlib
 from io import IOBase
 from datetime import datetime
 from cnab240 import errors
@@ -61,7 +60,7 @@ class Lote(object):
         self.header = header
         self.trailer = trailer
         self._codigo = None
-        if self.trailer != None:
+        if self.trailer is not None:
             self.trailer.quantidade_registros = 2
         self._eventos = []
 
@@ -72,9 +71,9 @@ class Lote(object):
     @codigo.setter
     def codigo(self, valor):
         self._codigo = valor
-        if self.header != None:
+        if self.header is not None:
             self.header.controle_lote = valor
-        if self.trailer != None:
+        if self.trailer is not None:
             self.trailer.controle_lote = valor
         self.atualizar_codigo_eventos()
 
@@ -96,7 +95,7 @@ class Lote(object):
             raise TypeError
 
         self._eventos.append(evento)
-        if self.trailer != None and hasattr(self.trailer, 'quantidade_registros'):
+        if self.trailer is not None and hasattr(self.trailer, 'quantidade_registros'):
             self.trailer.quantidade_registros += len(evento)
         self.atualizar_codigo_registros()
 
@@ -109,15 +108,15 @@ class Lote(object):
             raise errors.NenhumEventoError()
 
         result = []
-        if self.header != None:
+        if self.header is not None:
             result.append(str(self.header))
         result.extend(str(evento) for evento in self._eventos)
-        if self.trailer != None:
+        if self.trailer is not None:
             result.append(str(self.trailer))
         return '\r\n'.join(result)
 
     def __len__(self):
-        if self.trailer != None and hasattr(self.trailer, 'quantidade_registros'):
+        if self.trailer is not None and hasattr(self.trailer, 'quantidade_registros'):
             return self.trailer.quantidade_registros
         else:
             return len(self._eventos)
