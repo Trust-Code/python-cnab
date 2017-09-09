@@ -67,7 +67,7 @@ class TestRegistro(unittest.TestCase):
 
     def test_leitura_campo_alfa(self):
         self.assertEqual(self.header_arquivo.cedente_nome,
-                         u'TRACY TECNOLOGIA LTDA ME')
+                         'TRACY TECNOLOGIA LTDA ME')
 
     @skip
     def test_escrita_campo_alfa(self):
@@ -77,18 +77,18 @@ class TestRegistro(unittest.TestCase):
 
         # Testa que strings mais longas que obj.digitos nao serao aceitas
         with self.assertRaises(errors.NumDigitosExcedidoError):
-            self.header_arquivo.cedente_convenio = u'123456789012345678901'
+            self.header_arquivo.cedente_convenio = '123456789012345678901'
 
         # Testa que o valor atribuido foi guardado no objeto
-        self.header_arquivo.cedente_nome = u'tracy'
+        self.header_arquivo.cedente_nome = 'tracy'
         self.assertEqual(self.header_arquivo.cedente_nome, 'tracy')
 
     def test_fromdict(self):
         header_dict = self.header_arquivo.todict()
         header_arquivo = itau.registros.HeaderArquivo(**header_dict)
         self.assertEqual(header_arquivo.cedente_nome,
-                                                u'TRACY TECNOLOGIA LTDA ME')
-        self.assertEqual(header_arquivo.nome_do_banco, u'BANCO ITAU SA')
+                                                'TRACY TECNOLOGIA LTDA ME')
+        self.assertEqual(header_arquivo.nome_do_banco, 'BANCO ITAU SA')
 
     def test_necessario(self):
         self.assertTrue(self.seg_p)
@@ -104,7 +104,7 @@ class TestRegistro(unittest.TestCase):
 
     def test_unicode(self):
         def unicode_test(seg_instance, seg_str):
-            seg_gen_str = unicode(seg_instance)
+            seg_gen_str = str(seg_instance)
 
             self.assertEqual(len(seg_gen_str), 240)
             self.assertEqual(len(seg_str), 240)

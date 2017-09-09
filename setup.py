@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='python-cnab',
+    name='python-cnab3',
     version='0.1.19',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
@@ -40,6 +40,9 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.4',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     platforms='any',

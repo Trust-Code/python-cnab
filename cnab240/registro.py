@@ -26,40 +26,40 @@ class CampoBase(object):
     def valor(self, valor):
 
         if self.formato == 'alfa':
-            if not isinstance(valor, basestring):
-                print "{0} - {1}".format(self.nome, valor)
+            if not isinstance(valor, str):
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
             if len(valor) > self.digitos:
-                print u"truncating - {0}".format(self.nome)
+                print("truncating - {0}".format(self.nome))
                 # reduz o len(valor)
                 cortar = len(valor) - self.digitos
                 valor = valor[:-(cortar)]
 
         elif self.decimais:
             if not isinstance(valor, Decimal):
-                print u"{0} - {1}".format(self.nome, valor)
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
 
             num_decimais = valor.as_tuple().exponent * -1
             if num_decimais != self.decimais:
-                print u"{0} - {1}".format(self.nome, valor)
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.NumDecimaisError(self, valor)
 
             if len(str(valor).replace('.', '')) > self.digitos:
-                print u"{0} - {1}".format(self.nome, valor)
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         else:
-            if not isinstance(valor, (int, long)):
-                print u"{0} - {1}".format(self.nome, valor)
+            if not isinstance(valor, int):
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
             if len(str(valor)) > self.digitos:
-                print u"{0} - {1}".format(self.nome, valor)
+                print("{0} - {1}".format(self.nome, valor))
                 raise errors.NumDigitosExcedidoError(self, valor)
 
         self._valor = valor
 
-    def __unicode__(self):
+    def __str__(self):
 
         if self.valor is None:
             if self.default is not None:
@@ -74,25 +74,24 @@ class CampoBase(object):
                 if self.decimais or self.formato == 'num':
                     self.valor = 0
                 else:
-                    self.valor = u''
+                    self.valor = ''
             else:
                 raise errors.CampoObrigatorioError(self.nome)
 
         if self.formato == 'alfa' or self.decimais:
             if self.decimais:
-                valor = unicode(self.valor).replace('.', '')
+                valor = str(self.valor).replace('.', '')
                 chars_faltantes = self.digitos - len(valor)
-                return (u'0' * chars_faltantes) + valor
+                return ('0' * chars_faltantes) + valor
             else:
-                valor = unicodedata.normalize('NFKD', unicode(self.valor))
-                valor = valor.encode('ascii', 'ignore')
+                valor = unicodedata.normalize('NFKD', str(self.valor))
                 chars_faltantes = self.digitos - len(valor)
-                return valor + (u' ' * chars_faltantes)
+                return valor + (' ' * chars_faltantes)
 
-        return u'{0:0{1}d}'.format(self.valor, self.digitos)
+        return '{0:0{1}d}'.format(self.valor, self.digitos)
 
     def __repr__(self):
-        return unicode(self)
+        return str(self)
 
     def __set__(self, instance, value):
         self.valor = value
@@ -117,7 +116,7 @@ def criar_classe_campo(spec):
         'default': spec.get('default'),
     }
 
-    return type(nome.encode('utf8'), (CampoBase,), attrs)
+    return type(nome, (CampoBase,), attrs)
 
 
 class RegistroBase(object):
@@ -126,19 +125,19 @@ class RegistroBase(object):
         campos = OrderedDict()
         attrs = {'_campos': campos}
 
-        for Campo in cls._campos_cls.values():
+        for Campo in list(cls._campos_cls.values()):
             campo = Campo()
             campos.update({campo.nome: campo})
             attrs.update({campo.nome: campo})
 
         new_cls = type(cls.__name__, (cls, ), attrs)
-        return super(RegistroBase, cls).__new__(new_cls, **kwargs)
+        return super(RegistroBase, cls).__new__(new_cls)
 
     def __init__(self, **kwargs):
         self.fromdict(kwargs)
 
     def necessario(self):
-        for campo in self._campos.values():
+        for campo in list(self._campos.values()):
             eh_controle = campo.nome.startswith('controle_') or campo.nome.startswith('servico_')
             if not eh_controle and campo.valor != None:
                 return True
@@ -147,7 +146,7 @@ class RegistroBase(object):
 
     def todict(self):
         data_dict = dict()
-        for campo in self._campos.values():
+        for campo in list(self._campos.values()):
             if campo.valor is not None:
                 data_dict[campo.nome] = campo.valor
         return data_dict
@@ -159,12 +158,12 @@ class RegistroBase(object):
             key.startswith('controle_'),
         ))
 
-        for key, value in data_dict.items():
+        for key, value in list(data_dict.items()):
             if hasattr(self, key) and not ignore_fields(key):
                 setattr(self, key, value)
 
     def carregar(self, registro_str):
-        for campo in self._campos.values():
+        for campo in list(self._campos.values()):
             valor = registro_str[campo.inicio:campo.fim].strip()
             if campo.decimais:
                 exponente = campo.decimais * -1
@@ -182,8 +181,8 @@ class RegistroBase(object):
             else:
                 campo.valor = valor
 
-    def __unicode__(self):
-        return ''.join([unicode(campo) for campo in self._campos.values()])
+    def __str__(self):
+        return ''.join([str(campo) for campo in list(self._campos.values())])
 
 
 class Registros(object):
@@ -203,10 +202,10 @@ class Registros(object):
     def criar_classe_registro(self, spec):
         campos = OrderedDict()
         attrs = {'_campos_cls': campos}
-        cls_name = spec.get('nome').encode('utf8')
+        cls_name = spec.get('nome')
 
         campo_specs = spec.get('campos', {})
-        for key in sorted(campo_specs.iterkeys()):
+        for key in sorted(campo_specs.keys()):
             Campo = criar_classe_campo(campo_specs[key])
             entrada = {Campo.nome: Campo}
 

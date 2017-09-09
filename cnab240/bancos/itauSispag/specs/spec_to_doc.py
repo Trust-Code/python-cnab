@@ -10,7 +10,7 @@ spec = json.load(f, object_pairs_hook=OrderedDict)
 f.close()
 
 campos = spec.get('campos')
-for campo in campos.values():
+for campo in list(campos.values()):
     campo_nome = campo.get('nome')
     campo_formato = campo.get('formato')
     campo_decimais = campo.get('decimais')
@@ -22,6 +22,6 @@ for campo in campos.values():
     else:
         tipo = 'int'
 
-    print (' ' * 8) + ':param {0}:'.format(campo_nome)
-    print (' ' * 8) + ':type {0}: {1}'.format(campo_nome, tipo)
-    print
+    print((' ' * 8) + ':param {0}:'.format(campo_nome))
+    print((' ' * 8) + ':type {0}: {1}'.format(campo_nome, tipo))
+    print()

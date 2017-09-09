@@ -26,18 +26,18 @@ class TestCnab240(unittest.TestCase):
     @skip
     def test_unicode(self):
         self.arquivo.incluir_cobranca(**self.itau_data['cobranca'])
-        self.assertEqual(unicode(self.arquivo), get_itau_file_remessa())
+        self.assertEqual(str(self.arquivo), get_itau_file_remessa())
 
     def test_empty_data(self):
         arquivo = Arquivo(itau)
-        self.assertRaises(errors.ArquivoVazioError, unicode, arquivo)
+        self.assertRaises(errors.ArquivoVazioError, str, arquivo)
 
     def test_leitura(self):
         return_file_path = os.path.join(ARQS_DIRPATH, 'cobranca.itau.ret')
         ret_file = codecs.open(return_file_path, encoding='ascii')
         arquivo = Arquivo(itau, arquivo=ret_file)
         ret_file.seek(0)
-        self.assertEqual(ret_file.read(), unicode(arquivo))
+        self.assertEqual(ret_file.read(), str(arquivo))
 
 if __name__ == '__main__':
     unittest.main()

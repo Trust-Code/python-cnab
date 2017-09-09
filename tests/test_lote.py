@@ -42,13 +42,13 @@ class TestLote(unittest.TestCase):
 
     def test_unicode(self):
         with self.assertRaises(errors.NenhumEventoError):
-            unicode(self.lote)
+            str(self.lote)
 
         self.lote.adicionar_evento(self.evento_1)
         self.lote.adicionar_evento(self.evento_2)
         self.lote.codigo = 1
 
-        self.assertIn(unicode(self.lote), self.remessa)
+        self.assertIn(str(self.lote), self.remessa)
 
     def test_definir_codigo(self):
         self.lote.adicionar_evento(self.evento_1)

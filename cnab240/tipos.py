@@ -2,6 +2,7 @@
 
 import codecs
 import importlib
+from io import IOBase
 from datetime import datetime
 from cnab240 import errors
 
@@ -29,8 +30,8 @@ class Evento(object):
                 return getattr(segmento, name)
         return object.__getattribute__(self, name)
 
-    def __unicode__(self):
-        return u'\r\n'.join(unicode(seg) for seg in self._segmentos)
+    def __str__(self):
+        return '\r\n'.join(str(seg) for seg in self._segmentos)
 
     def __len__(self):
         return len(self._segmentos)
@@ -103,16 +104,16 @@ class Lote(object):
             self.atualizar_codigo_eventos()
 
     # Breakpoint
-    def __unicode__(self):
+    def __str__(self):
         if not self._eventos:
             raise errors.NenhumEventoError()
 
         result = []
         if self.header != None:
-            result.append(unicode(self.header))
-        result.extend(unicode(evento) for evento in self._eventos)
+            result.append(str(self.header))
+        result.extend(str(evento) for evento in self._eventos)
         if self.trailer != None:
-            result.append(unicode(self.trailer))
+            result.append(str(self.trailer))
         return '\r\n'.join(result)
 
     def __len__(self):
@@ -130,7 +131,7 @@ class Arquivo(object):
         self._lotes = []
         self.banco = banco
         arquivo = kwargs.get('arquivo')
-        if isinstance(arquivo, (file, codecs.StreamReaderWriter)):
+        if isinstance(arquivo, (IOBase, codecs.StreamReaderWriter)):
             return self.carregar_retorno(arquivo)
 
         self.header = self.banco.registros.HeaderArquivo(**kwargs)
@@ -275,19 +276,19 @@ class Arquivo(object):
                 self.trailer.totais_quantidade_registros += len(lote)
 
     def escrever(self, file_):
-        file_.write(unicode(self).encode('ascii'))
+        file_.write(str(self).encode('ascii'))
 
-    def __unicode__(self):
+    def __str__(self):
         if not self._lotes:
             raise errors.ArquivoVazioError()
 
         result = []
-        result.append(unicode(self.header))
-        result.extend(unicode(lote) for lote in self._lotes)
-        result.append(unicode(self.trailer))
+        result.append(str(self.header))
+        result.extend(str(lote) for lote in self._lotes)
+        result.append(str(self.trailer))
         # Adicionar elemento vazio para arquivo terminar com \r\n
-        result.append(u'')
-        return u'\r\n'.join(result)
+        result.append('')
+        return '\r\n'.join(result)
 
     def encontrar_lote_pag(self, codigo_servico):
         for lote in self.lotes:
@@ -328,7 +329,7 @@ class ArquivoCobranca400(object):
         self._lotes = []
         self.banco = banco
         arquivo = kwargs.get('arquivo')
-        if isinstance(arquivo, (file, codecs.StreamReaderWriter)):
+        if isinstance(arquivo, (IOBase, codecs.StreamReaderWriter)):
             return self.carregar_retorno(arquivo)
 
         self.header = self.banco.registros.HeaderArquivo(**kwargs)
@@ -415,16 +416,16 @@ class ArquivoCobranca400(object):
                 self.trailer.totais_quantidade_registros += len(lote)
 
     def escrever(self, file_):
-        file_.write(unicode(self).encode('ascii'))
+        file_.write(str(self).encode('ascii'))
 
-    def __unicode__(self):
+    def __str__(self):
         if not self._lotes:
             raise errors.ArquivoVazioError()
 
         result = []
-        result.append(unicode(self.header))
-        result.extend(unicode(lote) for lote in self._lotes)
-        result.append(unicode(self.trailer))
+        result.append(str(self.header))
+        result.extend(str(lote) for lote in self._lotes)
+        result.append(str(self.trailer))
         # Adicionar elemento vazio para arquivo terminar com \r\n
-        result.append(u'')
-        return u'\r\n'.join(result)
+        result.append('')
+        return '\r\n'.join(result)

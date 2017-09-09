@@ -279,8 +279,8 @@ with open(file_path, 'r') as f:
         if line[318:320] == '':
             continue
 
-        print ('Titulo: ' + line[116:126])
-        print ('\tOcorrencia: ' + str(codigo[line[108:110]]['texto']) + '\t Motivo: ' + str(codigo[line[108:110]][line[318:320]]))
+        print(('Titulo: ' + line[116:126]))
+        print(('\tOcorrencia: ' + str(codigo[line[108:110]]['texto']) + '\t Motivo: ' + str(codigo[line[108:110]][line[318:320]])))
         # print ('\t\tMotivo: ' + str(codigo[line[108:110]][line[318:320]]))
 f.closed
 

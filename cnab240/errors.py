@@ -13,16 +13,6 @@ class AtribuicaoCampoError(Cnab240Error):
         self.valor = valor
         super(AtribuicaoCampoError, self).__init__()
 
-    def __unicode__(self):
-        return u'campo:{0} formato:{1} decimais:{2} digitos:{3} - valor:{4}'.\
-            format(
-                self.campo.nome,
-                self.campo.formato,
-                self.campo.decimais,
-                self.campo.digitos,
-                repr(self.valor),
-            )
-
     def __str__(self):
         return 'campo:{0} formato:{1} decimais:{2} digitos:{3} - valor:{4}'.\
             format(
@@ -53,9 +43,9 @@ class FaltandoArgsError(Cnab240Error):
         self.args_faltantes = args_faltantes
         super(FaltandoArgsError, self).__init__()
 
-    def __unicode__(self):
-        return (u'Os seguintes kwargs sao obrigatorios e nao foram '
-                u'encontrados: {0}').format(', '.join(self.args_faltantes))
+    def __str__(self):
+        return ('Os seguintes kwargs sao obrigatorios e nao foram '
+                'encontrados: {0}').format(', '.join(self.args_faltantes))
 
 
 class ArquivoVazioError(Cnab240Error):
