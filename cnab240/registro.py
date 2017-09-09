@@ -5,12 +5,7 @@ import unicodedata
 
 from glob import iglob
 from decimal import Decimal, InvalidOperation
-try:
-    from collections import OrderedDict
-except ImportError:
-    # Fallback for python 2.6
-    from ordereddict import OrderedDict
-
+from collections import OrderedDict
 from cnab240 import errors
 
 
@@ -168,10 +163,7 @@ class RegistroBase(object):
             if campo.decimais:
                 exponente = campo.decimais * -1
                 dec = valor[:exponente] + '.' + valor[exponente:]
-                try:
-                    campo.valor = Decimal(dec)
-                except InvalidOperation:
-                    raise  # raise custom?
+                campo.valor = Decimal(dec)
 
             elif campo.formato == 'num':
                 try:
