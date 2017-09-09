@@ -10,9 +10,9 @@ Python Cnab
 
 Instalação
 ------------
-Você pode instalar ``python-cnab`` com ``pip``:
+Você pode instalar ``python-cnab3`` com ``pip``:
 
-    $ pip install python-cnab
+    $ pip3 install python-cnab3
 
 
 Mantido por Trustcode
