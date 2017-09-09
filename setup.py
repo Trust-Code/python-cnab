@@ -46,9 +46,7 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     platforms='any',
-    test_suite='nose.collector',
     tests_require=[
-        'nose',
         'mock',
     ],
 )

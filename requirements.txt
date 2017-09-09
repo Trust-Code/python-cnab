@@ -1,4 +1,2 @@
-nose
 coveralls
 ordereddict
-importlib
