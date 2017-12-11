@@ -1,0 +1,164 @@
+{
+  "nome": "SegmentoA",
+  "campos": {
+    "00.3J": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 341
+    },
+    "01.3J": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+    "02.3J": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 3
+    },
+    "03.3J": {
+      "nome": "servico_numero_registro",
+      "posicao_inicio": 9,
+      "posicao_fim": 13,
+      "formato": "num"
+    },
+    "04.3J": {
+      "nome": "servico_segmento",
+      "posicao_inicio": 14,
+      "posicao_fim": 14,
+      "formato": "alfa",
+      "default": "J"
+    },
+    "05.3J": {
+      "nome": "servico_codigo_movimento",
+      "posicao_inicio": 15,
+      "posicao_fim": 17,
+      "formato": "num"
+    },
+    "06.3J": {
+      "nome": "cod_barras_banco_favorecido",
+      "posicao_inicio": 18,
+      "posicao_fim": 20,
+      "formato": "num"
+    },
+    "07.3J": {
+      "nome": "cod_barras_moeda",
+      "posicao_inicio": 21,
+      "posicao_fim": 21,
+      "formato": "num"
+    },
+    "08.3J": {
+      "nome": "cod_barras_dv",
+      "posicao_inicio": 22,
+      "posicao_fim": 22,
+      "formato": "num"
+    },
+    "09.3J": {
+      "nome": "cod_barras_vencimento",
+      "posicao_inicio": 23,
+      "posicao_fim": 26,
+      "formato": "num"
+    },
+    "10.3J": {
+      "nome": "cod_barras_valor",
+      "posicao_inicio": 27,
+      "posicao_fim": 36,
+      "formato": "num",
+      "decimais": 2
+    },
+    "11.3J": {
+      "nome": "cod_barras_campo_livre",
+      "posicao_inicio": 37,
+      "posicao_fim": 61,
+      "formato": "num"
+    },
+    "12.3J": {
+      "nome": "nome_favorecido",
+      "posicao_inicio": 62,
+      "posicao_fim": 91,
+      "formato": "alfa"
+    },
+    "13.3J": {
+      "nome": "data_vencto",
+      "posicao_inicio": 92,
+      "posicao_fim": 99,
+      "formato": "num"
+    },
+    "14.3J": {
+      "nome": "valor_titulo",
+      "posicao_inicio": 100,
+      "posicao_fim": 114,
+      "formato": "num",
+      "decimais": 2
+    },
+    "15.3J": {
+      "nome": "descontos",
+      "posicao_inicio": 115,
+      "posicao_fim": 129,
+      "formato": "num",
+      "decimais": 2
+    },
+    "16.3J": {
+      "nome": "acrescimos",
+      "posicao_inicio": 130,
+      "posicao_fim": 144,
+      "formato": "num",
+      "decimais": "2"
+    },
+    "17.3J": {
+      "nome": "data_pgto",
+      "posicao_inicio": 145,
+      "posicao_fim": 152,
+      "formato": "num"
+    },
+    "18.3J": {
+      "nome": "valor_pgto",
+      "posicao_inicio": 153,
+      "posicao_fim": 167,
+      "formato": "num",
+      "decimais": 2
+    },
+    "19.3J": {
+      "nome": "ZEROS",
+      "posicao_inicio": 168,
+      "posicao_fim": 182,
+      "formato": "num",
+      "default": 0
+    },
+    "20.3J": {
+      "nome": "seu_numero",
+      "posicao_inicio": 183,
+      "posicao_fim": 202,
+      "formato": "alfa",
+      "default": ""
+    },
+    "21.3J": {
+      "nome": "BRANCOS",
+      "posicao_inicio": 203,
+      "posicao_fim": 215,
+      "formato": "alfa",
+      "default": ""
+    },
+    "22.3J": {
+      "nome": "nosso_numero",
+      "posicao_inicio": 216,
+      "posicao_fim": 230,
+      "formato": "alfa",
+      "default": ""
+    },
+    "23.3J": {
+      "nome": "ocorrencias",
+      "posicao_inicio": 231,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
+
