@@ -27,7 +27,7 @@ class CampoBase(object):
             if len(valor) > self.digitos:
                 print("truncating - {0}".format(self.nome))
                 # reduz o len(valor)
-                cortar = len(valor) - self.digitos
+                cortar = len(valor.encode('utf-8')) - self.digitos
                 valor = valor[:-(cortar)]
 
         elif self.decimais:
@@ -79,8 +79,8 @@ class CampoBase(object):
                 chars_faltantes = self.digitos - len(valor)
                 return ('0' * chars_faltantes) + valor
             else:
-                valor = unicodedata.normalize('NFKD', str(self.valor))
-                chars_faltantes = self.digitos - len(valor)
+                valor = self.valor
+                chars_faltantes = self.digitos - len(valor.encode('utf-8'))
                 return valor + (' ' * chars_faltantes)
 
         return '{0:0{1}d}'.format(self.valor, self.digitos)
