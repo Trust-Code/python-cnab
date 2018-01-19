@@ -24,10 +24,10 @@ class CampoBase(object):
             if not isinstance(valor, str):
                 print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
-            if len(valor.encode('utf-8')) > self.digitos:
+            if len(valor) > self.digitos:
                 print("truncating - {0}".format(self.nome))
                 # reduz o len(valor)
-                cortar = len(valor.encode('utf-8')) - self.digitos
+                cortar = len(valor) - self.digitos
                 valor = valor[:-(cortar)]
 
         elif self.decimais:
@@ -79,8 +79,8 @@ class CampoBase(object):
                 chars_faltantes = self.digitos - len(valor)
                 return ('0' * chars_faltantes) + valor
             else:
-                valor = self.valor
-                chars_faltantes = self.digitos - len(valor.encode('utf-8'))
+                valor = unicodedata.normalize('NFKD', str(self.valor))
+                chars_faltantes = self.digitos - len(valor)
                 return valor + (' ' * chars_faltantes)
 
         return '{0:0{1}d}'.format(self.valor, self.digitos)
