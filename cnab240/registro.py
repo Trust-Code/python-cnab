@@ -24,7 +24,7 @@ class CampoBase(object):
             if not isinstance(valor, str):
                 print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
-            if len(valor) > self.digitos:
+            if len(valor.encode('utf-8')) > self.digitos:
                 print("truncating - {0}".format(self.nome))
                 # reduz o len(valor)
                 cortar = len(valor.encode('utf-8')) - self.digitos
