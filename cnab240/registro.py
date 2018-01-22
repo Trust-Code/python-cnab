@@ -22,12 +22,8 @@ class CampoBase(object):
             if not isinstance(string, str):
                 string = str(string, 'utf-8', 'replace')
 
-            string = string.encode('utf-8')
-            nfkd = unicodedata.normalize('NFKD', string.decode('utf-8'))
-            string = u"".join(
-                [letra for letra in nfkd if not unicodedata.combining(letra)])
-
-            return re.sub('[^a-zA-Z0-9 \\\]', '', string)
+            return unicodedata.normalize('NFKD', string).encode(
+                'ASCII', 'ignore').decode('ASCII')
         return ''
 
     @property
