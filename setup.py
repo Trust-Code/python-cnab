@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='python3-cnab',
-    version='0.9.3',
+    version='0.9.4',
     author='Trustcode',
     author_email='suporte@trustcode.com.br',
     url='https://github.com/Trust-Code/python-cnab',
