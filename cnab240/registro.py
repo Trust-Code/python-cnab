@@ -2,6 +2,7 @@
 import os
 import json
 import unicodedata
+import re
 
 from glob import iglob
 from decimal import Decimal
@@ -12,6 +13,22 @@ from cnab240 import errors
 class CampoBase(object):
     def __init__(self):
         self._valor = None
+
+    def _normalize_str(self, string):
+        """
+        Remove special characters and strip spaces
+        """
+        if string:
+            if not isinstance(string, str):
+                string = str(string, 'utf-8', 'replace')
+
+            string = string.encode('utf-8')
+            nfkd = unicodedata.normalize('NFKD', string.decode('utf-8'))
+            string = u"".join(
+                [letra for letra in nfkd if not unicodedata.combining(letra)])
+
+            return re.sub('[^a-zA-Z0-9 \\\]', '', string)
+        return ''
 
     @property
     def valor(self):
@@ -24,6 +41,9 @@ class CampoBase(object):
             if not isinstance(valor, str):
                 print("{0} - {1}".format(self.nome, valor))
                 raise errors.TipoError(self, valor)
+
+            valor = self._normalize_str(valor)
+
             if len(valor) > self.digitos:
                 print("truncating - {0}".format(self.nome))
                 # reduz o len(valor)
@@ -79,7 +99,7 @@ class CampoBase(object):
                 chars_faltantes = self.digitos - len(valor)
                 return ('0' * chars_faltantes) + valor
             else:
-                valor = unicodedata.normalize('NFKD', str(self.valor))
+                valor = self.valor
                 chars_faltantes = self.digitos - len(valor)
                 return valor + (' ' * chars_faltantes)
 
