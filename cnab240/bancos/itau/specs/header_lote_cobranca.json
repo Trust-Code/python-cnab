@@ -169,7 +169,7 @@
     },
 
     "23.1": {
-      "nome": "data_credito",
+      "nome": "data_credito_hd_lote",
       "posicao_inicio": 200,
       "posicao_fim": 207,
       "formato": "num",
