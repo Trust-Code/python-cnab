@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.3Q": {
@@ -116,7 +116,7 @@
       "posicao_fim": 153,
       "formato": "alfa"
     },
-    
+
     "17.3Q": {
       "nome": "sacador_inscricao_tipo",
       "posicao_inicio": 154,
