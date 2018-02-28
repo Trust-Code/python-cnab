@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.3P": {
@@ -74,7 +74,7 @@
       "posicao_fim": 35,
       "formato": "num"
     },
-    
+
     "11.3P": {
       "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
@@ -137,14 +137,14 @@
       "posicao_fim": 77,
       "formato": "alfa"
     },
-    
+
     "20.3P": {
       "nome": "vencimento_titulo",
       "posicao_inicio": 78,
       "posicao_fim": 85,
       "formato": "num"
     },
-    
+
     "21.3P": {
       "nome": "valor_titulo",
       "posicao_inicio": 86,
@@ -261,7 +261,7 @@
       "posicao_fim": 221,
       "formato": "num"
     },
-    
+
     "37.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
@@ -304,6 +304,6 @@
       "formato": "alfa",
       "default": ""
     }
-    
+
   }
 }

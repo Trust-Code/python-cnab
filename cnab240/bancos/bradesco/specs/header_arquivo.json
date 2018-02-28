@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.0": {
@@ -152,7 +152,8 @@
       "nome": "arquivo_densidade",
       "posicao_inicio": 167,
       "posicao_fim": 171,
-      "formato": "num"
+      "formato": "num",
+      "default": 6250
     },
 
     "22.0": {
