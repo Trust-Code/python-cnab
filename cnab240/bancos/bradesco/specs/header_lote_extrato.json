@@ -114,10 +114,11 @@
     },
 
     "16.1": {
-      "nome": "cedente_dv_ag_cc",
+      "nome": "vazio1",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "17.1": {

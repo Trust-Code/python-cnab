@@ -83,10 +83,11 @@
     },
 
     "12.3T": {
-      "nome": "cedente_dv_ag_cc",
+      "nome": "vazio1",
       "posicao_inicio": 37,
       "posicao_fim": 37,
-      "formato": "num"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.3T": {
