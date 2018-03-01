@@ -64,7 +64,7 @@
     },
 
     "09.0": {
-      "nome": "nome_banco",
+      "nome": "nome_do_banco",
       "posicao_inicio": 80,
       "posicao_fim": 94,
       "formato": "alfa",
