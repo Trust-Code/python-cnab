@@ -33,7 +33,7 @@
     },
 
     "05.5": {
-      "nome": "qtde_reg",
+      "nome": "quantidade_registros",
       "posicao_inicio": 18,
       "posicao_fim": 23,
       "formato": "num"
