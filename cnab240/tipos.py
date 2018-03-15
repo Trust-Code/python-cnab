@@ -218,9 +218,8 @@ class Arquivo(object):
     def lotes(self):
         return self._lotes
 
-    def incluir_cobranca(self, header, **kwargs):
-        # 1 eh o codigo de cobranca
-        codigo_evento = 1
+    def incluir_evento(self, header, codigo_movimento, **kwargs):
+        codigo_evento = codigo_movimento
         evento = Evento(self.banco, codigo_evento)
 
         seg_p = self.banco.registros.SegmentoP(**kwargs)
@@ -252,6 +251,14 @@ class Arquivo(object):
         lote_cobranca.adicionar_evento(evento)
         # Incrementar numero de registros no trailer do arquivo
         self.trailer.totais_quantidade_registros += len(evento)
+
+    def incluir_cobranca(self, header, **kwargs):
+        # 1 = codigo de cobranca
+        self.incluir_evento(header, 1, **kwargs)
+
+    def incluir_baixa(self, header, **kwargs):
+        # 2 = codigo de solicitacao de baixa
+        self.incluir_evento(header, 2, **kwargs)
 
     def encontrar_lote(self, codigo_servico):
         for lote in self.lotes:
