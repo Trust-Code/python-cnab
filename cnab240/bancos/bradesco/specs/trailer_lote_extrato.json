@@ -5,7 +5,8 @@
       "nome": "controle_banco",
       "posicao_inicio": 1,
       "posicao_fim": 3,
-      "formato": "num"
+      "formato": "num",
+      "default": 237
       },
 
     "02.5": {
@@ -81,10 +82,11 @@
     },
 
     "12.5": {
-      "nome": "cedente_dv_ag_cc",
+      "nome": "vazio1",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.5": {
