@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.3P": {
@@ -74,7 +74,7 @@
       "posicao_fim": 35,
       "formato": "num"
     },
-    
+
     "11.3P": {
       "nome": "cedente_conta_dv",
       "posicao_inicio": 36,
@@ -83,17 +83,18 @@
     },
 
     "12.3P": {
-      "nome": "cedente_dv_ag_cc",
+      "nome": "vazio2",
       "posicao_inicio": 37,
       "posicao_fim": 37,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.3P": {
       "nome": "identificacao_titulo_banco",
       "posicao_inicio": 38,
       "posicao_fim": 57,
-      "formato": "num"
+      "formato": "alfa"
     },
 
     "14.3P": {
@@ -114,7 +115,7 @@
       "nome": "cobranca_documentoTipo",
       "posicao_inicio": 60,
       "posicao_fim": 60,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "17.3P": {
@@ -128,7 +129,7 @@
       "nome": "cobranca_distribuicaoBloqueto",
       "posicao_inicio": 62,
       "posicao_fim": 62,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "19.3P": {
@@ -137,14 +138,14 @@
       "posicao_fim": 77,
       "formato": "alfa"
     },
-    
+
     "20.3P": {
       "nome": "vencimento_titulo",
       "posicao_inicio": 78,
       "posicao_fim": 85,
       "formato": "num"
     },
-    
+
     "21.3P": {
       "nome": "valor_titulo",
       "posicao_inicio": 86,
@@ -261,7 +262,7 @@
       "posicao_fim": 221,
       "formato": "num"
     },
-    
+
     "37.3P": {
       "nome": "prazo_protesto",
       "posicao_inicio": 222,
@@ -304,6 +305,6 @@
       "formato": "alfa",
       "default": ""
     }
-    
+
   }
 }

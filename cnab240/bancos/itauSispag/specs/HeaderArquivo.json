@@ -96,7 +96,7 @@
       "default": ""
     },
     "14.0": {
-      "nome": "nome_banco",
+      "nome": "nome_do_banco",
       "posicao_inicio": 103,
       "posicao_fim": 132,
       "formato": "alfa",

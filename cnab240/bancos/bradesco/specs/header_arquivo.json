@@ -6,7 +6,7 @@
       "posicao_inicio": 1,
       "posicao_fim": 3,
       "formato": "num",
-      "default": 231
+      "default": 237
       },
 
     "02.0": {
@@ -84,10 +84,11 @@
     },
 
     "12.0": {
-      "nome": "cedente_dv_ag_cc",
+      "nome": "vazio2",
       "posicao_inicio": 72,
       "posicao_fim": 72,
-      "formato": "alfa"
+      "formato": "alfa",
+      "default": ""
     },
 
     "13.0": {
@@ -152,7 +153,8 @@
       "nome": "arquivo_densidade",
       "posicao_inicio": 167,
       "posicao_fim": 171,
-      "formato": "num"
+      "formato": "num",
+      "default": 6250
     },
 
     "22.0": {
