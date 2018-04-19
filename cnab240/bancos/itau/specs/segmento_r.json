@@ -161,13 +161,20 @@
         },
         "24.3R": {
             "nome": "vazio12",
+            "posicao_inicio": 229,
+            "posicao_fim": 230,
+            "formato": "alfa",
+            "default": ""
+        },
+        "25.3R": {
+            "nome": "vazio13",
             "posicao_inicio": 231,
             "posicao_fim": 231,
             "formato": "num",
             "default": 0
         },
-        "25.3R": {
-            "nome": "vazio13",
+        "26.3R": {
+            "nome": "vazio14",
             "posicao_inicio": 232,
             "posicao_fim": 240,
             "formato": "alfa",

@@ -60,7 +60,10 @@ class Lote(object):
         self.header = header
         self.trailer = trailer
         self._codigo = None
-        if self.trailer is not None:
+        if 'itau' in str(banco) and self.trailer is not None:
+            self.trailer.quantidade_registros = 1
+            self.trailer.cobrancasimples_quantidade_titulos = 0
+        elif self.trailer is not None:
             self.trailer.quantidade_registros = 2
         self._eventos = []
 
@@ -95,8 +98,12 @@ class Lote(object):
             raise TypeError
 
         self._eventos.append(evento)
-        if self.trailer is not None and hasattr(self.trailer, 'quantidade_registros'):
+        if self.trailer is not None and hasattr(
+                self.trailer, 'quantidade_registros'):
             self.trailer.quantidade_registros += len(evento)
+        if 'itau' in str(self.banco) and hasattr(
+                self.trailer, 'cobrancasimples_quantidade_titulos'):
+            self.trailer.cobrancasimples_quantidade_titulos += 1
         self.atualizar_codigo_registros()
 
         if self._codigo:
