@@ -85,7 +85,7 @@
       "nome": "numero_aviso",
       "posicao_inicio": 116,
       "posicao_fim": 123,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "12.5": {
