@@ -144,6 +144,8 @@ class Arquivo(object):
         self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
         self.trailer.totais_quantidade_lotes = 0
         self.trailer.totais_quantidade_registros = 2
+        if 'itau' in str(banco):
+            self.trailer.totais_quantidade_registros += 1
 
         if "arquivo_data_de_geracao" in dir(self.header) and \
            self.header.arquivo_data_de_geracao is None:
