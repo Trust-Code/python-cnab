@@ -92,25 +92,26 @@
             "default": 0
         },
         "14.3R": {
-            "nome": "vazio4",
+            "nome": "codigo_multa",
             "posicao_inicio": 66,
             "posicao_fim": 66,
             "formato": "num",
             "default": 0
         },
         "15.3R": {
-            "nome": "vazio5",
+            "nome": "data_multa",
             "posicao_inicio": 67,
             "posicao_fim": 74,
-            "formato": "num",
-            "default": 0
+            "formato": "alfa",
+            "default": ""
         },
         "16.3R": {
-            "nome": "vazio6",
+            "nome": "juros_multa",
             "posicao_inicio": 75,
             "posicao_fim": 89,
-            "formato": "num",
-            "default": 0
+            "formato": "alfa",
+            "decimais": 2,
+            "default": ""
         },
         "17.3R": {
             "nome": "vazio7",
