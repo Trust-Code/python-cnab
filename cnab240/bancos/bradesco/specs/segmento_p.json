@@ -122,7 +122,8 @@
       "nome": "cobranca_emissaoBloqueto",
       "posicao_inicio": 61,
       "posicao_fim": 61,
-      "formato": "num"
+      "formato": "num",
+      "default": 2
     },
 
     "18.3P": {
