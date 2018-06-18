@@ -28,24 +28,16 @@ class TestLote(unittest.TestCase):
 
     def test_init(self):
         self.assertEqual(self.lote.eventos, [])
-        if 'itau' in str(self.lote.banco):
-            num = 1
-        else:
-            num = 2
-        self.assertEqual(self.lote.trailer.quantidade_registros, num)
+        self.assertEqual(self.lote.trailer.quantidade_registros, 2)
 
     def test_adicionar_evento(self):
         with self.assertRaises(TypeError):
             self.lote.adicionar_evento(None)
-        if 'itau' in str(self.lote.banco):
-            num = 3
-        else:
-            num = 4
         self.lote.adicionar_evento(self.evento_1)
-        self.assertEqual(self.lote.trailer.quantidade_registros, num)
+        self.assertEqual(self.lote.trailer.quantidade_registros, 4)
 
         self.lote.adicionar_evento(self.evento_2)
-        self.assertEqual(self.lote.trailer.quantidade_registros, num + 2)
+        self.assertEqual(self.lote.trailer.quantidade_registros, 6)
 
     def test_unicode(self):
         with self.assertRaises(errors.NenhumEventoError):
