@@ -109,7 +109,7 @@
             "nome": "juros_multa",
             "posicao_inicio": 75,
             "posicao_fim": 89,
-            "formato": "alfa",
+            "formato": "num",
             "decimais": 2,
             "default": ""
         },

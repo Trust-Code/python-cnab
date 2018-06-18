@@ -60,10 +60,7 @@ class Lote(object):
         self.header = header
         self.trailer = trailer
         self._codigo = None
-        if 'itau' in str(banco) and self.trailer is not None:
-            self.trailer.quantidade_registros = 1
-            self.trailer.cobrancasimples_quantidade_titulos = 0
-        elif self.trailer is not None:
+        if self.trailer is not None:
             self.trailer.quantidade_registros = 2
         self._eventos = []
 
@@ -101,9 +98,6 @@ class Lote(object):
         if self.trailer is not None and hasattr(
                 self.trailer, 'quantidade_registros'):
             self.trailer.quantidade_registros += len(evento)
-        if 'itau' in str(self.banco) and hasattr(
-                self.trailer, 'cobrancasimples_quantidade_titulos'):
-            self.trailer.cobrancasimples_quantidade_titulos += 1
         self.atualizar_codigo_registros()
 
         if self._codigo:
@@ -144,8 +138,6 @@ class Arquivo(object):
         self.trailer = self.banco.registros.TrailerArquivo(**kwargs)
         self.trailer.totais_quantidade_lotes = 0
         self.trailer.totais_quantidade_registros = 2
-        if 'itau' in str(banco):
-            self.trailer.totais_quantidade_registros += 1
 
         if "arquivo_data_de_geracao" in dir(self.header) and \
            self.header.arquivo_data_de_geracao is None:
