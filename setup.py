@@ -21,6 +21,7 @@ setup(
             'bancos/cef/specs/*.json',
             'bancos/hsbc/specs/*.json',
             'bancos/itau/specs/*.json',
+            'bancos/itauRetorno/specs/*.json',
             'bancos/itauSispag/specs/*.json',
             'bancos/santander/specs/*.json',
             'bancos/sicoob/specs/*.json',
