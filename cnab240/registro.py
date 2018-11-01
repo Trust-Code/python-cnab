@@ -125,6 +125,7 @@ def criar_classe_campo(spec):
         'formato': spec.get('formato', 'alfa'),
         'decimais': spec.get('decimais', 0),
         'default': spec.get('default'),
+        'ignore': spec.get('ignore', False),
     }
 
     return type(nome, (CampoBase,), attrs)
@@ -185,6 +186,9 @@ class RegistroBase(object):
                 try:
                     campo.valor = int(valor)
                 except ValueError:
+                    if campo.ignore:
+                        campo.valor = 0
+                        continue
                     raise errors.TipoError(campo, valor)
             else:
                 campo.valor = valor

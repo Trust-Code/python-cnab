@@ -60,7 +60,8 @@
       "posicao_inicio": 53,
       "posicao_fim": 53,
       "formato": "num",
-      "default": 0
+      "default": 0,
+      "ignore": true
     },
 
     "09.0": {
@@ -122,7 +123,7 @@
       "formato": "alfa",
       "default": "BANCO ITAU SA"
     },
-    
+
     "17.0": {
       "nome": "vazio6",
       "posicao_inicio": 133,
@@ -173,7 +174,8 @@
       "posicao_inicio": 167,
       "posicao_fim": 171,
       "formato": "num",
-      "default": 0
+      "default": 0,
+      "ignore": true
     },
 
     "24.0": {
@@ -189,7 +191,8 @@
       "posicao_inicio": 226,
       "posicao_fim": 228,
       "formato": "num",
-      "default": 0
+      "default": 0,
+      "ignore": true
     },
 
     "26.0": {
