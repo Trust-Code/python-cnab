@@ -23,15 +23,50 @@ CNAB_CODE = {
         9: 'BAIXA SIMPLES',
         10: 'BAIXA POR TER SIDO LIQUIDADO',
         # TODO Implementar as outras mensagens
+    },
+    '033': {
+        '02': 'Entrada confirmada',
+        '03': 'Entrada rejeitada',
+        '04': 'Transferência de carteira/entrada',
+        '05': 'Transferência de carteira/baixa',
+        '06': 'Liquidação',
+        '09': 'Baixa',
+        '11': 'Títulos em carteira ( em ser)',
+        '12': 'Confirmação recebimento instrução de abatimento',
+        '13': 'Confirmação recebimento instrução de cancelamento abatimento',
+        '14': 'Confirmação recebimento instrução alteração de vencimento',
+        '17': 'Liquidação após baixa ou liquidação título não registrado',
+        '19': 'Confirmação recebimento instrução de protesto',
+        '20': 'Confirmação recebimento instrução de sustação/Não Protestar',
+        '23': 'Remessa a cartorio ( aponte em cartorio)',
+        '24': 'Retirada de cartorio e manutenção em carteira',
+        '25': 'Protestado e baixado ( baixa por ter sido protestado)',
+        '26': 'Instrução rejeitada',
+        '27': 'Confirmação do pedido de alteração de outros dados',
+        '28': 'Debito de tarifas/custas',
+        '29': 'Ocorrências do Pagador',
+        '30': 'Alteração de dados rejeitada',
+        '32': 'Código de IOF inválido',
+        '51': 'Título DDA reconhecido pelo Pagador',
+        '52': 'Título DDA não reconhecido pelo Pagador',
+        '53': 'Título DDA recusado pela CIP',
+        '61': 'Confirmação de Alteração do Valor Nominal do Título',
+        '91': 'Confirmação de Alteração do Valor Mínimo ou Percentual Mínimo',
+        '92': 'Confirmação de Alteração do Valor Máximo ou Percentual Máximo',
+        '93': 'Baixa Operacional',
+        '94': 'Cancelamento de Baixa Operacional',
     }
+
 }
 
 PROCESSED_CODE = {
-    '341': [2, 3],
+    '341': [2],
+    '033': ['02'],
 }
 
 OK_CODE = {
     '341': [6, 8, 10],
+    '033': ['06', '17'],
 }
 
 

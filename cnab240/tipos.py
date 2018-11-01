@@ -157,18 +157,29 @@ class Arquivo(object):
 
         for linha in arquivo:
             tipo_registro = linha[7]
-
             if tipo_registro == '0':
-                self.header = self.banco.registros.HeaderArquivo()
+                if "HeaderArquivoRet" in dir(self.banco.registros):
+                    self.header = self.banco.registros.HeaderArquivoRet()
+                else:
+                    self.header = self.banco.registros.HeaderArquivo()
                 self.header.carregar(linha)
 
             elif tipo_registro == '1':
                 codigo_servico = linha[9:11]
 
                 if codigo_servico == '01':
-                    header_lote = self.banco.registros.HeaderLoteCobranca()
+                    if "HeaderLoteCobrancaRet" in dir(self.banco.registros):
+                        header_lote = \
+                            self.banco.registros.HeaderLoteCobrancaRet()
+                    else:
+                        header_lote = self.banco.registros.HeaderLoteCobranca()
                     header_lote.carregar(linha)
-                    trailer_lote = self.banco.registros.TrailerLoteCobranca()
+                    if "TrailerLoteCobrancaRet" in dir(self.banco.registros):
+                        trailer_lote = \
+                            self.banco.registros.TrailerLoteCobrancaRet()
+                    else:
+                        trailer_lote = \
+                            self.banco.registros.TrailerLoteCobranca()
                     lote_aberto = Lote(self.banco, header_lote, trailer_lote)
                     self._lotes.append(lote_aberto)
                 elif codigo_servico == '04':
@@ -212,7 +223,10 @@ class Arquivo(object):
                     raise Exception
 
             elif tipo_registro == '9':
-                self.trailer = self.banco.registros.TrailerArquivo()
+                if "TrailerArquivoRet" in dir(self.banco.registros):
+                    self.trailer = self.banco.registros.TrailerArquivoRet()
+                else:
+                    self.trailer = self.banco.registros.TrailerArquivo()
                 self.trailer.carregar(linha)
 
     @property
