@@ -1,0 +1,119 @@
+{
+  "nome": "TrailerLoteCobrancaRet",
+  "campos": {
+    "01.5": {
+      "nome": "controle_banco",
+      "posicao_inicio": 1,
+      "posicao_fim": 3,
+      "formato": "num",
+      "default": 33
+    },
+
+    "02.5": {
+      "nome": "controle_lote",
+      "posicao_inicio": 4,
+      "posicao_fim": 7,
+      "formato": "num",
+      "default": 0
+    },
+
+    "03.5": {
+      "nome": "controle_registro",
+      "posicao_inicio": 8,
+      "posicao_fim": 8,
+      "formato": "num",
+      "default": 5
+    },
+
+    "04.5": {
+      "nome": "vazio1",
+      "posicao_inicio": 9,
+      "posicao_fim": 17,
+      "formato": "alfa",
+      "default": ""
+    },
+
+    "05.5": {
+      "nome": "quantidade_registros",
+      "posicao_inicio": 18,
+      "posicao_fim": 23,
+      "formato": "num",
+      "default": 0
+    },
+
+    "06.5": {
+      "nome": "quantidade_titulos_simples",
+      "posicao_inicio": 24,
+      "posicao_fim": 29,
+      "formato": "num"
+    },
+
+    "07.5": {
+      "nome": "valor_titulos_simples",
+      "posicao_inicio": 30,
+      "posicao_fim": 46,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "08.5": {
+      "nome": "quantidade_titulos_vinculados",
+      "posicao_inicio": 47,
+      "posicao_fim": 52,
+      "formato": "num"
+    },
+
+    "09.5": {
+      "nome": "valor_titulos_vinculados",
+      "posicao_inicio": 53,
+      "posicao_fim": 69,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "10.5": {
+      "nome": "quantidade_titulos_caucionados",
+      "posicao_inicio": 70,
+      "posicao_fim": 75,
+      "formato": "num"
+    },
+
+    "11.5": {
+      "nome": "valor_titulos_caucionados",
+      "posicao_inicio": 76,
+      "posicao_fim": 92,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "12.5": {
+      "nome": "quantidade_titulos_descontada",
+      "posicao_inicio": 93,
+      "posicao_fim": 98,
+      "formato": "num"
+    },
+
+    "13.5": {
+      "nome": "valor_titulos_descontada",
+      "posicao_inicio": 99,
+      "posicao_fim": 115,
+      "formato": "num",
+      "decimais": 2
+    },
+
+    "14.5": {
+      "nome": "aviso_lancamento",
+      "posicao_inicio": 116,
+      "posicao_fim": 123,
+      "formato": "alfa"
+    },
+
+    "15.5": {
+      "nome": "vazio2",
+      "posicao_inicio": 124,
+      "posicao_fim": 240,
+      "formato": "alfa",
+      "default": ""
+    }
+  }
+}
