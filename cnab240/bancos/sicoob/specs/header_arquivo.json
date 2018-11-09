@@ -89,7 +89,7 @@
             "posicao_inicio": 72,
             "posicao_fim": 72,
             "formato": "alfa",
-            "default": ""
+            "default": "0"
         },
 
         "13.0": {
@@ -149,7 +149,7 @@
             "posicao_inicio": 164,
             "posicao_fim": 166,
             "formato": "alfa",
-            "default": "087"
+            "default": "081"
         },
 
         "21.0": {
