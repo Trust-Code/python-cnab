@@ -217,7 +217,7 @@
     },
 
     "29.3P": {
-      "nome": "juros_cod_mora",
+      "nome": "codigo_juros",
       "posicao_inicio": 118,
       "posicao_fim": 118,
       "formato": "num"
@@ -231,7 +231,7 @@
     },
 
     "31.3P": {
-      "nome": "juros_mora_taxa_dia",
+      "nome": "juros_mora_taxa",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
