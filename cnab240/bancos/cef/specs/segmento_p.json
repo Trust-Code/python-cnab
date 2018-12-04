@@ -102,11 +102,10 @@
     },
 
     "14.3P": {
-      "nome": "carteira_titulo",
+      "nome": "nosso_numero",
       "posicao_inicio": 43,
       "posicao_fim": 57,
-      "formato": "num",
-      "default": 1
+      "formato": "num"
     },
 
     "15.3P": {
@@ -138,7 +137,7 @@
       "posicao_inicio": 61,
       "posicao_fim": 61,
       "formato": "num",
-      "default": 1
+      "default": 2
     },
 
     "19.3P": {
@@ -146,7 +145,7 @@
       "posicao_inicio": 62,
       "posicao_fim": 62,
       "formato": "alfa",
-      "default": "A"
+      "default": "0"
     },
 
     "20.3P": {
@@ -309,7 +308,7 @@
       "nome": "prazo_baixa",
       "posicao_inicio": 225,
       "posicao_fim": 227,
-      "formato": "alfa"
+      "formato": "num"
     },
 
     "42.3P": {
