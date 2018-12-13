@@ -109,7 +109,7 @@
       "posicao_fim": 59,
       "formato": "num"
     },
-    
+
     "16.3P": {
       "nome": "cobranca_documento",
       "posicao_inicio": 60,
@@ -207,7 +207,7 @@
     },
 
     "29.3P": {
-      "nome": "juros_mora_taxa_dia",
+      "nome": "juros_mora_taxa",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
@@ -255,7 +255,7 @@
       "formato": "num",
       "decimais": 2
     },
-    
+
     "35.3P": {
       "nome": "identificacao_titulo",
       "posicao_inicio": 196,
