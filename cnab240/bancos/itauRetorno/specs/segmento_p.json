@@ -76,7 +76,7 @@
       "formato": "alfa",
       "default": ""
     },
-    
+
     "11.3P": {
       "nome": "vazio4",
       "posicao_inicio": 24,
@@ -143,14 +143,14 @@
       "formato": "num",
       "default": 0
     },
-    
+
     "20.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 63,
       "posicao_fim": 72,
       "formato": "alfa"
     },
-    
+
     "21.3P": {
       "nome": "vazio8",
       "posicao_inicio": 73,
@@ -228,7 +228,7 @@
     },
 
     "31.3P": {
-      "nome": "juros_mora_taxa_dia",
+      "nome": "juros_mora_taxa",
       "posicao_inicio": 127,
       "posicao_fim": 141,
       "formato": "num",
@@ -278,7 +278,7 @@
       "decimais": 2,
       "default": 0
     },
-    
+
     "37.3P": {
       "nome": "identificacao_titulo",
       "posicao_inicio": 196,

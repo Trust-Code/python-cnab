@@ -71,7 +71,7 @@
       "posicao_fim": 66,
       "formato": "num"
     },
-    
+
     "11.3P": {
       "nome": "percentual_multa",
       "posicao_inicio": 67,
@@ -144,14 +144,14 @@
       "formato": "alfa",
       "default": ""
     },
-    
+
     "21.3P": {
       "nome": "identificacao_ocorrencia",
       "posicao_inicio": 109,
       "posicao_fim": 110,
       "formato": "num"
     },
-    
+
     "22.3P": {
       "nome": "numero_documento",
       "posicao_inicio": 111,
@@ -227,7 +227,7 @@
     },
 
     "32.3P": {
-      "nome": "juros_mora_taxa_dia",
+      "nome": "juros_mora_taxa",
       "posicao_inicio": 161,
       "posicao_fim": 173,
       "formato": "num",
@@ -271,7 +271,7 @@
       "posicao_fim": 220,
       "formato": "num"
     },
-    
+
     "38.3P": {
       "nome": "sacado_inscricao_numero",
       "posicao_inicio": 221,
