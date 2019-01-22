@@ -146,15 +146,16 @@ def get_bank(bank_code):
 
 
 def parse_cnab_code(bank_code, cnab_code):
-    try:
-        message = CNAB_CODE[bank_code][cnab_code]
-        if cnab_code in PROCESSED_CODE[bank_code]:
-            return '1111', message
-        elif cnab_code in OK_CODE[bank_code]:
-            return '0000', message
-        elif cnab_code in BAIXA_CODE[bank_code]:
-            return '2222', message
-        else:
-            return cnab_code, message
-    except KeyError:
-        parse_keyerror(CNAB_CODE, bank_code, CNAB_CODE)
+    if bank_code not in CNAB_CODE:
+        raise KeyError('Banco não implementado: %s!' % bank_code)
+    if cnab_code not in CNAB_CODE[bank_code]:
+        return '1111', 'Código de retorno: %s' % cnab_code
+    message = CNAB_CODE[bank_code][cnab_code]
+    if cnab_code in PROCESSED_CODE[bank_code]:
+        return '1111', message
+    elif cnab_code in OK_CODE[bank_code]:
+        return '0000', message
+    elif cnab_code in BAIXA_CODE[bank_code]:
+        return '2222', message
+    else:
+        return cnab_code, message
