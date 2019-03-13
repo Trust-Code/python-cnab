@@ -80,8 +80,7 @@
             "nome": "cedente_conta_dv",
             "posicao_inicio": 71,
             "posicao_fim": 71,
-            "formato": "alfa",
-            "default": 0
+            "formato": "alfa"
         },
 
         "12.0": {
