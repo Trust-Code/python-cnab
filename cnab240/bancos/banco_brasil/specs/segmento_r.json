@@ -29,8 +29,7 @@
       "nome": "servico_numero_registro",
       "posicao_inicio": 9,
       "posicao_fim": 13,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "05.3R": {
@@ -119,8 +118,7 @@
       "nome": "multa_data",
       "posicao_inicio": 67,
       "posicao_fim": 74,
-      "formato": "num",
-      "default": 0
+      "formato": "num"
     },
 
     "16.3R": {
@@ -128,8 +126,7 @@
       "posicao_inicio": 75,
       "posicao_fim": 89,
       "formato": "num",
-      "decimais": 2,
-      "default": 0
+      "decimais": 2
     },
 
     "17.3R": {
@@ -159,15 +156,15 @@
     "20.3R": {
       "nome": "email_sacado",
       "posicao_inicio": 180,
-      "posicao_fim": 229,
+      "posicao_fim": 199,
       "formato": "alfa",
       "default": ""
     },
 
     "21.3R": {
       "nome": "cnab_exclusivo_campo21dot3R",
-      "posicao_inicio": 230,
-      "posicao_fim": 240,
+      "posicao_inicio": 200,
+      "posicao_fim": 207,
       "formato": "alfa",
       "default": ""
     },
@@ -235,6 +232,5 @@
         "formato": "alfa",
         "default": ""
     }
-
-}
+  }
 }
