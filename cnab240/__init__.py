@@ -13,6 +13,34 @@ BANK = {
 }
 
 CNAB_CODE = {
+    '001': {
+       2: 'Entrada confirmada',
+       3: 'Entrada Rejeitada',
+       4: 'Transferência de Carteira/Entrada',
+       5: 'Transferência de Carteira/Baixa',
+       6: 'Liquidação',
+       9: 'Baixa',
+       11: 'Títulos em Carteira (em ser)',
+       12: 'Confirmação Recebimento Instrução de Abatimento',
+       13: 'Confirmação Recebimento Instrução de Cancelamento Abatimento',
+       14: 'Confirmação Recebimento Instrução Alteração de Vencimento',
+       15: 'Franco de Pagamento',
+       17: 'Liquidação Após Baixa ou Liquidação Título Não Registrado',
+       19: 'Confirmação Recebimento Instrução de Protesto',
+       20: 'Confirmação Recebimento Instrução de Sustação/Cancelamento de Protesto',
+       23: 'Remessa a Cartório (Aponte em Cartório)',
+       24: 'Retirada de Cartório e Manutenção em Carteira',
+       25: 'Protestado e Baixado (Baixa por ter sido Protestado)',
+       26: 'Instrução Rejeitada',
+       27: 'Confirmação do Pedido de Alteração de Outros Dados',
+       28: 'Débito de Tarifas/Custas',
+       29: 'Ocorrências do Sacado',
+       30: 'Alteração de Dados Rejeitada',
+       44: 'Título pago com cheque devolvido',
+       50: 'Título pago com cheque pendente de Compensação',
+       85: 'Inclusão de Negativação',
+       86: 'Exclusão de Negativação',
+    },
     '341': {
         2: 'ENTRADA CONFIRMADA',
         3: 'ENTRADA REJEITADA',
@@ -113,18 +141,21 @@ CNAB_CODE = {
 }
 
 PROCESSED_CODE = {
+    '001': [2],
     '341': [2],
     '033': ['02'],
     '756': [2],
 }
 
 BAIXA_CODE = {
+    '001': [9, 25],
     '341': [9],
     '033': ['09', '25', '93'],
     '756': [9, 25],
 }
 
 OK_CODE = {
+    '001': [6, 17],
     '341': [6, 8, 10],
     '033': ['06', '17'],
     '756': [6, 17],
