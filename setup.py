@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+import os.path
 
 setup(
     name='python3-cnab',
@@ -33,7 +34,7 @@ setup(
     ],
     license='MIT',
     description='Lib para gerar arquivo CNAB - Integração bancária',
-    long_description=open('README.md', 'r').read(),
+    long_description=open('README.md', 'r').read() if os.path.exists('README.md') else None,
     download_url='https://github.com/Trust-Code/python-cnab',
     classifiers=[
         'Development Status :: 3 - Alpha',
