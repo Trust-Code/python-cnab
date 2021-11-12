@@ -43,8 +43,8 @@
       "nome": "vazio1",
       "posicao_inicio": 12,
       "posicao_fim": 13,
-      "formato": "num",
-      "default": 0
+      "formato": "alfa",
+      "default": ""
     },
 
     "07.1": {
